@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
+	name="carneiros2019_7_sitioprainha_capa" resourceBundle="jasperprops" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
+
+	<queryString>
+		<![CDATA[SELECT p.id as idProduto, p.nome as nomeProduto,
+		ROUND(MIN((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))) as menorValor
+		FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
+		WHERE p.id IN (1713)
+		;]]>
+	</queryString>
+	
+	<field name="menorValor" class="java.lang.String">
+		<fieldDescription><![CDATA[menorValor]]></fieldDescription>
+	</field>
+	
+	<background>
+	
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" />
+				<imageExpression><![CDATA[$R{injoy.carneiros.image.sitioprainha.capa}]]></imageExpression>
+				<!-- <imageExpression><![CDATA["C:\\_java\\workspaces\\_comum\\injoy-pdf-automation\\images\\carneiros2019\\Pousada Sitio da Prainha.png"]]></imageExpression> -->
+				<anchorNameExpression><![CDATA[$R{injoy.carneiros.sitioprainha.nome}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="595" y="479" width="33" height="33" />
+				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.link.sitioprainha.sobre}]]></hyperlinkReferenceExpression>
+			</image>
+			<image hyperlinkType="RemoteAnchor">
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" />
+				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
+				<!-- <hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>  -->
+				<hyperlinkReferenceExpression><![CDATA["carneiros2019_4_acomodacoes.pdf"]]></hyperlinkReferenceExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="586" y="433" width="98" height="34" forecolor="#FFFFFF" />
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{menorValor}]]></textFieldExpression>
+			</textField>
+		</band>
+		
+	</background>
+	
+</jasperReport>
