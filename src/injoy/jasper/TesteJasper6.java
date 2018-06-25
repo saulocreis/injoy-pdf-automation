@@ -20,7 +20,8 @@ public class TesteJasper6 {
 
 	public static void main(String[] args) throws JRException, FileNotFoundException, IOException, SQLException {
 		
-		/* carneiros2019
+		/* report1
+		 * carneiros2019
 		 * carneiros2019_0_ij, carneiros2019_0_menu
 		 * carneiros2019_1_reveillon
 		 * carneiros2019_2_pq_injoy
@@ -30,7 +31,7 @@ public class TesteJasper6 {
 		 * carneiros2019_6_clubmeridional_capa, carneiros2019_6_clubmeridional_fotos, carneiros2019_6_clubmeridional_precos
 		 * carneiros2019_7_sitioprainha_capa, carneiros2019_7_sitioprainha_fotos, carneiros2019_7_sitioprainha_precos
 		 */
-		String nomeArquivo = "carneiros2019"; 
+		String nomeArquivo = "report1"; 
 		
 		System.out.println("Tentando conectar...");
 		Connection cn = DriverManager.getConnection(CONEXAO);

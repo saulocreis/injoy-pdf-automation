@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" 
-	name="carneiros2019_6_clubmeridional_precos" resourceBundle="jasperprops" pageWidth="684" pageHeight="929" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
-
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros2019_6_clubmeridional_precos" pageWidth="684" pageHeight="929" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="44504152-df3e-4b7b-9efc-240e07a3179d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
 	<queryString>
 		<![CDATA[SELECT
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25045))
     as valorPessoa_1716_25045,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25046))
     as valorPessoa_1716_25046,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25047))
     as valorPessoa_1716_25047,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25048))
     as valorPessoa_1716_25048,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25049))
     as valorPessoa_1716_25049,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25050))
     as valorPessoa_1716_25050,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25051))
     as valorPessoa_1716_25051,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25052))
     as valorPessoa_1716_25052,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25053))
     as valorPessoa_1716_25053,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25054))
     as valorPessoa_1716_25054,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
 	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 	WHERE p.id IN (1716) AND aq.id IN (25055))
     as valorPessoa_1716_25055
@@ -86,89 +86,89 @@
 	<background>
 		<band height="929">
 			<image>
-				<reportElement x="0" y="0" width="684" height="929"/>
+				<reportElement x="0" y="0" width="684" height="929" uuid="1190b0d0-59f9-4564-aed0-3cec720d4284"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.clubmeridional.quartos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
-				<reportElement mode="Transparent" x="27" y="617" width="40" height="40" />
+				<reportElement mode="Transparent" x="27" y="617" width="40" height="40" uuid="2ed6ddb8-2866-4a6b-beff-56085c65b1e5"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
-				<reportElement x="335" y="242" width="98" height="34" />
+				<reportElement x="335" y="242" width="98" height="34" uuid="ebf158aa-9528-4701-bf9b-68a6e9317cde"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25045}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="286" width="98" height="34" />
+				<reportElement x="335" y="286" width="98" height="34" uuid="196b07c8-79dd-4285-886b-5cd3c2596160"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25046}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="320" width="98" height="34" />
+				<reportElement x="335" y="320" width="98" height="34" uuid="fd088159-9ff7-4d71-8b9f-6450834edfa7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25047}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="380" width="98" height="34" />
+				<reportElement x="335" y="380" width="98" height="34" uuid="3ae00efa-9034-4625-bf91-97e86557640a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25048}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="434" width="98" height="34" />
+				<reportElement x="335" y="434" width="98" height="34" uuid="ece14dd9-5d24-41eb-8f5b-9c1c8e57adf0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25049}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="506" width="98" height="34" />
+				<reportElement x="335" y="506" width="98" height="34" uuid="7ec32f67-8939-4ccd-a587-5fe423e81b3f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25050}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="563" width="98" height="34" />
+				<reportElement x="335" y="563" width="98" height="34" uuid="83c4b5ce-f838-4a56-9368-68c8d6ea4d88"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25051}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="638" width="98" height="34" />
+				<reportElement x="335" y="638" width="98" height="34" uuid="57f1c25e-596c-4cb5-a06b-d170cb713486"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25052}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="689" width="98" height="34" />
+				<reportElement x="335" y="689" width="98" height="34" uuid="0c8cc6ed-951f-48d6-b972-52bd23b296ed"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25053}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="760" width="98" height="34" />
+				<reportElement x="335" y="760" width="98" height="34" uuid="bdd81105-0e90-41f6-8d61-f554c4e22a80"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25054}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="814" width="98" height="34" />
+				<reportElement x="335" y="814" width="98" height="34" uuid="ceac7d27-2a1d-4964-b649-58ab2a6636b4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{valorPessoa_1716_25055}]]></textFieldExpression>
 			</textField>

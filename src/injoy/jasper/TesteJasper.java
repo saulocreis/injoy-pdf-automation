@@ -24,7 +24,7 @@ public class TesteJasper {
 	
 	static private final String DEFAULT_WORKSPACE = "injoy.";
 	static private final String DEFAULT_FILENAME = "src/jasperprops.properties";
-	private static final String CONEXAO = "jdbc:mariadb://localhost:3306/injoy?user=root";
+	static private final String CONEXAO = "jdbc:mariadb://localhost:3306/injoy?user=root";
 	static private Properties jasperprops;
 
 	public static void main(String[] args) throws JRException, FileNotFoundException, IOException, SQLException {

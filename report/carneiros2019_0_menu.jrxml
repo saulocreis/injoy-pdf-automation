@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
-	name="carneiros2019_0_menu" resourceBundle="jasperprops" pageWidth="684" pageHeight="508" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
-	
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros2019_0_menu" pageWidth="684" pageHeight="508" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="ffcb1b4d-eaaa-4d43-aa43-0dd3c49ce8cb">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="injoyadmin"/>
+	<property name="ireport.jasperserver.reportUnit" value="/injoy/carneiros2019/carneiros2019_0_menu"/>
+	<property name="ireport.jasperserver.report.resource" value="/injoy/carneiros2019/carneiros2019_0_menu_files/main_jrxml"/>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
-	
 	<background>
-		
 		<band height="508">
 			<image>
-				<reportElement x="0" y="0" width="684" height="508" />
+				<reportElement x="0" y="0" width="684" height="508" uuid="0636228c-b35a-4692-b883-01583a27bba9"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.menu}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.carneiros.menu}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
-				<reportElement x="0" y="104" width="227" height="199" />
+				<reportElement x="0" y="104" width="227" height="199" uuid="03038f5e-e1b6-4503-8fe8-60ff99175697"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.reveillon}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
-				<reportElement x="227" y="104" width="227" height="199" />
+				<reportElement x="227" y="104" width="227" height="199" uuid="6d882143-fdc1-4027-bdad-a701a2354dad"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.pq_injoy}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
-				<reportElement x="454" y="104" width="226" height="199" />
+				<reportElement x="454" y="104" width="226" height="199" uuid="7c966fac-2cc1-4c5c-baba-1c2845a3a47d"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.infoVenda}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
-				<reportElement x="1" y="303" width="226" height="205" />
+				<reportElement x="1" y="303" width="226" height="205" uuid="6f4bed5f-487c-4f80-9147-c8b2906217fb"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
-				<reportElement x="227" y="303" width="226" height="205" />
+				<reportElement x="227" y="303" width="226" height="205" uuid="37c8ef0d-82a1-4229-9715-259277ae59d1"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.reveillon}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
-				<reportElement x="453" y="303" width="226" height="205" />
+				<reportElement x="453" y="303" width="226" height="205" uuid="c5004424-ce4b-4dde-9aac-5a91419147dc"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.reveillon}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
-		
 	</background>
-	
 </jasperReport>

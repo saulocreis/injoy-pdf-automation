@@ -1,76 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
-	name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" resourceBundle="jasperprops">
-	
-	<parameter name = "injoy.prop1" class = "java.lang.String" />
-	
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="51c61b9e-efd6-4686-bc30-6788f549202b">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local_MariaDB.xml"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="injoyadmin"/>
+	<property name="ireport.jasperserver.reportUnit" value="/injoy/carneiros2019/report1"/>
 	<queryString>
-		<![CDATA[]]>
+		<![CDATA[SELECT 
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
+	WHERE p.id IN (1744) AND aq.id IN (25056)) 
+    as valorPessoa_1744_25056,
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
+	WHERE p.id IN (1744) AND aq.id IN (25057)) 
+    as valorPessoa_1744_25057,
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
+	WHERE p.id IN (1744) AND aq.id IN (25058)) 
+    as valorPessoa_1744_25058,
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
+	WHERE p.id IN (1744) AND aq.id IN (25059)) 
+    as valorPessoa_1744_25059,
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
+	WHERE p.id IN (1744) AND aq.id IN (25060)) 
+    as valorPessoa_1744_25060,
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
+	WHERE p.id IN (1744) AND aq.id IN (25061)) 
+    as valorPessoa_1744_25061,
+	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
+	FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
+	WHERE p.id IN (1744) AND aq.id IN (25062)) 
+    as valorPessoa_1744_25062
+	;]]>
 	</queryString>
-	
-	<field name="descricao" class="java.lang.String">
-		<fieldDescription><![CDATA[descricao]]></fieldDescription>
+	<field name="valorPessoa_1744_25056" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1744_25056]]></fieldDescription>
 	</field>
-	<field name="nome" class="java.lang.String">
-		<fieldDescription><![CDATA[nome]]></fieldDescription>
+	<field name="valorPessoa_1744_25057" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1744_25057]]></fieldDescription>
 	</field>
-	
+	<field name="valorPessoa_1744_25058" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1744_25058]]></fieldDescription>
+	</field>
+	<field name="valorPessoa_1744_25059" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1744_25059]]></fieldDescription>
+	</field>
+	<field name="valorPessoa_1744_25060" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1744_25060]]></fieldDescription>
+	</field>
+	<field name="valorPessoa_1744_25061" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1744_25061]]></fieldDescription>
+	</field>
+	<field name="valorPessoa_1744_25062" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1744_25062]]></fieldDescription>
+	</field>
 	<columnHeader>
 		<band height="23" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="3" width="535" height="15" backcolor="#70A9A9" />
+				<reportElement mode="Opaque" x="0" y="3" width="535" height="15" backcolor="#70A9A9" uuid="ebd0c5a3-b6e5-480e-965b-ead816442af1"/>
 				<box>
 					<bottomPen lineWidth="1.0" lineColor="#CCFFCC"/>
 				</box>
 				<text><![CDATA[ ]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="414" y="3" width="121" height="15" />
+				<reportElement x="414" y="3" width="121" height="15" uuid="e124428c-165d-4bdb-bf11-8bfcad8b58ff"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Descricao]]></text>
+				<text><![CDATA[valorPessoa_1744_25056]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="0" y="3" width="136" height="15" />
+				<reportElement x="0" y="3" width="136" height="15" uuid="6f818e93-0a57-43c8-9eb6-551e5ef1df70"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font isBold="true"/>
 				</textElement>
-				<text><![CDATA[Nome]]></text>
+				<text><![CDATA[valorPessoa_1744_25057]]></text>
 			</staticText>
 		</band>
 	</columnHeader>
-	
 	<detail>
 		<band height="20" splitType="Stretch">
 			<staticText>
-				<reportElement mode="Opaque" x="0" y="0" width="535" height="14" backcolor="#E5ECF9" />
+				<reportElement mode="Opaque" x="0" y="0" width="535" height="14" backcolor="#E5ECF9" uuid="1c00cd64-244a-49c2-a6c6-e0d90106934f"/>
 				<box>
 					<bottomPen lineWidth="0.25" lineColor="#CCCCCC"/>
 				</box>
 				<text><![CDATA[ ]]></text>
 			</staticText>
 			<textField>
-				<reportElement x="414" y="0" width="121" height="15" />
+				<reportElement x="414" y="0" width="121" height="15" uuid="c6a9469e-0189-4959-b186-2b26561e9295"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="9" />
+					<font size="9"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{descricao}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25056}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="0" y="0" width="136" height="15" />
+				<reportElement x="0" y="0" width="136" height="15" uuid="15319fd3-c590-4e4c-abdd-3b2083498d82"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle"/>
-				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25057}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="178" y="0" width="100" height="20" />
-				<textFieldExpression><![CDATA[$R{injoy.carneiros.nomeArquivoFinal}]]></textFieldExpression>
+				<reportElement x="178" y="0" width="100" height="20" uuid="06c1b7ac-3c09-4c1b-97d7-ed321a27b327"/>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25058}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="278" y="0" width="100" height="20" />
-				<textFieldExpression><![CDATA[$P{injoy.prop1}]]></textFieldExpression>
+				<reportElement x="278" y="0" width="100" height="20" uuid="2f64d34d-6702-48d2-be86-ad8b509d89d5"/>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25059}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
-	
 </jasperReport>

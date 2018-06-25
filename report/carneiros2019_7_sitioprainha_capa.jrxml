@@ -1,47 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd"
-	name="carneiros2019_7_sitioprainha_capa" resourceBundle="jasperprops" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0">
-
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros2019_7_sitioprainha_capa" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="4ba0e69f-39df-4a47-a75d-0d027ef53c3e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="injoyadmin"/>
+	<property name="ireport.jasperserver.report.resource" value="/injoy/carneiros2019/carneiros2019_7_sitioprainha_capa_files/main_jrxml"/>
+	<property name="ireport.jasperserver.reportUnit" value="/injoy/carneiros2019/carneiros2019_7_sitioprainha_capa"/>
 	<queryString>
 		<![CDATA[SELECT p.id as idProduto, p.nome as nomeProduto,
-		ROUND(MIN((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))) as menorValor
+		ROUND(MIN((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes)), 0) as menorValor
 		FROM acomodacao_quarto aq INNER JOIN produto p ON aq.idProduto = p.id
 		WHERE p.id IN (1713)
 		;]]>
 	</queryString>
-	
 	<field name="menorValor" class="java.lang.String">
 		<fieldDescription><![CDATA[menorValor]]></fieldDescription>
 	</field>
-	
 	<background>
-	
 		<band height="512">
 			<image>
-				<reportElement x="0" y="0" width="684" height="512" />
+				<reportElement x="0" y="0" width="684" height="512" uuid="5247cd1f-b457-4bc1-95cd-9b5873981df2"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.sitioprainha.capa}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.carneiros.sitioprainha.nome}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="595" y="479" width="33" height="33" />
+				<reportElement mode="Transparent" x="595" y="479" width="33" height="33" uuid="ab78b2b2-d799-4e38-a963-9cf604cf9722"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.link.sitioprainha.sobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
-				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="87930652-5857-4d6a-bfe9-1f212ddfab38"/>
 				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
-				<reportElement x="586" y="433" width="98" height="34" forecolor="#FFFFFF" />
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font size="16" isBold="true"/>
+				<reportElement x="600" y="433" width="84" height="34" forecolor="#FFFFFF" uuid="f9bc5333-e3f9-4b2b-af27-d98cfe617628"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{menorValor}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["R$ " + $F{menorValor}]]></textFieldExpression>
 			</textField>
 		</band>
-		
 	</background>
-	
 </jasperReport>
