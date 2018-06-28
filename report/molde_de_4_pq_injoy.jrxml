@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="molde_de_4_pq_injoy" pageWidth="684" pageHeight="509" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="e9a52a5f-94e9-4521-8969-069d25553a22">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
+	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
+	<property name="ireport.jasperserver.user" value="injoyadmin"/>
+	<parameter name="codigo" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT CONCAT("images\\carneiros2019\\", imagem_pq_ij) AS imagem_pq_ij
+			FROM jr_mkt t WHERE t.codigo IN ($P{codigo});]]>
+	</queryString>
+	<field name="imagem_pq_ij" class="java.lang.String">
+		<fieldDescription><![CDATA[imagem_pq_ij]]></fieldDescription>
+	</field>
+	<background>
+		<band height="509">
+			<image>
+				<reportElement x="0" y="0" width="684" height="509" uuid="d5b08756-bffe-4beb-a040-11d6282eb015"/>
+				<imageExpression><![CDATA[$F{imagem_pq_ij}]]></imageExpression>
+				<anchorNameExpression><![CDATA["pq_ij"]]></anchorNameExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

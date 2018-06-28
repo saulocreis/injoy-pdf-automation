@@ -16,7 +16,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/_java/software/mariadb-java-client-2.2.5.jar"/>
 	<classpathentry exported="true" kind="con" path="net.sf.jasperreports.JR_CONTAINER"/>
 	<classpathentry exported="true" kind="con" path="com.jaspersoft.server.JRS_CONTAINER"/>
 	<classpathentry kind="output" path="target/classes"/>
