@@ -4,16 +4,19 @@
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
 	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
 	<property name="ireport.jasperserver.user" value="injoyadmin"/>
-	<property name="ireport.jasperserver.report.resource" value="/injoy/carneiros2019/carneiros2019_4_acomodacoes_files/main_jrxml"/>
-	<property name="ireport.jasperserver.reportUnit" value="/injoy/carneiros2019/carneiros2019_4_acomodacoes"/>
 	<queryString>
-		<![CDATA[SELECT TRUE;]]>
+		<![CDATA[SELECT CONCAT("images\\carneiros2019\\", t.arquivo) AS arquivo1 
+		FROM pdf t WHERE t.slug IN ("jr_carneiros2019_menuacomodacoes")
+		;]]>
 	</queryString>
+	<field name="arquivo1" class="java.lang.String">
+		<fieldDescription><![CDATA[arquivo1]]></fieldDescription>
+	</field>
 	<background>
 		<band height="474">
 			<image>
 				<reportElement x="0" y="0" width="684" height="474" uuid="0727b312-6e89-4664-90fe-b27c9095cd45"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.acomodacoes}]]></imageExpression>
+				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
