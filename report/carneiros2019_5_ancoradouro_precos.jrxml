@@ -4,54 +4,70 @@
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
 	<queryString>
 		<![CDATA[SELECT 
-	(SELECT CONCAT("images\\carneiros2019\\", t.arquivo) AS arquivo1 
-		FROM pdf t WHERE t.slug IN ("jr_carneiros2019_ac_hotel-ancoradouro_precos")) as arquivo1,
+	(SELECT CONCAT("images\\carneiros2019\\", t.arquivo)
+		FROM pdf t WHERE t.slug IN ("jr_carneiros2019_ac_hotel-ancoradouro_precos")) 
+	AS arquivo1,
     (SELECT ROUND(efd.valor) FROM experiencia_festadias efd
-		WHERE efd.idProduto IN (1723) AND efd.id IN (777)) AS festaMasculino,
+		WHERE efd.idProduto IN (1723) AND efd.id IN (777)) 
+	AS festaMasculino,
 	(SELECT ROUND(efd.valor) FROM experiencia_festadias efd
-		WHERE efd.idProduto IN (1723) AND efd.id IN (776)) AS festaFeminino,
+		WHERE efd.idProduto IN (1723) AND efd.id IN (776)) 
+	AS festaFeminino,
 	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-	FROM acomodacao_quarto aq
-	WHERE aq.idProduto IN (1744) AND aq.id IN (25069)) 
-    as valorPessoa_1744_25069,
-    (SELECT valorPessoa_1744_25069 + festaMasculino) AS festaMasculino_1744_25069,
-    (SELECT valorPessoa_1744_25069 + festaFeminino) AS festaFeminino_1744_25069,
+		FROM acomodacao_quarto aq WHERE aq.idProduto IN (1744) AND aq.id IN (25069)) 
+    AS valorPessoa_1744_25069,
+    (SELECT valorPessoa_1744_25069 + festaMasculino) 
+    AS festaMasculino_1744_25069,
+    (SELECT valorPessoa_1744_25069 + festaFeminino) 
+    AS festaFeminino_1744_25069,
 	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-	FROM acomodacao_quarto aq
-	WHERE aq.idProduto IN (1744) AND aq.id IN (25070)) 
-    as valorPessoa_1744_25070,
-    (SELECT valorPessoa_1744_25070 + festaMasculino) AS festaMasculino_1744_25070,
-    (SELECT valorPessoa_1744_25070 + festaFeminino) AS festaFeminino_1744_25070,
+		FROM acomodacao_quarto aq
+		WHERE aq.idProduto IN (1744) AND aq.id IN (25070)) 
+    AS valorPessoa_1744_25070,
+    (SELECT valorPessoa_1744_25070 + festaMasculino) 
+    AS festaMasculino_1744_25070,
+    (SELECT valorPessoa_1744_25070 + festaFeminino) 
+    AS festaFeminino_1744_25070,
 	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-	FROM acomodacao_quarto aq
-	WHERE aq.idProduto IN (1744) AND aq.id IN (25071)) 
-    as valorPessoa_1744_25071,
-    (SELECT valorPessoa_1744_25071 + festaMasculino) AS festaMasculino_1744_25071,
-    (SELECT valorPessoa_1744_25071 + festaFeminino) AS festaFeminino_1744_25071,
+		FROM acomodacao_quarto aq
+		WHERE aq.idProduto IN (1744) AND aq.id IN (25071)) 
+    AS valorPessoa_1744_25071,
+    (SELECT valorPessoa_1744_25071 + festaMasculino) 
+    AS festaMasculino_1744_25071,
+    (SELECT valorPessoa_1744_25071 + festaFeminino) 
+    AS festaFeminino_1744_25071,
 	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-	FROM acomodacao_quarto aq
-	WHERE aq.idProduto IN (1744) AND aq.id IN (25072)) 
-    as valorPessoa_1744_25072,
-    (SELECT valorPessoa_1744_25072 + festaMasculino) AS festaMasculino_1744_25072,
-    (SELECT valorPessoa_1744_25072 + festaFeminino) AS festaFeminino_1744_25072,
+		FROM acomodacao_quarto aq
+		WHERE aq.idProduto IN (1744) AND aq.id IN (25072)) 
+    AS valorPessoa_1744_25072,
+    (SELECT valorPessoa_1744_25072 + festaMasculino) 
+    AS festaMasculino_1744_25072,
+    (SELECT valorPessoa_1744_25072 + festaFeminino) 
+    AS festaFeminino_1744_25072,
 	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-	FROM acomodacao_quarto aq
-	WHERE aq.idProduto IN (1744) AND aq.id IN (25073)) 
-    as valorPessoa_1744_25073,
-    (SELECT valorPessoa_1744_25073 + festaMasculino) AS festaMasculino_1744_25073,
-    (SELECT valorPessoa_1744_25073 + festaFeminino) AS festaFeminino_1744_25073,
+		FROM acomodacao_quarto aq
+		WHERE aq.idProduto IN (1744) AND aq.id IN (25073)) 
+    AS valorPessoa_1744_25073,
+    (SELECT valorPessoa_1744_25073 + festaMasculino) 
+    AS festaMasculino_1744_25073,
+    (SELECT valorPessoa_1744_25073 + festaFeminino) 
+    AS festaFeminino_1744_25073,
 	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-	FROM acomodacao_quarto aq
-	WHERE aq.idProduto IN (1744) AND aq.id IN (25074)) 
-    as valorPessoa_1744_25074,
-    (SELECT valorPessoa_1744_25074 + festaMasculino) AS festaMasculino_1744_25074,
-    (SELECT valorPessoa_1744_25074 + festaFeminino) AS festaFeminino_1744_25074,
+		FROM acomodacao_quarto aq
+		WHERE aq.idProduto IN (1744) AND aq.id IN (25074)) 
+    AS valorPessoa_1744_25074,
+    (SELECT valorPessoa_1744_25074 + festaMasculino) 
+    AS festaMasculino_1744_25074,
+    (SELECT valorPessoa_1744_25074 + festaFeminino) 
+    AS festaFeminino_1744_25074,
 	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-	FROM acomodacao_quarto aq
-	WHERE aq.idProduto IN (1744) AND aq.id IN (25075)) 
-    as valorPessoa_1744_25075,
-    (SELECT valorPessoa_1744_25075 + festaMasculino) AS festaMasculino_1744_25075,
-    (SELECT valorPessoa_1744_25075 + festaFeminino) AS festaFeminino_1744_25075
+		FROM acomodacao_quarto aq
+		WHERE aq.idProduto IN (1744) AND aq.id IN (25075)) 
+    AS valorPessoa_1744_25075,
+    (SELECT valorPessoa_1744_25075 + festaMasculino) 
+    AS festaMasculino_1744_25075,
+    (SELECT valorPessoa_1744_25075 + festaFeminino) 
+    AS festaFeminino_1744_25075
 	;]]>
 	</queryString>
 	<field name="arquivo1" class="java.lang.String">
@@ -141,79 +157,149 @@
 			<textField>
 				<reportElement x="335" y="251" width="98" height="34" uuid="a78ebb53-97dc-456f-852b-b54a9f41ddb0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25069}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1744_25069},4)]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="307" width="98" height="34" uuid="2e2d36d0-020b-4391-8c69-f9bcf2a58341"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25070}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1744_25070},4)]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="379" width="98" height="34" uuid="0585381f-1cec-43a2-bfe4-98f7d40359f8"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25071}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1744_25071},4)]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="436" width="98" height="34" uuid="c1b64207-a01d-4492-b72a-5c5c9d1a1434"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25072}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1744_25072},4)]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="493" width="98" height="34" uuid="5df48695-64c3-4d48-bafc-c311a4b3c88d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25073}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1744_25073},4)]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="535" width="98" height="34" uuid="921ca22e-04e5-4596-b65a-a0834d9d3436"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25074}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1744_25074},4)]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="574" width="98" height="34" uuid="98eea572-62e7-46ca-876b-a67d0da01f51"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{valorPessoa_1744_25075}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1744_25075},4)]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="450" y="251" width="98" height="34" uuid="7490a57a-48f2-4f0a-95ed-a7ab8d806b24"/>
+				<reportElement x="450" y="251" width="98" height="34" uuid="fd50ffb7-da71-44f0-9c2d-309d2478f6c3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{festaFeminino_1744_25069})]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1744_25069},4)]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="251" width="98" height="34" uuid="66a50382-0a7e-49d8-b8cd-b5547dc00e1d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{festaMasculino_1744_25069}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1744_25069},4)]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="307" width="98" height="34" uuid="b002ee8c-410c-4df5-880b-b24da51c5a67"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{festaFeminino_1744_25070}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1744_25070},4)]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="307" width="98" height="34" uuid="be6c5ffb-e462-4446-bd1c-4c6101f1439f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$F{festaMasculino_1744_25070}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1744_25070},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="380" width="98" height="34" uuid="3119aff4-62f0-451a-8b0e-6f3d55699a62"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1744_25071},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="380" width="98" height="34" uuid="a98228ff-6c80-4640-9149-f8926eaea849"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1744_25071},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="436" width="98" height="34" uuid="400bfd81-3681-468f-9ca7-fad820471d7a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1744_25072},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="436" width="98" height="34" uuid="cdd24435-1081-46ec-bc13-b43e9f0f51ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1744_25072},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="493" width="98" height="34" uuid="285c5f19-4876-4619-a764-e418c6389baa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1744_25073},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="493" width="98" height="34" uuid="2e4b6c50-1d01-43d7-8921-7a72e3d85448"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1744_25073},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="535" width="98" height="34" uuid="3320eacb-8fd9-450e-88fd-f588dbbf1006"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1744_25074},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="535" width="98" height="34" uuid="a7000407-6faa-4196-9346-7cc44aa7a7c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1744_25074},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="574" width="98" height="34" uuid="4ad48d68-1018-4b40-bf9d-1052037a4a78"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1744_25075},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="574" width="98" height="34" uuid="ee9cf38d-f484-437e-be03-3727257a5a32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1744_25075},4)]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>
