@@ -57,7 +57,7 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["R$"+$F{menorValor}]]></textFieldExpression>
+				<textFieldExpression><![CDATA["R$ "+LEFT($F{menorValor},4)]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="518">

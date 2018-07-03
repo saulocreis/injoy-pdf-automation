@@ -3,72 +3,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros2019_5_ancoradouro_precos" pageWidth="684" pageHeight="857" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="711c4424-4462-4150-a3d1-817d01541a3d">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
 	<queryString>
-		<![CDATA[SELECT 
-	(SELECT CONCAT("images\\carneiros2019\\", t.arquivo)
-		FROM pdf t WHERE t.slug IN ("jr_carneiros2019_ac_hotel-ancoradouro_precos")) 
-	AS arquivo1,
-    (SELECT ROUND(efd.valor) FROM experiencia_festadias efd
-		WHERE efd.idProduto IN (1723) AND efd.id IN (777)) 
-	AS festaMasculino,
-	(SELECT ROUND(efd.valor) FROM experiencia_festadias efd
-		WHERE efd.idProduto IN (1723) AND efd.id IN (776)) 
-	AS festaFeminino,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-		FROM acomodacao_quarto aq WHERE aq.idProduto IN (1744) AND aq.id IN (25069)) 
-    AS valorPessoa_1744_25069,
-    (SELECT valorPessoa_1744_25069 + festaMasculino) 
-    AS festaMasculino_1744_25069,
-    (SELECT valorPessoa_1744_25069 + festaFeminino) 
-    AS festaFeminino_1744_25069,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1744) AND aq.id IN (25070)) 
-    AS valorPessoa_1744_25070,
-    (SELECT valorPessoa_1744_25070 + festaMasculino) 
-    AS festaMasculino_1744_25070,
-    (SELECT valorPessoa_1744_25070 + festaFeminino) 
-    AS festaFeminino_1744_25070,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1744) AND aq.id IN (25071)) 
-    AS valorPessoa_1744_25071,
-    (SELECT valorPessoa_1744_25071 + festaMasculino) 
-    AS festaMasculino_1744_25071,
-    (SELECT valorPessoa_1744_25071 + festaFeminino) 
-    AS festaFeminino_1744_25071,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1744) AND aq.id IN (25072)) 
-    AS valorPessoa_1744_25072,
-    (SELECT valorPessoa_1744_25072 + festaMasculino) 
-    AS festaMasculino_1744_25072,
-    (SELECT valorPessoa_1744_25072 + festaFeminino) 
-    AS festaFeminino_1744_25072,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1744) AND aq.id IN (25073)) 
-    AS valorPessoa_1744_25073,
-    (SELECT valorPessoa_1744_25073 + festaMasculino) 
-    AS festaMasculino_1744_25073,
-    (SELECT valorPessoa_1744_25073 + festaFeminino) 
-    AS festaFeminino_1744_25073,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1744) AND aq.id IN (25074)) 
-    AS valorPessoa_1744_25074,
-    (SELECT valorPessoa_1744_25074 + festaMasculino) 
-    AS festaMasculino_1744_25074,
-    (SELECT valorPessoa_1744_25074 + festaFeminino) 
-    AS festaFeminino_1744_25074,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes), 0)
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1744) AND aq.id IN (25075)) 
-    AS valorPessoa_1744_25075,
-    (SELECT valorPessoa_1744_25075 + festaMasculino) 
-    AS festaMasculino_1744_25075,
-    (SELECT valorPessoa_1744_25075 + festaFeminino) 
-    AS festaFeminino_1744_25075
-	;]]>
+		<![CDATA[SELECT * FROM vw_carneiros2019_hotel_ancoradouro;]]>
 	</queryString>
 	<field name="arquivo1" class="java.lang.String">
 		<fieldDescription><![CDATA[arquivo1]]></fieldDescription>
@@ -142,11 +77,17 @@
 	<field name="festaFeminino_1744_25075" class="java.lang.String">
 		<fieldDescription><![CDATA[festaFeminino_1744_25075]]></fieldDescription>
 	</field>
+	<field name="pacoteMasculino" class="java.lang.String">
+		<fieldDescription><![CDATA[pacoteMasculino]]></fieldDescription>
+	</field>
+	<field name="pacoteFeminino" class="java.lang.String">
+		<fieldDescription><![CDATA[pacoteFeminino]]></fieldDescription>
+	</field>
 	<background>
 		<band height="857">
 			<image>
 				<reportElement x="0" y="0" width="684" height="857" uuid="33773fc1-e4c0-4c8c-91c8-7da92463e885"/>
-				<imageExpression><![CDATA["images\\carneiros2019\\Ancoradouro - Quartos - Completo.png"]]></imageExpression>
+				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
 			</image>
 			<image hyperlinkType="RemoteAnchor">
 				<reportElement mode="Transparent" x="30" y="810" width="40" height="40" uuid="aa54d480-4354-43fc-a39a-5ed842288ab6"/>
@@ -300,6 +241,20 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1744_25075},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="670" width="98" height="34" uuid="be2acbe5-3d09-40ec-9aec-5dd89a539d06"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{pacoteMasculino},4)]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="670" width="98" height="34" uuid="d06df34e-6cdb-4c75-aa8d-b668dd79a28e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[LEFT($F{pacoteFeminino},4)]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>
