@@ -2,8 +2,6 @@
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros2019_6_clubmeridional_capa_fotos" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="1110893c-0c9a-4bce-872d-f12e44328650">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
-	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
-	<property name="ireport.jasperserver.user" value="injoyadmin"/>
 	<queryString>
 		<![CDATA[SELECT
 	(SELECT CONCAT("images\\carneiros2019\\", t.arquivo)
