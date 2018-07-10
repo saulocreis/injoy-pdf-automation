@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_final" pageWidth="684" pageHeight="522" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="9e093f65-da6c-4d8b-9d8c-07784ed9d7f9">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local_MariaDB.xml"/>
+	<queryString>
+		<![CDATA[SELECT
+	(SELECT CONCAT("images\\jeri2019\\", t.arquivo) FROM pdf t
+	WHERE t.slug IN ("jr_jeri2019_festas")) as arquivo1,
+	(SELECT CONCAT("images\\jeri2019\\", t.arquivo) FROM pdf t
+	WHERE t.slug IN ("jr_jeri2019_final")) as arquivo2
+	;]]>
+	</queryString>
+	<field name="arquivo1" class="java.lang.String">
+		<fieldDescription><![CDATA[arquivo1]]></fieldDescription>
+	</field>
+	<field name="arquivo2" class="java.lang.String">
+		<fieldDescription><![CDATA[arquivo2]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="507">
+			<image>
+				<reportElement x="0" y="0" width="684" height="507" uuid="3692b14c-7493-4bad-b1d8-c0838953f28f"/>
+				<imageExpression><![CDATA["images\\jeri2019\\Festas.png"]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.festas}]]></anchorNameExpression>
+			</image>
+		</band>
+		<band height="522">
+			<image>
+				<reportElement x="0" y="0" width="684" height="522" uuid="94b86454-6b02-481b-86c0-81cb4618ad60"/>
+				<imageExpression><![CDATA["images\\jeri2019\\Final.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="110" y="460" width="40" height="40" uuid="a9547ed2-7ecb-4a0f-9145-8f8282fcc5c3"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link}]]></hyperlinkReferenceExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

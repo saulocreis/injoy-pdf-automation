@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_3_infovenda" pageWidth="684" pageHeight="1131" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="9008f4f3-c390-40d7-a95f-9545abe5a68d">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
+	<queryString>
+		<![CDATA[SELECT CONCAT("images\\jeri2019\\", t.arquivo) AS arquivo1 
+		FROM pdf t WHERE t.slug IN ("jr_jeri2019_infovenda")
+		;]]>
+	</queryString>
+	<field name="arquivo1" class="java.lang.String">
+		<fieldDescription><![CDATA[arquivo1]]></fieldDescription>
+	</field>
+	<background>
+		<band height="1131">
+			<image>
+				<reportElement x="0" y="0" width="684" height="1131" uuid="2837f4ba-072b-43ec-a3b4-24986c6f976e"/>
+				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.infovenda}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="210" y="1040" width="60" height="60" uuid="9663f6b3-2124-40ea-b918-32d4d5a58d7e"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.email.concierge}]]></hyperlinkReferenceExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

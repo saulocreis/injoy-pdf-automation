@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_1_reveillon" pageWidth="684" pageHeight="716" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="68ad67b8-0c30-4658-88f2-db4f3b9704a4">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="716">
+			<image>
+				<reportElement x="0" y="0" width="684" height="716" uuid="79249e35-057c-4d64-a32b-811f26fa9a8c"/>
+				<imageExpression><![CDATA["images\\jeri2019\\Jeri.png"]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.reveillon}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="285" y="230" width="100" height="100" uuid="a630b75e-dd17-483e-8d59-36e8bf8a0d00"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.carneiros.sobre}]]></hyperlinkReferenceExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>
