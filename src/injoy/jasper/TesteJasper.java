@@ -30,15 +30,16 @@ public class TesteJasper {
 	public static void main(String[] args) throws JRException, FileNotFoundException, IOException, SQLException {
 		
 		String[] listaArquivos = {
-				"carneiros2019",
+				"carneiros2019_inicio",
 				"carneiros2019_0_ij", "carneiros2019_0_menu",
 				"carneiros2019_1_reveillon",
-				"carneiros2019_2_pq_injoy",
-				"carneiros2019_3_info_venda",
+				"carneiros2019_2_pqinjoy",
+				"carneiros2019_3_infovenda",
 				"carneiros2019_4_acomodacoes",
-				"carneiros2019_5_ancoradouro_capa", "carneiros2019_5_ancoradouro_fotos", "carneiros2019_5_ancoradouro_precos",
-				"carneiros2019_6_clubmeridional_capa", "carneiros2019_6_clubmeridional_fotos", "carneiros2019_6_clubmeridional_precos",
-				"carneiros2019_7_sitioprainha_capa", "carneiros2019_7_sitioprainha_fotos", "carneiros2019_7_sitioprainha_precos"};
+				"carneiros2019_5_ancoradouro_capa_fotos", "carneiros2019_5_ancoradouro_precos",
+				"carneiros2019_6_clubmeridional_capa_fotos", "carneiros2019_6_clubmeridional_precos",
+				"carneiros2019_7_sitioprainha_capa_fotos", "carneiros2019_7_sitioprainha_precos",
+				"carneiros2019_final"};
 		
 		System.out.println("Tentando conectar...");
 		Connection connection = DriverManager.getConnection(CONEXAO);
@@ -60,7 +61,7 @@ public class TesteJasper {
 		System.out.println("Configurando a exportacao.");
 		SimplePdfExporterConfiguration configuration = new SimplePdfExporterConfiguration();
 		configuration.setCreatingBatchModeBookmarks(true);
-		String nomeArquivoFinal = getPDFFilePath(get("carneiros.finalFileName"));
+		String nomeArquivoFinal = getPDFFilePath(get("file.carneiros"));
 		SimpleOutputStreamExporterOutput eo = new SimpleOutputStreamExporterOutput(nomeArquivoFinal);
 		JRPdfExporter exporter = new JRPdfExporter();
 		exporter.setConfiguration(configuration);

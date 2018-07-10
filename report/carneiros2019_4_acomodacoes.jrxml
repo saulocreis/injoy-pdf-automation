@@ -15,25 +15,22 @@
 			<image>
 				<reportElement x="0" y="0" width="684" height="474" uuid="0727b312-6e89-4664-90fe-b27c9095cd45"/>
 				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
-				<anchorNameExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></anchorNameExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></anchorNameExpression>
 			</image>
-			<image hyperlinkType="RemoteAnchor">
+			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="30" y="190" width="145" height="145" uuid="5b2e84f3-c4cc-4ad2-be0d-22b447a0160d"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.ancoradouro.nome}]]></hyperlinkAnchorExpression>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.carneiros.hotelancoradouro}]]></hyperlinkAnchorExpression>
 			</image>
-			<image hyperlinkType="RemoteAnchor">
+			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="271" y="190" width="145" height="145" uuid="4412a929-9a51-400d-8e5f-80ee7d5cf76f"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.clubmeridional.nome}]]></hyperlinkAnchorExpression>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.carneiros.clubmeridional}]]></hyperlinkAnchorExpression>
 			</image>
-			<image hyperlinkType="RemoteAnchor">
+			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="506" y="190" width="145" height="145" uuid="b3b6bfc7-ce56-401d-9c86-cb5d64669893"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.sitioprainha.nome}]]></hyperlinkAnchorExpression>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.carneiros.sitioprainha}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 	</background>

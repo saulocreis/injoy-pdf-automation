@@ -37,25 +37,24 @@
 			<image>
 				<reportElement x="0" y="0" width="684" height="518" uuid="504a2dc7-0faf-4fce-b3db-ebd0c60de91e"/>
 				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
-				<anchorNameExpression><![CDATA["hotel-ancoradouro"]]></anchorNameExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.carneiros.hotelancoradouro}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="595" y="485" width="33" height="33" uuid="9663f6b3-2124-40ea-b918-32d4d5a58d7e"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.link.ancoradouro.sobre}]]></hyperlinkReferenceExpression>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.carneiros.ancoradouro.sobre}]]></hyperlinkReferenceExpression>
 			</image>
-			<image hyperlinkType="RemoteAnchor">
+			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="614cc5f1-3ce5-4bb6-a298-12475f097ea4"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></hyperlinkAnchorExpression>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
 				<reportElement x="600" y="432" width="84" height="34" forecolor="#FFFFFF" uuid="f9bc5333-e3f9-4b2b-af27-d98cfe617628"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA["R$ "+LEFT($F{menorValor},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA["R$ "+$F{menorValor}]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="518">
@@ -63,11 +62,10 @@
 				<reportElement x="0" y="0" width="684" height="518" uuid="49224b6e-0c59-4a80-9c9b-def965a3218d"/>
 				<imageExpression><![CDATA[$F{arquivo2}]]></imageExpression>
 			</image>
-			<image hyperlinkType="RemoteAnchor">
+			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="474" width="40" height="40" uuid="47baa3ae-3d25-4226-a3b2-64a81c1371ca"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></hyperlinkAnchorExpression>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 		<band height="518">
@@ -75,11 +73,10 @@
 				<reportElement x="0" y="0" width="684" height="518" uuid="5bcf8f77-71d0-4d43-bd4c-50bd0271bf86"/>
 				<imageExpression><![CDATA[$F{arquivo3}]]></imageExpression>
 			</image>
-			<image hyperlinkType="RemoteAnchor">
+			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="474" width="40" height="40" uuid="1045570a-efc6-42ff-b406-582258557aca"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></hyperlinkAnchorExpression>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 	</detail>

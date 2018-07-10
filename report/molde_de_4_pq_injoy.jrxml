@@ -4,20 +4,22 @@
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
 	<property name="ireport.jasperserver.url" value="http://localhost:8080/jasperserver/"/>
 	<property name="ireport.jasperserver.user" value="injoyadmin"/>
-	<parameter name="codigo" class="java.lang.String"/>
+	<parameter name="codigo_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["carneiros2019"]]></defaultValueExpression>
+	</parameter>
 	<queryString>
-		<![CDATA[SELECT CONCAT("images\\carneiros2019\\", imagem_pq_ij) AS imagem_pq_ij
-			FROM jr_mkt t WHERE t.codigo IN ($P{codigo});]]>
+		<![CDATA[SELECT CONCAT("images\\carneiros2019\\", t.arquivo) AS arquivo1
+			FROM pdf t WHERE t.slug = CONCAT("jr_", $P{codigo_de}, "_", "pqinjoy");]]>
 	</queryString>
-	<field name="imagem_pq_ij" class="java.lang.String">
-		<fieldDescription><![CDATA[imagem_pq_ij]]></fieldDescription>
+	<field name="arquivo1" class="java.lang.String">
+		<fieldDescription><![CDATA[arquivo1]]></fieldDescription>
 	</field>
 	<background>
 		<band height="509">
 			<image>
 				<reportElement x="0" y="0" width="684" height="509" uuid="d5b08756-bffe-4beb-a040-11d6282eb015"/>
-				<imageExpression><![CDATA[$F{imagem_pq_ij}]]></imageExpression>
-				<anchorNameExpression><![CDATA["pq_ij"]]></anchorNameExpression>
+				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
+				<anchorNameExpression><![CDATA["pqinjoy"]]></anchorNameExpression>
 			</image>
 		</band>
 	</background>

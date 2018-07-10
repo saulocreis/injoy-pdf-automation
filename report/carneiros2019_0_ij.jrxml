@@ -14,7 +14,7 @@
 			<image>
 				<reportElement x="0" y="0" width="684" height="585" uuid="2a0428c1-de4c-4ae8-a2f8-996bd891a12d"/>
 				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
-				<anchorNameExpression><![CDATA[$R{injoy.carneiros.ij}]]></anchorNameExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.ij}]]></anchorNameExpression>
 			</image>
 		</band>
 	</background>

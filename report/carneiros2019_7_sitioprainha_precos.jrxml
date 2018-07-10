@@ -56,109 +56,108 @@
 				<reportElement x="0" y="0" width="684" height="1245" uuid="74873a08-0300-4f15-a697-dc6047d977f7"/>
 				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
 			</image>
-			<image hyperlinkType="RemoteAnchor">
+			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="26" y="996" width="40" height="40" uuid="02dd4899-76e9-4537-ad61-146fc76b716b"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.carneiros.finalFileName}]]></hyperlinkReferenceExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.carneiros.acomodacoes}]]></hyperlinkAnchorExpression>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
 				<reportElement x="335" y="279" width="98" height="34" uuid="606a6d9c-bfc5-407d-9e99-1ba9f1fe099c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1713_25101},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1713_25101}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="374" width="98" height="34" uuid="30508a70-4962-40c8-9342-fe6f655849fc"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1713_25102},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1713_25102}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="430" width="98" height="34" uuid="700197b1-afdd-41e7-976c-ec7554609832"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1713_25103},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1713_25103}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="526" width="98" height="34" uuid="6ec66cf8-24df-446b-9a5a-3af667f095f0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{valorPessoa_1713_25104},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1713_25104}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="280" width="98" height="34" uuid="85b0bf56-26ff-498d-b2e8-a64a0eeb1a8f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1713_25101},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{festaFeminino_1713_25101}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="375" width="98" height="34" uuid="4f9ebea2-7136-467b-8cbf-eb805c37eaac"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1713_25102},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{festaFeminino_1713_25102}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="431" width="98" height="34" uuid="a76d475e-00a1-443c-89b5-639114bc18e0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1713_25103},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{festaFeminino_1713_25103}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="527" width="98" height="34" uuid="53fb70bf-cbde-4355-956a-f81b279d25fc"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{festaFeminino_1713_25104},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{festaFeminino_1713_25104}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="280" width="98" height="34" uuid="b5a05040-2315-4392-b8e5-47f2468a059b"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1713_25101},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{festaMasculino_1713_25101}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="375" width="98" height="34" uuid="eca03b90-4830-44bd-9736-f2b8193caf8a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1713_25102},5)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{festaMasculino_1713_25102}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="431" width="98" height="34" uuid="85a07633-d6a4-4987-a63f-9ec914c9f1c5"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1713_25103},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{festaMasculino_1713_25103}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="527" width="98" height="34" uuid="7a678d08-ae45-4e40-a6d2-5f99d3d557e2"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{festaMasculino_1713_25104},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{festaMasculino_1713_25104}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="1040" width="98" height="34" uuid="b65f0266-9659-4b8d-8d81-089cffb19573"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{pacoteFeminino},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{pacoteFeminino}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="1040" width="98" height="34" uuid="8ce3709f-27df-40ba-9358-40fa4102a831"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="18" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[LEFT($F{pacoteMasculino},4)]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$F{pacoteMasculino}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

@@ -19,16 +19,16 @@
 	<detail>
 		<band height="512">
 			<image>
-				<reportElement x="0" y="0" width="684" height="512" uuid="2492549e-c7bb-4106-9e0f-64cee98172b5"/>
+				<reportElement x="0" y="0" width="684" height="512" uuid="2492549e-c7bb-4106-9e0f-64cee98172b5" />
 				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
-				<anchorNameExpression><![CDATA[$R{injoy.carneiros.capa}]]></anchorNameExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.capa}]]></anchorNameExpression>
 			</image>
 		</band>
 		<band height="512">
 			<image>
-				<reportElement x="0" y="0" width="684" height="512" uuid="ca177d20-be2a-4273-8267-ffda2afa1b04"/>
+				<reportElement x="0" y="0" width="684" height="512" uuid="ca177d20-be2a-4273-8267-ffda2afa1b04" />
 				<imageExpression><![CDATA[$F{arquivo2}]]></imageExpression>
-				<anchorNameExpression><![CDATA[$R{injoy.carneiros.mapa}]]></anchorNameExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.mapa}]]></anchorNameExpression>
 			</image>
 		</band>
 	</detail>

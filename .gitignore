@@ -1,2 +1,6 @@
 /bin/
 /target/
+/images/
+.settings
+.classpath
+.project

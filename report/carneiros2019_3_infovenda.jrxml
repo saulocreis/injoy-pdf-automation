@@ -15,11 +15,11 @@
 			<image>
 				<reportElement x="0" y="0" width="684" height="1123" uuid="2837f4ba-072b-43ec-a3b4-24986c6f976e"/>
 				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
-				<anchorNameExpression><![CDATA[$R{injoy.carneiros.infovenda}]]></anchorNameExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.infovenda}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="210" y="1050" width="50" height="50" uuid="9663f6b3-2124-40ea-b918-32d4d5a58d7e"/>
-				<imageExpression><![CDATA[$R{injoy.carneiros.image.link}]]></imageExpression>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.email.concierge}]]></hyperlinkReferenceExpression>
 			</image>
 		</band>
