@@ -81,16 +81,5 @@
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
-		<band height="511">
-			<image>
-				<reportElement x="0" y="0" width="684" height="511" uuid="5bcf8f77-71d0-4d43-bd4c-50bd0271bf86"/>
-				<imageExpression><![CDATA[$F{arquivo3}]]></imageExpression>
-			</image>
-			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="1045570a-efc6-42ff-b406-582258557aca"/>
-				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
-			</image>
-		</band>
 	</detail>
 </jasperReport>

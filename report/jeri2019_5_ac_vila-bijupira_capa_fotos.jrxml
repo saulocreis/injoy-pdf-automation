@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_5_ac_pousada-cabana_capa_fotos" pageWidth="684" pageHeight="511" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="08966a2a-3fa5-4bc8-803b-c39c70a358ad">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_5_ac_vila-bijupira_capa_fotos" pageWidth="684" pageHeight="511" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="08966a2a-3fa5-4bc8-803b-c39c70a358ad">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA["images"]]></defaultValueExpression>
@@ -9,7 +9,7 @@
 		<defaultValueExpression><![CDATA["jeri2019"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="slug_ac" class="java.lang.String">
-		<defaultValueExpression><![CDATA["pousada-cabana"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["vila-bijupira"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT
@@ -50,12 +50,12 @@
 			<image>
 				<reportElement x="0" y="0" width="684" height="511" uuid="504a2dc7-0faf-4fce-b3db-ebd0c60de91e"/>
 				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
-				<anchorNameExpression><![CDATA[$R{injoy.tag.jeri.pousada-cabana}]]></anchorNameExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.jeri.vila-bijupira}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="9663f6b3-2124-40ea-b918-32d4d5a58d7e"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.pousada-cabana.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.vila-bijupira.sobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="614cc5f1-3ce5-4bb6-a298-12475f097ea4"/>
@@ -77,17 +77,6 @@
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="47baa3ae-3d25-4226-a3b2-64a81c1371ca"/>
-				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
-			</image>
-		</band>
-		<band height="511">
-			<image>
-				<reportElement x="0" y="0" width="684" height="511" uuid="5bcf8f77-71d0-4d43-bd4c-50bd0271bf86"/>
-				<imageExpression><![CDATA[$F{arquivo3}]]></imageExpression>
-			</image>
-			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="1045570a-efc6-42ff-b406-582258557aca"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
