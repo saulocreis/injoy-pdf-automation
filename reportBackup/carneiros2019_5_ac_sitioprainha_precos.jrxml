@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros2019_5_ac_sitioprainha_precos" pageWidth="684" pageHeight="1245" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="f2e5480c-bd08-4e13-af9e-f6c5f678a134">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
+	<queryString>
+		<![CDATA[SELECT * FROM injoy.vw_carneiros2019_sitioprainha;]]>
+	</queryString>
+	<field name="arquivo1" class="java.lang.String">
+		<fieldDescription><![CDATA[arquivo1]]></fieldDescription>
+	</field>
+	<field name="valorPessoa_1713_25101" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1713_25101]]></fieldDescription>
+	</field>
+	<field name="festaMasculino_1713_25101" class="java.lang.String">
+		<fieldDescription><![CDATA[festaMasculino_1713_25101]]></fieldDescription>
+	</field>
+	<field name="festaFeminino_1713_25101" class="java.lang.String">
+		<fieldDescription><![CDATA[festaFeminino_1713_25101]]></fieldDescription>
+	</field>
+	<field name="valorPessoa_1713_25102" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1713_25102]]></fieldDescription>
+	</field>
+	<field name="festaMasculino_1713_25102" class="java.lang.String">
+		<fieldDescription><![CDATA[festaMasculino_1713_25102]]></fieldDescription>
+	</field>
+	<field name="festaFeminino_1713_25102" class="java.lang.String">
+		<fieldDescription><![CDATA[festaFeminino_1713_25102]]></fieldDescription>
+	</field>
+	<field name="valorPessoa_1713_25103" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1713_25103]]></fieldDescription>
+	</field>
+	<field name="festaMasculino_1713_25103" class="java.lang.String">
+		<fieldDescription><![CDATA[festaMasculino_1713_25103]]></fieldDescription>
+	</field>
+	<field name="festaFeminino_1713_25103" class="java.lang.String">
+		<fieldDescription><![CDATA[festaFeminino_1713_25103]]></fieldDescription>
+	</field>
+	<field name="valorPessoa_1713_25104" class="java.lang.String">
+		<fieldDescription><![CDATA[valorPessoa_1713_25104]]></fieldDescription>
+	</field>
+	<field name="festaMasculino_1713_25104" class="java.lang.String">
+		<fieldDescription><![CDATA[festaMasculino_1713_25104]]></fieldDescription>
+	</field>
+	<field name="festaFeminino_1713_25104" class="java.lang.String">
+		<fieldDescription><![CDATA[festaFeminino_1713_25104]]></fieldDescription>
+	</field>
+	<field name="pacoteMasculino" class="java.lang.String">
+		<fieldDescription><![CDATA[pacoteMasculino]]></fieldDescription>
+	</field>
+	<field name="pacoteFeminino" class="java.lang.String">
+		<fieldDescription><![CDATA[pacoteFeminino]]></fieldDescription>
+	</field>
+	<background>
+		<band height="1245">
+			<image>
+				<reportElement x="0" y="0" width="684" height="1245" uuid="74873a08-0300-4f15-a697-dc6047d977f7"/>
+				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="26" y="996" width="40" height="40" uuid="02dd4899-76e9-4537-ad61-146fc76b716b"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="279" width="98" height="34" uuid="606a6d9c-bfc5-407d-9e99-1ba9f1fe099c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1713_25101}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="374" width="98" height="34" uuid="30508a70-4962-40c8-9342-fe6f655849fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1713_25102}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="430" width="98" height="34" uuid="700197b1-afdd-41e7-976c-ec7554609832"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1713_25103}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="526" width="98" height="34" uuid="6ec66cf8-24df-446b-9a5a-3af667f095f0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{valorPessoa_1713_25104}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="280" width="98" height="34" uuid="85b0bf56-26ff-498d-b2e8-a64a0eeb1a8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{festaFeminino_1713_25101}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="375" width="98" height="34" uuid="4f9ebea2-7136-467b-8cbf-eb805c37eaac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{festaFeminino_1713_25102}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="431" width="98" height="34" uuid="a76d475e-00a1-443c-89b5-639114bc18e0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{festaFeminino_1713_25103}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="527" width="98" height="34" uuid="53fb70bf-cbde-4355-956a-f81b279d25fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{festaFeminino_1713_25104}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="280" width="98" height="34" uuid="b5a05040-2315-4392-b8e5-47f2468a059b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{festaMasculino_1713_25101}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="375" width="98" height="34" uuid="eca03b90-4830-44bd-9736-f2b8193caf8a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{festaMasculino_1713_25102}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="431" width="98" height="34" uuid="85a07633-d6a4-4987-a63f-9ec914c9f1c5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{festaMasculino_1713_25103}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="527" width="98" height="34" uuid="7a678d08-ae45-4e40-a6d2-5f99d3d557e2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{festaMasculino_1713_25104}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="1040" width="98" height="34" uuid="b65f0266-9659-4b8d-8d81-089cffb19573"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pacoteFeminino}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="1040" width="98" height="34" uuid="8ce3709f-27df-40ba-9358-40fa4102a831"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pacoteMasculino}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

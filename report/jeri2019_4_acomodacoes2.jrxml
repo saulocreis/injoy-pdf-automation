@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_4_acomodacoes" pageWidth="684" pageHeight="721" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="1f66e8cc-f325-4f18-a803-030c8ef2dea8">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA["images"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_jeri2019_menuacomodacoes" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.jeri2019.menuacomodacoes}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem1" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link1" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem2" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link2" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem3" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link3" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem4" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link4" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem5" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link5" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem6" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link6" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem7" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link7" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem8" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link8" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem9" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link9" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem10" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link10" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem11" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link11" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem12" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link12" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem13" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link13" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem14" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link14" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem15" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link15" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem16" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link16" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="721">
+			<image>
+				<reportElement x="0" y="0" width="684" height="721" uuid="0727b312-6e89-4664-90fe-b27c9095cd45"/>
+				<imageExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="190" width="145" height="145" uuid="5b2e84f3-c4cc-4ad2-be0d-22b447a0160d"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem1}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link1}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="190" width="145" height="145" uuid="4412a929-9a51-400d-8e5f-80ee7d5cf76f"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem2}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link2}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="190" width="145" height="145" uuid="b3b6bfc7-ce56-401d-9c86-cb5d64669893"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem3}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link3}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="190" width="145" height="145" uuid="2c934f57-2e60-4764-857d-7d50cf6df750"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem4}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link4}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="310" width="145" height="145" uuid="da202152-b3bc-46e3-8a47-7cb4a58439bf"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem5}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link5}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="310" width="145" height="145" uuid="ada82415-e0c3-4245-9d60-b0335782c0f3"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem6}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link6}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="310" width="145" height="145" uuid="5493ed77-a0e0-4e6c-a5ce-72297c839dee"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem7}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link7}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="310" width="145" height="145" uuid="534e6b24-ad74-49ec-800f-1dcc9140cbd5"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem8}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link8}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="430" width="145" height="145" uuid="4df80f94-ef20-4f5f-9300-f6605edaf4a3"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem9}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link9}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="430" width="145" height="145" uuid="db109f3c-4ba5-4360-96ec-c625b3cfd3d3"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem10}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link10}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="430" width="145" height="145" uuid="74f7ed3f-a3ee-4cf9-a61f-d4edef50de3a"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem11}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link11}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="430" width="145" height="145" uuid="90c1cbee-85c7-47cd-a32b-fc990b7d5058"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem12}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link12}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="550" width="145" height="145" uuid="d0dfcc00-fb4c-44b3-82b8-542ca4995994"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem13}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link13}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="550" width="145" height="145" uuid="bcec1399-c8e3-4023-853a-8aa36f86e3eb"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem14}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link14}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="550" width="145" height="145" uuid="cf8e9b06-cf6a-4c8c-844d-a9b8a731805c"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem15}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link15}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="550" width="145" height="145" uuid="02c43cda-5bcc-4599-8643-4a6cb488d570"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem16}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link16}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

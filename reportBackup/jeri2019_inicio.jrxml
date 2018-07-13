@@ -4,21 +4,35 @@
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA["images"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_jeri2019_capa" class="java.lang.String" />
-	<parameter name="jr_jeri2019_quemsomos" class="java.lang.String" />
-	<queryString><![CDATA[SELECT TRUE;]]></queryString>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["jeri2019"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT
+	(SELECT CONCAT($P{img_dir}, "\\", $P{slug_de}, "\\", t.arquivo) FROM pdf t
+	WHERE t.slug IN (CONCAT("jr_", $P{slug_de}, "_", "capa"))) as arquivo1,
+	(SELECT CONCAT($P{img_dir}, "\\", $P{slug_de}, "\\", t.arquivo) FROM pdf t
+	WHERE t.slug IN (CONCAT("jr_", $P{slug_de}, "_", "quemsomos"))) as arquivo2
+	;]]>
+	</queryString>
+	<field name="arquivo1" class="java.lang.String">
+		<fieldDescription><![CDATA[arquivo1]]></fieldDescription>
+	</field>
+	<field name="arquivo2" class="java.lang.String">
+		<fieldDescription><![CDATA[arquivo2]]></fieldDescription>
+	</field>
 	<detail>
 		<band height="514">
 			<image>
 				<reportElement x="0" y="0" width="684" height="514" uuid="2492549e-c7bb-4106-9e0f-64cee98172b5"/>
-				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_capa}]]></imageExpression>
+				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.capa}]]></anchorNameExpression>
 			</image>
 		</band>
 		<band height="514">
 			<image>
 				<reportElement x="0" y="0" width="684" height="514" uuid="ca177d20-be2a-4273-8267-ffda2afa1b04"/>
-				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_quemsomos}]]></imageExpression>
+				<imageExpression><![CDATA[$F{arquivo2}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.mapa}]]></anchorNameExpression>
 			</image>
 		</band>

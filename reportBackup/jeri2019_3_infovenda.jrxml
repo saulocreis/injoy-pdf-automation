@@ -4,13 +4,22 @@
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA["images"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_jeri2019_infovenda" class="java.lang.String" />
-	<queryString><![CDATA[SELECT TRUE;]]></queryString>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["jeri2019"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT CONCAT($P{img_dir}, "\\", $P{slug_de}, "\\", t.arquivo) AS arquivo1 
+		FROM pdf t WHERE t.slug IN (CONCAT("jr_", $P{slug_de}, "_", "infovenda"))
+		;]]>
+	</queryString>
+	<field name="arquivo1" class="java.lang.String">
+		<fieldDescription><![CDATA[arquivo1]]></fieldDescription>
+	</field>
 	<background>
 		<band height="1131">
 			<image>
 				<reportElement x="0" y="0" width="684" height="1131" uuid="2837f4ba-072b-43ec-a3b4-24986c6f976e"/>
-				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_infovenda}]]></imageExpression>
+				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.infovenda}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
