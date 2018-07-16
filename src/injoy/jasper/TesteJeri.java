@@ -11,7 +11,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
-
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -24,6 +23,7 @@ import net.sf.jasperreports.export.SimplePdfExporterConfiguration;
 
 public class TesteJeri {
 	
+	static private final int MAX_RESULTS = 16;
 	static private final String DEFAULT_WORKSPACE = "injoy.";
 	static private final String DEFAULT_FILENAME = "src/jasperprops.properties";
 	static private final String CONEXAO = "jdbc:mariadb://localhost:3306/injoy?user=root";
@@ -85,7 +85,6 @@ public class TesteJeri {
 				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_final')" + 
 				") AS jr_jeri2019_final" + 
 				";";
-		System.out.println("query: " + query);
 		
 		statement = connection.prepareStatement(query);
 		//statement.setString(1, "jr_jeri2019_capa");
@@ -103,6 +102,7 @@ public class TesteJeri {
 		}
 		result.close();
 		
+
 		
 		query = "SELECT subprod.slug as slugSubprod," + 
 				"	MIN(ROUND(DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes, 0)) as menorValorPessoa " + 
@@ -124,30 +124,28 @@ public class TesteJeri {
 				"GROUP BY subprod.slug " + 
 				"ORDER BY menorValorPessoa ASC " + 
 				";";
-		System.out.println("query: " + query);
 		
 		statement = connection.prepareStatement(query);
 		statement.setString(1, SLUG_DE);
 		result = statement.executeQuery();
 
 		int i = 1;
-		while(result.next()) {
-			
-			String parameter;
+		while(result.next() && i <= MAX_RESULTS) {
 			String iAsString = String.valueOf(i);
-			System.out.println("iAsString: " + iAsString);
-			
-			parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
-			String SLUG_AC = result.getString("slugSubprod");
-			System.out.println(parameter + " -> " + SLUG_AC);
-			parameters.put(parameter, SLUG_AC);
+			String slugSubprod = result.getString("slugSubprod");
+			String menorValorPessoa = result.getString("menorValorPessoa");
+			String parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
+			System.out.println(parameter + " -> " + slugSubprod);
+			parameters.put(parameter, slugSubprod);
+			parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugSubprod).concat("_menorValorPessoa");
+			System.out.println(parameter + " -> " + menorValorPessoa);
+			parameters.put(parameter, menorValorPessoa);
 			
 			query = "SELECT arquivo FROM pdf WHERE slug IN ('jr_"
 					+ SLUG_DE
 					+ "_ac_"
-					+ SLUG_AC
+					+ slugSubprod
 					+ "_menu');";
-			System.out.println("query: " + query);
 			statement = connection.prepareStatement(query);
 			ResultSet result2 = statement.executeQuery();
 			
@@ -158,9 +156,69 @@ public class TesteJeri {
 				parameters.put(parameter, arquivo);
 			}
 			result2.close();
+			
 			i++;
 		}
 		result.close();
+		
+		if(i <= MAX_RESULTS) {
+			
+			query = "SELECT subprod.slug as slugSubprod" + 
+					"	FROM acomodacao_quarto aq, produto subprod, produto_subproduto ps, produto prod, produto_tipo pt WHERE " + 
+					"	aq.idProduto = subprod.id AND ps.idSubproduto = subprod.id AND ps.idProduto = prod.id AND " + 
+					"   ps.idProduto_Tipo = pt.id AND aq.estoque <= 0 AND " + 
+					"	ps.idProduto IN (" + 
+					"		SELECT id FROM produto WHERE " + /*
+					"			idProduto_Status IN (" + 
+					"				SELECT id FROM produto_status WHERE nome IN ('Normal')" + 
+					"			) AND " + */
+					"			idProduto_Tipo IN (" + 
+					"				SELECT id FROM produto_tipo WHERE tabela IN ('pacote')" + 
+					"			) AND " + 
+					"			idDe IN (" + 
+					"				SELECT id FROM de WHERE slug IN (?)" + 
+					"			)" + 
+					"	)" + 
+					"GROUP BY subprod.slug " +
+					";";
+			
+			statement = connection.prepareStatement(query);
+			statement.setString(1, SLUG_DE);
+			result = statement.executeQuery();
+			
+			while(result.next() && i <= MAX_RESULTS) {
+				String iAsString = String.valueOf(i);
+				String slugSubprod = result.getString("slugSubprod");
+				String parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
+				System.out.println(parameter + " -> " + slugSubprod);
+				parameters.put(parameter, slugSubprod);
+				
+				query = "SELECT arquivo FROM pdf WHERE slug IN ('jr_"
+						+ SLUG_DE
+						+ "_ac_"
+						+ slugSubprod /*
+						+ "_menu_esgotado');"; */
+						+ "_menu');";
+				statement = connection.prepareStatement(query);
+				ResultSet result2 = statement.executeQuery();
+				
+				while(result2.next()) {
+					String arquivo = result2.getString("arquivo");
+					parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_imagem").concat(iAsString);
+					System.out.println(parameter + " -> " + arquivo);
+					parameters.put(parameter, arquivo);
+				}
+				result2.close();
+				
+				i++;
+			}
+		}
+		
+
+		
+		
+		
+		
 
 		/* */
 		System.out.println("Iniciando a compilacao dos relatorios.");

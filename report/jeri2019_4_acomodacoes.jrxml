@@ -3,7 +3,7 @@
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_4_acomodacoes" pageWidth="684" pageHeight="721" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="1f66e8cc-f325-4f18-a803-030c8ef2dea8">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="img_dir" class="java.lang.String">
-		<defaultValueExpression><![CDATA["images"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.directory.jeri2019}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_menuacomodacoes" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.image.jeri2019.menuacomodacoes}]]></defaultValueExpression>
@@ -30,6 +30,16 @@
 	<parameter name="jr_jeri2019_menuacomodacoes_link10" class="java.lang.String"/>
 	<parameter name="jr_jeri2019_menuacomodacoes_imagem11" class="java.lang.String"/>
 	<parameter name="jr_jeri2019_menuacomodacoes_link11" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem12" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link12" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem13" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link13" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem14" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link14" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem15" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link15" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_imagem16" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_menuacomodacoes_link16" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
@@ -94,6 +104,31 @@
 				<reportElement mode="Transparent" x="350" y="430" width="145" height="145" uuid="74f7ed3f-a3ee-4cf9-a61f-d4edef50de3a"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem11}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link11}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="430" width="145" height="145" uuid="534e6b24-ad74-49ec-800f-1dcc9140cbd5"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem12}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link12}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="550" width="145" height="145" uuid="5df80f94-ef20-4f5f-9300-f6605edaf4a3"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem13}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link13}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="550" width="145" height="145" uuid="eb109f3c-4ba5-4360-96ec-c625b3cfd3d3"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem14}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link14}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="550" width="145" height="145" uuid="84f7ed3f-a3ee-4cf9-a61f-d4edef50de3a"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem15}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link15}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="550" width="145" height="145" uuid="634e6b24-ad74-49ec-800f-1dcc9140cbd5"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem16}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link16}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 	</background>
