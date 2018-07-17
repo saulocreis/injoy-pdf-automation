@@ -21,7 +21,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes_link1" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"/jeri2019/sobre/"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes_nome2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -156,7 +156,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes_link10" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"jeri2019/sobre/"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes_nome11" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -171,7 +171,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes_link11" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"jeri2019/sobre/"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes_nome12" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -186,7 +186,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes_link12" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"jeri2019/sobre/"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes_nome13" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -201,7 +201,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes_link13" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"jeri2019/sobre/"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>

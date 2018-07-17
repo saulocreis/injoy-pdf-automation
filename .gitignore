@@ -1,6 +1,8 @@
 /bin/
 /target/
 /images/
+/reportBackup/
+/pdf/
 .settings
 .classpath
 .project
