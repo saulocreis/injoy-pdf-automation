@@ -8,6 +8,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
@@ -36,24 +37,15 @@ public class TesteJeri {
 
 	public static void main(String[] args) throws JRException, FileNotFoundException, IOException, SQLException {
 		
-		String[] listaArquivos = {/*
-				"jeri2019_inicio", 
-				"jeri2019_0_ij", "jeri2019_0_menu", 
-				"jeri2019_1_reveillon",
-				"jeri2019_2_pqinjoy",
-				"jeri2019_3_infovenda", */
-				"jeri2019_4_acomodacoes", 
-				"jeri2019_4_resumopacotes", /*
-				"jeri2019_5_ac_pousada-cabana_capa_fotos",
-				"jeri2019_5_ac_hotel-jeri_capa_fotos",
-				"jeri2019_5_ac_pousada-do-norte_capa_fotos",
-				"jeri2019_5_ac_jeri-village-hotel_capa_fotos",
-				"jeri2019_5_ac_pousada-capitao-thomaz_capa_fotos",
-				"jeri2019_5_ac_vila-bijupira_capa_fotos",
-				"jeri2019_5_ac_pousada-carcara_capa_fotos",
-				"jeri2019_5_ac_pousada-naquela-jericoacoara_capa_fotos",
-				"jeri2019_5_ac_pousada-kanaloa_capa_fotos", 
-				"jeri2019_final" */ };
+		ArrayList<String> listaArquivos = new ArrayList<String>();
+		listaArquivos.add("jeri2019_inicio");
+		listaArquivos.add("jeri2019_0_ij");
+		listaArquivos.add("jeri2019_0_menu");
+		listaArquivos.add("jeri2019_1_reveillon");
+		listaArquivos.add("jeri2019_2_pqinjoy");
+		listaArquivos.add("jeri2019_3_infovenda");
+		listaArquivos.add("jeri2019_4_acomodacoes");
+		listaArquivos.add("jeri2019_4_resumopacotes");
 		
 		System.out.println("Tentando conectar...");
 		Connection connection = DriverManager.getConnection(CONEXAO);
@@ -72,6 +64,9 @@ public class TesteJeri {
 		String nomeArquivoPDF = get("file.".concat(SLUG_DE));
 		String injoyLinkDESobre = get("link").concat(SLUG_DE).concat(SEP2).concat("sobre").concat(SEP2);
 		
+		//DecimalFormat formatoComCentavosSemCifra = new DecimalFormat("#,##0.00");
+		DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("#,##0");
+				
 
 		query = "SELECT" + 
 				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_capa')" + 
@@ -167,10 +162,14 @@ public class TesteJeri {
 		while(result.next()) {
 			valorExperienciaFemininoAsString = result.getString("valorExperienciaFeminino");
 			valorExperienciaFeminino = Integer.parseInt(valorExperienciaFemininoAsString);
+			valorExperienciaFemininoAsString = formatoSemCentavosSemCifra.format(valorExperienciaFeminino);
 			valorExperienciaMasculinoAsString = result.getString("valorExperienciaMasculino");
 			valorExperienciaMasculino = Integer.parseInt(valorExperienciaMasculinoAsString);
+			valorExperienciaMasculinoAsString = formatoSemCentavosSemCifra.format(valorExperienciaMasculino);
 		}
 		result.close();
+		
+		
 
 
 // jeri2019_4_acomodacoes, jeri2019_4_resumopacotes
@@ -206,8 +205,16 @@ public class TesteJeri {
 			String slugPacote = result.getString("slugPacote");
 			String nomeProduto = result.getString("nomeProduto");
 			String slugProduto = result.getString("slugProduto");
+			
+			// jeri2019_5_ac_<slugProduto>_capa_fotos, jeri2019_5_ac_<slugProduto>_precos
+			String nomeArquivoCapaFotos = "jeri2019_5_ac_".concat(slugProduto).concat("_capa_fotos");
+			String nomeArquivoPrecos = "jeri2019_5_ac_".concat(slugProduto).concat("_precos");
+			listaArquivos.add(nomeArquivoCapaFotos);
+			listaArquivos.add(nomeArquivoPrecos);
+			
 			String menorValorPessoaAsString = result.getString("menorValorPessoa");
 			int menorValorPessoa = Integer.parseInt(menorValorPessoaAsString);
+			menorValorPessoaAsString = formatoSemCentavosSemCifra.format(menorValorPessoa);
 			
 			parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
 			System.out.println(parameter + " -> " + slugProduto);
@@ -222,12 +229,14 @@ public class TesteJeri {
 			parameters.put(parameter, menorValorPessoaAsString);
 			
 			parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotefeminino").concat(iAsString);
-			String menorValorPessoaFemininoAsString = String.valueOf(menorValorPessoa + valorExperienciaFeminino);
+			int menorValorPessoaFeminino = menorValorPessoa + valorExperienciaFeminino;
+			String menorValorPessoaFemininoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaFeminino);
 			System.out.println(parameter + " -> " + menorValorPessoaFemininoAsString);
 			parameters.put(parameter, menorValorPessoaFemininoAsString);
 			
 			parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotemasculino").concat(iAsString);
-			String menorValorPessoaMasculinoAsString = String.valueOf(menorValorPessoa + valorExperienciaMasculino);
+			int menorValorPessoaMasculino = menorValorPessoa + valorExperienciaMasculino;
+			String menorValorPessoaMasculinoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaMasculino);
 			System.out.println(parameter + " -> " + menorValorPessoaMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaMasculinoAsString);
 			
@@ -262,7 +271,7 @@ public class TesteJeri {
 		
 		if(i <= MAX_RESULTS) {
 			
-			query = "SELECT subprod.slug as slugSubprod" + 
+			query = "SELECT prod.slug as slugPacote, subprod.nome as nomeProduto, subprod.slug as slugProduto" + 
 					"	FROM acomodacao_quarto aq, produto subprod, produto_subproduto ps, produto prod, produto_tipo pt WHERE " + 
 					"	aq.idProduto = subprod.id AND ps.idSubproduto = subprod.id AND ps.idProduto = prod.id AND " + 
 					"   ps.idProduto_Tipo = pt.id AND " + /*
@@ -288,15 +297,41 @@ public class TesteJeri {
 			
 			while(result.next() && i <= MAX_RESULTS) {
 				String iAsString = String.valueOf(i);
-				String slugSubprod = result.getString("slugSubprod");
+				String slugPacote = result.getString("slugPacote");
+				String nomeProduto = result.getString("nomeProduto");
+				String slugProduto = result.getString("slugProduto");
+				String esgotado = "ESGOTADO";
+				
 				String parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
-				System.out.println(parameter + " -> " + slugSubprod);
-				parameters.put(parameter, slugSubprod);
+				System.out.println(parameter + " -> " + slugProduto);
+				parameters.put(parameter, slugProduto);
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_nome").concat(iAsString);
+				System.out.println(parameter + " -> " + nomeProduto);
+				parameters.put(parameter, nomeProduto.toUpperCase());
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacoteac").concat(iAsString);
+				System.out.println(parameter + " -> " + esgotado);
+				parameters.put(parameter, esgotado);
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotefeminino").concat(iAsString);
+				System.out.println(parameter + " -> " + esgotado);
+				parameters.put(parameter, esgotado);
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotemasculino").concat(iAsString);
+				parameters.put(parameter, esgotado);
+				
+				/*
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_link").concat(iAsString);
+				String linkPacote = injoyLinkDESobre.concat(slugPacote);
+				System.out.println(parameter + " -> " + linkPacote);
+				parameters.put(parameter, linkPacote);
+				*/				
 				
 				query = "SELECT arquivo FROM pdf WHERE slug IN ('jr_"
 						+ SLUG_DE
 						+ "_ac_"
-						+ slugSubprod
+						+ slugProduto
 						+ "_menu_esgotado');"; /*
 						+ "_menu');"; */
 				statement = connection.prepareStatement(query);
@@ -315,12 +350,30 @@ public class TesteJeri {
 			
 			while(i <= MAX_RESULTS) {
 				String iAsString = String.valueOf(i);
+				
 				String parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_imagem").concat(iAsString);
 				System.out.println(parameter + " -> " + imageVazio);
 				parameters.put(parameter, imageVazio);
+				
 				parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
 				System.out.println(parameter + " -> " + tagAcomodacoes);
 				parameters.put(parameter, tagAcomodacoes);
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacoteac").concat(iAsString);
+				System.out.println(parameter + " -> " + "");
+				parameters.put(parameter, "");
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotefeminino").concat(iAsString);
+				System.out.println(parameter + " -> " + "");
+				parameters.put(parameter, "");
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotemasculino").concat(iAsString);
+				parameters.put(parameter, "");
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_link").concat(iAsString);
+				System.out.println(parameter + " -> " + injoyLinkDESobre);
+				parameters.put(parameter, injoyLinkDESobre);
+				
 				i++;
 			}
 			
@@ -332,12 +385,35 @@ public class TesteJeri {
 		
 		
 		
-		
 
+		
+		
+		String[] arrayArquivos = {/*
+				"jeri2019_inicio", 
+				"jeri2019_0_ij", "jeri2019_0_menu", 
+				"jeri2019_1_reveillon",
+				"jeri2019_2_pqinjoy",
+				"jeri2019_3_infovenda", */
+				"jeri2019_4_acomodacoes", 
+				"jeri2019_4_resumopacotes", /*
+				"jeri2019_5_ac_pousada-cabana_capa_fotos",
+				"jeri2019_5_ac_hotel-jeri_capa_fotos",
+				"jeri2019_5_ac_pousada-do-norte_capa_fotos",
+				"jeri2019_5_ac_jeri-village-hotel_capa_fotos",
+				"jeri2019_5_ac_pousada-capitao-thomaz_capa_fotos",
+				"jeri2019_5_ac_vila-bijupira_capa_fotos",
+				"jeri2019_5_ac_pousada-carcara_capa_fotos",
+				"jeri2019_5_ac_pousada-naquela-jericoacoara_capa_fotos",
+				"jeri2019_5_ac_pousada-kanaloa_capa_fotos", 
+				"jeri2019_final" */ };
+		
+		
 		/* */
+		listaArquivos.add("jeri2019_final");
+		
 		System.out.println("Iniciando a compilacao dos relatorios.");
 		ArrayList<JasperPrint> jasperPrintList = new ArrayList<JasperPrint>();
-		for(String arquivo: listaArquivos) {
+		for(String arquivo: arrayArquivos) {
 			System.out.println("Processando: ".concat(arquivo).concat("..."));
 			String caminhoArquivoJasper = getReportFilePath(arquivo);
 			JasperReport jasperReport = JasperCompileManager.compileReport(caminhoArquivoJasper);

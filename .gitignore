@@ -3,6 +3,8 @@
 /images/
 /reportBackup/
 /pdf/
+/font/
 .settings
 .classpath
 .project
+fonts.xml
