@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_5_ac_hotel-jeri_precos" pageWidth="684" pageHeight="569" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="f2e5480c-bd08-4e13-af9e-f6c5f678a134">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA["images\\jeri2019\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_precos" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_jeri2019_ac_hotel-jeri_pacotemasculino5" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="569">
+			<image>
+				<reportElement x="0" y="0" width="684" height="569" uuid="74873a08-0300-4f15-a697-dc6047d977f7"/>
+				<imageExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_precos}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="529" width="40" height="40" uuid="02dd4899-76e9-4537-ad61-146fc76b716b"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="270" width="98" height="34" uuid="606a6d9c-bfc5-407d-9e99-1ba9f1fe099c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="270" width="98" height="34" uuid="85b0bf56-26ff-498d-b2e8-a64a0eeb1a8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="270" width="98" height="34" uuid="b5a05040-2315-4392-b8e5-47f2468a059b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="320" width="98" height="34" uuid="f1ba2b95-b595-4572-ab57-113ff1aa7036"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="320" width="98" height="34" uuid="a0445326-1b47-46a8-a7bb-c876bfeb72ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="320" width="98" height="34" uuid="03bd324a-e899-4b95-913d-7d2ad48322b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="380" width="98" height="34" uuid="b6337fb2-030f-467e-9760-24a8e794bc37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="380" width="98" height="34" uuid="468c2045-4969-486c-b1c7-0d62ab39352c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="380" width="98" height="34" uuid="e1675035-7fdb-4f08-851b-02a3b39415d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="420" width="98" height="34" uuid="1a2c14f4-f988-4323-b153-0530f4b13b0b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="420" width="98" height="34" uuid="ccbed2ab-e8e1-4d48-aa33-741dc3efad62"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotefeminino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="420" width="98" height="34" uuid="bfc852ee-75f6-4d30-9a00-6146b260a4b0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotemasculino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="460" width="98" height="34" uuid="dac55987-0dc5-401d-9c85-6b86852560b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacoteac5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="460" width="98" height="34" uuid="ffc3799b-6b3a-45dc-a462-04ecda10da2c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotefeminino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="460" width="98" height="34" uuid="fd7cabdc-24e2-4d8e-b085-8c8d6dbf8106"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_hotel-jeri_pacotemasculino5}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

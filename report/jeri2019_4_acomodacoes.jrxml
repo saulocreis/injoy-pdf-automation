@@ -47,7 +47,7 @@
 		<band height="721">
 			<image>
 				<reportElement x="0" y="0" width="684" height="721" uuid="0727b312-6e89-4664-90fe-b27c9095cd45"/>
-				<imageExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes}]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
@@ -126,7 +126,7 @@
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link15}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="510" y="550" width="145" height="145" uuid="634e6b24-ad74-49ec-800f-1dcc9140cbd5"/>
+				<reportElement mode="Transparent" x="510" y="550" width="145" height="145" uuid="84f7ed3f-a3ee-4cf9-a61f-d4edef50de3a"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_menuacomodacoes_imagem16}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_jeri2019_menuacomodacoes_link16}]]></hyperlinkAnchorExpression>
 			</image>

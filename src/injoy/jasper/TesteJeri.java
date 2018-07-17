@@ -28,6 +28,7 @@ public class TesteJeri {
 	static private final String DEFAULT_FILENAME = "src/jasperprops.properties";
 	static private final String CONEXAO = "jdbc:mariadb://localhost:3306/injoy?user=root";
 	static private final String SEP = System.getProperty("file.separator");
+	static private final String SEP2 = "/"; 
 	static private final String SLUG_DE = "jeri2019";
 	static private final String IMG_DIR = "images".concat(SEP).concat(SLUG_DE).concat(SEP);
 	
@@ -41,7 +42,8 @@ public class TesteJeri {
 				"jeri2019_1_reveillon",
 				"jeri2019_2_pqinjoy",
 				"jeri2019_3_infovenda", */
-				"jeri2019_4_acomodacoes", /*
+				"jeri2019_4_acomodacoes", 
+				"jeri2019_4_resumopacotes", /*
 				"jeri2019_5_ac_pousada-cabana_capa_fotos",
 				"jeri2019_5_ac_hotel-jeri_capa_fotos",
 				"jeri2019_5_ac_pousada-do-norte_capa_fotos",
@@ -55,16 +57,22 @@ public class TesteJeri {
 		
 		System.out.println("Tentando conectar...");
 		Connection connection = DriverManager.getConnection(CONEXAO);
+		System.out.println("Conectado.");
+		
 		PreparedStatement statement = null;
 		String query;
-		System.out.println("Conectado.");
 		
 		HashMap<String, Object> parameters = new HashMap<String, Object>();
 		parameters.put("sep", SEP);
 		parameters.put("img_dir", IMG_DIR);
 		parameters.put("slug_de", SLUG_DE);
 		
+		String tagAcomodacoes = get("tag.acomodacoes");
+		String imageVazio = get("image.vazio");
+		String nomeArquivoPDF = get("file.".concat(SLUG_DE));
+		String injoyLinkDESobre = get("link").concat(SLUG_DE).concat(SEP2).concat("sobre").concat(SEP2);
 		
+
 		query = "SELECT" + 
 				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_capa')" + 
 				") AS jr_jeri2019_capa," + 
@@ -79,7 +87,11 @@ public class TesteJeri {
 				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_pqinjoy')" + 
 				") AS jr_jeri2019_pqinjoy," + 
 				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_infovenda')" + 
-				") AS jr_jeri2019_infovenda," + 
+				") AS jr_jeri2019_infovenda," +
+				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_menuacomodacoes')" + 
+				") AS jr_jeri2019_menuacomodacoes," +
+				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_resumopacotes')" + 
+				") AS jr_jeri2019_resumopacotes," + 
 				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_festas')" + 
 				") AS jr_jeri2019_festas," + 
 				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_final')" + 
@@ -97,14 +109,72 @@ public class TesteJeri {
 			parameters.put("jr_jeri2019_reveillon", result.getString("jr_jeri2019_reveillon"));
 			parameters.put("jr_jeri2019_pqinjoy", result.getString("jr_jeri2019_pqinjoy"));
 			parameters.put("jr_jeri2019_infovenda", result.getString("jr_jeri2019_infovenda"));
+			parameters.put("jr_jeri2019_menuacomodacoes", result.getString("jr_jeri2019_menuacomodacoes"));
+			parameters.put("jr_jeri2019_resumopacotes", result.getString("jr_jeri2019_resumopacotes"));
 			parameters.put("jr_jeri2019_festas", result.getString("jr_jeri2019_festas"));
 			parameters.put("jr_jeri2019_final", result.getString("jr_jeri2019_final"));
 		}
 		result.close();
 		
 
+// jeri2019_4_resumopacotes
+		query = "SELECT ( " + 
+				"	SELECT ROUND(efd.valor, 0) " + 
+				"	FROM experiencia_festadias efd " + 
+				"	WHERE efd.sexo IN ('Feminino') AND " + 
+				"		efd.idProduto IN ( " + 
+				"		SELECT id " + 
+				"		FROM produto p WHERE " + 
+				"			idProduto_Status IN ( " + 
+				"				SELECT id FROM produto_status WHERE nome IN ('Normal') " + 
+				"			) AND " + 
+				"			idProduto_Tipo IN ( " + 
+				"				SELECT id FROM produto_tipo WHERE tabela IN ('experiencia') " + 
+				"			) AND " + 
+				"			idDe IN ( " + 
+				"				SELECT id FROM de WHERE slug IN (?) " + 
+				"			)\r\n" + 
+				"			ORDER BY slug ASC " + 
+				"		) " + 
+				"	) AS valorExperienciaFeminino, ( " + 
+				"	SELECT ROUND(efd.valor, 0) " + 
+				"	FROM experiencia_festadias efd " + 
+				"	WHERE efd.sexo IN ('Masculino') AND " + 
+				"		efd.idProduto IN ( " + 
+				"		SELECT id " + 
+				"		FROM produto p WHERE " + 
+				"			idProduto_Status IN ( " + 
+				"				SELECT id FROM produto_status WHERE nome IN ('Normal') " + 
+				"			) AND " + 
+				"			idProduto_Tipo IN ( " + 
+				"				SELECT id FROM produto_tipo WHERE tabela IN ('experiencia') " + 
+				"			) AND " + 
+				"			idDe IN ( " + 
+				"				SELECT id FROM de WHERE slug IN (?) " + 
+				"			) " + 
+				"			ORDER BY slug ASC " + 
+				"		) " + 
+				"	) AS valorExperienciaMasculino" + 
+				";";
+
+		statement = connection.prepareStatement(query);
+		statement.setString(1, SLUG_DE);
+		statement.setString(2, SLUG_DE);
+		result = statement.executeQuery();
 		
-		query = "SELECT subprod.slug as slugSubprod," + 
+		String valorExperienciaFemininoAsString = "0", valorExperienciaMasculinoAsString = "0";
+		int valorExperienciaFeminino = 0, valorExperienciaMasculino = 0;
+		while(result.next()) {
+			valorExperienciaFemininoAsString = result.getString("valorExperienciaFeminino");
+			valorExperienciaFeminino = Integer.parseInt(valorExperienciaFemininoAsString);
+			valorExperienciaMasculinoAsString = result.getString("valorExperienciaMasculino");
+			valorExperienciaMasculino = Integer.parseInt(valorExperienciaMasculinoAsString);
+		}
+		result.close();
+
+
+// jeri2019_4_acomodacoes, jeri2019_4_resumopacotes
+		query = "SELECT prod.slug as slugPacote, subprod.nome as nomeProduto, subprod.slug as slugProduto," + 
 				"	MIN(ROUND(DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes, 0)) as menorValorPessoa " + 
 				"	FROM acomodacao_quarto aq, produto subprod, produto_subproduto ps, produto prod, produto_tipo pt WHERE " + 
 				"	aq.idProduto = subprod.id AND ps.idSubproduto = subprod.id AND ps.idProduto = prod.id AND " + 
@@ -131,20 +201,49 @@ public class TesteJeri {
 
 		int i = 1;
 		while(result.next() && i <= MAX_RESULTS) {
+			String parameter;
 			String iAsString = String.valueOf(i);
-			String slugSubprod = result.getString("slugSubprod");
-			String menorValorPessoa = result.getString("menorValorPessoa");
-			String parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
-			System.out.println(parameter + " -> " + slugSubprod);
-			parameters.put(parameter, slugSubprod);
-			parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugSubprod).concat("_menorValorPessoa");
-			System.out.println(parameter + " -> " + menorValorPessoa);
-			parameters.put(parameter, menorValorPessoa);
+			String slugPacote = result.getString("slugPacote");
+			String nomeProduto = result.getString("nomeProduto");
+			String slugProduto = result.getString("slugProduto");
+			String menorValorPessoaAsString = result.getString("menorValorPessoa");
+			int menorValorPessoa = Integer.parseInt(menorValorPessoaAsString);
+			
+			parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
+			System.out.println(parameter + " -> " + slugProduto);
+			parameters.put(parameter, slugProduto);
+			
+			parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_nome").concat(iAsString);
+			System.out.println(parameter + " -> " + nomeProduto);
+			parameters.put(parameter, nomeProduto.toUpperCase());
+			
+			parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacoteac").concat(iAsString);
+			System.out.println(parameter + " -> " + menorValorPessoaAsString);
+			parameters.put(parameter, menorValorPessoaAsString);
+			
+			parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotefeminino").concat(iAsString);
+			String menorValorPessoaFemininoAsString = String.valueOf(menorValorPessoa + valorExperienciaFeminino);
+			System.out.println(parameter + " -> " + menorValorPessoaFemininoAsString);
+			parameters.put(parameter, menorValorPessoaFemininoAsString);
+			
+			parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotemasculino").concat(iAsString);
+			String menorValorPessoaMasculinoAsString = String.valueOf(menorValorPessoa + valorExperienciaMasculino);
+			System.out.println(parameter + " -> " + menorValorPessoaMasculinoAsString);
+			parameters.put(parameter, menorValorPessoaMasculinoAsString);
+			
+			parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_link").concat(iAsString);
+			String linkPacote = injoyLinkDESobre.concat(slugPacote);
+			System.out.println(parameter + " -> " + linkPacote);
+			parameters.put(parameter, linkPacote);
+			
+			parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_menorValorPessoa");
+			System.out.println(parameter + " -> " + menorValorPessoaAsString);
+			parameters.put(parameter, menorValorPessoaAsString);
 			
 			query = "SELECT arquivo FROM pdf WHERE slug IN ('jr_"
 					+ SLUG_DE
 					+ "_ac_"
-					+ slugSubprod
+					+ slugProduto
 					+ "_menu');";
 			statement = connection.prepareStatement(query);
 			ResultSet result2 = statement.executeQuery();
@@ -166,12 +265,13 @@ public class TesteJeri {
 			query = "SELECT subprod.slug as slugSubprod" + 
 					"	FROM acomodacao_quarto aq, produto subprod, produto_subproduto ps, produto prod, produto_tipo pt WHERE " + 
 					"	aq.idProduto = subprod.id AND ps.idSubproduto = subprod.id AND ps.idProduto = prod.id AND " + 
-					"   ps.idProduto_Tipo = pt.id AND aq.estoque <= 0 AND " + 
+					"   ps.idProduto_Tipo = pt.id AND " + /*
+					+ " AND aq.estoque <= 0 AND " + */
 					"	ps.idProduto IN (" + 
-					"		SELECT id FROM produto WHERE " + /*
+					"		SELECT id FROM produto WHERE " + 
 					"			idProduto_Status IN (" + 
-					"				SELECT id FROM produto_status WHERE nome IN ('Normal')" + 
-					"			) AND " + */
+					"				SELECT id FROM produto_status WHERE nome IN ('Esgotado')" + 
+					"			) AND " + 
 					"			idProduto_Tipo IN (" + 
 					"				SELECT id FROM produto_tipo WHERE tabela IN ('pacote')" + 
 					"			) AND " + 
@@ -196,9 +296,9 @@ public class TesteJeri {
 				query = "SELECT arquivo FROM pdf WHERE slug IN ('jr_"
 						+ SLUG_DE
 						+ "_ac_"
-						+ slugSubprod /*
-						+ "_menu_esgotado');"; */
-						+ "_menu');";
+						+ slugSubprod
+						+ "_menu_esgotado');"; /*
+						+ "_menu');"; */
 				statement = connection.prepareStatement(query);
 				ResultSet result2 = statement.executeQuery();
 				
@@ -212,9 +312,23 @@ public class TesteJeri {
 				
 				i++;
 			}
+			
+			while(i <= MAX_RESULTS) {
+				String iAsString = String.valueOf(i);
+				String parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_imagem").concat(iAsString);
+				System.out.println(parameter + " -> " + imageVazio);
+				parameters.put(parameter, imageVazio);
+				parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
+				System.out.println(parameter + " -> " + tagAcomodacoes);
+				parameters.put(parameter, tagAcomodacoes);
+				i++;
+			}
+			
 		}
 		
 
+		
+		
 		
 		
 		
@@ -235,7 +349,7 @@ public class TesteJeri {
 		System.out.println("Configurando a exportacao.");
 		SimplePdfExporterConfiguration configuration = new SimplePdfExporterConfiguration();
 		configuration.setCreatingBatchModeBookmarks(true);
-		String nomeArquivoFinal = getPDFFilePath(get("file.jeri2019"));
+		String nomeArquivoFinal = getPDFFilePath(nomeArquivoPDF);
 		SimpleOutputStreamExporterOutput eo = new SimpleOutputStreamExporterOutput(nomeArquivoFinal);
 		JRPdfExporter exporter = new JRPdfExporter();
 		exporter.setConfiguration(configuration);
