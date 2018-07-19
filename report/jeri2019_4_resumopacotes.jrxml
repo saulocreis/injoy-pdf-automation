@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_4_resumopacotes" pageWidth="684" pageHeight="1033" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="1f66e8cc-f325-4f18-a803-030c8ef2dea8">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="img_dir" class="java.lang.String">
-		<defaultValueExpression><![CDATA["images"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.directory.jeri2019}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_jeri2019_resumopacotes" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.image.jeri2019.resumopacotes}]]></defaultValueExpression>
@@ -210,7 +209,7 @@
 		<band height="1033">
 			<image>
 				<reportElement x="0" y="0" width="684" height="1033" uuid="0727b312-6e89-4664-90fe-b27c9095cd45"/>
-				<imageExpression><![CDATA["images\\jeri2019\\resumo-pacotes.jpeg"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_resumopacotes}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.resumopacotes}]]></anchorNameExpression>
 			</image>
 			<textField>

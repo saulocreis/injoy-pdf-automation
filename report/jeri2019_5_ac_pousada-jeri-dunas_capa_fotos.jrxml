@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_5_ac_vila-bijupira_capa_fotos" pageWidth="684" pageHeight="511" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" >
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_5_ac_pousada-jeri-dunas_capa_fotos" pageWidth="684" pageHeight="511" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.jeri2019}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["jeri2019"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_jeri2019_ac_vila-bijupira_anchor" class="java.lang.String">
-		<defaultValueExpression><![CDATA["vila-bijupira"]]></defaultValueExpression>
+	<parameter name="jr_jeri2019_ac_pousada-jeri-dunas_anchor" class="java.lang.String">
+		<defaultValueExpression><![CDATA["pousada-jeri-dunas"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_jeri2019_ac_vila-bijupira_capa" class="java.lang.String">
+	<parameter name="jr_jeri2019_ac_pousada-jeri-dunas_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_jeri2019_ac_vila-bijupira_fotos1" class="java.lang.String">
+	<parameter name="jr_jeri2019_ac_pousada-jeri-dunas_fotos1" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_jeri2019_ac_vila-bijupira_fotos2" class="java.lang.String">
+	<parameter name="jr_jeri2019_ac_pousada-jeri-dunas_fotos2" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_jeri2019_ac_vila-bijupira_menorValorPessoa" class="java.lang.String">
+	<parameter name="jr_jeri2019_ac_pousada-jeri-dunas_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
@@ -29,13 +29,13 @@
 		<band height="511">
 			<image>
 				<reportElement x="0" y="0" width="684" height="511" />
-				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_ac_vila-bijupira_capa}]]></imageExpression>
-				<anchorNameExpression><![CDATA[$P{jr_jeri2019_ac_vila-bijupira_anchor}]]></anchorNameExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_ac_pousada-jeri-dunas_capa}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$P{jr_jeri2019_ac_pousada-jeri-dunas_anchor}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" />
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.vila-bijupira.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.pousada-jeri-dunas.sobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" />
@@ -47,13 +47,13 @@
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_vila-bijupira_menorValorPessoa}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_jeri2019_ac_pousada-jeri-dunas_menorValorPessoa}]]></textFieldExpression>
 			</textField>
 		</band>
 		<band height="511">
 			<image>
 				<reportElement x="0" y="0" width="684" height="511" />
-				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_ac_vila-bijupira_fotos1}]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_jeri2019_ac_pousada-jeri-dunas_fotos1}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" />

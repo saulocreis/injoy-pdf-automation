@@ -2,10 +2,12 @@
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_3_infovenda" pageWidth="684" pageHeight="1131" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="9008f4f3-c390-40d7-a95f-9545abe5a68d">
 	<parameter name="img_dir" class="java.lang.String">
-		<defaultValueExpression><![CDATA["images"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.directory.jeri2019}]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_jeri2019_infovenda" class="java.lang.String" />
-	<queryString><![CDATA[SELECT TRUE;]]></queryString>
+	<parameter name="jr_jeri2019_infovenda" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
 	<background>
 		<band height="1131">
 			<image>

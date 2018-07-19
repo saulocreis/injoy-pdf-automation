@@ -36,6 +36,24 @@ public class TesteJeri {
 	static private Properties jasperprops;
 
 	public static void main(String[] args) throws JRException, FileNotFoundException, IOException, SQLException {
+		/*
+		String[] arrayArquivos = {
+				"jeri2019_inicio", 
+				"jeri2019_0_ij", "jeri2019_0_menu", 
+				"jeri2019_1_reveillon",
+				"jeri2019_2_pqinjoy",
+				"jeri2019_3_infovenda", 
+				"jeri2019_4_acomodacoes", "jeri2019_4_resumopacotes", 
+				"jeri2019_5_ac_pousada-cabana_capa_fotos", 
+				"jeri2019_5_ac_hotel-jeri_capa_fotos", 
+				"jeri2019_5_ac_pousada-do-norte_capa_fotos", 
+				"jeri2019_5_ac_jeri-village-hotel_capa_fotos", 
+				"jeri2019_5_ac_pousada-capitao-thomaz_capa_fotos", 
+				"jeri2019_5_ac_vila-bijupira_capa_fotos",
+				"jeri2019_5_ac_pousada-carcara_capa_fotos",
+				"jeri2019_5_ac_pousada-naquela-jericoacoara_capa_fotos",
+				"jeri2019_final"  };
+		*/
 		
 		ArrayList<String> listaArquivos = new ArrayList<String>();
 		listaArquivos.add("jeri2019_inicio");
@@ -64,50 +82,85 @@ public class TesteJeri {
 		String nomeArquivoPDF = get("file.".concat(SLUG_DE));
 		String injoyLinkDESobre = get("link").concat(SLUG_DE).concat(SEP2).concat("sobre").concat(SEP2);
 		
-		//DecimalFormat formatoComCentavosSemCifra = new DecimalFormat("#,##0.00");
-		DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("#,##0");
-				
+		//DecimalFormat formatoComCentavosComCifra = new DecimalFormat("#,##0.00");
+		DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("R$ #,##0");
+		
+		String capa = "capa";
+		String quemsomos = "quemsomos";
+		String ijreveillon = "ijreveillon";
+		String menu = "menu";
+		String reveillon = "reveillon";
+		String pqinjoy = "pqinjoy";
+		String infovenda = "infovenda";
+		String menuacomodacoes = "menuacomodacoes";
+		String resumopacotes = "resumopacotes";
+		String festas = "festas";
+		String finalString = "final";
 
 		query = "SELECT" + 
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_capa')" + 
-				") AS jr_jeri2019_capa," + 
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_quemsomos')" + 
-				") AS jr_jeri2019_quemsomos," + 
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_ijreveillon')" + 
-				") AS jr_jeri2019_ijreveillon," + 
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_menu')" + 
-				") AS jr_jeri2019_menu," + 
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_reveillon')" + 
-				") AS jr_jeri2019_reveillon," + 
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_pqinjoy')" + 
-				") AS jr_jeri2019_pqinjoy," + 
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_infovenda')" + 
-				") AS jr_jeri2019_infovenda," +
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_menuacomodacoes')" + 
-				") AS jr_jeri2019_menuacomodacoes," +
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_resumopacotes')" + 
-				") AS jr_jeri2019_resumopacotes," + 
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_festas')" + 
-				") AS jr_jeri2019_festas," + 
-				"(SELECT arquivo FROM pdf WHERE slug IN ('jr_jeri2019_final')" + 
-				") AS jr_jeri2019_final" + 
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + capa + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + quemsomos + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + ijreveillon + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + menu + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + reveillon + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + pqinjoy + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + infovenda + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + menuacomodacoes + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + resumopacotes + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + festas + "," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS " + finalString +
 				";";
-		
 		statement = connection.prepareStatement(query);
+		
+		String pBase = "jr_" + SLUG_DE + "_";
+		String parameterCapa = pBase + capa;
+		String parameterQuemSomos = pBase + quemsomos;
+		String parameterIJReveillon = pBase + ijreveillon;
+		String parameterMenu = pBase + menu;
+		String parameterReveillon = pBase + reveillon;
+		String parameterPqInjoy = pBase + pqinjoy;
+		String parameterInfovenda = pBase + infovenda;
+		String parameterMenuAcomodacoes = pBase + menuacomodacoes;
+		String parameterResumoPacotes = pBase + resumopacotes;
+		String parameterFestas = pBase + festas;
+		String parameterFinal = pBase + finalString;
+		statement.setString(1, parameterCapa);
+		statement.setString(2, parameterQuemSomos);
+		statement.setString(3, parameterIJReveillon);
+		statement.setString(4, parameterMenu);
+		statement.setString(5, parameterReveillon);
+		statement.setString(6, parameterPqInjoy);
+		statement.setString(7, parameterInfovenda);
+		statement.setString(8, parameterMenuAcomodacoes);
+		statement.setString(9, parameterResumoPacotes);
+		statement.setString(10, parameterFestas);
+		statement.setString(11, parameterFinal);
+		
 		//statement.setString(1, "jr_jeri2019_capa");
 		ResultSet result = statement.executeQuery();
 		if(result.next()) {
-			parameters.put("jr_jeri2019_capa", result.getString("jr_jeri2019_capa"));
-			parameters.put("jr_jeri2019_quemsomos", result.getString("jr_jeri2019_quemsomos"));
-			parameters.put("jr_jeri2019_ijreveillon", result.getString("jr_jeri2019_ijreveillon"));
-			parameters.put("jr_jeri2019_menu", result.getString("jr_jeri2019_menu"));
-			parameters.put("jr_jeri2019_reveillon", result.getString("jr_jeri2019_reveillon"));
-			parameters.put("jr_jeri2019_pqinjoy", result.getString("jr_jeri2019_pqinjoy"));
-			parameters.put("jr_jeri2019_infovenda", result.getString("jr_jeri2019_infovenda"));
-			parameters.put("jr_jeri2019_menuacomodacoes", result.getString("jr_jeri2019_menuacomodacoes"));
-			parameters.put("jr_jeri2019_resumopacotes", result.getString("jr_jeri2019_resumopacotes"));
-			parameters.put("jr_jeri2019_festas", result.getString("jr_jeri2019_festas"));
-			parameters.put("jr_jeri2019_final", result.getString("jr_jeri2019_final"));
+			parameters.put(parameterCapa, result.getString(capa));
+			parameters.put(parameterQuemSomos, result.getString(quemsomos));
+			parameters.put(parameterIJReveillon, result.getString(ijreveillon));
+			parameters.put(parameterMenu, result.getString(menu));
+			parameters.put(parameterReveillon, result.getString(reveillon));
+			parameters.put(parameterPqInjoy, result.getString(pqinjoy));
+			parameters.put(parameterInfovenda, result.getString(infovenda));
+			parameters.put(parameterMenuAcomodacoes, result.getString(menuacomodacoes));
+			parameters.put(parameterResumoPacotes, result.getString(resumopacotes));
+			parameters.put(parameterFestas, result.getString(festas));
+			parameters.put(parameterFinal, result.getString(finalString));
 		}
 		result.close();
 		
@@ -210,7 +263,7 @@ public class TesteJeri {
 			String nomeArquivoCapaFotos = "jeri2019_5_ac_".concat(slugProduto).concat("_capa_fotos");
 			String nomeArquivoPrecos = "jeri2019_5_ac_".concat(slugProduto).concat("_precos");
 			listaArquivos.add(nomeArquivoCapaFotos);
-			listaArquivos.add(nomeArquivoPrecos);
+			//listaArquivos.add(nomeArquivoPrecos);
 			
 			String menorValorPessoaAsString = result.getString("menorValorPessoa");
 			int menorValorPessoa = Integer.parseInt(menorValorPessoaAsString);
@@ -245,23 +298,71 @@ public class TesteJeri {
 			System.out.println(parameter + " -> " + linkPacote);
 			parameters.put(parameter, linkPacote);
 			
+			parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_anchor");
+			System.out.println(parameter + " -> " + slugProduto);
+			parameters.put(parameter, slugProduto);
+			
 			parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_menorValorPessoa");
 			System.out.println(parameter + " -> " + menorValorPessoaAsString);
 			parameters.put(parameter, menorValorPessoaAsString);
 			
-			query = "SELECT arquivo FROM pdf WHERE slug IN ('jr_"
-					+ SLUG_DE
-					+ "_ac_"
-					+ slugProduto
-					+ "_menu');";
+			String fotos1 = "fotos1";
+			String fotos2 = "fotos2";
+			String precos = "precos";
+			
+			query = "SELECT ( " + 
+					"	SELECT arquivo FROM pdf " + 
+					"	WHERE slug IN (?) " + 
+					") AS " + capa + ", ( " + 
+					"	SELECT arquivo FROM pdf " + 
+					"	WHERE slug IN (?) " + 
+					") AS " + fotos1 + ", ( " +
+					"	SELECT arquivo FROM pdf " + 
+					"	WHERE slug IN (?) " + 
+					") AS " + fotos2 + ", ( " +
+					"	SELECT arquivo FROM pdf " + 
+					"	WHERE slug IN (?) " + 
+					") AS " + menu + ", ( " +
+					"	SELECT arquivo FROM pdf " + 
+					"	WHERE slug IN (?) " + 
+					") AS " + precos +
+					";";
 			statement = connection.prepareStatement(query);
+			
+			pBase = "jr_" + SLUG_DE + "_ac_" + slugProduto + "_";
+			parameterCapa = pBase + capa;
+			String parameterFotos1 = pBase + fotos1;
+			String parameterFotos2 = pBase + fotos2;
+			parameterMenu = pBase + menu;
+			String parameterPrecos = pBase + precos;
+			statement.setString(1, parameterCapa);
+			statement.setString(2, parameterFotos1);
+			statement.setString(3, parameterFotos2);
+			statement.setString(4, parameterMenu);
+			statement.setString(5, parameterPrecos);
 			ResultSet result2 = statement.executeQuery();
 			
 			while(result2.next()) {
-				String arquivo = result2.getString("arquivo");
+				String arquivoMenu = result2.getString("menu");
 				parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_imagem").concat(iAsString);
-				System.out.println(parameter + " -> " + arquivo);
-				parameters.put(parameter, arquivo);
+				System.out.println(parameter + " -> " + arquivoMenu);
+				parameters.put(parameter, arquivoMenu);
+				
+				String arquivoCapa = result2.getString("capa");
+				System.out.println(parameterCapa + " -> " + arquivoCapa);
+				parameters.put(parameterCapa, arquivoCapa);
+				
+				String arquivoFotos1 = result2.getString("fotos1");
+				System.out.println(parameterFotos1 + " -> " + arquivoFotos1);
+				parameters.put(parameterFotos1, arquivoFotos1);
+				
+				String arquivoFotos2 = result2.getString("fotos2");
+				System.out.println(parameterFotos2 + " -> " + arquivoFotos2);
+				parameters.put(parameterFotos2, arquivoFotos2);
+				
+				String arquivoPrecos = result2.getString("precos");
+				System.out.println(parameterPrecos + " -> " + arquivoPrecos);
+				parameters.put(parameterPrecos, arquivoPrecos);
 			}
 			result2.close();
 			
@@ -297,7 +398,7 @@ public class TesteJeri {
 			
 			while(result.next() && i <= MAX_RESULTS) {
 				String iAsString = String.valueOf(i);
-				String slugPacote = result.getString("slugPacote");
+				// String slugPacote = result.getString("slugPacote");
 				String nomeProduto = result.getString("nomeProduto");
 				String slugProduto = result.getString("slugProduto");
 				String esgotado = "ESGOTADO";
@@ -343,7 +444,7 @@ public class TesteJeri {
 					System.out.println(parameter + " -> " + arquivo);
 					parameters.put(parameter, arquivo);
 				}
-				result2.close();
+				result2.close();			
 				
 				i++;
 			}
@@ -382,38 +483,12 @@ public class TesteJeri {
 
 		
 		
-		
-		
-		
-
-		
-		
-		String[] arrayArquivos = {/*
-				"jeri2019_inicio", 
-				"jeri2019_0_ij", "jeri2019_0_menu", 
-				"jeri2019_1_reveillon",
-				"jeri2019_2_pqinjoy",
-				"jeri2019_3_infovenda", */
-				"jeri2019_4_acomodacoes", 
-				"jeri2019_4_resumopacotes", /*
-				"jeri2019_5_ac_pousada-cabana_capa_fotos",
-				"jeri2019_5_ac_hotel-jeri_capa_fotos",
-				"jeri2019_5_ac_pousada-do-norte_capa_fotos",
-				"jeri2019_5_ac_jeri-village-hotel_capa_fotos",
-				"jeri2019_5_ac_pousada-capitao-thomaz_capa_fotos",
-				"jeri2019_5_ac_vila-bijupira_capa_fotos",
-				"jeri2019_5_ac_pousada-carcara_capa_fotos",
-				"jeri2019_5_ac_pousada-naquela-jericoacoara_capa_fotos",
-				"jeri2019_5_ac_pousada-kanaloa_capa_fotos", 
-				"jeri2019_final" */ };
-		
-		
 		/* */
 		listaArquivos.add("jeri2019_final");
 		
 		System.out.println("Iniciando a compilacao dos relatorios.");
 		ArrayList<JasperPrint> jasperPrintList = new ArrayList<JasperPrint>();
-		for(String arquivo: arrayArquivos) {
+		for(String arquivo: listaArquivos) {
 			System.out.println("Processando: ".concat(arquivo).concat("..."));
 			String caminhoArquivoJasper = getReportFilePath(arquivo);
 			JasperReport jasperReport = JasperCompileManager.compileReport(caminhoArquivoJasper);
