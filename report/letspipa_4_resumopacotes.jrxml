@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_4_resumopacotes" pageWidth="684" pageHeight="1380" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="da384b65-922e-44d7-8719-4d711f73afec">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Resumo de Acomodações.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"/letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome10" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac10" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino10" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino10" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link10" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome11" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac11" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino11" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino11" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link11" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome12" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac12" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino12" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino12" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link12" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome13" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac13" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino13" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino13" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link13" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome14" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac14" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino14" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino14" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link14" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome15" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac15" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino15" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino15" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link15" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome16" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac16" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino16" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino16" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link16" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome17" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac17" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino17" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino17" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link17" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome18" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac18" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino18" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino18" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link18" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_nome19" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacoteac19" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotefeminino19" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_pacotemasculino19" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_resumopacotes_link19" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+"letspipa/sobre/"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="1380">
+			<image>
+				<reportElement x="0" y="0" width="684" height="1380" uuid="014e5a86-6857-4eba-9f7b-4d34cc9cf892"/>
+				<imageExpression><![CDATA["images\\letspipa\\Resumo de Acomodações.png"]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.resumopacotes}]]></anchorNameExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="304" width="120" height="55" uuid="48862780-4617-4849-919a-617b9a6fc41f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="304" width="90" height="55" uuid="87dcf021-a445-4d55-8b29-7e2d78bf264a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="304" width="80" height="55" uuid="bd584d71-510f-4c04-b0fd-f31a05d657a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="304" width="80" height="55" uuid="de3bb2a2-0823-4e87-8f15-801ef28a8470"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="322" width="75" height="27" uuid="be1d2771-9952-46a8-bdd4-72329f481d83"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link1}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="360" width="120" height="55" uuid="74086edb-e6d9-472a-87bc-3f7aacc00b7d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="360" width="90" height="55" uuid="d9254ac3-1590-4738-9ff6-ebdf80713b51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="359" width="80" height="55" uuid="09dedd4d-cadd-4c02-9748-9148a0cd0520"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="360" width="80" height="55" uuid="2bbbd3f6-940f-497f-aad0-bb69adf63183"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="373" width="75" height="27" uuid="224345d4-e795-4e8c-947a-a5e930d375e0"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link2}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="415" width="120" height="55" uuid="95ece1ce-2a78-4ad3-a136-144c627213ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="415" width="90" height="55" uuid="223ead47-231c-4b82-aa94-25d5e4dc0e59"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="415" width="80" height="55" uuid="271abfb7-040f-459f-b1c6-4786c71d79fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="415" width="80" height="55" uuid="6e91ba0e-079b-4a24-87de-942ec735275b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="429" width="75" height="27" uuid="1e8e48ef-e5f8-4364-aeff-b3f9b06687e6"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link3}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="471" width="120" height="55" uuid="a00f0489-b20d-4267-962a-ac26f16b1e7f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="471" width="90" height="55" uuid="205fbea0-5d7d-4a98-9afa-e98fd9655a09"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="471" width="80" height="55" uuid="cac366a9-43cd-4a46-923e-0acc2b78d74e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="471" width="80" height="55" uuid="cce3d077-37b9-4496-8d7a-1d38c0f587e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino4}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="485" width="75" height="27" uuid="ae81815d-c500-4f13-bf53-5e380b85b9c3"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link4}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="526" width="120" height="55" uuid="3d3cd10f-c0c2-41a1-8087-f54ffba88760"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="526" width="90" height="55" uuid="342ab7a6-229f-4907-bda3-5f439785cf1e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="526" width="80" height="55" uuid="2e1085ee-6a0b-4d15-8a36-ae7b8512da0c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="526" width="80" height="55" uuid="904846ca-bb28-40a9-9f87-a134bf473c96"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino5}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="540" width="75" height="27" uuid="ddc3ea99-2bfb-4b48-b112-cd11cc959cb0"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link5}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="585" width="120" height="55" uuid="37065b8d-4ddd-4eff-b44b-5a886bf2fa77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="581" width="90" height="55" uuid="6a592247-5791-47a1-9ff8-abebb72ce194"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="581" width="80" height="55" uuid="60ce8deb-a231-44be-ab95-9f082a8bee5b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="581" width="80" height="55" uuid="42429ec5-dcc7-4c6c-9809-517caf8344b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino6}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="595" width="75" height="27" uuid="1154303c-a1dd-44e0-97c1-248841dce1e9"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link6}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="640" width="120" height="55" uuid="ce2bddf8-24ce-401e-9068-dd2abf39c321"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="636" width="90" height="55" uuid="adf99450-56fc-4439-8224-8673d2354377"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="636" width="80" height="55" uuid="c3bd750a-3259-48bb-a43f-48f1141ce55b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="636" width="80" height="55" uuid="e0f39ab7-4705-4113-89de-3d41be58680c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino7}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="650" width="75" height="27" uuid="36331ba8-9313-46c7-9796-46b3d068cc63"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link7}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="696" width="120" height="55" uuid="14004892-9ce7-44a6-803f-507f245b85ac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="696" width="90" height="55" uuid="871b8169-037e-48f0-92c7-8ac859178a8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="696" width="80" height="55" uuid="da9f9579-f317-495a-993f-c26b6019e7a4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="696" width="80" height="55" uuid="16e75eab-306d-4312-9e00-7f1d05c95b1a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino8}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="710" width="75" height="27" uuid="4280fb35-ca9f-4e02-a0ed-6e518bd3b0f8"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link8}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="756" width="120" height="55" uuid="862026ae-a908-43b1-ac21-549cd64adc7f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="756" width="90" height="55" uuid="0f7447d9-8bc0-4d94-901c-32099a23826d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="756" width="80" height="55" uuid="56b48957-c045-4d80-b6ea-7e7988ef68c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="756" width="80" height="55" uuid="1a897a2f-2e7d-4737-ae9e-e0ec4281e42b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino9}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="770" width="75" height="27" uuid="6f3bcd22-a524-4c8d-9f15-63e150ce5ad1"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link9}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="816" width="120" height="55" uuid="242d0349-8c61-46ec-a088-b2e0657d4a3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="816" width="90" height="55" uuid="d7d4dd38-f0cc-4114-8e90-c7dd30b3c456"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="816" width="80" height="55" uuid="14643211-8970-4e40-a3d4-ce045d2b69a6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="816" width="80" height="55" uuid="ff10870b-8ffd-4806-8eaa-bbc1f58a8497"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="830" width="75" height="27" uuid="4f97b4d6-6376-49b1-a5ef-320d49cad549"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link10}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="871" width="120" height="55" uuid="5f09d34e-ea19-4b8e-a61b-9bf3b52b3f03"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="871" width="90" height="55" uuid="49f7144a-2310-4b0b-8d3f-3e289c65dc57"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="871" width="80" height="55" uuid="af274e49-1a8f-4d07-81f0-a2a1b5959d87"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="871" width="80" height="55" uuid="32c56e1f-39ce-4bca-b8c6-5fb73fa46ebe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino11}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="885" width="75" height="27" uuid="5773b149-31dd-45db-8c8f-ead091a4842a"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link11}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="926" width="120" height="55" uuid="4a9fd7e3-e9b0-446d-a178-8f25c8ac06b2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="926" width="90" height="55" uuid="f0f3eee6-4b91-4009-8d11-b9d2d02c7cd8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="926" width="80" height="55" uuid="1e8fb8d5-73b8-49f8-b3c3-5733ab42b8ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="926" width="80" height="55" uuid="2280fe86-52fe-44b0-847f-bae57418b13f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino12}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="940" width="75" height="27" uuid="048f8201-d63e-4fb5-87ad-34e4dfb39cb9"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link12}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="980" width="120" height="55" uuid="567c60ac-69cd-47b3-a379-96993a2679e8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="980" width="90" height="55" uuid="9f41a01c-4d94-4839-b473-bb5453e614bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="980" width="80" height="55" uuid="27e286ff-1abd-4b3b-88f9-18d52db05612"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="980" width="80" height="55" uuid="b6b5a105-648f-4741-81ca-48b323dc6946"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino13}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="995" width="75" height="27" uuid="3b705bf3-6b90-4085-ae31-1d7c8c41ac47"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link13}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="1036" width="120" height="55" uuid="22191958-e69e-4e7c-9cd0-f998fd2d857b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="1036" width="90" height="55" uuid="e10296e8-083b-4e64-9d46-41ad19e814d4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="1036" width="80" height="55" uuid="256ac6ec-2bbe-472f-85dc-6399a8d2e851"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="1036" width="80" height="55" uuid="ba6bf239-4dfa-468e-bac1-38596d118062"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino14}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="1050" width="75" height="27" uuid="00875a1e-ba0c-4ad0-b1ef-4b0adac9241c"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link14}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="1091" width="120" height="55" uuid="4c16c31d-d803-4f17-84dc-8d55bd6a7efd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="1091" width="90" height="55" uuid="73cd8255-870c-4876-927d-b747fd035e7c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="1091" width="80" height="55" uuid="4f03d6c0-8858-482e-9fa1-bfb86d10bbff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="1091" width="80" height="55" uuid="e7c5439b-a6a5-4f8e-b420-bdbd9db0febd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino15}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="1105" width="75" height="27" uuid="f4b03db7-c22e-479c-89cb-3242fe76a965"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link15}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="1150" width="120" height="55" uuid="3ef42470-0b1a-4c63-a860-533488063271"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="1150" width="90" height="55" uuid="103c843d-ada1-43b3-bd86-292ef314125a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="1150" width="80" height="55" uuid="e59c45b1-ba5c-4cc4-b9ff-9f17e21b4f0e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="1150" width="80" height="55" uuid="f1a24a82-da5e-4058-bd5c-c087d6d2d040"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino16}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="1165" width="75" height="27" uuid="ca4e667d-1b7d-49b8-8acc-0fbd4abc2947"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link16}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="1210" width="120" height="55" uuid="016f385f-3d0e-4656-a8d2-78232ec39191"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome17}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="1210" width="90" height="55" uuid="3214fbe8-eead-4706-8636-cc0e010369e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac17}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="1210" width="80" height="55" uuid="0eb7d6c2-bcba-43a4-bc60-c7fca8c11697"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino17}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="1210" width="80" height="55" uuid="8f34d353-2287-4556-8cad-544c390b2fba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino17}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="1225" width="75" height="27" uuid="f18e5073-8dfe-4917-b690-e03fd891314a"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link17}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="1265" width="120" height="55" uuid="e9808c07-b940-4d7a-9978-92cb950311ac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="1265" width="90" height="55" uuid="9a915b5a-ba1d-448f-bf5f-d69610a480c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="1265" width="80" height="55" uuid="b60faf4a-a579-4404-b581-736cfd277cdc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="1265" width="80" height="55" uuid="b44609b7-7749-4a16-a982-3a4c5e126925"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino18}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="1280" width="75" height="27" uuid="ed14c2d9-e809-4882-ac7f-37cbf1302679"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link18}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="1320" width="120" height="55" uuid="56818d15-2687-474d-8678-fae40c749ff7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_nome19}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="1320" width="90" height="55" uuid="985fe42e-6acf-4224-b069-7475001d1964"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacoteac19}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="1320" width="80" height="55" uuid="442904db-4a7f-4cf4-aa73-dbd9822321dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotefeminino19}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="1320" width="80" height="55" uuid="f1293459-35d3-4ef4-8cb1-3dd2274ffd8d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_resumopacotes_pacotemasculino19}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="1335" width="75" height="27" uuid="5bbf4ef1-c753-45ff-ae4e-48cb9d956b1d"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_resumopacotes_link19}]]></hyperlinkReferenceExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

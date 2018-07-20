@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_0_menu" pageWidth="684" pageHeight="516" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menu" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="516">
+			<image>
+				<reportElement x="0" y="0" width="684" height="516" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menu}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.menu}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="20" y="104" width="227" height="199" />
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.reveillon}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="240" y="104" width="227" height="199" />
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.pqinjoy}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="467" y="104" width="226" height="199" />
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.infovenda}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="20" y="310" width="226" height="205" />
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="240" y="310" width="226" height="205" />
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.festas}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="467" y="310" width="226" height="205" />
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.aereo}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

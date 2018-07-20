@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_4_acomodacoes" pageWidth="684" pageHeight="836" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.letspipa.menuacomodacoes}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem11" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link11" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem12" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link12" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem13" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link13" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem14" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link14" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem15" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link15" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem16" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link16" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="836">
+			<image>
+				<reportElement x="0" y="0" width="684" height="836" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="190" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem1}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link1}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="190" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem2}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link2}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="190" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem3}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link3}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="190" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem4}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link4}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="310" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem5}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link5}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="310" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem6}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link6}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="310" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem7}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link7}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="310" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem8}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link8}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="430" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem9}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link9}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="430" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem10}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link10}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="430" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem11}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link11}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="430" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem12}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link12}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="550" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem13}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link13}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="550" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem14}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link14}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="550" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem15}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link15}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="550" width="145" height="145" />
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem16}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link16}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

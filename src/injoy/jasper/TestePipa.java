@@ -12,6 +12,7 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Properties;
+
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -22,49 +23,32 @@ import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 import net.sf.jasperreports.export.SimplePdfExporterConfiguration;
 
-public class TesteJeri {
+public class TestePipa {
 	
-	static private final int MAX_RESULTS = 16;
+	static private final int MAX_RESULTS = 20;
 	static private final String DEFAULT_WORKSPACE = "injoy.";
 	static private final String DEFAULT_FILENAME = "src/jasperprops.properties";
 	static private final String CONEXAO = "jdbc:mariadb://localhost:3306/injoy?user=root";
 	static private final String SEP = System.getProperty("file.separator");
 	static private final String SEP2 = "/"; 
-	static private final String SLUG_DE = "jeri2019";
+	static private final String SLUG_DE = "letspipa";
 	static private final String SLUG_EXPERIENCIA = "festas-john-john-rocks-jeri-2019";
 	static private final String IMG_DIR = "images".concat(SEP).concat(SLUG_DE).concat(SEP);
 	
 	static private Properties jasperprops;
 
-	public static void main(String[] args) throws JRException, FileNotFoundException, IOException, SQLException {
-		/*
-		String[] arrayArquivos = {
-				"jeri2019_inicio", 
-				"jeri2019_0_ij", "jeri2019_0_menu", 
-				"jeri2019_1_reveillon",
-				"jeri2019_2_pqinjoy",
-				"jeri2019_3_infovenda", 
-				"jeri2019_4_acomodacoes", "jeri2019_4_resumopacotes", 
-				"jeri2019_5_ac_pousada-cabana_capa_fotos", 
-				"jeri2019_5_ac_hotel-jeri_capa_fotos", 
-				"jeri2019_5_ac_pousada-do-norte_capa_fotos", 
-				"jeri2019_5_ac_jeri-village-hotel_capa_fotos", 
-				"jeri2019_5_ac_pousada-capitao-thomaz_capa_fotos", 
-				"jeri2019_5_ac_vila-bijupira_capa_fotos",
-				"jeri2019_5_ac_pousada-carcara_capa_fotos",
-				"jeri2019_5_ac_pousada-naquela-jericoacoara_capa_fotos",
-				"jeri2019_final"  };
-		*/
+	public static void main(String[] args) throws JRException, FileNotFoundException, IOException, SQLException {		
 		
 		ArrayList<String> listaArquivos = new ArrayList<String>();
-		listaArquivos.add("jeri2019_inicio");
-		listaArquivos.add("jeri2019_0_ij");
-		listaArquivos.add("jeri2019_0_menu");
-		listaArquivos.add("jeri2019_1_reveillon");
-		listaArquivos.add("jeri2019_2_pqinjoy");
-		listaArquivos.add("jeri2019_3_infovenda");
-		listaArquivos.add("jeri2019_4_acomodacoes");
-		listaArquivos.add("jeri2019_4_resumopacotes");
+		listaArquivos.add("letspipa_inicio");
+		listaArquivos.add("letspipa_0_ij");
+		listaArquivos.add("letspipa_0_menu");
+		listaArquivos.add("letspipa_1_reveillon");
+		listaArquivos.add("letspipa_2_pqinjoy");
+		listaArquivos.add("letspipa_3_infovenda");
+		// listaArquivos.add("letspipa_4_acomodacoes");
+		listaArquivos.add("letspipa_4_resumopacotes");
+		/* */
 		
 		System.out.println("Tentando conectar...");
 		Connection connection = DriverManager.getConnection(CONEXAO);
@@ -84,7 +68,7 @@ public class TesteJeri {
 		String injoyLinkDESobre = get("link").concat(SLUG_DE).concat(SEP2).concat("sobre").concat(SEP2);
 		
 		//DecimalFormat formatoComCentavosComCifra = new DecimalFormat("#,##0.00");
-		DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("R$ #,##0");
+		DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("#,##0");
 		
 		String capa = "capa";
 		String quemsomos = "quemsomos";
@@ -150,14 +134,12 @@ public class TesteJeri {
 		
 		System.out.println(statement);
 		
-		//statement.setString(1, "jr_jeri2019_capa");
 		ResultSet result = statement.executeQuery();
 		if(result.next()) {
 			parameters.put(parameterCapa, result.getString(capa));
 			parameters.put(parameterQuemSomos, result.getString(quemsomos));
 			parameters.put(parameterIJReveillon, result.getString(ijreveillon));
 			parameters.put(parameterMenu, result.getString(menu));
-			System.out.println(parameterReveillon + " -> " + result.getString(reveillon));
 			parameters.put(parameterReveillon, result.getString(reveillon));
 			parameters.put(parameterPqInjoy, result.getString(pqinjoy));
 			parameters.put(parameterInfovenda, result.getString(infovenda));
@@ -169,8 +151,8 @@ public class TesteJeri {
 		result.close();
 		
 
-// jeri2019_4_resumopacotes
-		query = "SELECT (\r\n" + 
+// letspipa_4_resumopacotes
+		query = "SELECT (" + 
 				"	SELECT ROUND(efd.valor, 0) " + 
 				"	FROM experiencia_festadias efd " + 
 				"	WHERE efd.sexo IN ('Feminino') AND " + 
@@ -213,7 +195,7 @@ public class TesteJeri {
 		
 
 
-// jeri2019_4_acomodacoes, jeri2019_4_resumopacotes
+// letspipa_4_acomodacoes, letspipa_4_resumopacotes
 		query = "SELECT prod.slug as slugPacote, subprod.nome as nomeProduto, subprod.slug as slugProduto," + 
 				"	MIN(ROUND(DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes, 0)) as menorValorPessoa " + 
 				"	FROM acomodacao_quarto aq, produto subprod, produto_subproduto ps, produto prod, produto_tipo pt WHERE " + 
@@ -247,10 +229,10 @@ public class TesteJeri {
 			String nomeProduto = result.getString("nomeProduto");
 			String slugProduto = result.getString("slugProduto");
 			
-			// jeri2019_5_ac_<slugProduto>_capa_fotos, jeri2019_5_ac_<slugProduto>_precos
-			String nomeArquivoCapaFotos = "jeri2019_5_ac_".concat(slugProduto).concat("_capa_fotos");
-			String nomeArquivoPrecos = "jeri2019_5_ac_".concat(slugProduto).concat("_precos");
-			listaArquivos.add(nomeArquivoCapaFotos);
+			// letspipa_ac_<slugProduto>_capa_fotos, letspipa_5_ac_<slugProduto>_precos
+			String nomeArquivoCapaFotos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_capa_fotos");
+			String nomeArquivoPrecos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_precos");
+			//listaArquivos.add(nomeArquivoCapaFotos);
 			//listaArquivos.add(nomeArquivoPrecos);
 			
 			String menorValorPessoaAsString = result.getString("menorValorPessoa");
@@ -468,7 +450,9 @@ public class TesteJeri {
 			
 		}
 		
-		listaArquivos.add("jeri2019_final");
+		//listaArquivos.add("letspipa_final");
+		listaArquivos.add("letspipa_festas");
+		listaArquivos.add("letspipa_final");
 		
 		/* */
 		System.out.println("Iniciando a compilacao dos relatorios.");
