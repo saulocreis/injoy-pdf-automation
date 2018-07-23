@@ -32,7 +32,7 @@ public class TestePipa {
 	static private final String SEP = System.getProperty("file.separator");
 	static private final String SEP2 = "/"; 
 	static private final String SLUG_DE = "letspipa";
-	static private final String SLUG_EXPERIENCIA = "festas-john-john-rocks-jeri-2019";
+	static private final String SLUG_EXPERIENCIA = "pacote-de-festas-pipa-2019";
 	static private final String IMG_DIR = "images".concat(SEP).concat(SLUG_DE).concat(SEP);
 	
 	static private Properties jasperprops;
@@ -46,7 +46,7 @@ public class TestePipa {
 		listaArquivos.add("letspipa_1_reveillon");
 		listaArquivos.add("letspipa_2_pqinjoy");
 		listaArquivos.add("letspipa_3_infovenda");
-		// listaArquivos.add("letspipa_4_acomodacoes");
+		//listaArquivos.add("letspipa_4_acomodacoes");
 		listaArquivos.add("letspipa_4_resumopacotes");
 		/* */
 		
@@ -232,7 +232,7 @@ public class TestePipa {
 			// letspipa_ac_<slugProduto>_capa_fotos, letspipa_5_ac_<slugProduto>_precos
 			String nomeArquivoCapaFotos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_capa_fotos");
 			String nomeArquivoPrecos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_precos");
-			//listaArquivos.add(nomeArquivoCapaFotos);
+			listaArquivos.add(nomeArquivoCapaFotos);
 			//listaArquivos.add(nomeArquivoPrecos);
 			
 			String menorValorPessoaAsString = result.getString("menorValorPessoa");

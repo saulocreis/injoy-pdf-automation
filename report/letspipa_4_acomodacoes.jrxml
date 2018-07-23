@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_4_acomodacoes" pageWidth="684" pageHeight="836" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_4_acomodacoes" pageWidth="684" pageHeight="836" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="2f1f11d4-ff6a-40ea-8bf5-ac4b130b8e55">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_menuacomodacoes" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.image.letspipa.menuacomodacoes}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}+$R{injoy.image.letspipa.menuacomodacoes}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_menuacomodacoes_imagem1" class="java.lang.String"/>
 	<parameter name="jr_letspipa_menuacomodacoes_link1" class="java.lang.String"/>
@@ -39,95 +39,123 @@
 	<parameter name="jr_letspipa_menuacomodacoes_link15" class="java.lang.String"/>
 	<parameter name="jr_letspipa_menuacomodacoes_imagem16" class="java.lang.String"/>
 	<parameter name="jr_letspipa_menuacomodacoes_link16" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem17" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link17" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem18" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link18" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem19" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link19" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem20" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_link20" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
 		<band height="836">
 			<image>
-				<reportElement x="0" y="0" width="684" height="836" />
+				<reportElement x="0" y="0" width="684" height="836" uuid="d226c2f3-8ce3-4a76-96e7-7f2727ad573e"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="30" y="190" width="145" height="145" />
+				<reportElement mode="Transparent" x="30" y="190" width="145" height="145" uuid="180a125d-cc19-4807-85aa-620e362943bb"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem1}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link1}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="190" y="190" width="145" height="145" />
+				<reportElement mode="Transparent" x="190" y="190" width="145" height="145" uuid="aa26cf86-4f2f-4b30-a837-c0b46373103e"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem2}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link2}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="350" y="190" width="145" height="145" />
+				<reportElement mode="Transparent" x="350" y="190" width="145" height="145" uuid="25c8f8d5-1d87-4ee8-b098-e0f013c571d4"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem3}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link3}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="510" y="190" width="145" height="145" />
+				<reportElement mode="Transparent" x="510" y="190" width="145" height="145" uuid="a353d237-87dd-4e44-b202-4286a3da7237"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem4}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link4}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="30" y="310" width="145" height="145" />
+				<reportElement mode="Transparent" x="30" y="310" width="145" height="145" uuid="6823a4fa-91c9-4fd1-b638-2a1dd6a9588a"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem5}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link5}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="190" y="310" width="145" height="145" />
+				<reportElement mode="Transparent" x="190" y="310" width="145" height="145" uuid="6b5d28d2-bda8-4de3-9828-7be86b9b1194"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem6}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link6}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="350" y="310" width="145" height="145" />
+				<reportElement mode="Transparent" x="350" y="310" width="145" height="145" uuid="1d0186ea-26b1-4304-b0ab-ca79f10a55ea"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem7}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link7}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="510" y="310" width="145" height="145" />
+				<reportElement mode="Transparent" x="510" y="310" width="145" height="145" uuid="f22b7502-9a38-44de-89ce-e9cb493f65bd"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem8}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link8}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="30" y="430" width="145" height="145" />
+				<reportElement mode="Transparent" x="30" y="430" width="145" height="145" uuid="d655c145-fa8d-4e33-a63c-981ad1cec618"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem9}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link9}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="190" y="430" width="145" height="145" />
+				<reportElement mode="Transparent" x="190" y="430" width="145" height="145" uuid="b3522448-d232-4061-8321-44dd85329d01"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem10}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link10}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="350" y="430" width="145" height="145" />
+				<reportElement mode="Transparent" x="350" y="430" width="145" height="145" uuid="26f649ac-d49b-4dfd-b1e3-ea00eb3262e9"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem11}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link11}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="510" y="430" width="145" height="145" />
+				<reportElement mode="Transparent" x="510" y="430" width="145" height="145" uuid="c7446472-7742-4cad-8dc7-afada5da488c"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem12}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link12}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="30" y="550" width="145" height="145" />
+				<reportElement mode="Transparent" x="30" y="550" width="145" height="145" uuid="f0a19ba1-2840-4826-a615-8904a1fae302"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem13}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link13}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="190" y="550" width="145" height="145" />
+				<reportElement mode="Transparent" x="190" y="550" width="145" height="145" uuid="6fc8fdc8-5643-4b04-8376-ec185af93625"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem14}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link14}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="350" y="550" width="145" height="145" />
+				<reportElement mode="Transparent" x="350" y="550" width="145" height="145" uuid="24390c6a-d7ef-433d-ae7e-355509c3cd48"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem15}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link15}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="510" y="550" width="145" height="145" />
+				<reportElement mode="Transparent" x="510" y="550" width="145" height="145" uuid="e322225e-757c-46a7-ae41-6fec6f6d4eb5"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem16}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link16}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="680" width="145" height="145" uuid="eb8e9d0d-e3ea-43da-989b-5419e716d763"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem17}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link17}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="680" width="145" height="145" uuid="fcd1bb54-03f2-4b6e-be88-ae537fac95d4"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem18}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link18}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="680" width="145" height="145" uuid="176d2cfc-5652-4e01-9759-a5b5809791a1"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem19}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link19}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="680" width="145" height="145" uuid="95e1c070-af87-455b-a4f5-222638cc3676"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_menuacomodacoes_imagem20}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_letspipa_menuacomodacoes_link20}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 	</background>
