@@ -336,6 +336,31 @@ public class TestePipa {
 			}
 			result2.close();
 			
+			
+			
+			
+			// PREENCHIMENTO DO SLIDE DE PREÇOS
+			
+			query = "";
+			statement = connection.prepareStatement(query);
+			result2 = statement.executeQuery();
+			int j = 1;
+			while(result2.next()) {
+				String jAsString = String.valueOf(j);
+				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacoteac").concat(jAsString);
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacotefeminino").concat(jAsString);
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacotemasculino").concat(jAsString);
+				
+				j++;
+			}
+			result2.close();
+			
+			
+			
+			
+			
 			i++;
 		}
 		result.close();
