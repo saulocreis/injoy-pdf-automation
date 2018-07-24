@@ -353,6 +353,9 @@ public class TestePipa {
 				
 				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacotemasculino").concat(jAsString);
 				
+				
+				
+				
 				j++;
 			}
 			result2.close();
