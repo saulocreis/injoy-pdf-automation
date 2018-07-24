@@ -26,18 +26,8 @@
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac6" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino6" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefemininoaereo" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculinoaereo" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
@@ -183,14 +173,14 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino10}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotefemininoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="670" width="98" height="34" uuid="0d0cd5bd-b05a-4ac0-8b11-9c59dc3f9519"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino10}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculinoaereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>
