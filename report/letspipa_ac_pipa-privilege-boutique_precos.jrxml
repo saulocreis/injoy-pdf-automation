@@ -38,10 +38,36 @@
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac10" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino10" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac11" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino11" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino11" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac12" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino12" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino12" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac13" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino13" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino13" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac14" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino14" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino14" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac15" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino15" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino15" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac16" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino16" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino16" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac17" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino17" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino17" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac18" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino18" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino18" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefemininoaereo" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculinoaereo" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
-	<background>
+	<detail>
 		<band height="855">
 			<image>
 				<reportElement x="0" y="0" width="684" height="855" uuid="e73bc60f-55b8-4a5f-9326-a2f26f092871"/>
@@ -263,5 +289,198 @@
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino10}]]></textFieldExpression>
 			</textField>
 		</band>
-	</background>
+		<band height="855">
+			<image>
+				<reportElement x="0" y="0" width="684" height="855" uuid="a7404766-def7-465e-bd59-b71612a6c318"/>
+				<imageExpression><![CDATA["images\\letspipa\\Privilege Boutique - Quartos2.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="815" width="40" height="40" uuid="7da357aa-65ed-476d-ba7c-18abc397e1ba"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="235" width="98" height="34" uuid="6bd9dcaa-9f40-4a5f-9c92-bbd477463222"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacoteac11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="235" width="98" height="34" uuid="175266ad-832b-4cb9-bbd5-fb9904a7818a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="235" width="98" height="34" uuid="b288aa66-3f3c-410c-9558-bc6fb402722a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="274" width="98" height="34" uuid="59ad7ae3-26d4-47cd-8080-5455d9d0f54d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacoteac12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="274" width="98" height="34" uuid="df951a4f-dd64-4106-be6b-6de773f59887"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="274" width="98" height="34" uuid="0526fefb-7b6e-4f9c-ad57-0ce49c4db3ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="310" width="98" height="34" uuid="963cfe9e-1f65-4d31-920a-329f8e3a7958"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacoteac13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="310" width="98" height="34" uuid="aeb52d45-5bf4-4e4c-83c3-fd8fcf8c99c6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="310" width="98" height="34" uuid="fadc2a38-f6e3-43f6-a479-b88c3410e57c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="360" width="98" height="34" uuid="c3972215-551e-43d7-8859-2b46a1d19b84"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacoteac14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="360" width="98" height="34" uuid="9176e866-23e8-47ab-9232-b434182dbad1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="360" width="98" height="34" uuid="f5d558e8-9d1a-46f9-a92f-648359f19343"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="400" width="98" height="34" uuid="88e62191-3386-47d4-bffe-da19312c10e2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacoteac15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="400" width="98" height="34" uuid="99509cc1-9a65-4c31-9460-7637fb0c1ece"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="400" width="98" height="34" uuid="30d04d1d-600c-4775-b374-2bd6845adabf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="440" width="98" height="34" uuid="ff6071e0-152c-4c3c-9dde-445154db98ce"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacoteac16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="440" width="98" height="34" uuid="dfe995fc-1fa5-4f8d-916f-bb317c8f7a2c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="440" width="98" height="34" uuid="89c03c4a-7da0-4373-973a-e86f867ae44b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="500" width="98" height="34" uuid="b39b14d6-1e31-4919-816f-139ea47d61bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacoteac17}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="500" width="98" height="34" uuid="ef2f3010-d4cd-4541-a597-82a40b97381b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino17}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="500" width="98" height="34" uuid="f60eaa86-eb5a-4f4d-a012-22832946d1e2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino17}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="555" width="98" height="34" uuid="038dbe32-4203-4e0f-a435-aa667021f80c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacoteac18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="555" width="98" height="34" uuid="37d321a6-8602-4561-abc3-77ff1b9cb62f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="555" width="98" height="34" uuid="46d8ca2f-771c-4e0b-ac56-c783ad8097b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="670" width="98" height="34" uuid="86da74cb-6cd6-472f-8ba7-089d5b36170b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotefemininoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="670" width="98" height="34" uuid="e394d5e5-3254-4d73-8cbd-7f9f998f9b04"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
 </jasperReport>

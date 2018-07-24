@@ -17,27 +17,8 @@
 	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac3" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino3" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefemininoaereo" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculinoaereo" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
@@ -120,14 +101,14 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino10}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefemininoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="670" width="98" height="34" uuid="5288537e-f485-4719-bfa7-733a4d34f8d0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino10}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculinoaereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

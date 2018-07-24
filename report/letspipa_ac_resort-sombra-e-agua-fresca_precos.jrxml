@@ -14,30 +14,8 @@
 	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac2" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino2" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefemininoaereo" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculinoaereo" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
@@ -99,14 +77,14 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino10}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefemininoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="430" width="98" height="34" uuid="aa806f52-489d-4933-8f98-bc597910b0a5"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino10}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculinoaereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

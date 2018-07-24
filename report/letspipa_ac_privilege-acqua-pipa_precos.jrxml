@@ -36,8 +36,8 @@
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino9" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino9" class="java.lang.String"/>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefemininoaereo" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculinoaereo" class="java.lang.String"/>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
@@ -183,14 +183,14 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino10}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefemininoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="560" width="98" height="34" uuid="a57c4903-cc1c-480b-a2da-e65a0867197e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino10}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculinoaereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>
