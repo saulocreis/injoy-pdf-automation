@@ -46,7 +46,7 @@ public class TestePipa {
 		listaArquivos.add("letspipa_1_reveillon");
 		listaArquivos.add("letspipa_2_pqinjoy");
 		listaArquivos.add("letspipa_3_infovenda");
-		//listaArquivos.add("letspipa_4_acomodacoes");
+		listaArquivos.add("letspipa_4_acomodacoes");
 		listaArquivos.add("letspipa_4_resumopacotes");
 		/* */
 		
@@ -229,7 +229,7 @@ public class TestePipa {
 			String nomeProduto = result.getString("nomeProduto");
 			String slugProduto = result.getString("slugProduto");
 			
-			// letspipa_ac_<slugProduto>_capa_fotos, letspipa_5_ac_<slugProduto>_precos
+			// letspipa_ac_<slugProduto>_capa_fotos, letspipa_ac_<slugProduto>_precos
 			String nomeArquivoCapaFotos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_capa_fotos");
 			String nomeArquivoPrecos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_precos");
 			listaArquivos.add(nomeArquivoCapaFotos);
@@ -340,8 +340,97 @@ public class TestePipa {
 		}
 		result.close();
 		
+		
+		
+		
+		
+		
 		if(i <= MAX_RESULTS) {
 			
+			
+			// EM BREVE
+			query = "SELECT prod.slug as slugPacote, subprod.nome as nomeProduto, subprod.slug as slugProduto" + 
+					"	FROM acomodacao_quarto aq, produto subprod, produto_subproduto ps, produto prod, produto_tipo pt WHERE " + 
+					"	aq.idProduto = subprod.id AND ps.idSubproduto = subprod.id AND ps.idProduto = prod.id AND " + 
+					"   ps.idProduto_Tipo = pt.id AND " + /*
+					+ " AND aq.estoque <= 0 AND " + */
+					"	ps.idProduto IN (" + 
+					"		SELECT id FROM produto WHERE " + 
+					"			idProduto_Status IN (" + 
+					"				SELECT id FROM produto_status WHERE nome IN ('Em Breve')" + 
+					"			) AND " + 
+					"			idProduto_Tipo IN (" + 
+					"				SELECT id FROM produto_tipo WHERE tabela IN ('pacote')" + 
+					"			) AND " + 
+					"			idDe IN (" + 
+					"				SELECT id FROM de WHERE slug IN (?)" + 
+					"			)" + 
+					"	)" + 
+					"GROUP BY subprod.slug " +
+					";";
+			
+			statement = connection.prepareStatement(query);
+			statement.setString(1, SLUG_DE);
+			result = statement.executeQuery();
+			
+			while(result.next() && i <= MAX_RESULTS) {
+				String iAsString = String.valueOf(i);
+				// String slugPacote = result.getString("slugPacote");
+				String nomeProduto = result.getString("nomeProduto");
+				String slugProduto = result.getString("slugProduto");
+				String emBreve = "EM BREVE";
+				
+				String parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
+				System.out.println(parameter + " -> " + slugProduto);
+				parameters.put(parameter, slugProduto);
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_nome").concat(iAsString);
+				System.out.println(parameter + " -> " + nomeProduto);
+				parameters.put(parameter, nomeProduto.toUpperCase());
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacoteac").concat(iAsString);
+				System.out.println(parameter + " -> " + emBreve);
+				parameters.put(parameter, emBreve);
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotefeminino").concat(iAsString);
+				System.out.println(parameter + " -> " + emBreve);
+				parameters.put(parameter, emBreve);
+				
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_pacotemasculino").concat(iAsString);
+				parameters.put(parameter, emBreve);
+				
+				/*
+				parameter = "jr_".concat(SLUG_DE).concat("_resumopacotes_link").concat(iAsString);
+				String linkPacote = injoyLinkDESobre.concat(slugPacote);
+				System.out.println(parameter + " -> " + linkPacote);
+				parameters.put(parameter, linkPacote);
+				*/				
+				
+				query = "SELECT arquivo FROM pdf WHERE slug IN ('jr_"
+						+ SLUG_DE
+						+ "_ac_"
+						+ slugProduto
+						+ "_menu_embreve');"; /*
+						+ "_menu');"; */
+				statement = connection.prepareStatement(query);
+				ResultSet result2 = statement.executeQuery();
+				
+				while(result2.next()) {
+					String arquivo = result2.getString("arquivo");
+					parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_imagem").concat(iAsString);
+					System.out.println(parameter + " -> " + arquivo);
+					parameters.put(parameter, arquivo);
+				}
+				result2.close();			
+				
+				i++;
+			}
+			
+			
+			
+			
+			
+			// ESGOTADOS
 			query = "SELECT prod.slug as slugPacote, subprod.nome as nomeProduto, subprod.slug as slugProduto" + 
 					"	FROM acomodacao_quarto aq, produto subprod, produto_subproduto ps, produto prod, produto_tipo pt WHERE " + 
 					"	aq.idProduto = subprod.id AND ps.idSubproduto = subprod.id AND ps.idProduto = prod.id AND " + 
@@ -418,6 +507,15 @@ public class TestePipa {
 				
 				i++;
 			}
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			while(i <= MAX_RESULTS) {
 				String iAsString = String.valueOf(i);
