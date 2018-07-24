@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_hotel-da-pipa_precos" pageWidth="684" pageHeight="990" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="aad2fdf5-7456-4aba-ac64-5a2e8915654a">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="990">
+			<image>
+				<reportElement x="0" y="0" width="684" height="990" uuid="621f581c-1f26-44bb-9ab7-565b809a63cf"/>
+				<imageExpression><![CDATA["images\\letspipa\\Hotel da Pipa - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="950" width="40" height="40" uuid="68d67291-0863-4f89-b7b5-40089a18df96"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="290" width="98" height="34" uuid="8d334b21-31ae-4bec-be6c-6ffb616d2d62"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="290" width="98" height="34" uuid="ff04ae13-eb70-4a95-b784-ce62bfa519f8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="290" width="98" height="34" uuid="a8383a57-8096-4b4b-b7ab-2e53d7ce7424"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="420" width="98" height="34" uuid="b09d0a28-1e5f-45db-a72a-e8a8e76c543e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="420" width="98" height="34" uuid="2f70af42-455b-43b9-9ad4-ad6639e2c4ec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="420" width="98" height="34" uuid="f7a2643a-f7dd-4066-ba3c-73dc82004e79"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="535" width="98" height="34" uuid="386b61e5-5e28-4dba-b404-b2b22c79e323"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="535" width="98" height="34" uuid="146d2b9f-de6d-4a17-b65c-0c26fcaec0b7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="535" width="98" height="34" uuid="e81d36c5-2b36-472e-a68d-464288673766"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="660" width="98" height="34" uuid="75aeb33b-e86a-4a64-b950-15eff3246764"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="660" width="98" height="34" uuid="72a6068a-95a0-405a-a7e4-beaf9a358fbb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefeminino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="660" width="98" height="34" uuid="1cc3a8f0-3655-48f2-a3bd-c375a0bb7034"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="805" width="98" height="34" uuid="3bf9d9cc-eeb4-4de6-8757-eeb7341e123f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="805" width="98" height="34" uuid="cc02b30b-fd32-43c6-b706-c517ee632069"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

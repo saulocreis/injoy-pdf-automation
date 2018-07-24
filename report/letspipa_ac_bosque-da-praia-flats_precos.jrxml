@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_bosque-da-praia-flats_precos" pageWidth="684" pageHeight="816" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="c176ba12-c148-4fac-bcf3-bbe451967c52">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="816">
+			<image>
+				<reportElement x="0" y="0" width="684" height="816" uuid="cf2bfee0-e6df-447b-970e-f7a6912b0f05"/>
+				<imageExpression><![CDATA["images\\letspipa\\Bosque da Praia - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="776" width="40" height="40" uuid="490a88cf-db2f-496e-bc80-ce1ca5e7f956"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="270" width="98" height="34" uuid="137e51b2-41e1-45d1-b87e-73aedf5127a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="270" width="98" height="34" uuid="d541d1cc-7b27-4894-aaa8-52d839ef1cff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="270" width="98" height="34" uuid="09ed362f-fd34-437e-bcdd-37383132d3ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="320" width="98" height="34" uuid="29e5b215-c064-43a9-bb53-8dbc7c7cc14e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="320" width="98" height="34" uuid="f691837d-d394-4851-94cc-b4d293c76f92"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="320" width="98" height="34" uuid="3976e823-7992-41a6-95c7-0a8ef2b4a4c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="390" width="98" height="34" uuid="16149e0d-c6da-444b-9750-106c0335e822"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="390" width="98" height="34" uuid="d83858c2-4b94-4b87-bf71-1a75f5833ebe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="390" width="98" height="34" uuid="7fe8ce81-1a3f-47eb-a58a-a84aa30a989f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="450" width="98" height="34" uuid="48154c69-a58f-4dc9-b57a-67392fe75a68"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="450" width="98" height="34" uuid="0deea73f-79a3-471f-9d70-734a4658eb9d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="450" width="98" height="34" uuid="bbf06e5d-22f0-4b65-8496-1809e96c5e14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="505" width="98" height="34" uuid="d31a4bc4-8e8c-4e6b-ade2-681d6190eac1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="505" width="98" height="34" uuid="832729bf-8586-453a-9955-94fa60f7c212"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="505" width="98" height="34" uuid="f7fa3b93-cfa9-48de-9687-b2c1b105dc32"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="550" width="98" height="34" uuid="50102a20-85c4-47b6-8052-ca87d4b83bfc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="550" width="98" height="34" uuid="7959c05f-e3f4-40d5-b11f-68f98684089d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="550" width="98" height="34" uuid="28f3c9f2-954a-4241-99cc-0e5094cf3cf2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="590" width="98" height="34" uuid="d4f84c1c-a4cb-4525-8c29-a1f5ca9dcbcf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="590" width="98" height="34" uuid="c7f577ac-1f5e-4392-b222-3555efd3e509"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="590" width="98" height="34" uuid="817c9431-495d-49cc-9f9c-35c58794ad88"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="630" width="98" height="34" uuid="d5d91cbe-ba83-4d81-9ba0-0314d38dfab6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="630" width="98" height="34" uuid="999b1d02-a270-48bb-927d-9378f289d41c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="630" width="98" height="34" uuid="554091b1-43f5-4472-b857-35cdb120af0b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="670" width="98" height="34" uuid="5edfd29f-1ddb-4cfa-9bcc-231a7e9753dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="670" width="98" height="34" uuid="93cb4fdd-2787-4d18-81ad-1e2dac4909ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="670" width="98" height="34" uuid="9ecb0ec2-ea8e-4b3c-a764-8e167052376e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="715" width="98" height="34" uuid="1f0cf462-6009-4c1f-81ca-78b8dab8e84c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacoteac10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="715" width="98" height="34" uuid="9e8d7e9c-9d51-4053-9ada-1efcdcd251d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="715" width="98" height="34" uuid="c2347b95-dbe6-4707-9a2b-eb406b681bb3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

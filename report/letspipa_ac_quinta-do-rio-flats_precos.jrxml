@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_quinta-do-rio-flats_precos" pageWidth="684" pageHeight="989" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="f3f4f56c-94da-4fe6-a0b6-eb02b2d48276">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="989">
+			<image>
+				<reportElement x="0" y="0" width="684" height="989" uuid="045e79b0-048b-48d9-a264-53b9e6d415a6"/>
+				<imageExpression><![CDATA["images\\letspipa\\Quinta do Rio - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="940" width="40" height="40" uuid="104860ac-4ad2-4f62-aad3-05f87e46d25e"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="250" width="98" height="34" uuid="7d8ead71-7310-4c2d-928b-b45349fd8ff2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="250" width="98" height="34" uuid="fadb3dc5-6570-46b0-922b-f1d1ad4eef22"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="250" width="98" height="34" uuid="335fd954-6da6-4b73-9e64-c44408e2b170"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="300" width="98" height="34" uuid="4ce6e7d6-e758-438d-b667-77fe57ce7012"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="300" width="98" height="34" uuid="8537f1a6-5b5a-4279-b27e-e045559dad71"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="300" width="98" height="34" uuid="275acdda-220b-4e9d-913f-2fe61e71164f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="380" width="98" height="34" uuid="95d208fe-42f8-49eb-a9a5-840d19295b19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="380" width="98" height="34" uuid="87034512-78b9-47d1-b0e7-30eaf04a6ae9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="380" width="98" height="34" uuid="2300f1ac-bd73-4ac8-bc15-f48ebd2c3bff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="430" width="98" height="34" uuid="92e06da7-c59d-450c-9eae-056a77ea6fa1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="430" width="98" height="34" uuid="cd73f7c4-5859-46bd-9324-180e8e431ea2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="430" width="98" height="34" uuid="76f496e3-3ae9-47ef-a171-627d36c309d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="490" width="98" height="34" uuid="ce4fecb3-3c5c-4ccc-b536-5ac6e657b2ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="490" width="98" height="34" uuid="3ac08020-3df2-4814-8942-f188b5543aa4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="490" width="98" height="34" uuid="ec3d2b17-514d-42a0-8909-e03344ad97ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="535" width="98" height="34" uuid="2a0e90f5-38ca-4093-b787-406585e07315"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="535" width="98" height="34" uuid="7663e795-171d-4c5f-b66d-646f108599ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="535" width="98" height="34" uuid="b80ed7a7-5f3e-42e9-ac2f-6be189c38753"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="575" width="98" height="34" uuid="2b74e916-b043-457f-8c8a-c20569c52d37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="575" width="98" height="34" uuid="381be611-b591-44ed-b015-feed008dd4c3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="575" width="98" height="34" uuid="e0d8768b-910f-4252-933d-01bfce405286"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="620" width="98" height="34" uuid="01e949d9-01da-452c-83ae-3d1493be1fd2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="620" width="98" height="34" uuid="a3c493aa-0eb8-4d0f-b5f5-47cb17909665"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="620" width="98" height="34" uuid="3b9f0bc4-419e-4281-9ecb-e4d77f553a59"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="660" width="98" height="34" uuid="aa74d352-e3c1-49d9-a48f-3b6de0a049e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="660" width="98" height="34" uuid="5987cabc-2f8b-4c85-a204-0b5145bd68b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="660" width="98" height="34" uuid="34d111e2-35c8-4228-a91d-2998a128e5b5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="700" width="98" height="34" uuid="968c6a8a-c95e-4202-ba02-0fd5291bddc5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacoteac10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="700" width="98" height="34" uuid="4a886a5b-483d-4d14-9710-7763cd6bbe21"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="700" width="98" height="34" uuid="1300947e-bff9-4f14-9275-c9287f39424c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="800" width="98" height="34" uuid="f7c5cdd7-b3db-4030-acba-0a9cc4939817"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotefeminino11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="800" width="98" height="34" uuid="943f5bcf-7b09-4d35-99c3-81c54ddd7eec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculino11}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

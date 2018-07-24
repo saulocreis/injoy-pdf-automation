@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_vila-da-pipa-suites_precos" pageWidth="684" pageHeight="855" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="639dddc9-5b01-442a-a139-96fa99267fb7">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="855">
+			<image>
+				<reportElement x="0" y="0" width="684" height="855" uuid="654c4208-8d09-49cf-8b0d-3773c935dbed"/>
+				<imageExpression><![CDATA["images\\letspipa\\Villa da Pipa Suítes - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="815" width="40" height="40" uuid="36fb9f91-5bac-4fe0-933c-e0d9b216d1ff"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="245" width="98" height="34" uuid="9ab7dd58-b312-4cf1-9e4d-3f08db4f5cd3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="245" width="98" height="34" uuid="55f7fc88-33cc-418a-b593-62cd09184f0d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="245" width="98" height="34" uuid="b14e346d-0f2e-4570-97e6-9fc473324585"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="300" width="98" height="34" uuid="c227457a-e582-44de-9d7f-c70abfa16705"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="300" width="98" height="34" uuid="b9c0bcef-49af-4565-b434-cce43f33584a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="300" width="98" height="34" uuid="5d19b8d2-c28c-45bc-aab5-97e73a018053"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="370" width="98" height="34" uuid="03341f56-9f8b-48a4-926f-dbc6193d09e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="370" width="98" height="34" uuid="01af4af2-bdb9-4beb-a262-64bb5f815962"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="370" width="98" height="34" uuid="d0ab1c04-aa09-443f-9216-658ca9a6ccd6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="430" width="98" height="34" uuid="7c9d0788-d81a-4650-855a-56372f539c57"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="430" width="98" height="34" uuid="c52c6666-5764-4f1e-b940-8abde410facb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="430" width="98" height="34" uuid="fc2f600e-3311-4661-abf2-3961f5b79c05"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="500" width="98" height="34" uuid="0df0c8f5-e2fb-4d3d-b91f-a7817bd08ba3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacoteac5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="500" width="98" height="34" uuid="905461ad-5844-46a6-addc-6c3b34753be5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="500" width="98" height="34" uuid="7b7604c3-022c-47fb-ab6d-b6d19635a074"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="550" width="98" height="34" uuid="9bcced8c-e8aa-4b55-b0d5-ef3183d99fed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacoteac6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="550" width="98" height="34" uuid="664aad6f-8235-4649-84f9-0dd679b5b46c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="550" width="98" height="34" uuid="ca28f642-fe7d-467d-9861-d43c7b89b4ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="670" width="98" height="34" uuid="e56f139b-7695-49e9-8f85-7bb3d8ac978d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="670" width="98" height="34" uuid="0d0cd5bd-b05a-4ac0-8b11-9c59dc3f9519"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

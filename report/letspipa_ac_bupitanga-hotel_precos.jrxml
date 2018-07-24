@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_bupitanga-hotel_precos" pageWidth="684" pageHeight="855" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="92ef1ae5-f796-4719-bef9-4e1ee87da1e5">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="855">
+			<image>
+				<reportElement x="0" y="0" width="684" height="855" uuid="d235b5d7-d30f-4a3c-9594-c9b8613ccb70"/>
+				<imageExpression><![CDATA["images\\letspipa\\Bupitanga - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="810" width="40" height="40" uuid="09d142cc-2c36-49e4-ae2c-44173e266bdc"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="270" width="98" height="34" uuid="48eef1a2-774c-4da1-b1dd-2ef66ac6d429"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="270" width="98" height="34" uuid="8218352b-3015-4cad-ba1f-e6ec2db2b5ee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="270" width="98" height="34" uuid="0adb71a0-9919-4531-a451-a38de318ea34"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="380" width="98" height="34" uuid="17c80f97-8ad8-4a08-b097-dcab114097ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="380" width="98" height="34" uuid="4de000c5-95af-4e6a-aab0-a7de93e74919"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="380" width="98" height="34" uuid="5eea6b43-61ea-4692-a087-3420070146d4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="430" width="98" height="34" uuid="1bd7682c-f089-4d9c-a231-9f778a1438fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="430" width="98" height="34" uuid="d28ffe1d-66a6-40e2-a97f-324bf78df6e3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="430" width="98" height="34" uuid="29f48c10-a0c5-4a63-98d9-7033eda64ae0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="490" width="98" height="34" uuid="9eb08b12-00c4-45cf-a1db-c3a2f67aedcd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="490" width="98" height="34" uuid="d69a7726-90a6-442d-8692-d34e6874f3bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="490" width="98" height="34" uuid="7e9e127f-3f1f-4b16-8866-5b8129e9a4ba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="530" width="98" height="34" uuid="7744fea3-9c72-4611-aac7-389e79cae9c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="530" width="98" height="34" uuid="f6c24a3a-352a-4860-a1fc-a0efa8e1ffa7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="530" width="98" height="34" uuid="94d29b53-d981-4e92-ac2b-615645a75871"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="570" width="98" height="34" uuid="60b6c44d-293b-4e92-a22f-fb5e3b233724"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="570" width="98" height="34" uuid="b0a30b94-8be4-415f-b5c1-d9bf1029e7fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="570" width="98" height="34" uuid="f8fc91c8-5007-4477-ae81-765154fd2439"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="670" width="98" height="34" uuid="31b43246-01ad-4cfc-8dfc-3f7cf6c915bc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="670" width="98" height="34" uuid="88d073cc-cbf3-49d9-850f-29c106fdf1ab"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

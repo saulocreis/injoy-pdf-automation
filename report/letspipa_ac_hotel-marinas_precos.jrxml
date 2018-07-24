@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_hotel-marinas_precos" pageWidth="684" pageHeight="989" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="2d818975-a234-4a7e-a454-6eccd45427db">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-marinas_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-marinas_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="989">
+			<image>
+				<reportElement x="0" y="0" width="684" height="989" uuid="dd107472-18b5-4bf8-bc90-38d487a9a88a"/>
+				<imageExpression><![CDATA["images\\letspipa\\Marinas - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="940" width="40" height="40" uuid="264b90b1-f4eb-4bf3-b4b2-9ce4c277eb90"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="250" width="98" height="34" uuid="0f2f345d-8f7a-4730-b8e7-54311bba37ff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="250" width="98" height="34" uuid="5e4c5b6b-1e5a-4a08-8a08-f68274e7eab3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="250" width="98" height="34" uuid="cc094582-86b8-4af1-b39b-4247edbc7795"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="300" width="98" height="34" uuid="a609e360-3db5-4faa-88ab-93eab701dfb4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="300" width="98" height="34" uuid="36e61653-7dd7-469d-8e59-46783368f9d4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="300" width="98" height="34" uuid="6f21af0f-9aee-4d9b-8812-0aedab49ecae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="375" width="98" height="34" uuid="8681c9be-21b7-44da-bed0-d73651596d53"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="375" width="98" height="34" uuid="e933631c-217b-4c80-a786-37bda38c1108"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="375" width="98" height="34" uuid="9048380b-a2be-405f-8842-b8044900e057"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="430" width="98" height="34" uuid="448a539c-b5ba-4689-a2ef-215e170dd48e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="430" width="98" height="34" uuid="51c5870b-15be-42f4-802b-6f8bbfd6330d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotefeminino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="430" width="98" height="34" uuid="bb51ae98-5d82-4f95-bf72-c39101cbd8e6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="505" width="98" height="34" uuid="02fd394c-133a-4353-8a35-2be4b9e4893a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacoteac5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="505" width="98" height="34" uuid="97cb5475-40e4-4e03-9a17-0cfeffd0d152"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotefeminino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="505" width="98" height="34" uuid="d65e00a4-9bf2-4c8a-bc29-99603146ea2d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="556" width="98" height="34" uuid="3ff2f18e-2f7e-4505-b454-88b061549b40"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacoteac6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="556" width="98" height="34" uuid="aaa11904-d506-4c5c-8f71-4fa704a0f5db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotefeminino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="556" width="98" height="34" uuid="d357632a-2b02-4ad1-9d6d-d86a8046142b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculino6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="630" width="98" height="34" uuid="229c0aab-dc6b-4d01-9237-4d4c93cd8453"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacoteac7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="630" width="98" height="34" uuid="8e7bf5c8-aa38-430c-902e-75d76325f67c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotefeminino7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="630" width="98" height="34" uuid="ef1153d2-5836-4bf1-bd49-1fcafe65d619"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculino7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="685" width="98" height="34" uuid="9564ced1-7e02-4053-b17c-fcad226ffd4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacoteac8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="685" width="98" height="34" uuid="e4a4e544-0342-41e5-a143-f3892c6aa72c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotefeminino8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="685" width="98" height="34" uuid="fff2a152-24bf-481b-8223-83c5614fadfe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculino8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="800" width="98" height="34" uuid="ff3e199c-826c-4711-95c0-cd825c6c0776"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="800" width="98" height="34" uuid="ed24a2b9-1ed1-4a60-93cb-54def8df6f04"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_hotel-casablanca_precos" pageWidth="684" pageHeight="759" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="2208e80b-4ef3-4faf-aab9-0509bf17ab57">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="759">
+			<image>
+				<reportElement x="0" y="0" width="684" height="759" uuid="78d450a3-2471-4860-81ae-41c68b1087d7"/>
+				<imageExpression><![CDATA["images\\letspipa\\Casablanca - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="715" width="40" height="40" uuid="6c3f5615-bb7b-4ba2-8c70-8bfc97fd84b0"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="300" width="98" height="34" uuid="8b944495-d127-4b26-b2a3-594347ec1105"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="300" width="98" height="34" uuid="89eb3a19-a8de-461e-b8af-f5af05007239"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="300" width="98" height="34" uuid="98728d97-1ced-4ec6-beb6-a188752eb445"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="420" width="98" height="34" uuid="c873478d-9c90-48fd-92c7-aecd56351c49"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="420" width="98" height="34" uuid="91e15931-fbe1-4a67-bb56-b446efb17825"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="420" width="98" height="34" uuid="9ce9a75a-7c63-43b0-994b-bb2294d62756"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="560" width="98" height="34" uuid="1ea60c3d-74ea-4a4f-b847-f3857933a625"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="560" width="98" height="34" uuid="f38ad19d-da6e-4186-9f80-d51c7ae4ad6d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_madeiro-beach-hotel_precos" pageWidth="684" pageHeight="988" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="6832b33f-d3c4-46f4-8c64-0c7304e34d4f">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="988">
+			<image>
+				<reportElement x="0" y="0" width="684" height="988" uuid="9f172286-b036-4368-8150-63a571f59040"/>
+				<imageExpression><![CDATA["images\\letspipa\\Madeiro Beach - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="945" width="40" height="40" uuid="dafdcc56-f1d2-4441-9e05-cf54afe51034"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="280" width="98" height="34" uuid="4d47a749-3fae-4c91-9cda-be6b5012040e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="280" width="98" height="34" uuid="af39a982-731d-446f-ba62-83397509289c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="280" width="98" height="34" uuid="350dd1bd-f0fd-4ea3-8e89-1a10fd4df3d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="400" width="98" height="34" uuid="bf833d5d-5a71-40c1-92f1-c8b764457d6c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="400" width="98" height="34" uuid="b5e73b3f-f024-48df-882c-8d177386b88d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="400" width="98" height="34" uuid="a980f7a6-fed6-4489-a324-17e73adcc924"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="530" width="98" height="34" uuid="7fa16db0-fad5-446a-8e09-3c7e25e06675"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="530" width="98" height="34" uuid="94cf8e5c-8c7e-482a-b485-039be94729b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="530" width="98" height="34" uuid="9c20f913-4368-4a98-a329-9e6bece1b553"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="660" width="98" height="34" uuid="47aeef01-e542-4b22-98a2-c9f65fdeef74"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="660" width="98" height="34" uuid="bd28b5ca-2358-497e-a0ca-0dfcec1e2bbe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="660" width="98" height="34" uuid="8fb37653-ef43-41df-95e5-ae06e3a9efb6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="800" width="98" height="34" uuid="93e9d7fa-3394-44a4-907d-49fc14e7c682"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="800" width="98" height="34" uuid="e9454cf0-2c2b-4066-b15d-5c1ac2d88f46"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

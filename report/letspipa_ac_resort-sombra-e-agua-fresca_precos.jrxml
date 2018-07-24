@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_resort-sombra-e-agua-fresca_precos" pageWidth="684" pageHeight="644" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="97621b2e-291b-4895-974f-312379fb912c">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="644">
+			<image>
+				<reportElement x="0" y="0" width="684" height="644" uuid="7d89989d-3c50-4788-b784-d1fb060583ba"/>
+				<imageExpression><![CDATA["images\\letspipa\\Resort Sombra e Água Fresca - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="590" width="40" height="40" uuid="71fd8e00-6711-4f81-9788-7a6dfa4c9e92"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="260" width="98" height="34" uuid="75708acb-0941-4c60-8ce6-77aebb3dee65"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="260" width="98" height="34" uuid="b2a90c7e-c9c3-4340-b13a-5773a425eac8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="260" width="98" height="34" uuid="57e0ccf0-8a86-4531-8b28-d5e0093b8498"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="320" width="98" height="34" uuid="8fb06859-bc95-42ee-bf9d-8da1fa122094"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="320" width="98" height="34" uuid="6f0560be-5b57-43fa-929c-1fa5db3c140c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="320" width="98" height="34" uuid="97fc7462-0f16-4d49-a51c-ce8c054a0517"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="430" width="98" height="34" uuid="dffb31df-b923-4095-96cd-8224910dc121"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="430" width="98" height="34" uuid="aa806f52-489d-4933-8f98-bc597910b0a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

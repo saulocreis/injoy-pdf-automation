@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_hotel-tibau-lagoa_precos" pageWidth="684" pageHeight="856" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="a7293006-1f61-4df0-b858-505449215d34">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="856">
+			<image>
+				<reportElement x="0" y="0" width="684" height="856" uuid="2937148d-1f72-4f34-bb13-4c96f3a5c3e4"/>
+				<imageExpression><![CDATA["images\\letspipa\\Tibau Lagoa - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="816" width="40" height="40" uuid="d41857b1-9526-4a7a-9ea0-5e21a01e5941"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="270" width="98" height="34" uuid="086b1cea-0e32-4d71-abb1-3433113587ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="270" width="98" height="34" uuid="85974cc3-cd57-45f3-91ee-23eeb068b948"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="270" width="98" height="34" uuid="af1bb931-51ac-4377-8a14-7c13e6793d1b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="400" width="98" height="34" uuid="26758320-31eb-4f3a-a5d3-1f89366f560d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="400" width="98" height="34" uuid="5b9e4168-7da2-4be8-b1e3-429b1d11674f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="400" width="98" height="34" uuid="41bad2b9-7f5b-4458-870b-37c924b0e453"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="520" width="98" height="34" uuid="cc37f961-4d2c-48c9-948a-47ab7ca536d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="520" width="98" height="34" uuid="f36792e3-9774-479c-929f-ec7b4322857f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="520" width="98" height="34" uuid="fa44cfc0-a595-43a1-853b-42cc0f6f8620"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="670" width="98" height="34" uuid="09fc1488-6ce7-4998-85f2-b80dae947d41"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="670" width="98" height="34" uuid="5288537e-f485-4719-bfa7-733a4d34f8d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino10}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

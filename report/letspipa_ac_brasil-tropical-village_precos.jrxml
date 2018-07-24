@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_brasil-tropical-village_precos" pageWidth="684" pageHeight="757" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="60696324-6c37-478d-ba02-1a8a3ff7eef5">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_precos" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino1" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino2" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino3" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino4" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino5" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino6" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino7" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino8" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino9" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino10" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino10" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="757">
+			<image>
+				<reportElement x="0" y="0" width="684" height="757" uuid="e0b51629-25a0-4319-b5f3-0df87e3b8999"/>
+				<imageExpression><![CDATA["images\\letspipa\\Brasil Tropical Village - Quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="715" width="40" height="40" uuid="ef67303b-585e-4b59-a544-9c4aa13637d1"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="270" width="98" height="34" uuid="a4b2ae2a-c05f-4b1e-9408-1c8de8869daa"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="270" width="98" height="34" uuid="aed3309d-3363-49e7-91d5-ad070ef8bbad"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="270" width="98" height="34" uuid="b76142e9-35ae-40b4-a2ae-847b0087ee50"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="400" width="98" height="34" uuid="ac7007d9-11be-47bc-922e-00b758098654"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="400" width="98" height="34" uuid="3c7fe5cc-688d-4358-8694-0fe17d425cef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="400" width="98" height="34" uuid="e5a09687-660e-473b-af8b-2edcd5dac1d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="560" width="98" height="34" uuid="0cfe7cdf-2cfb-4bda-b57e-87a98bdcab4d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_pacotefeminino5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="560" width="98" height="34" uuid="21d53d7a-1f6f-414e-bc51-f8ecbe4141ef"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_pacotemasculino5}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>
