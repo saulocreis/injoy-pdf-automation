@@ -7,15 +7,33 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_precos" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefemininoaereo" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculinoaereo" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacoteac2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefeminino2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculino2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotefemininoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_pacotemasculinoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>

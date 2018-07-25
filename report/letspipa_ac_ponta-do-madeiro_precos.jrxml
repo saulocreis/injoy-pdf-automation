@@ -1,43 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_ponta-do-madeiro_precos" pageWidth="684" pageHeight="988" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="bf8a8d0c-7826-46b5-8ee1-6e8ed3192797">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_precos" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefemininoaereo" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculinoaereo" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac_standard_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_standard_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_standard_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac_standard_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_standard_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_standard_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac_luxo_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_luxo_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_luxo_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac_luxo_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_luxo_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_luxo_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac_master_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_master_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_master_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac_super_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_super_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_super_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac_super_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_super_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_super_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac_super_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_super_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_super_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotefemininoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacotemasculinoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
@@ -57,168 +108,168 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac_standard_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="250" width="98" height="34" uuid="30c460a6-aac1-4e22-bc8b-331f5c1a8e99"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_standard_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="250" width="98" height="34" uuid="d5fe0b1e-4dd4-45c0-9225-191346127feb"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_standard_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="300" width="98" height="34" uuid="36962402-347a-4e4a-867f-b0e0e82d906a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac2}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac_standard_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="300" width="98" height="34" uuid="f91bec1e-46fc-4f32-99f1-31e2c6bdab30"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino2}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_standard_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="300" width="98" height="34" uuid="d843c885-c05b-4546-9dbc-ba5802c300bc"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino2}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_standard_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="380" width="98" height="34" uuid="046cb494-3586-480f-aeec-9b14f518ac56"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac3}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac_luxo_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="380" width="98" height="34" uuid="da4e68ac-8e97-4ff9-ab4b-638e49bfe6f2"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino3}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_luxo_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="380" width="98" height="34" uuid="5298cb16-5f61-4b78-8701-f1a3ce71a0ea"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino3}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_luxo_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="430" width="98" height="34" uuid="63eb5ade-934b-440b-8fd4-b9479ae3e8af"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac4}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac_luxo_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="430" width="98" height="34" uuid="6ccdaac5-c6f7-49fe-a502-ebfaa89e56f1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino4}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_luxo_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="430" width="98" height="34" uuid="cdfc0702-4685-4196-9712-4d1f62ec02f6"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino4}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_luxo_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="530" width="98" height="34" uuid="462ecb42-f30b-4579-9113-4990e813d3d1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac5}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac_master_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="530" width="98" height="34" uuid="6001fd42-72d9-4f45-8f7d-979d98261113"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino5}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_master_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="530" width="98" height="34" uuid="cd7b763e-ce87-42ad-948c-394d00511e36"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino5}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_master_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="610" width="98" height="34" uuid="b3c92343-367b-4029-b0c4-3d97b261ec22"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac6}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac_super_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="610" width="98" height="34" uuid="50dbc9c2-b1d2-46d7-b33a-b40b1ae1de61"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino6}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_super_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="610" width="98" height="34" uuid="4bceefaf-cc7f-41e6-b42b-738d79a8516a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino6}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_super_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="650" width="98" height="34" uuid="4f11c47d-1e39-40b7-af5e-3e51cb5ac818"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac7}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac_super_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="650" width="98" height="34" uuid="67c98b60-0a35-4a05-8051-fc9e832b51b4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino7}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_super_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="650" width="98" height="34" uuid="53d3d8dd-da29-40ea-b67e-31e19861b6a2"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino7}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_super_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="690" width="98" height="34" uuid="4896cc5d-b497-453e-afc0-761ebfffb9b8"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac8}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacoteac_super_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="690" width="98" height="34" uuid="a2255a70-9c18-42b3-b1f3-de89edde5c6a"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino8}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotefeminino_super_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="690" width="98" height="34" uuid="00312187-ede4-4be6-9c72-cd29f759e98f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino8}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculino_super_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="800" width="98" height="34" uuid="85cea1e1-1baf-4235-9f18-f0810d64bfaa"/>

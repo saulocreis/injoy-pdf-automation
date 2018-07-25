@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_privilege-acqua-pipa_capa_fotos" pageWidth="684" pageHeight="514" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_privilege-acqua-pipa_capa_fotos" pageWidth="684" pageHeight="514" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="0b23eba7-0729-451d-883a-ee6209a87c8b">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
@@ -28,22 +28,22 @@
 	<detail>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="1164420e-a80b-4640-a692-0f52f2cbbf72"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_privilege-acqua-pipa_capa}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_anchor}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" />
+				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="211fb913-2a10-495f-9733-48f556e3db34"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.privilege-acqua-pipa.sobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="fb9c0024-58d0-4a17-a9e9-8a9686e7e512"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
-				<reportElement x="600" y="430" width="84" height="34" forecolor="#FFFFFF" />
+				<reportElement x="600" y="432" width="84" height="34" forecolor="#FFFFFF" uuid="1154580d-405f-4072-9100-34d9607b9cad"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
@@ -52,22 +52,22 @@
 		</band>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="555f620c-14e2-44b9-ad49-555f7414d8ed"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_privilege-acqua-pipa_fotos1}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="831e0ac4-edcc-44d0-a8de-3acdfab4e77d"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="9acdb16b-b968-4b60-a390-09e2de9c3187"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_privilege-acqua-pipa_fotos2}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="d3e2930c-132c-4f8b-bfc5-49919c9850dd"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>

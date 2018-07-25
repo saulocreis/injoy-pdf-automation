@@ -7,15 +7,33 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_hotel-casablanca_precos" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefemininoaereo" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculinoaereo" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac_chalé_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino_chalé_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino_chalé_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacoteac_chalé_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefeminino_chalé_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculino_chalé_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotefemininoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-casablanca_pacotemasculinoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
@@ -35,42 +53,42 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacoteac1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacoteac_chalé_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="300" width="98" height="34" uuid="89eb3a19-a8de-461e-b8af-f5af05007239"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotefeminino1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotefeminino_chalé_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="300" width="98" height="34" uuid="98728d97-1ced-4ec6-beb6-a188752eb445"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotemasculino1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotemasculino_chalé_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="420" width="98" height="34" uuid="c873478d-9c90-48fd-92c7-aecd56351c49"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacoteac2}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacoteac_chalé_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="420" width="98" height="34" uuid="91e15931-fbe1-4a67-bb56-b446efb17825"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotefeminino2}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotefeminino_chalé_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="420" width="98" height="34" uuid="9ce9a75a-7c63-43b0-994b-bb2294d62756"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotemasculino2}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-casablanca_pacotemasculino_chalé_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="560" width="98" height="34" uuid="1ea60c3d-74ea-4a4f-b847-f3857933a625"/>

@@ -7,37 +7,69 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_precos" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefemininoaereo" class="java.lang.String"/>
-	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculinoaereo" class="java.lang.String"/>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_standard_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_standard_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_standard_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_standard_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_standard_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_standard_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_standard_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_standard_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_standard_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_bangalô_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_bangalô_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_bangalô_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_bangalô_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_bangalô_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_bangalô_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_bangalô_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_bangalô_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_bangalô_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefemininoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculinoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
@@ -57,126 +89,126 @@
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac_standard_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="250" width="98" height="34" uuid="38e8a03e-1b4a-4dff-86a7-9addba62c6c4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_standard_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="250" width="98" height="34" uuid="d4d77bbd-9ed3-4177-b72f-bc23ee2832ad"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino1}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_standard_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="290" width="98" height="34" uuid="9db127c6-227a-4daf-994a-560312904572"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac2}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac_standard_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="290" width="98" height="34" uuid="78b0d7d6-5b28-4144-8d96-cedbbdb9df79"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino2}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_standard_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="290" width="98" height="34" uuid="6083d43c-c91a-40fc-a66b-a5e789e61e0d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino2}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_standard_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="330" width="98" height="34" uuid="37461dce-d753-4ca0-92ff-08851550b001"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac3}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac_standard_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="330" width="98" height="34" uuid="6d3baf91-dac7-4fa7-bd5b-005c6c0ac659"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino3}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_standard_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="330" width="98" height="34" uuid="19c81bbd-9e96-4120-a626-17959a2b225b"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino3}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_standard_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="380" width="98" height="34" uuid="5d0d3480-7d97-4d4c-a498-7e6e45d0d1ed"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac4}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac_bangalô_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="380" width="98" height="34" uuid="037cda0a-c629-4134-8d22-e80b833fa956"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino4}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_bangalô_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="380" width="98" height="34" uuid="2e8cc8e0-eba7-424b-8a3f-f25d936ac6ea"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino4}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_bangalô_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="420" width="98" height="34" uuid="a0d2a6f0-14b4-4dc8-ac60-5f66dac46c9f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac5}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac_bangalô_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="420" width="98" height="34" uuid="4cd2f498-bab6-4deb-8d64-58f46b852d86"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino5}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_bangalô_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="420" width="98" height="34" uuid="a56e8c5c-af16-49c9-a450-b692ec943732"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino5}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_bangalô_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="460" width="98" height="34" uuid="1b341cb6-3fa8-4982-a779-320782ced54f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac6}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacoteac_bangalô_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="460" width="98" height="34" uuid="16312255-9782-48c0-82ac-d84ca07326aa"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino6}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_bangalô_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="460" width="98" height="34" uuid="d555240f-2e36-40df-bc91-ec49745ef9ae"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino6}]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_bangalô_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="560" width="98" height="34" uuid="740f7148-4a39-4cf1-bc57-32f7423b1292"/>

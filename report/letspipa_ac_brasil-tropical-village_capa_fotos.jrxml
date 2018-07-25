@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_brasil-tropical-village_capa_fotos" pageWidth="684" pageHeight="514" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_brasil-tropical-village_capa_fotos" pageWidth="684" pageHeight="514" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="d72602db-244b-40c1-acee-ba5632f59d46">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
@@ -28,22 +28,22 @@
 	<detail>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="80c306a0-aa89-4e2c-aef3-1365f74916a7"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_brasil-tropical-village_capa}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_anchor}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" />
+				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="3e6c046e-6f45-443c-8d74-360771876c6e"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.brasil-tropical-village.sobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="e10241e5-1023-4019-b4b9-4a8a23404f1b"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
-				<reportElement x="600" y="430" width="84" height="34" forecolor="#FFFFFF" />
+				<reportElement x="600" y="432" width="84" height="34" forecolor="#FFFFFF" uuid="624b4579-9a27-45cf-93aa-4ae0c5a994a8"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
@@ -52,22 +52,22 @@
 		</band>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="9ab348c2-ba7a-4d46-815f-5e4b5cd13349"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_brasil-tropical-village_fotos1}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="534b242f-6fd2-48eb-b833-a84aebd4e0c1"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="36c55f8f-1ac0-4881-bf7d-3c8b0736ab4f"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_brasil-tropical-village_fotos2}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="91657b5c-ce03-46ed-9957-80af580f95c2"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>

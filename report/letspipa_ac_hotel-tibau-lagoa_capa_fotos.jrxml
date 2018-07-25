@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_hotel-tibau-lagoa_capa_fotos" pageWidth="684" pageHeight="514" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_hotel-tibau-lagoa_capa_fotos" pageWidth="684" pageHeight="514" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="8e12e7e4-22e8-43dd-8673-434e2bc42008">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
@@ -28,22 +28,22 @@
 	<detail>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="44fbd162-e00e-4726-93e0-7bb06f6fe301"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_hotel-tibau-lagoa_capa}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_anchor}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" />
+				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="76058955-90c2-4b64-90ed-b406566a004c"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.hotel-tibau-lagoa.sobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="4e86916d-1611-470f-836c-9a133bd01794"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
-				<reportElement x="600" y="430" width="84" height="34" forecolor="#FFFFFF" />
+				<reportElement x="600" y="432" width="84" height="34" forecolor="#FFFFFF" uuid="d7c3d0c2-ecbf-4d0b-82b6-367defc1cf14"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
@@ -52,22 +52,22 @@
 		</band>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="4dc0544f-899c-42b0-932f-df553f3bf37e"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_hotel-tibau-lagoa_fotos1}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="77c2c5d1-2d20-4721-a49b-0f6d36f3144f"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="813746d4-dfd8-4166-a3ea-16a30f7a932c"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_hotel-tibau-lagoa_fotos2}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="cfc9cef8-efa6-431b-b513-2a50fe29f5c3"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_quinta-do-rio-flats_capa_fotos" pageWidth="684" pageHeight="514" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_quinta-do-rio-flats_capa_fotos" pageWidth="684" pageHeight="514" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="bc43b97e-97c8-4fa4-802b-d11e30ea0079">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
@@ -28,22 +28,22 @@
 	<detail>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="59960c43-c831-4a44-8e97-15e0477fa69f"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_quinta-do-rio-flats_capa}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_anchor}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" />
+				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="b94d7588-3c9f-4567-ad32-e8386e8afdf6"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.quinta-do-rio-flats.sobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="1afcac9d-03f8-4357-9ee1-5afa540eaacc"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
-				<reportElement x="600" y="430" width="84" height="34" forecolor="#FFFFFF" />
+				<reportElement x="600" y="432" width="84" height="34" forecolor="#FFFFFF" uuid="b6a2361e-c1d9-4e5e-b1ef-f0b93044bde7"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
@@ -52,22 +52,22 @@
 		</band>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="60209eb0-e98f-454c-a0d8-403cb509629c"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_quinta-do-rio-flats_fotos1}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="c910eadf-c5da-4f8a-af42-7471f36baa6c"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="514" />
+				<reportElement x="0" y="0" width="684" height="514" uuid="7f94091c-4d1d-43c2-9299-ba62f97be4f9"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_quinta-do-rio-flats_fotos2}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" />
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="66e6829f-8bf2-4564-90be-8cdb27af8cbb"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>

@@ -67,8 +67,10 @@ public class TestePipa {
 		String nomeArquivoPDF = get("file.".concat(SLUG_DE));
 		String injoyLinkDESobre = get("link").concat(SLUG_DE).concat(SEP2).concat("sobre").concat(SEP2);
 		
-		//DecimalFormat formatoComCentavosComCifra = new DecimalFormat("#,##0.00");
+		DecimalFormat formatoSemCentavosComCifra = new DecimalFormat("R$ #,##0");
 		DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("#,##0");
+		
+		String esgotado = "ESGOTADO";
 		
 		String capa = "capa";
 		String quemsomos = "quemsomos";
@@ -229,15 +231,14 @@ public class TestePipa {
 			String nomeProduto = result.getString("nomeProduto");
 			String slugProduto = result.getString("slugProduto");
 			
-			// letspipa_ac_<slugProduto>_capa_fotos, letspipa_ac_<slugProduto>_precos
+			// <slugDe>_ac_<slugProduto>_capa_fotos, <slugDe>_ac_<slugProduto>_precos
 			String nomeArquivoCapaFotos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_capa_fotos");
 			String nomeArquivoPrecos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_precos");
 			listaArquivos.add(nomeArquivoCapaFotos);
-			//listaArquivos.add(nomeArquivoPrecos);
+			listaArquivos.add(nomeArquivoPrecos);
 			
-			String menorValorPessoaAsString = result.getString("menorValorPessoa");
-			int menorValorPessoa = Integer.parseInt(menorValorPessoaAsString);
-			menorValorPessoaAsString = formatoSemCentavosSemCifra.format(menorValorPessoa);
+			int menorValorPessoa = result.getInt("menorValorPessoa");
+			String menorValorPessoaAsString = formatoSemCentavosComCifra.format(menorValorPessoa);
 			
 			parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
 			System.out.println(parameter + " -> " + slugProduto);
@@ -337,31 +338,70 @@ public class TestePipa {
 			result2.close();
 			
 			
-			
-			
 			// PREENCHIMENTO DO SLIDE DE PREÇOS
-			
-			query = "";
+
+			query = "SELECT aq.nome as nomeAc, aq.estoque, ROUND(aq.valor, 0) AS valor, " + 
+					"	aq.hospedes, ROUND(DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes, 0) as valorPessoa " + 
+					"FROM acomodacao_quarto aq WHERE " + 
+					"	DATEDIFF(aq.data_final, aq.data_inicial) = 7 AND " +
+					"	estoque > 0 AND " + 
+					"	idProduto IN ( " + 
+					"        SELECT id FROM produto WHERE " + 
+					"			slug IN (?) AND " + 
+					"			idDe IN ( " + 
+					"				SELECT id FROM de WHERE slug IN (?) " + 
+					"			) " + 
+					"    ) " + 
+					" " + 
+					"UNION " + 
+					"SELECT aq.nome as nomeAc, aq.estoque, ROUND(aq.valor, 0) AS valor, " + 
+					"	aq.hospedes, 'ESGOTADO' as valorPessoa " + 
+					"FROM acomodacao_quarto aq WHERE " + 
+					"	DATEDIFF(aq.data_final, aq.data_inicial) = 7 AND " +
+					"	aq.estoque <= 0 AND " + 
+					"	aq.idProduto IN ( " + 
+					"        SELECT id FROM produto WHERE " + 
+					"			slug IN (?) AND " + 
+					"			idDe IN ( " + 
+					"				SELECT id FROM de WHERE slug IN (?) " + 
+					"			) " + 
+					"    ) " + 
+					";";
 			statement = connection.prepareStatement(query);
+			statement.setString(1, slugProduto);
+			statement.setString(2, SLUG_DE);
+			statement.setString(3, slugProduto);
+			statement.setString(4, SLUG_DE);
 			result2 = statement.executeQuery();
-			int j = 1;
+			
 			while(result2.next()) {
-				String jAsString = String.valueOf(j);
-				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacoteac").concat(jAsString);
 				
-				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacotefeminino").concat(jAsString);
+				int estoque = result2.getInt("estoque");
 				
-				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacotemasculino").concat(jAsString);
+				String nomeAc = result2.getString("nomeAc").toLowerCase().replace(' ', '-');
+				String hospedes = result2.getString("hospedes");
+				nomeAc = nomeAc + "_" + hospedes;
 				
+				String valorPessoaAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
+						formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa")));
+				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacoteac_").concat(nomeAc);
+				System.out.println(parameter + " -> " + valorPessoaAsString);
+				parameters.put(parameter, valorPessoaAsString);
 				
+				String valorPacoteFemininoAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
+						formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa") + valorExperienciaFeminino));
+				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacotefeminino_").concat(nomeAc);
+				System.out.println(parameter + " -> " + valorPacoteFemininoAsString);
+				parameters.put(parameter, valorPacoteFemininoAsString);
 				
-				
-				j++;
+				String valorPacoteMasculinoAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
+						formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa") + valorExperienciaMasculino));
+				parameter = "jr_".concat(SLUG_DE).concat("_ac_").concat(slugProduto).concat("_pacotemasculino_").concat(nomeAc);
+				System.out.println(parameter + " -> " + valorPacoteMasculinoAsString);
+				parameters.put(parameter, valorPacoteMasculinoAsString);
+
 			}
 			result2.close();
-			
-			
-			
 			
 			
 			i++;
@@ -488,7 +528,7 @@ public class TestePipa {
 				// String slugPacote = result.getString("slugPacote");
 				String nomeProduto = result.getString("nomeProduto");
 				String slugProduto = result.getString("slugProduto");
-				String esgotado = "ESGOTADO";
+				
 				
 				String parameter = "jr_".concat(SLUG_DE).concat("_menuacomodacoes_link").concat(iAsString);
 				System.out.println(parameter + " -> " + slugProduto);
@@ -584,12 +624,12 @@ public class TestePipa {
 		System.out.println("Iniciando a compilacao dos relatorios.");
 		ArrayList<JasperPrint> jasperPrintList = new ArrayList<JasperPrint>();
 		for(String arquivo: listaArquivos) {
-			System.out.println("Processando: ".concat(arquivo).concat("..."));
+			System.out.print("Processando: ".concat(arquivo).concat("... "));
 			String caminhoArquivoJasper = getReportFilePath(arquivo);
 			JasperReport jasperReport = JasperCompileManager.compileReport(caminhoArquivoJasper);
 			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, connection);
 			jasperPrintList.add(jasperPrint);
-			System.out.println("Processado ".concat(arquivo).concat("."));
+			System.out.println("Processado.");
 		}
 		
 		System.out.println("Configurando a exportacao.");
