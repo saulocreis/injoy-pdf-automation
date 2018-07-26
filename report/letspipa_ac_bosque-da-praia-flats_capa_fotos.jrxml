@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["bosque-da-praia-flats"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["bosque-da-praia-flats"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="8d451be7-3b06-490d-aa9d-4791656f69ac"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.bosque-da-praia-flats.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="a5ceb147-da49-4b07-861d-00e8f0cc4ff9"/>

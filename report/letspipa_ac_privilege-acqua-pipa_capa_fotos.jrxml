@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["privilege-acqua-pipa"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["privilege-acqua-pipa"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="211fb913-2a10-495f-9733-48f556e3db34"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.privilege-acqua-pipa.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_privilege-acqua-pipa_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="fb9c0024-58d0-4a17-a9e9-8a9686e7e512"/>

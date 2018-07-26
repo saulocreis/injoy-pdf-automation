@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["madeiro-beach-hotel"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["madeiro-beach-hotel"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="4cae5e91-0c9d-4494-9dbc-d19726e3fc8b"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.madeiro-beach-hotel.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="6d9c5db1-633b-4fda-91a7-a8052c9b1aa0"/>

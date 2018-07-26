@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["resort-sombra-e-agua-fresca"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["resort-sombra-e-agua-fresca"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_resort-sombra-e-agua-fresca_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="cbe83cb5-7e45-4665-9fbf-7430e71e156a"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.resort-sombra-e-agua-fresca.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_resort-sombra-e-agua-fresca_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="c15a8c28-962b-4a8e-937c-2e6a3e8a2854"/>

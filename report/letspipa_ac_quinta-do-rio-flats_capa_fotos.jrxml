@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["quinta-do-rio-flats"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["quinta-do-rio-flats"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="b94d7588-3c9f-4567-ad32-e8386e8afdf6"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.quinta-do-rio-flats.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="1afcac9d-03f8-4357-9ee1-5afa540eaacc"/>

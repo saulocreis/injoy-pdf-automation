@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["hotel-tibau-lagoa"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["hotel-tibau-lagoa"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="76058955-90c2-4b64-90ed-b406566a004c"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.hotel-tibau-lagoa.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="4e86916d-1611-470f-836c-9a133bd01794"/>

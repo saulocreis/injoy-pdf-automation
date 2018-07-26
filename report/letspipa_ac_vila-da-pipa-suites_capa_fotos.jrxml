@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["vila-da-pipa-suites"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vila-da-pipa-suites"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="9a8a8cf0-707c-420e-ac0a-cbcda026f608"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.vila-da-pipa-suites.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="e9e7d7db-d27d-474a-a9b0-fe1f0bd5934c"/>

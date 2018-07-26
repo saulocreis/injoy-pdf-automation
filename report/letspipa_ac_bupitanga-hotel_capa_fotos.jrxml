@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_bupitanga-hotel_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["bupitanga-hotel"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["bupitanga-hotel"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_bupitanga-hotel_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="aa93f790-b9d6-4c85-a44b-63c2e80368c5"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.bupitanga-hotel.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="3be3a798-e6ab-4196-ad6d-11e49ab6ac97"/>

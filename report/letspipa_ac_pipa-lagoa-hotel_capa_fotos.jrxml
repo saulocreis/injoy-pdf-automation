@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_pipa-lagoa-hotel_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["pipa-lagoa-hotel"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_pipa-lagoa-hotel_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["pipa-lagoa-hotel"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-lagoa-hotel_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="d60ec085-c78e-431b-9061-9d80cd4d6adc"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.pipa-lagoa-hotel.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_pipa-lagoa-hotel_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="3c02c80b-6094-4e90-ac5a-f83b43ad3d19"/>

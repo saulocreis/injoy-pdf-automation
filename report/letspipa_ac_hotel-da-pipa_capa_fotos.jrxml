@@ -10,6 +10,9 @@
 	<parameter name="jr_letspipa_ac_hotel-da-pipa_anchor" class="java.lang.String">
 		<defaultValueExpression><![CDATA["hotel-da-pipa"]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["hotel-da-pipa"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-da-pipa_capa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
@@ -35,7 +38,7 @@
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="459aa374-ea68-4b40-96de-07e2c2c4c864"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.jeri.hotel-da-pipa.sobre}]]></hyperlinkReferenceExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="ec77617d-f95a-4326-a0f7-fb84335359be"/>
