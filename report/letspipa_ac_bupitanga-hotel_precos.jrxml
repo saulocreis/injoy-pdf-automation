@@ -90,147 +90,147 @@
 			<textField>
 				<reportElement x="335" y="270" width="98" height="34" uuid="48eef1a2-774c-4da1-b1dd-2ef66ac6d429"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac_bangalo-com-piscina-particular_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="270" width="98" height="34" uuid="8218352b-3015-4cad-ba1f-e6ec2db2b5ee"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino_bangalo-com-piscina-particular_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="270" width="98" height="34" uuid="0adb71a0-9919-4531-a451-a38de318ea34"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino_bangalo-com-piscina-particular_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="380" width="98" height="34" uuid="17c80f97-8ad8-4a08-b097-dcab114097ef"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac_bangalo-com-mezanino_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="380" width="98" height="34" uuid="4de000c5-95af-4e6a-aab0-a7de93e74919"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino_bangalo-com-mezanino_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="380" width="98" height="34" uuid="5eea6b43-61ea-4692-a087-3420070146d4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino_bangalo-com-mezanino_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="430" width="98" height="34" uuid="1bd7682c-f089-4d9c-a231-9f778a1438fc"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac_bangalo-com-mezanino_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="430" width="98" height="34" uuid="d28ffe1d-66a6-40e2-a97f-324bf78df6e3"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino_bangalo-com-mezanino_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="430" width="98" height="34" uuid="29f48c10-a0c5-4a63-98d9-7033eda64ae0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino_bangalo-com-mezanino_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="490" width="98" height="34" uuid="9eb08b12-00c4-45cf-a1db-c3a2f67aedcd"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac_bangalo-vista-jardim_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="490" width="98" height="34" uuid="d69a7726-90a6-442d-8692-d34e6874f3bc"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino_bangalo-vista-jardim_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="490" width="98" height="34" uuid="7e9e127f-3f1f-4b16-8866-5b8129e9a4ba"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino_bangalo-vista-jardim_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="530" width="98" height="34" uuid="7744fea3-9c72-4611-aac7-389e79cae9c0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac_bangalo-vista-jardim_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="530" width="98" height="34" uuid="f6c24a3a-352a-4860-a1fc-a0efa8e1ffa7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino_bangalo-vista-jardim_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="530" width="98" height="34" uuid="94d29b53-d981-4e92-ac2b-615645a75871"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino_bangalo-vista-jardim_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="570" width="98" height="34" uuid="60b6c44d-293b-4e92-a22f-fb5e3b233724"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacoteac_bangalo-vista-jardim_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="570" width="98" height="34" uuid="b0a30b94-8be4-415f-b5c1-d9bf1029e7fc"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefeminino_bangalo-vista-jardim_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="570" width="98" height="34" uuid="f8fc91c8-5007-4477-ae81-765154fd2439"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculino_bangalo-vista-jardim_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="670" width="98" height="34" uuid="31b43246-01ad-4cfc-8dfc-3f7cf6c915bc"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotefemininoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="670" width="98" height="34" uuid="88d073cc-cbf3-49d9-850f-29c106fdf1ab"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculinoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="360" y="760" width="130" height="34" forecolor="#FFFFFF" uuid="ad482455-a278-4781-a1aa-05fd8e4c0a43"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="24" isBold="true"/>
+					<font fontName="Montserrat" size="26" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>

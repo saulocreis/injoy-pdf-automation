@@ -63,84 +63,84 @@
 			<textField>
 				<reportElement x="335" y="270" width="98" height="34" uuid="086b1cea-0e32-4d71-abb1-3433113587ae"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacoteac_chalé-master_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="270" width="98" height="34" uuid="85974cc3-cd57-45f3-91ee-23eeb068b948"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino_chalé-master_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="270" width="98" height="34" uuid="af1bb931-51ac-4377-8a14-7c13e6793d1b"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino_chalé-master_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="400" width="98" height="34" uuid="26758320-31eb-4f3a-a5d3-1f89366f560d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacoteac_chalé-master_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="400" width="98" height="34" uuid="5b9e4168-7da2-4be8-b1e3-429b1d11674f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino_chalé-master_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="400" width="98" height="34" uuid="41bad2b9-7f5b-4458-870b-37c924b0e453"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino_chalé-master_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="520" width="98" height="34" uuid="cc37f961-4d2c-48c9-948a-47ab7ca536d1"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacoteac_chalé_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="520" width="98" height="34" uuid="f36792e3-9774-479c-929f-ec7b4322857f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefeminino_chalé_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="520" width="98" height="34" uuid="fa44cfc0-a595-43a1-853b-42cc0f6f8620"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculino_chalé_4}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="670" width="98" height="34" uuid="09fc1488-6ce7-4998-85f2-b80dae947d41"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotefemininoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="670" width="98" height="34" uuid="5288537e-f485-4719-bfa7-733a4d34f8d0"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculinoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="360" y="750" width="130" height="34" forecolor="#FFFFFF" uuid="8c7bc9da-a5bf-4391-ad4d-80e87a80eb3c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="24" isBold="true"/>
+					<font fontName="Montserrat" size="26" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>

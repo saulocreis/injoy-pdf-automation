@@ -72,105 +72,105 @@
 			<textField>
 				<reportElement x="335" y="290" width="98" height="34" uuid="8d334b21-31ae-4bec-be6c-6ffb616d2d62"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacoteac_vista-jardim_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="290" width="98" height="34" uuid="ff04ae13-eb70-4a95-b784-ce62bfa519f8"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefeminino_vista-jardim_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="290" width="98" height="34" uuid="a8383a57-8096-4b4b-b7ab-2e53d7ce7424"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculino_vista-jardim_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="420" width="98" height="34" uuid="b09d0a28-1e5f-45db-a72a-e8a8e76c543e"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacoteac_vista-parcial_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="420" width="98" height="34" uuid="2f70af42-455b-43b9-9ad4-ad6639e2c4ec"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefeminino_vista-parcial_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="420" width="98" height="34" uuid="f7a2643a-f7dd-4066-ba3c-73dc82004e79"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculino_vista-parcial_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="535" width="98" height="34" uuid="386b61e5-5e28-4dba-b404-b2b22c79e323"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacoteac_frente-mar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="535" width="98" height="34" uuid="146d2b9f-de6d-4a17-b65c-0c26fcaec0b7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefeminino_frente-mar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="535" width="98" height="34" uuid="e81d36c5-2b36-472e-a68d-464288673766"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculino_frente-mar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="660" width="98" height="34" uuid="75aeb33b-e86a-4a64-b950-15eff3246764"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacoteac_luxo-frente-mar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="660" width="98" height="34" uuid="72a6068a-95a0-405a-a7e4-beaf9a358fbb"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefeminino_luxo-frente-mar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="660" width="98" height="34" uuid="1cc3a8f0-3655-48f2-a3bd-c375a0bb7034"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculino_luxo-frente-mar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="805" width="98" height="34" uuid="3bf9d9cc-eeb4-4de6-8757-eeb7341e123f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotefemininoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="805" width="98" height="34" uuid="cc02b30b-fd32-43c6-b706-c517ee632069"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="17" isBold="true"/>
+					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculinoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="360" y="890" width="130" height="34" forecolor="#FFFFFF" uuid="9f849a32-a0ea-46ab-9d22-8bbb0a766007"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="24" isBold="true"/>
+					<font fontName="Montserrat" size="26" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
