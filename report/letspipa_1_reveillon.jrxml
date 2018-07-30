@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_1_reveillon" pageWidth="684" pageHeight="717" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_1_reveillon" pageWidth="684" pageHeight="717" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="4e6f4d88-e495-4900-8963-9cc4b1f2acbb">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_reveillon" class="java.lang.String"/>
+	<parameter name="jr_letspipa_reveillon" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Pipa.png"]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
 		<band height="717">
 			<image>
-				<reportElement x="0" y="0" width="684" height="717" />
+				<reportElement x="0" y="0" width="684" height="717" uuid="d518efb7-851a-473e-bd52-039a1b5f3476"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_reveillon}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.reveillon}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="285" y="230" width="100" height="100" />
+				<reportElement mode="Transparent" x="290" y="230" width="100" height="100" uuid="5609128a-577f-4ffb-94dc-98db8db73b87"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></hyperlinkReferenceExpression>
 			</image>

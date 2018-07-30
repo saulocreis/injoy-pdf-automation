@@ -14,13 +14,13 @@
 		<defaultValueExpression><![CDATA["hotel-casablanca"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-casablanca_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Casablanca.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-casablanca_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Casablanca - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-casablanca_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Casablanca - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-casablanca_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

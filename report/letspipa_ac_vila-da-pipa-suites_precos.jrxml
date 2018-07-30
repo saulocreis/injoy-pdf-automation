@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Villa da Pipa Suítes - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac_standard_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -77,7 +80,7 @@
 		<band height="855">
 			<image>
 				<reportElement x="0" y="0" width="684" height="855" uuid="654c4208-8d09-49cf-8b0d-3773c935dbed"/>
-				<imageExpression><![CDATA["images\\letspipa\\Villa da Pipa Suítes - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_vila-da-pipa-suites_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="815" width="40" height="40" uuid="36fb9f91-5bac-4fe0-933c-e0d9b216d1ff"/>
@@ -223,6 +226,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_vila-da-pipa-suites_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="755" width="130" height="34" forecolor="#FFFFFF" uuid="f316c8c0-d317-4848-82d6-87a691ef1374"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

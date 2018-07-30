@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_brasil-tropical-village_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_brasil-tropical-village_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Brasil Tropical Village - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac_chalé-luxo-30-mq_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -41,7 +44,7 @@
 		<band height="757">
 			<image>
 				<reportElement x="0" y="0" width="684" height="757" uuid="e0b51629-25a0-4319-b5f3-0df87e3b8999"/>
-				<imageExpression><![CDATA["images\\letspipa\\Brasil Tropical Village - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_brasil-tropical-village_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="715" width="40" height="40" uuid="ef67303b-585e-4b59-a544-9c4aa13637d1"/>
@@ -103,6 +106,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="645" width="130" height="34" forecolor="#FFFFFF" uuid="5110c61c-6305-4c91-9045-b3b029e1d05f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

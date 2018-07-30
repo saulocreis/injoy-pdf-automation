@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_pousada-oasis_precos" pageWidth="684" pageHeight="761" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="26ea81f1-5d63-4111-bf4e-9f0ff1054b3d">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="valorAereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pousada-oasis_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Pousada Oasis - Quartos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pousada-oasis_pacoteac_chalé-duplo_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pousada-oasis_pacotefeminino_chalé-duplo_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pousada-oasis_pacotemasculino_chalé-duplo_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pousada-oasis_pacoteac_chalé-triplo_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pousada-oasis_pacotefeminino_chalé-triplo_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pousada-oasis_pacotemasculino_chalé-triplo_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pousada-oasis_pacotefemininoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pousada-oasis_pacotemasculinoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="761">
+			<image>
+				<reportElement x="0" y="0" width="684" height="761" uuid="b50675ca-598b-437a-a1ba-4dea6ff6ef44"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_pousada-oasis_precos}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="25" y="715" width="40" height="40" uuid="9f381661-674c-410e-83be-99b44b1ae9b8"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="300" width="98" height="34" uuid="fb832088-6727-4bd4-a394-248ae7087ba8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pousada-oasis_pacoteac_chalé-duplo_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="300" width="98" height="34" uuid="13a0078d-17a9-4ea0-96cd-480ba54771b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pousada-oasis_pacotefeminino_chalé-duplo_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="300" width="98" height="34" uuid="7d7d55bd-0481-4e28-aaaf-2d90b8021cf7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pousada-oasis_pacotemasculino_chalé-duplo_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="420" width="98" height="34" uuid="2f542d46-5a54-467d-9520-dbbc7e38bee6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pousada-oasis_pacoteac_chalé-triplo_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="420" width="98" height="34" uuid="2b0b4449-6507-4929-aa42-482f9b35735d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pousada-oasis_pacotefeminino_chalé-triplo_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="420" width="98" height="34" uuid="b5613e9d-00a5-4f16-871b-2d1736f75182"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pousada-oasis_pacotemasculino_chalé-triplo_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="560" width="98" height="34" uuid="9f5a2826-95a4-497a-a422-b0d07857b67c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pousada-oasis_pacotefemininoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="560" width="98" height="34" uuid="97533abe-b407-47f7-98af-13712235f91a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pousada-oasis_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="650" width="130" height="34" forecolor="#FFFFFF" uuid="7fb4ad24-07ae-484b-874c-4c268fd4d10a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

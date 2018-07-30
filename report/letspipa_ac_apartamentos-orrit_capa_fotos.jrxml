@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_apartamentos-orrit_capa_fotos" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="6211dff9-ede6-4cc6-a5c4-c5549dbc40cd">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_anchor" class="java.lang.String">
+		<defaultValueExpression><![CDATA["apartamentos-orrit"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["apartamentos-orrit"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_capa" class="java.lang.String">
+		<defaultValueExpression><![CDATA["APARTAMENTOS ORRIT.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_fotos1" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Apartamentos Orrit - fotos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_fotos2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Apartamentos Orrit - fotos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_menorValorPessoa" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<detail>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="8d741cb1-93de-4981-972f-7a61a2ce11cb"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_apartamentos-orrit_capa}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_anchor}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="ca4feced-b3e2-4f76-a043-f2ada52d8f73"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_linkSobre}]]></hyperlinkReferenceExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="68e9d06d-10a1-40af-adfe-e3161631c314"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="600" y="430" width="84" height="34" forecolor="#FFFFFF" uuid="7047a0db-afd8-4eb0-a9a6-343f662df669"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_menorValorPessoa}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="6be8d1ca-44ec-4582-ab85-30545489b566"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_apartamentos-orrit_fotos1}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="61d78af3-7ffd-420c-9354-4b55e1d76708"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

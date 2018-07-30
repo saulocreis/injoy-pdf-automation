@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_ponta-do-madeiro_precos" pageWidth="684" pageHeight="988" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="bf8a8d0c-7826-46b5-8ee1-6e8ed3192797">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_ponta-do-madeiro_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_ponta-do-madeiro_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Ponta do Madeiro - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_ponta-do-madeiro_pacoteac_standard_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -96,7 +98,7 @@
 		<band height="988">
 			<image>
 				<reportElement x="0" y="0" width="684" height="988" uuid="39e19ca1-d833-4256-a6d9-df7f82ca95cb"/>
-				<imageExpression><![CDATA["images\\letspipa\\Ponta do Madeiro - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_ponta-do-madeiro_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="940" width="40" height="40" uuid="b6df9264-3e48-489d-8306-d5d5a9bc9f2e"/>
@@ -284,6 +286,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_ponta-do-madeiro_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="885" width="130" height="34" forecolor="#FFFFFF" uuid="aaa2428c-0c7b-4f7f-9cd5-b3e1660661c4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

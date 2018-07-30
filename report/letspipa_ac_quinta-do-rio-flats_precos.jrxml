@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Quinta do Rio - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_pacoteac_master-jardim_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -113,7 +116,7 @@
 		<band height="989">
 			<image>
 				<reportElement x="0" y="0" width="684" height="989" uuid="045e79b0-048b-48d9-a264-53b9e6d415a6"/>
-				<imageExpression><![CDATA["images\\letspipa\\Quinta do Rio - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_quinta-do-rio-flats_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="940" width="40" height="40" uuid="104860ac-4ad2-4f62-aad3-05f87e46d25e"/>
@@ -343,6 +346,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_quinta-do-rio-flats_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="880" width="130" height="34" forecolor="#FFFFFF" uuid="f82de991-839c-4e2d-8e23-dc1653b14d1a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

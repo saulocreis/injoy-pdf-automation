@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Hotel Sombra e Água Fresca - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacoteac_executivo-jardim_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -58,8 +61,8 @@
 	<background>
 		<band height="759">
 			<image>
-				<reportElement x="0" y="0" width="684" height="759" uuid="9885c37d-a8ef-4e48-a2b0-e8d0f8db4ab2"/>
-				<imageExpression><![CDATA["images\\letspipa\\Hotel Sombra e Água Fresca - Quartos.png"]]></imageExpression>
+				<reportElement x="0" y="0" width="684" height="759" uuid="9785c37d-a8ef-4e48-a2b0-e8d0f8db4ab2"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="715" width="40" height="40" uuid="be3698cf-673f-4a46-a29e-53a32413183d"/>
@@ -163,6 +166,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="645" width="130" height="34" forecolor="#FFFFFF" uuid="67b48641-8837-4824-b6e2-ae4b76e3ae77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

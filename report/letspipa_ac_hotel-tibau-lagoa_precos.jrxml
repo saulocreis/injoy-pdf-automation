@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Tibau Lagoa - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-tibau-lagoa_pacoteac_chalé-master_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -50,7 +53,7 @@
 		<band height="856">
 			<image>
 				<reportElement x="0" y="0" width="684" height="856" uuid="2937148d-1f72-4f34-bb13-4c96f3a5c3e4"/>
-				<imageExpression><![CDATA["images\\letspipa\\Tibau Lagoa - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_hotel-tibau-lagoa_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="816" width="40" height="40" uuid="d41857b1-9526-4a7a-9ea0-5e21a01e5941"/>
@@ -133,6 +136,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-tibau-lagoa_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="750" width="130" height="34" forecolor="#FFFFFF" uuid="8c7bc9da-a5bf-4391-ad4d-80e87a80eb3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

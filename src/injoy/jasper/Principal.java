@@ -8,14 +8,11 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.text.DateFormat;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Properties;
-
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -26,7 +23,7 @@ import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 import net.sf.jasperreports.export.SimplePdfExporterConfiguration;
 
-public class TestePipa {
+public class Principal {
 	
 	static private final int MAX_RESULTS = 20;
 	static private final String DEFAULT_WORKSPACE = "injoy.";
@@ -42,100 +39,103 @@ public class TestePipa {
 	static private final String IMG_DIR = "images".concat(SEP).concat(SLUG_DE).concat(SEP);
 	
 	static private Properties jasperprops;
+	
 
-	public static void main(String[] args) throws JRException, FileNotFoundException, IOException, SQLException {
+	public static void main(String[] args) throws SQLException {
+		long startTime = Calendar.getInstance().getTimeInMillis();
 		
-		Calendar calendar = Calendar.getInstance();
-		long startTime = calendar.getTimeInMillis();
+		String nomeArquivoPDF = SLUG_DE + "-" + String.valueOf(startTime) + ".pdf";
 		
-		ArrayList<String> listaArquivos = new ArrayList<String>();
-		listaArquivos.add("letspipa_capa");
-		listaArquivos.add("letspipa_quemsomos");
-		listaArquivos.add("letspipa_0_ij");
-		listaArquivos.add("letspipa_0_menu");
-		listaArquivos.add("letspipa_1_reveillon");
-		listaArquivos.add("letspipa_2_pqinjoy"); 
-		listaArquivos.add("letspipa_3_infovenda"); 
-		listaArquivos.add("letspipa_4_acomodacoes");
-		listaArquivos.add("letspipa_4_resumopacotes"); 
+
 		
+		// PREPARANDO ITENS DA CONEXÃO COM BANCO DE DADOS
 		System.out.println("Tentando conectar...");
 		Connection connection = DriverManager.getConnection(CONEXAO);
 		System.out.println("Conectado.");
+
 		
-		PreparedStatement statement = null;
-		String query;
-		
+		// CRIANDO PARÂMETROS DOS DADOS DOS RELATÓRIOS
 		HashMap<String, Object> parameters = new HashMap<String, Object>();
 		parameters.put("sep", SEP);
 		parameters.put("img_dir", IMG_DIR);
 		parameters.put("slug_de", SLUG_DE);
+			
 		
-		String dataCriacao = DateFormat.getDateInstance().format(calendar.getTime());
-		parameters.put("dataCriacao", dataCriacao);
+		// RELATÓRIOS A SEREM USADOS NA CRIAÇÃO DO PDF
+		ArrayList<String> listaArquivos = new ArrayList<String>();
+		listaArquivos.add(SLUG_DE + "_capa");
+		listaArquivos.add(SLUG_DE + "_quemsomos");
+		listaArquivos.add(SLUG_DE + "_0_ij");
+		listaArquivos.add(SLUG_DE + "_0_menu");
+		listaArquivos.add(SLUG_DE + "_1_reveillon");
+		listaArquivos.add(SLUG_DE + "_2_pqinjoy"); 
+		listaArquivos.add(SLUG_DE + "_3_infovenda"); 
+		listaArquivos.add(SLUG_DE + "_4_acomodacoes");
+		listaArquivos.add(SLUG_DE + "_4_resumopacotes");
 		
-		String tagAcomodacoes = get("tag.acomodacoes");
-		String imageVazio = get("image.vazio");
-		String nomeArquivoPDF = get("file.".concat(SLUG_DE));
-		String injoyLinkDESobre = get("link").concat(SLUG_DE).concat(SEP2).concat("sobre").concat(SEP2);
+		// BUSCA DOS DADOS DOS PARÂMETROS NO BANCO DE DADOS
+		searchDataFromConnection(connection, parameters, listaArquivos);
 		
-		DecimalFormat formatoSemCentavosComCifra = new DecimalFormat("R$ #,##0");
-		DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("#,##0");
+		listaArquivos.add(SLUG_DE + "_festas");
+		listaArquivos.add(SLUG_DE + "_final");
 		
-		String baseParamDe = "jr_".concat(SLUG_DE);
-		String baseParamDeAc = baseParamDe.concat("_ac_");
-		String esgotado = "ESGOTADO";
 		
-		String capa = "capa";
-		String quemsomos = "quemsomos";
-		String ijreveillon = "ijreveillon";
-		String menu = "menu";
-		String reveillon = "reveillon";
-		String pqinjoy = "pqinjoy";
-		String infovenda = "infovenda";
-		String menuacomodacoes = "menuacomodacoes";
-		String resumopacotes = "resumopacotes";
-		String festas = "festas";
-		String finalString = "final";
-
-		query = "SELECT" + 
+		// PRODUÇÃO DO PDF
+		try {
+			producePDF(connection, parameters, nomeArquivoPDF, listaArquivos);
+		} catch (JRException e) {
+			e.printStackTrace();
+		}
+		
+		// FINALIZAÇÃO
+		long endTime = Calendar.getInstance().getTimeInMillis();
+		long processingTime = endTime - startTime;
+		System.out.println("Finalizado em " + processingTime + " milisegundos.");
+	}
+	
+	
+	private static void searchDataFromConnection(Connection connection, HashMap<String, Object> parameters,
+			ArrayList<String> listaArquivos) throws SQLException {
+		
+		String query = "SELECT" + 
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + capa + "," +
+				") AS capa," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + quemsomos + "," +
+				") AS quemsomos," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + ijreveillon + "," +
+				") AS ijreveillon," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + menu + "," +
+				") AS menu," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + reveillon + "," +
+				") AS reveillon," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + pqinjoy + "," +
+				") AS pqinjoy," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + infovenda + "," +
+				") AS infovenda," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + menuacomodacoes + "," +
+				") AS menuacomodacoes," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + resumopacotes + "," +
+				") AS resumopacotes," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + festas + "," +
+				") AS festas," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
-				") AS " + finalString +
+				") AS final" +
 				";";
-		statement = connection.prepareStatement(query);
+		PreparedStatement statement = connection.prepareStatement(query);
 		
-		String pBase = "jr_" + SLUG_DE + "_";
-		String parameterCapa = pBase + capa;
-		String parameterQuemSomos = pBase + quemsomos;
-		String parameterIJReveillon = pBase + ijreveillon;
-		String parameterMenu = pBase + menu;
-		String parameterReveillon = pBase + reveillon;
-		String parameterPqInjoy = pBase + pqinjoy;
-		String parameterInfovenda = pBase + infovenda;
-		String parameterMenuAcomodacoes = pBase + menuacomodacoes;
-		String parameterResumoPacotes = pBase + resumopacotes;
-		String parameterFestas = pBase + festas;
-		String parameterFinal = pBase + finalString;
+		String baseParameter = "jr_" + SLUG_DE + "_";
+		String parameterCapa = baseParameter + "capa";
+		String parameterQuemSomos = baseParameter + "quemsomos";
+		String parameterIJReveillon = baseParameter + "ijreveillon";
+		String parameterMenu = baseParameter + "menu";
+		String parameterReveillon = baseParameter + "reveillon";
+		String parameterPqInjoy = baseParameter + "pqinjoy";
+		String parameterInfovenda = baseParameter + "infovenda";
+		String parameterMenuAcomodacoes = baseParameter + "menuacomodacoes";
+		String parameterResumoPacotes = baseParameter + "resumopacotes";
+		String parameterFestas = baseParameter + "festas";
+		String parameterFinal = baseParameter + "final";
+		
 		statement.setString(1, parameterCapa);
 		statement.setString(2, parameterQuemSomos);
 		statement.setString(3, parameterIJReveillon);
@@ -147,29 +147,26 @@ public class TestePipa {
 		statement.setString(9, parameterResumoPacotes);
 		statement.setString(10, parameterFestas);
 		statement.setString(11, parameterFinal);
-		
-		System.out.println(statement);
-		
 		ResultSet result = statement.executeQuery();
-		if(result.next()) {
-			parameters.put(parameterCapa, result.getString(capa));
-			parameters.put(parameterQuemSomos, result.getString(quemsomos));
-			parameters.put(parameterIJReveillon, result.getString(ijreveillon));
-			parameters.put(parameterMenu, result.getString(menu));
-			parameters.put(parameterReveillon, result.getString(reveillon));
-			parameters.put(parameterPqInjoy, result.getString(pqinjoy));
-			parameters.put(parameterInfovenda, result.getString(infovenda));
-			parameters.put(parameterMenuAcomodacoes, result.getString(menuacomodacoes));
-			parameters.put(parameterResumoPacotes, result.getString(resumopacotes));
-			parameters.put(parameterFestas, result.getString(festas));
-			parameters.put(parameterFinal, result.getString(finalString));
-		}
+		
+		result.next();
+		parameters.put(parameterCapa, result.getString("capa"));
+		parameters.put(parameterQuemSomos, result.getString("quemsomos"));
+		parameters.put(parameterIJReveillon, result.getString("ijreveillon"));
+		parameters.put(parameterMenu, result.getString("menu"));
+		parameters.put(parameterReveillon, result.getString("reveillon"));
+		parameters.put(parameterPqInjoy, result.getString("pqinjoy"));
+		parameters.put(parameterInfovenda, result.getString("infovenda"));
+		parameters.put(parameterMenuAcomodacoes, result.getString("menuacomodacoes"));
+		parameters.put(parameterResumoPacotes, result.getString("resumopacotes"));
+		parameters.put(parameterFestas, result.getString("festas"));
+		parameters.put(parameterFinal, result.getString("final"));
 		result.close();
 		
-		System.out.println(parameters);
 		
-
-// letspipa_4_resumopacotes
+		
+		
+		
 		query = "SELECT (" + 
 				"	SELECT ROUND(efd.valor, 0) " + 
 				"	FROM experiencia_festadias efd " + 
@@ -206,25 +203,14 @@ public class TestePipa {
 		statement.setString(3, SLUG_EXPERIENCIA);
 		result = statement.executeQuery();
 		
-		String valorExperienciaFemininoAsString = "0", valorExperienciaMasculinoAsString = "0";
-		int valorExperienciaFeminino = 0, valorExperienciaMasculino = 0, valorExperienciaAvulsa = 0;
-		while(result.next()) {
-			valorExperienciaAvulsa = result.getInt("valorExperienciaAvulsa");
-			
-			valorExperienciaFeminino = result.getInt("valorExperienciaFeminino")  + valorExperienciaAvulsa;
-			valorExperienciaFemininoAsString = formatoSemCentavosSemCifra.format(valorExperienciaFeminino);
-			valorExperienciaMasculino = result.getInt("valorExperienciaMasculino") + valorExperienciaAvulsa;
-			valorExperienciaMasculinoAsString = formatoSemCentavosSemCifra.format(valorExperienciaMasculino);
-		}
+		result.next();
+		int valorExperienciaAvulsa = result.getInt("valorExperienciaAvulsa");
+		int valorExperienciaFeminino = result.getInt("valorExperienciaFeminino")  + valorExperienciaAvulsa;
+		int valorExperienciaMasculino = result.getInt("valorExperienciaMasculino") + valorExperienciaAvulsa;
 		result.close();
 		
 		
-
-
-// letspipa_4_acomodacoes, letspipa_4_resumopacotes
 		
-		// PEGANDO O VALOR DO AÉREO NORMAL E AÉREO+FESTAS
-		int valorAereo = 0, valorAereoComboFeminino = 0, valorAereoComboMasculino = 0;;
 		
 		query = "SELECT (" + 
 				"	SELECT ROUND(valor + taxa, 0) " + 
@@ -252,21 +238,20 @@ public class TestePipa {
 		statement.setString(3, SLUG_AEREO_COMBO_MASCULINO);
 		result = statement.executeQuery();
 		
-		while(result.next()) {
-			valorAereo = result.getInt("valorAereo");
-			parameters.put("valorAereo", formatoSemCentavosComCifra.format(valorAereo));
-			
-			valorAereoComboFeminino = result.getInt("valorAereoComboFeminino");
-			parameters.put("valorAereoComboFeminino", formatoSemCentavosComCifra.format(valorAereoComboFeminino));
-			
-			valorAereoComboMasculino = result.getInt("valorAereoComboMasculino");
-			parameters.put("valorAereoComboMasculino", formatoSemCentavosComCifra.format(valorAereoComboMasculino));
-		}
+		result.next();
+		DecimalFormat formatoSemCentavosComCifra = new DecimalFormat("R$ #,##0");
+		int valorAereo = result.getInt("valorAereo");
+		int valorAereoComboFeminino = result.getInt("valorAereoComboFeminino");
+		int valorAereoComboMasculino = result.getInt("valorAereoComboMasculino");
+		parameters.put("valorAereo", formatoSemCentavosComCifra.format(valorAereo));
+		parameters.put("valorAereoComboFeminino", formatoSemCentavosComCifra.format(valorAereoComboFeminino));
+		parameters.put("valorAereoComboMasculino", formatoSemCentavosComCifra.format(valorAereoComboMasculino));
 		result.close();
 		
 		
 		
-		// PEGANDO DADOS DAS ACOMODAÇÕES
+		
+		
 		query = "SELECT prod.slug as slugPacote, subprod.nome as nomeProduto, subprod.slug as slugProduto," + 
 				"	MIN(ROUND(DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes, 0)) as menorValorPessoa " + 
 				"	FROM acomodacao_quarto aq, produto subprod, produto_subproduto ps, produto prod, produto_tipo pt WHERE " + 
@@ -291,11 +276,17 @@ public class TestePipa {
 		statement = connection.prepareStatement(query);
 		statement.setString(1, SLUG_DE);
 		result = statement.executeQuery();
-
+		
+		
+		String baseParameterDe = "jr_".concat(SLUG_DE);
+		String injoyLinkDESobre = get("link").concat(SLUG_DE).concat(SEP2).concat("sobre").concat(SEP2);
+		String esgotado = "ESGOTADO";
+		String tagAcomodacoes = get("tag.acomodacoes");
+		String imageVazio = get("image.vazio");
+		
 		int i = 1;
 		while(result.next() && i <= MAX_RESULTS) {
-			String parameter;
-			String iAsString = String.valueOf(i);
+			
 			String slugPacote = result.getString("slugPacote");
 			String nomeProduto = result.getString("nomeProduto");
 			String slugProduto = result.getString("slugProduto");
@@ -308,112 +299,110 @@ public class TestePipa {
 			listaArquivos.add(nomeArquivoPrecos); 
 			
 			int menorValorPessoa = result.getInt("menorValorPessoa");
+			DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("#,##0");
 			String menorValorPessoaAsString = formatoSemCentavosSemCifra.format(menorValorPessoa);
 			
-			parameter = baseParamDe.concat("_menuacomodacoes_link").concat(iAsString);
+			String iAsString = String.valueOf(i);
+			String parameter = baseParameterDe.concat("_menuacomodacoes_link").concat(iAsString);
 			System.out.println(parameter + " -> " + slugProduto);
 			parameters.put(parameter, slugProduto);
 			
-			parameter = baseParamDe.concat("_resumopacotes_nome").concat(iAsString);
+			parameter = baseParameterDe.concat("_resumopacotes_nome").concat(iAsString);
 			System.out.println(parameter + " -> " + nomeProduto);
 			parameters.put(parameter, nomeProduto.toUpperCase());
 			
-			parameter = baseParamDe.concat("_resumopacotes_pacoteac").concat(iAsString);
+			parameter = baseParameterDe.concat("_resumopacotes_pacoteac").concat(iAsString);
 			System.out.println(parameter + " -> " + menorValorPessoaAsString);
 			parameters.put(parameter, menorValorPessoaAsString);
 			
-			parameter = baseParamDe.concat("_resumopacotes_pacoteaereo").concat(iAsString);
+			parameter = baseParameterDe.concat("_resumopacotes_pacoteaereo").concat(iAsString);
 			int menorValorPessoaComAereo = menorValorPessoa + valorAereo;
 			String menorValorPessoaComAereoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaComAereo);
 			System.out.println(parameter + " -> " + menorValorPessoaComAereoAsString);
 			parameters.put(parameter, menorValorPessoaComAereoAsString);
 			
-			parameter = baseParamDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
+			parameter = baseParameterDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
 			int menorValorPessoaFeminino = menorValorPessoa + valorExperienciaFeminino;
 			String menorValorPessoaFemininoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaFeminino);
 			System.out.println(parameter + " -> " + menorValorPessoaFemininoAsString);
 			parameters.put(parameter, menorValorPessoaFemininoAsString);
 			
-			parameter = baseParamDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
+			parameter = baseParameterDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
 			int menorValorPessoaMasculino = menorValorPessoa + valorExperienciaMasculino;
 			String menorValorPessoaMasculinoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaMasculino);
 			System.out.println(parameter + " -> " + menorValorPessoaMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaMasculinoAsString);
 			
-			parameter = baseParamDe.concat("_resumopacotes_completofeminino").concat(iAsString);
+			parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
 			int menorValorPessoaCompletoFeminino = menorValorPessoa + valorAereoComboFeminino;
 			String menorValorPessoaCompletoFemininoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoFeminino);
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoFemininoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoFemininoAsString);
 
-			parameter = baseParamDe.concat("_resumopacotes_completomasculino").concat(iAsString);
+			parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
 			int menorValorPessoaCompletoMasculino = menorValorPessoa + valorAereoComboMasculino;
 			String menorValorPessoaCompletoMasculinoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoMasculino);
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoMasculinoAsString);
 			
-			parameter = baseParamDe.concat("_resumopacotes_link").concat(iAsString);
+			parameter = baseParameterDe.concat("_resumopacotes_link").concat(iAsString);
 			String linkPacote = injoyLinkDESobre.concat(slugPacote);
 			System.out.println(parameter + " -> " + linkPacote);
 			parameters.put(parameter, linkPacote);
 			
-			parameter = baseParamDeAc.concat(slugProduto).concat("_anchor");
+			String baseParameterDeAc = baseParameterDe.concat("_ac_");
+			parameter = baseParameterDeAc.concat(slugProduto).concat("_anchor");
 			System.out.println(parameter + " -> " + slugProduto);
 			parameters.put(parameter, slugProduto);
 			
-			parameter = baseParamDeAc.concat(slugProduto).concat("_linkSobre");
+			parameter = baseParameterDeAc.concat(slugProduto).concat("_linkSobre");
 			System.out.println(parameter + " -> " + linkPacote);
 			parameters.put(parameter, linkPacote);
 			
-			parameter = baseParamDeAc.concat(slugProduto).concat("_menorValorPessoa");
+			parameter = baseParameterDeAc.concat(slugProduto).concat("_menorValorPessoa");
 			menorValorPessoaAsString = formatoSemCentavosComCifra.format(menorValorPessoa);
 			System.out.println(parameter + " -> " + menorValorPessoaAsString);
 			parameters.put(parameter, menorValorPessoaAsString);
 			
-			parameter = baseParamDeAc.concat(slugProduto).concat("_pacotefemininoaereo");
+			parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotefemininoaereo");
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoFemininoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoFemininoAsString);
 			
-			parameter = baseParamDeAc.concat(slugProduto).concat("_pacotemasculinoaereo");
+			parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotemasculinoaereo");
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoMasculinoAsString);
 			
-			
-			
-			String fotos1 = "fotos1";
-			String fotos2 = "fotos2";
-			String precos = "precos";
-			String precos2 = "precos2";
+		
 			
 			query = "SELECT ( " + 
 					"	SELECT arquivo FROM pdf " + 
 					"	WHERE slug IN (?) " + 
-					") AS " + capa + ", ( " + 
+					") AS capa, ( " + 
 					"	SELECT arquivo FROM pdf " + 
 					"	WHERE slug IN (?) " + 
-					") AS " + fotos1 + ", ( " +
+					") AS fotos1, ( " +
 					"	SELECT arquivo FROM pdf " + 
 					"	WHERE slug IN (?) " + 
-					") AS " + fotos2 + ", ( " +
+					") AS fotos2, ( " +
 					"	SELECT arquivo FROM pdf " + 
 					"	WHERE slug IN (?) " + 
-					") AS " + menu + ", ( " +
+					") AS menu, ( " +
 					"	SELECT arquivo FROM pdf " + 
 					"	WHERE slug IN (?) " + 
-					") AS " + precos + ", (" +
+					") AS precos, (" +
 					"	SELECT arquivo FROM pdf " + 
 					"	WHERE slug IN (?) " + 
-					") AS " + precos2 +
+					") AS precos2" +
 					";";
 			statement = connection.prepareStatement(query);
 			
-			pBase = baseParamDeAc + slugProduto + "_";
-			parameterCapa = pBase + capa;
-			String parameterFotos1 = pBase + fotos1;
-			String parameterFotos2 = pBase + fotos2;
-			parameterMenu = pBase + menu;
-			String parameterPrecos = pBase + precos;
-			String parameterPrecos2 = pBase + precos2;
+			baseParameter = baseParameterDeAc + slugProduto + "_";
+			parameterCapa = baseParameter + "capa";
+			String parameterFotos1 = baseParameter + "fotos1";
+			String parameterFotos2 = baseParameter + "fotos2";
+			parameterMenu = baseParameter + "menu";
+			String parameterPrecos = baseParameter + "precos";
+			String parameterPrecos2 = baseParameter + "precos2";
 			statement.setString(1, parameterCapa);
 			statement.setString(2, parameterFotos1);
 			statement.setString(3, parameterFotos2);
@@ -424,27 +413,27 @@ public class TestePipa {
 			
 			while(result2.next()) {
 				String arquivoMenu = result2.getString("menu");
-				parameter = baseParamDe.concat("_menuacomodacoes_imagem").concat(iAsString);
+				parameter = baseParameterDe.concat("_menuacomodacoes_imagem").concat(iAsString);
 				System.out.println(parameter + " -> " + arquivoMenu);
 				parameters.put(parameter, arquivoMenu);
 				
-				String arquivoCapa = result2.getString(capa);
+				String arquivoCapa = result2.getString("capa");
 				System.out.println(parameterCapa + " -> " + arquivoCapa);
 				parameters.put(parameterCapa, arquivoCapa);
 				
-				String arquivoFotos1 = result2.getString(fotos1);
+				String arquivoFotos1 = result2.getString("fotos1");
 				System.out.println(parameterFotos1 + " -> " + arquivoFotos1);
 				parameters.put(parameterFotos1, arquivoFotos1);
 				
-				String arquivoFotos2 = result2.getString(fotos2);
+				String arquivoFotos2 = result2.getString("fotos2");
 				System.out.println(parameterFotos2 + " -> " + arquivoFotos2);
 				parameters.put(parameterFotos2, arquivoFotos2);
 				
-				String arquivoPrecos = result2.getString(precos);
+				String arquivoPrecos = result2.getString("precos");
 				System.out.println(parameterPrecos + " -> " + arquivoPrecos);
 				parameters.put(parameterPrecos, arquivoPrecos);
 				
-				String arquivoPrecos2 = result2.getString(precos2);
+				String arquivoPrecos2 = result2.getString("precos2");
 				System.out.println(parameterPrecos2 + " -> " + arquivoPrecos2);
 				parameters.put(parameterPrecos2, arquivoPrecos2);
 			}
@@ -497,19 +486,19 @@ public class TestePipa {
 				
 				String valorPessoaAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
 						formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa")));
-				parameter = baseParamDeAc.concat(slugProduto).concat("_pacoteac_").concat(nomeAc);
+				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacoteac_").concat(nomeAc);
 				System.out.println(parameter + " -> " + valorPessoaAsString);
 				parameters.put(parameter, valorPessoaAsString);
 				
 				String valorPacoteFemininoAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
 						formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa") + valorExperienciaFeminino));
-				parameter = baseParamDeAc.concat(slugProduto).concat("_pacotefeminino_").concat(nomeAc);
+				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotefeminino_").concat(nomeAc);
 				System.out.println(parameter + " -> " + valorPacoteFemininoAsString);
 				parameters.put(parameter, valorPacoteFemininoAsString);
 				
 				String valorPacoteMasculinoAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
 						formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa") + valorExperienciaMasculino));
-				parameter = baseParamDeAc.concat(slugProduto).concat("_pacotemasculino_").concat(nomeAc);
+				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotemasculino_").concat(nomeAc);
 				System.out.println(parameter + " -> " + valorPacoteMasculinoAsString);
 				parameters.put(parameter, valorPacoteMasculinoAsString);
 
@@ -561,35 +550,35 @@ public class TestePipa {
 				String slugProduto = result.getString("slugProduto");
 				String emBreve = "EM BREVE";
 				
-				String parameter = baseParamDe.concat("_menuacomodacoes_link").concat(iAsString);
+				String parameter = baseParameterDe.concat("_menuacomodacoes_link").concat(iAsString);
 				System.out.println(parameter + " -> " + slugProduto);
 				parameters.put(parameter, slugProduto);
 				
-				parameter = baseParamDe.concat("_resumopacotes_nome").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_nome").concat(iAsString);
 				System.out.println(parameter + " -> " + nomeProduto);
 				parameters.put(parameter, nomeProduto.toUpperCase());
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacoteac").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacoteac").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacoteaereo").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacoteaereo").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);				
 				
-				parameter = baseParamDe.concat("_resumopacotes_completofeminino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);
 				
-				parameter = baseParamDe.concat("_resumopacotes_completomasculino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);
 				
@@ -597,14 +586,13 @@ public class TestePipa {
 						+ SLUG_DE
 						+ "_ac_"
 						+ slugProduto
-						+ "_menu_embreve');"; /*
-						+ "_menu');"; */
+						+ "_menu_embreve');";
 				statement = connection.prepareStatement(query);
 				ResultSet result2 = statement.executeQuery();
 				
 				while(result2.next()) {
 					String arquivo = result2.getString("arquivo");
-					parameter = baseParamDe.concat("_menuacomodacoes_imagem").concat(iAsString);
+					parameter = baseParameterDe.concat("_menuacomodacoes_imagem").concat(iAsString);
 					System.out.println(parameter + " -> " + arquivo);
 					parameters.put(parameter, arquivo);
 				}
@@ -649,35 +637,35 @@ public class TestePipa {
 				String slugProduto = result.getString("slugProduto");
 				
 				
-				String parameter = baseParamDe.concat("_menuacomodacoes_link").concat(iAsString);
+				String parameter = baseParameterDe.concat("_menuacomodacoes_link").concat(iAsString);
 				System.out.println(parameter + " -> " + slugProduto);
 				parameters.put(parameter, slugProduto);
 				
-				parameter = baseParamDe.concat("_resumopacotes_nome").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_nome").concat(iAsString);
 				System.out.println(parameter + " -> " + nomeProduto);
 				parameters.put(parameter, nomeProduto.toUpperCase());
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacoteac").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacoteac").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacoteaereo").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacoteaereo").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
 				
-				parameter = baseParamDe.concat("_resumopacotes_completofeminino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
 				
-				parameter = baseParamDe.concat("_resumopacotes_completomasculino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
 				
@@ -692,7 +680,7 @@ public class TestePipa {
 				
 				while(result2.next()) {
 					String arquivo = result2.getString("arquivo");
-					parameter = baseParamDe.concat("_menuacomodacoes_imagem").concat(iAsString);
+					parameter = baseParameterDe.concat("_menuacomodacoes_imagem").concat(iAsString);
 					System.out.println(parameter + " -> " + arquivo);
 					parameters.put(parameter, arquivo);
 				}
@@ -713,39 +701,39 @@ public class TestePipa {
 			while(i <= MAX_RESULTS) {
 				String iAsString = String.valueOf(i);
 				
-				String parameter = baseParamDe.concat("_menuacomodacoes_imagem").concat(iAsString);
+				String parameter = baseParameterDe.concat("_menuacomodacoes_imagem").concat(iAsString);
 				System.out.println(parameter + " -> " + imageVazio);
 				parameters.put(parameter, imageVazio);
 				
-				parameter = baseParamDe.concat("_menuacomodacoes_link").concat(iAsString);
+				parameter = baseParameterDe.concat("_menuacomodacoes_link").concat(iAsString);
 				System.out.println(parameter + " -> " + tagAcomodacoes);
 				parameters.put(parameter, tagAcomodacoes);
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacoteac").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacoteac").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacoteaereo").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacoteaereo").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
 				
-				parameter = baseParamDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
 				
-				parameter = baseParamDe.concat("_resumopacotes_completofeminino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
 				
-				parameter = baseParamDe.concat("_resumopacotes_completomasculino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
 				
-				parameter = baseParamDe.concat("_resumopacotes_link").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_link").concat(iAsString);
 				System.out.println(parameter + " -> " + injoyLinkDESobre);
 				parameters.put(parameter, injoyLinkDESobre);
 				
@@ -753,15 +741,20 @@ public class TestePipa {
 			}
 			
 		}
-
-		listaArquivos.add("letspipa_festas");
-		listaArquivos.add("letspipa_final");
-
-		/* */
+		
+		
+	}
+	
+	
+	
+	
+	private static void producePDF(Connection connection, HashMap<String, Object> parameters, 
+			String nomeArquivoPDF, ArrayList<String> listaArquivos) throws JRException {
+		
 		System.out.println("Iniciando a compilacao dos relatorios.");
 		ArrayList<JasperPrint> jasperPrintList = new ArrayList<JasperPrint>();
 		for(String arquivo: listaArquivos) {
-			System.out.print("Processando: ".concat(arquivo).concat("... "));
+			System.out.print("Processando: " + arquivo + "... ");
 			String caminhoArquivoJasper = getReportFilePath(arquivo);
 			JasperReport jasperReport = JasperCompileManager.compileReport(caminhoArquivoJasper);
 			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, connection);
@@ -778,16 +771,11 @@ public class TestePipa {
 		exporter.setConfiguration(configuration);
 		exporter.setExporterOutput(eo);
 		exporter.setExporterInput(SimpleExporterInput.getInstance(jasperPrintList));
-		System.out.println("Iniciando a producao do arquivo final...: ".concat(nomeArquivoFinal));
+		System.out.println("Iniciando a producao do arquivo final...: " + nomeArquivoFinal);
 		
 		exporter.exportReport();
 		
-		long endTime = Calendar.getInstance().getTimeInMillis();
-		long processingTime = endTime - startTime;
-		System.out.println("Finalizado em " + processingTime + " milisegundos.");
-		/* */
 	}
-	
 	
 	
 	

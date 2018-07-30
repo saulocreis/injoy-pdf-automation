@@ -1,24 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_3_infovenda" pageWidth="684" pageHeight="1137" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_3_infovenda" pageWidth="684" pageHeight="1137" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="e4203300-1059-4320-a55e-f4239a4d5e5b">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_infovenda" class="java.lang.String"/>
+	<parameter name="jr_letspipa_infovenda" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Infos de Venda.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataCriacao" class="java.lang.String">
+		<defaultValueExpression><![CDATA[DateFormat.getDateInstance().format(new Date())]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
 		<band height="1137">
 			<image>
-				<reportElement x="0" y="0" width="684" height="1137" />
+				<reportElement x="0" y="0" width="684" height="1137" uuid="581e1112-e192-46f0-a429-c88c4b598ecb"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_infovenda}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.infovenda}]]></anchorNameExpression>
 			</image>
+			<textField>
+				<reportElement x="340" y="128" width="70" height="20" forecolor="#FFFFFF" uuid="14d6d67c-9c05-4909-acd4-8a427d0a5dcc"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataCriacao}]]></textFieldExpression>
+			</textField>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="210" y="1040" width="60" height="60" />
-				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<reportElement mode="Transparent" x="410" y="170" width="150" height="27" uuid="a60bd0f1-3e69-474d-90b7-95961fb3f4dd"/>
+				<imageExpression><![CDATA[$R{injoy.image.link2}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link}]]></hyperlinkReferenceExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="220" y="1080" width="160" height="27" uuid="224bd75e-e437-4136-9e47-068fc7d59b47"/>
+				<imageExpression><![CDATA[$R{injoy.image.link2}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.email.concierge}]]></hyperlinkReferenceExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="285" y="1100" width="30" height="30" uuid="477c3d64-c7d3-4997-8859-c9e04be94d15"/>
+				<imageExpression><![CDATA[$R{injoy.image.link2}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.letspipa.whatsapp}]]></hyperlinkReferenceExpression>
 			</image>
 		</band>
 	</background>

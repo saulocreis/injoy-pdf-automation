@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_hotel-marinas_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-marinas_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Marinas - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-marinas_pacoteac_standard_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -95,7 +98,7 @@
 		<band height="989">
 			<image>
 				<reportElement x="0" y="0" width="684" height="989" uuid="dd107472-18b5-4bf8-bc90-38d487a9a88a"/>
-				<imageExpression><![CDATA["images\\letspipa\\Marinas - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_hotel-marinas_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="940" width="40" height="40" uuid="264b90b1-f4eb-4bf3-b4b2-9ce4c277eb90"/>
@@ -283,6 +286,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-marinas_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="885" width="130" height="34" forecolor="#FFFFFF" uuid="cdfe321c-edd6-42bf-ab9e-fc59603df4d9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

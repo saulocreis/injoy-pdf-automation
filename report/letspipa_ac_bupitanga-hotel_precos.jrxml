@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_bupitanga-hotel_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_bupitanga-hotel_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Bupitanga - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_bupitanga-hotel_pacoteac_bangalo-com-piscina-particular_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -77,7 +80,7 @@
 		<band height="855">
 			<image>
 				<reportElement x="0" y="0" width="684" height="855" uuid="d235b5d7-d30f-4a3c-9594-c9b8613ccb70"/>
-				<imageExpression><![CDATA["images\\letspipa\\Bupitanga - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_bupitanga-hotel_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="810" width="40" height="40" uuid="09d142cc-2c36-49e4-ae2c-44173e266bdc"/>
@@ -223,6 +226,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bupitanga-hotel_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="760" width="130" height="34" forecolor="#FFFFFF" uuid="ad482455-a278-4781-a1aa-05fd8e4c0a43"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

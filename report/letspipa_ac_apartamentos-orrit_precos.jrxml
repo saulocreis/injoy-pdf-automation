@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_apartamentos-orrit_precos" pageWidth="684" pageHeight="645" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="88a9fbcc-1c7a-4f90-8b4f-d16a4d64a869">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="valorAereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Apartamentos Orrit - quartos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacoteac_apartamento-vista-mar_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotefeminino_apartamento-vista-mar_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotemasculino_apartamento-vista-mar_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacoteac_apartamento-vista-mar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotefeminino_apartamento-vista-mar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotemasculino_apartamento-vista-mar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotefemininoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotemasculinoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="645">
+			<image>
+				<reportElement x="0" y="0" width="684" height="645" uuid="f32e6067-fa6f-42e0-ad37-62e068c1ccb9"/>
+				<imageExpression><![CDATA["images\\letspipa\\Apartamentos Orrit - quartos.png"]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="594" width="40" height="40" uuid="720c12d4-7dae-40f2-8783-f92f68e824f9"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="260" width="98" height="34" uuid="2bdef2de-640d-4898-9c17-71229132c4e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_pacoteac_apartamento-vista-mar_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="260" width="98" height="34" uuid="01f4006e-fcfb-456d-a760-994382211f58"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_pacotefeminino_apartamento-vista-mar_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="260" width="98" height="34" uuid="757a5275-2a7d-4835-8aa3-3d64588b565d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_pacotemasculino_apartamento-vista-mar_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="320" width="98" height="34" uuid="55e9cf33-d187-4ef5-84f4-f046a0de0d0c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_pacoteac_apartamento-vista-mar_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="320" width="98" height="34" uuid="f6d005e9-50f6-4cbf-8a50-4f426e1170db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_pacotefeminino_apartamento-vista-mar_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="320" width="98" height="34" uuid="e527dd32-acb8-46b6-8455-77c6a0879b08"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_pacotemasculino_apartamento-vista-mar_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="430" width="98" height="34" uuid="42e4f9a6-8a65-4da8-8905-24f51b6efb00"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_pacotefemininoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="430" width="98" height="34" uuid="f0670fda-85d0-4b2e-acf4-a486c5235041"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_apartamentos-orrit_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="520" width="130" height="34" forecolor="#FFFFFF" uuid="40ff31b2-2831-4a7e-b721-e1cc050d4226"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

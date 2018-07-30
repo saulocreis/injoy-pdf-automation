@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_pipa-privilege-boutique_precos" pageWidth="684" pageHeight="855" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="6a604d2b-ba6c-4352-8b2f-29bdad9530fa">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
@@ -9,6 +8,12 @@
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Privilege Boutique - Quartos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_precos2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Privilege Boutique - Quartos2.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac1" class="java.lang.String">
@@ -186,7 +191,7 @@
 		<band height="855">
 			<image>
 				<reportElement x="0" y="0" width="684" height="855" uuid="e73bc60f-55b8-4a5f-9326-a2f26f092871"/>
-				<imageExpression><![CDATA["images\\letspipa\\Privilege Boutique - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_pipa-privilege-boutique_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="815" width="40" height="40" uuid="6992350c-99e8-408d-9896-3f6a75905ad7"/>
@@ -407,7 +412,7 @@
 		<band height="855">
 			<image>
 				<reportElement x="0" y="0" width="684" height="855" uuid="a7404766-def7-465e-bd59-b71612a6c318"/>
-				<imageExpression><![CDATA["images\\letspipa\\Privilege Boutique - Quartos2.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_pipa-privilege-boutique_precos2}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="815" width="40" height="40" uuid="7da357aa-65ed-476d-ba7c-18abc397e1ba"/>
@@ -595,6 +600,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_pipa-privilege-boutique_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="350" y="750" width="130" height="34" forecolor="#FFFFFF" uuid="d55497b7-b22a-4ec5-a17b-d5b54b9bd779"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

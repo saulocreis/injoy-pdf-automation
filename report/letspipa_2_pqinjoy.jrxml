@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_2_pqinjoy" pageWidth="684" pageHeight="504" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_2_pqinjoy" pageWidth="684" pageHeight="502" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="6d26db57-ebc8-42dd-a635-36091f90341b">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_pqinjoy" class="java.lang.String"/>
+	<parameter name="jr_letspipa_pqinjoy" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Pq IJ.png"]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="504">
+		<band height="502">
 			<image>
-				<reportElement x="0" y="0" width="684" height="504" />
+				<reportElement x="0" y="0" width="684" height="502" uuid="fe5f171d-fee2-4528-948a-29360eb4d5d3"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_pqinjoy}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.pqinjoy}]]></anchorNameExpression>
 			</image>

@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Madeiro Beach - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac_duplo-vista-mar-twin_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -50,7 +53,7 @@
 		<band height="988">
 			<image>
 				<reportElement x="0" y="0" width="684" height="988" uuid="9f172286-b036-4368-8150-63a571f59040"/>
-				<imageExpression><![CDATA["images\\letspipa\\Madeiro Beach - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_madeiro-beach-hotel_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="945" width="40" height="40" uuid="dafdcc56-f1d2-4441-9e05-cf54afe51034"/>
@@ -154,6 +157,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_madeiro-beach-hotel_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="885" width="130" height="34" forecolor="#FFFFFF" uuid="34f16a1b-b94f-4f60-92a9-a64e7231f2ae"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

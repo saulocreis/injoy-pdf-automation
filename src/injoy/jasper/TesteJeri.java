@@ -32,6 +32,9 @@ public class TesteJeri {
 	static private final String SEP2 = "/"; 
 	static private final String SLUG_DE = "jeri2019";
 	static private final String SLUG_EXPERIENCIA = "festas-john-john-rocks-jeri-2019";
+	static private final String SLUG_AEREO_NORMAL = "aereo-fretado-1-reveillon-jeri-2019";
+	static private final String SLUG_AEREO_COMBO_FEMININO = "combo-aereo-pacote-feminino-5-festas-jeri-2019";
+	static private final String SLUG_AEREO_COMBO_MASCULINO = "combo-aereo-pacote-masculino-5-festas-jeri-2019";
 	static private final String IMG_DIR = "images".concat(SEP).concat(SLUG_DE).concat(SEP);
 	
 	static private Properties jasperprops;

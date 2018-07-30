@@ -1,52 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_4_acomodacoes" pageWidth="684" pageHeight="836" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="2f1f11d4-ff6a-40ea-8bf5-ac4b130b8e55">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_menuacomodacoes" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}+$R{injoy.image.letspipa.menuacomodacoes}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Menu Acomodações.png"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link1" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link2" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link3" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link4" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link5" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link6" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link7" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link8" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link9" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link10" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem11" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link11" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem12" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link12" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem13" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link13" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem14" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link14" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem15" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link15" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem16" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link16" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem17" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link17" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem18" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link18" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem19" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link19" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_imagem20" class="java.lang.String"/>
-	<parameter name="jr_letspipa_menuacomodacoes_link20" class="java.lang.String"/>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem1" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem4" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem5" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem6" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem7" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem8" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem9" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem10" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link10" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem11" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link11" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem12" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link12" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem13" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link13" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem14" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link14" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem15" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link15" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem16" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link16" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem17" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link17" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem18" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link18" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem19" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link19" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_imagem20" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_menuacomodacoes_link20" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>

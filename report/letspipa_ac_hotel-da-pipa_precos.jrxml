@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_hotel-da-pipa_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-da-pipa_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Hotel da Pipa - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-da-pipa_pacoteac_vista-jardim_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -59,7 +62,7 @@
 		<band height="990">
 			<image>
 				<reportElement x="0" y="0" width="684" height="990" uuid="621f581c-1f26-44bb-9ab7-565b809a63cf"/>
-				<imageExpression><![CDATA["images\\letspipa\\Hotel da Pipa - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_hotel-da-pipa_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="950" width="40" height="40" uuid="68d67291-0863-4f89-b7b5-40089a18df96"/>
@@ -163,6 +166,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-da-pipa_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="890" width="130" height="34" forecolor="#FFFFFF" uuid="9f849a32-a0ea-46ab-9d22-8bbb0a766007"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>

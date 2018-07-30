@@ -7,8 +7,11 @@
 	<parameter name="slug_de" class="java.lang.String">
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_precos" class="java.lang.String">
+	<parameter name="valorAereo" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Bosque da Praia - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_pacoteac_master-jardim_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -113,7 +116,7 @@
 		<band height="986">
 			<image>
 				<reportElement x="0" y="0" width="684" height="986" uuid="cf2bfee0-e6df-447b-970e-f7a6912b0f05"/>
-				<imageExpression><![CDATA["images\\letspipa\\Bosque da Praia - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_bosque-da-praia-flats_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="25" y="940" width="40" height="40" uuid="490a88cf-db2f-496e-bc80-ce1ca5e7f956"/>
@@ -343,6 +346,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_bosque-da-praia-flats_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="890" width="130" height="34" forecolor="#FFFFFF" uuid="1d763d15-9735-4cda-8f9b-227ba0680025"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>
 		</band>
 	</background>
