@@ -8,52 +8,52 @@
 		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="valorAereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_precos" class="java.lang.String">
 		<defaultValueExpression><![CDATA["Hotel Sombra e Água Fresca - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacoteac_executivo-jardim_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefeminino_executivo-jardim_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculino_executivo-jardim_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacoteac_executivo-jardim_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefeminino_executivo-jardim_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculino_executivo-jardim_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacoteac_executivo-mar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefeminino_executivo-mar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculino_executivo-mar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacoteac_executivo-mar_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefeminino_executivo-mar_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculino_executivo-mar_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefemininoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculinoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
@@ -72,105 +72,105 @@
 			<textField>
 				<reportElement x="335" y="270" width="98" height="34" uuid="288bd47d-77ba-4ca2-8ced-9a5412fe09f4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacoteac_executivo-jardim_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="270" width="98" height="34" uuid="e517d723-0f4c-4c14-80d5-6981d3afe588"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefeminino_executivo-jardim_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="270" width="98" height="34" uuid="83417157-1ddf-46a6-b28d-d006d6aa381c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculino_executivo-jardim_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="320" width="98" height="34" uuid="10a9c45c-3c91-4bf1-8433-8d837bf7d53f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacoteac_executivo-jardim_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="320" width="98" height="34" uuid="489bbd01-e78b-4b6a-8986-75bbd8f8d027"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefeminino_executivo-jardim_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="320" width="98" height="34" uuid="1b781e22-b1d8-408e-873c-2eeea6a11f21"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculino_executivo-jardim_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="390" width="98" height="34" uuid="9f32e76e-8290-41ec-a14b-2ca2bdf6bab6"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacoteac_executivo-mar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="390" width="98" height="34" uuid="24c7a801-5c78-4e60-83a7-67f205ca6902"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefeminino_executivo-mar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="390" width="98" height="34" uuid="bc780321-9479-41bc-acc2-06e39398941f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculino_executivo-mar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="335" y="450" width="98" height="34" uuid="31e209a8-1493-4ace-92cf-211d44d434fd"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacoteac_executivo-mar_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="450" width="98" height="34" uuid="ed1a41ee-01d3-4456-bfe2-fb92785ff3f8"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefeminino_executivo-mar_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="450" width="98" height="34" uuid="987696ac-dd81-4bbc-a88b-c2426e2f61f9"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculino_executivo-mar_3}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="450" y="560" width="98" height="34" uuid="3984bf22-eea4-4581-96c7-b5e131e2f15d"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotefemininoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="560" y="560" width="98" height="34" uuid="f70575b9-ea01-4be2-9b08-81f2dc21f1a7"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="17" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sombra-e-agua-fresca_pacotemasculinoaereo}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="360" y="645" width="130" height="34" forecolor="#FFFFFF" uuid="67b48641-8837-4824-b6e2-ae4b76e3ae77"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="24" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
 			</textField>

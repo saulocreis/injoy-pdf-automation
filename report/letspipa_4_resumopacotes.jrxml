@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_4_resumopacotes" pageWidth="684" pageHeight="1383" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="da384b65-922e-44d7-8719-4d711f73afec">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_4_resumopacotes" pageWidth="684" pageHeight="1382" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="da384b65-922e-44d7-8719-4d711f73afec">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
@@ -470,10 +470,10 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="1383">
+		<band height="1382">
 			<image>
-				<reportElement x="0" y="0" width="684" height="1383" uuid="014e5a86-6857-4eba-9f7b-4d34cc9cf892"/>
-				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_resumopacotes}]]></imageExpression>
+				<reportElement x="0" y="0" width="684" height="1382" uuid="014e5a86-6857-4eba-9f7b-4d34cc9cf892"/>
+				<imageExpression><![CDATA["images\\letspipa\\Resumo de Acomodações.png"]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.resumopacotes}]]></anchorNameExpression>
 			</image>
 			<textField>

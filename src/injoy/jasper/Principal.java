@@ -42,11 +42,17 @@ public class Principal {
 	
 
 	public static void main(String[] args) throws SQLException {
-		long startTime = Calendar.getInstance().getTimeInMillis();
-		
+		Calendar calendar = Calendar.getInstance();
+		long startTime = calendar.getTimeInMillis(); /*
+		String dia = String.valueOf(calendar.get(Calendar.DAY_OF_MONTH));
+		String mesDia = String.valueOf(calendar.get(Calendar.MONTH))+dia;
+		String anoMesDia = String.valueOf(calendar.get(Calendar.YEAR))+mesDia;
+		String segundo = String.valueOf(calendar.get(Calendar.SECOND));
+		String minutoSegundo = String.valueOf(calendar.get(Calendar.MINUTE))+segundo;
+		String horaMinutoSegundo = String.valueOf(calendar.get(Calendar.HOUR))+minutoSegundo;
+		String data = anoMesDia+horaMinutoSegundo; */
 		String nomeArquivoPDF = SLUG_DE + "-" + String.valueOf(startTime) + ".pdf";
 		
-
 		
 		// PREPARANDO ITENS DA CONEXÃO COM BANCO DE DADOS
 		System.out.println("Tentando conectar...");
