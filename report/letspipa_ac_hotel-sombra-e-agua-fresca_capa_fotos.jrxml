@@ -14,13 +14,13 @@
 		<defaultValueExpression><![CDATA["hotel-sombra-e-agua-fresca"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Hotel Sombra e Água Fresca.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Hotel Sombra e Ãgua Fresca.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Hotel Sombra e Água Fresca - Fotos.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Hotel Sombra e Ãgua Fresca - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Hotel Sombra e Água Fresca - Fotos2.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Hotel Sombra e Ãgua Fresca - Fotos2.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-sombra-e-agua-fresca_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

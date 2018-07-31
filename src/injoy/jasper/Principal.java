@@ -31,17 +31,20 @@ public class Principal {
 	static private final String DEFAULT_FILENAME = "src/jasperprops.properties";
 	static private final String CONEXAO = "jdbc:mariadb://localhost:3306/injoy?user=root";
 	static private final String SEP = System.getProperty("file.separator");
-	static private final String SEP2 = "/"; 
+	static private final String SEP2 = "/";
+	/*
+	 * 'letspipa', 'jeri2019', 'carneiros'
+	 */
 	static private final String SLUG_DE = "letspipa";
-	static private final String IMG_DIR = "images".concat(SEP).concat(SLUG_DE).concat(SEP);
-	static private final String SLUG_EXPERIENCIA = "pacote-de-festas-pipa-2019";
-	static private final String SLUG_AEREO_NORMAL = "aereo-reveillon-pipa-2019";
-	static private final String SLUG_AEREO_COMBO_FEMININO = "combo-aereo-pacote-feminino-6-festas-lets-pipa-2019";
-	static private final String SLUG_AEREO_COMBO_MASCULINO = "combo-aereo-pacote-masculino-6-festas-lets-pipa-2019";
+	static private final String SLUG_HIBRIDO = "combo-aereo-pacote-6-festas-lets-pipa-2019";
+	static private final String SLUG_EXPERIENCIA = "pacote-de-festas-combo-pipa-6d-2019";
+	static private final String SLUG_AEREO = "aereo-26-27-reveillon-pipa-2019";
+	//static private final String SLUG_AEREO_COMBO_FEMININO = "combo-aereo-pacote-feminino-5-festas-jeri-2019";
+	//static private final String SLUG_AEREO_COMBO_MASCULINO = "combo-aereo-pacote-masculino-5-festas-jeri-2019";
 	
 	
 	static private Properties jasperprops;
-	
+	static private final String IMG_DIR = "images".concat(SEP).concat(SLUG_DE).concat(SEP);
 
 	public static void main(String[] args) throws SQLException {
 		Calendar calendar = Calendar.getInstance();
@@ -172,6 +175,11 @@ public class Principal {
 		result.close();
 		
 		
+		/*
+		
+		
+		
+		*/
 		
 		
 		
@@ -221,12 +229,14 @@ public class Principal {
 		
 		
 		query = "SELECT (" + 
-				"	SELECT ROUND(valor + taxa, 0) " + 
+				"	SELECT MIN(ROUND(valor + taxa, 0)) " + 
 				"	FROM aereo_trecho WHERE " + 
 				"		idProduto IN ( " + 
 				"			SELECT id FROM produto WHERE slug IN (?) " + 
-				"		) " + 
-				"	) as valorAereo, ( " + 
+				"		) "
+				+ "	GROUP BY idProduto" + 
+				"	) as valorAereo" /*
+				+ ", ( " + 
 				"	SELECT ROUND(valor + taxa, 0) " + 
 				"	FROM aereo_trecho WHERE " + 
 				"		idProduto IN ( " + 
@@ -238,25 +248,56 @@ public class Principal {
 				"		idProduto IN ( " + 
 				"			SELECT id FROM produto WHERE slug IN (?) " + 
 				"		) " + 
-				"    ) AS valorAereoComboMasculino" + 
+				"    ) AS valorAereoComboMasculino" */ + 
 				";";
 		statement = connection.prepareStatement(query);
-		statement.setString(1, SLUG_AEREO_NORMAL);
-		statement.setString(2, SLUG_AEREO_COMBO_FEMININO);
-		statement.setString(3, SLUG_AEREO_COMBO_MASCULINO);
+		statement.setString(1, SLUG_AEREO);
+		//statement.setString(2, SLUG_AEREO_COMBO_FEMININO);
+		//statement.setString(3, SLUG_AEREO_COMBO_MASCULINO);
 		result = statement.executeQuery();
 		
 		result.next();
 		DecimalFormat formatoSemCentavosComCifra = new DecimalFormat("R$ #,##0");
 		int valorAereo = result.getInt("valorAereo");
-		int valorAereoComboFeminino = result.getInt("valorAereoComboFeminino");
-		int valorAereoComboMasculino = result.getInt("valorAereoComboMasculino");
+		//int valorAereoComboFeminino = result.getInt("valorAereoComboFeminino");
+		//int valorAereoComboMasculino = result.getInt("valorAereoComboMasculino");
 		parameters.put("valorAereo", formatoSemCentavosComCifra.format(valorAereo));
-		parameters.put("valorAereoComboFeminino", formatoSemCentavosComCifra.format(valorAereoComboFeminino));
-		parameters.put("valorAereoComboMasculino", formatoSemCentavosComCifra.format(valorAereoComboMasculino));
+		//parameters.put("valorAereoComboFeminino", formatoSemCentavosComCifra.format(valorAereoComboFeminino));
+		//parameters.put("valorAereoComboMasculino", formatoSemCentavosComCifra.format(valorAereoComboMasculino));
 		result.close();
 		
+		/*
+		query = "SELECT (" + 
+				"	SELECT MIN(ROUND(valor + taxa, 0)) " + 
+				"	FROM aereo_trecho WHERE " + 
+				"		idProduto IN ( " + 
+				"			SELECT id FROM produto WHERE slug IN (?) " + 
+				"		) " + 
+				"	GROUP BY idProduto " + 
+				") AS valorAereo" + 
+				";";
+		statement.setString(1, SLUG_AEREO);
+		result = statement.executeQuery();
 		
+		result.next();
+		DecimalFormat formatoSemCentavosComCifra = new DecimalFormat("R$ #,##0");
+		int valorAereo = result.getInt(1);
+		parameters.put("valorAereo", formatoSemCentavosComCifra.format(valorAereo));
+		result.close();
+		*/
+		
+		query = "SELECT ROUND(hib.desconto_fixo, 0) as desconto " + 
+				"FROM produto hib WHERE " + 
+				"	hib.slug IN (?) " + 
+				";";
+		
+		statement = connection.prepareStatement(query);
+		statement.setString(1, SLUG_HIBRIDO);
+		result = statement.executeQuery();
+		
+		result.next();
+		int desconto = result.getInt("desconto");
+		result.close();
 		
 		
 		
@@ -342,13 +383,13 @@ public class Principal {
 			parameters.put(parameter, menorValorPessoaMasculinoAsString);
 			
 			parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
-			int menorValorPessoaCompletoFeminino = menorValorPessoa + valorAereoComboFeminino;
+			int menorValorPessoaCompletoFeminino = menorValorPessoa + valorAereo + valorExperienciaFeminino - desconto;
 			String menorValorPessoaCompletoFemininoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoFeminino);
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoFemininoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoFemininoAsString);
 
 			parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
-			int menorValorPessoaCompletoMasculino = menorValorPessoa + valorAereoComboMasculino;
+			int menorValorPessoaCompletoMasculino = menorValorPessoa + valorAereo + valorExperienciaMasculino - desconto;
 			String menorValorPessoaCompletoMasculinoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoMasculino);
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoMasculinoAsString);

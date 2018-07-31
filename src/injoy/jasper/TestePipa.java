@@ -191,7 +191,7 @@ public class TestePipa {
 				"			slug IN (?) " + 
 				"		) " + 
 				"	) AS valorExperienciaMasculino, (" + 
-				"	SELECT ROUND(efd.valor,0)\r\n" + 
+				"	SELECT ROUND(efd.valor,0)" + 
 				"	FROM experiencia_festadias efd WHERE " + 
 				"		efd.categoria IN ('Secundário') AND " + 
 				"		efd.idProduto IN ( " + 
