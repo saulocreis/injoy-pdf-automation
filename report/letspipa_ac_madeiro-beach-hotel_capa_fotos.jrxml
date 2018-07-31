@@ -14,13 +14,13 @@
 		<defaultValueExpression><![CDATA["madeiro-beach-hotel"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Madeiro Beach.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Madeiro Beach - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Madeiro Beach - Fotos2.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

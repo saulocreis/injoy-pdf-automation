@@ -14,13 +14,13 @@
 		<defaultValueExpression><![CDATA["hotel-da-pipa"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-da-pipa_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Hotel da Pipa.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-da-pipa_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Hotel da Pipa - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-da-pipa_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Hotel da Pipa - Fotos2.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_hotel-da-pipa_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

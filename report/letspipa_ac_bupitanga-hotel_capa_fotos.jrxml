@@ -14,13 +14,10 @@
 		<defaultValueExpression><![CDATA["bupitanga-hotel"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_bupitanga-hotel_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Bupitanga.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_bupitanga-hotel_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
-	</parameter>
-	<parameter name="jr_letspipa_ac_bupitanga-hotel_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Bupitanga - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_bupitanga-hotel_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

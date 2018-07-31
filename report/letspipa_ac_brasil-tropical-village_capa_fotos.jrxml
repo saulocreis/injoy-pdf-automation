@@ -17,10 +17,10 @@
 		<defaultValueExpression><![CDATA["Brasil Tropical Village.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Brasil Tropical Village - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Brasil Tropical Village - Fotos2.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
@@ -32,7 +32,7 @@
 		<band height="514">
 			<image>
 				<reportElement x="0" y="0" width="684" height="514" uuid="80c306a0-aa89-4e2c-aef3-1365f74916a7"/>
-				<imageExpression><![CDATA["images\\letspipa\\Brasil Tropical Village.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_brasil-tropical-village_capa}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$P{jr_letspipa_ac_brasil-tropical-village_anchor}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">

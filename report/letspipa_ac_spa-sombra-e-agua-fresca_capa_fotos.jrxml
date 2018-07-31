@@ -14,13 +14,10 @@
 		<defaultValueExpression><![CDATA["spa-sombra-e-agua-fresca"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_spa-sombra-e-agua-fresca_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["SPA Sombra e Agua Fresca.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_spa-sombra-e-agua-fresca_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
-	</parameter>
-	<parameter name="jr_letspipa_ac_spa-sombra-e-agua-fresca_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["SPA Sombra e Agua Fresca - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_spa-sombra-e-agua-fresca_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

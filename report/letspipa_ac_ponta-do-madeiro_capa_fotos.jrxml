@@ -14,13 +14,13 @@
 		<defaultValueExpression><![CDATA["ponta-do-madeiro"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_ponta-do-madeiro_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Ponta do Madeiro.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_ponta-do-madeiro_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Ponta do Madeiro - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_ponta-do-madeiro_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Ponta do Madeiro - Fotos2.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_ponta-do-madeiro_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

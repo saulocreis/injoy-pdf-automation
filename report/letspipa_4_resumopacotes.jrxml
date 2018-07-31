@@ -4,11 +4,11 @@
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
-	<parameter name="linkSobre" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link.sobre}]]></defaultValueExpression>
-	</parameter>
 	<parameter name="jr_letspipa_resumopacotes" class="java.lang.String">
 		<defaultValueExpression><![CDATA["Resumo de Acomodações.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome1" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -473,7 +473,7 @@
 		<band height="1382">
 			<image>
 				<reportElement x="0" y="0" width="684" height="1382" uuid="014e5a86-6857-4eba-9f7b-4d34cc9cf892"/>
-				<imageExpression><![CDATA["images\\letspipa\\Resumo de Acomodações.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_resumopacotes}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.resumopacotes}]]></anchorNameExpression>
 			</image>
 			<textField>

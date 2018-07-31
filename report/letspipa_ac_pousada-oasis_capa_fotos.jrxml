@@ -19,9 +19,6 @@
 	<parameter name="jr_letspipa_ac_pousada-oasis_fotos1" class="java.lang.String">
 		<defaultValueExpression><![CDATA["Pousada Oasis - Fotos.png"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_letspipa_ac_pousada-oasis_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Pousada Oasis - Fotos.png"]]></defaultValueExpression>
-	</parameter>
 	<parameter name="jr_letspipa_ac_pousada-oasis_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>

@@ -14,13 +14,13 @@
 		<defaultValueExpression><![CDATA["pipa-privilege-boutique"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Privilege Boutique.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Privilege Boutique - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Privilege Boutique - Fotos2.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

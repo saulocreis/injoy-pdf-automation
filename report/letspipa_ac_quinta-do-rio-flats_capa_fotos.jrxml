@@ -14,13 +14,13 @@
 		<defaultValueExpression><![CDATA["quinta-do-rio-flats"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Quinta do Rio.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Quinta do Rio - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Quinta do Rio - Fotos2.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_quinta-do-rio-flats_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

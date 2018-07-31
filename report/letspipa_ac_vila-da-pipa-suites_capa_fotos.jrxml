@@ -14,13 +14,10 @@
 		<defaultValueExpression><![CDATA["vila-da-pipa-suites"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Villa da Pipa Suítes.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
-	</parameter>
-	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Villa da Pipa Suítes - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

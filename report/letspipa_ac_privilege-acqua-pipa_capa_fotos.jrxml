@@ -14,13 +14,13 @@
 		<defaultValueExpression><![CDATA["privilege-acqua-pipa"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Privilege Acquapipa.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Privilege Acquapipa - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Privilege Acquapipa - Fotos2.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

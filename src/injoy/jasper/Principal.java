@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Properties;
+
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -32,11 +33,12 @@ public class Principal {
 	static private final String SEP = System.getProperty("file.separator");
 	static private final String SEP2 = "/"; 
 	static private final String SLUG_DE = "letspipa";
+	static private final String IMG_DIR = "images".concat(SEP).concat(SLUG_DE).concat(SEP);
 	static private final String SLUG_EXPERIENCIA = "pacote-de-festas-pipa-2019";
 	static private final String SLUG_AEREO_NORMAL = "aereo-reveillon-pipa-2019";
 	static private final String SLUG_AEREO_COMBO_FEMININO = "combo-aereo-pacote-feminino-6-festas-lets-pipa-2019";
 	static private final String SLUG_AEREO_COMBO_MASCULINO = "combo-aereo-pacote-masculino-6-festas-lets-pipa-2019";
-	static private final String IMG_DIR = "images".concat(SEP).concat(SLUG_DE).concat(SEP);
+	
 	
 	static private Properties jasperprops;
 	

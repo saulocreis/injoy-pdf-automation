@@ -14,13 +14,10 @@
 		<defaultValueExpression><![CDATA["bosque-da-praia-flats"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Bosque da Praia.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
-	</parameter>
-	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_fotos2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Bosque da Praia - Fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_bosque-da-praia-flats_menorValorPessoa" class="java.lang.String">
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>

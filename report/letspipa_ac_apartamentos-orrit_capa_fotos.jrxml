@@ -14,12 +14,9 @@
 		<defaultValueExpression><![CDATA["apartamentos-orrit"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_capa" class="java.lang.String">
-		<defaultValueExpression><![CDATA["APARTAMENTOS ORRIT.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Apartamentos Orrit.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_fotos1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Apartamentos Orrit - fotos.png"]]></defaultValueExpression>
-	</parameter>
-	<parameter name="jr_letspipa_ac_apartamentos-orrit_fotos2" class="java.lang.String">
 		<defaultValueExpression><![CDATA["Apartamentos Orrit - fotos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_menorValorPessoa" class="java.lang.String">
