@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_quemsomos" pageWidth="684" pageHeight="512" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="5cd9b31a-505f-4d10-8142-3f53da1788bd">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_quemsomos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Mapa.png"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<detail>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="b3e1a041-cbeb-4d9a-baf6-b9e861a59e48"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_quemsomos}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.mapa}]]></anchorNameExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

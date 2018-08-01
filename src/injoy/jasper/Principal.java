@@ -36,9 +36,9 @@ public class Principal {
 	 * 'letspipa', 'jeri2019', 'carneiros'
 	 */
 	static private final String SLUG_DE = "letspipa";
-	static private final String SLUG_HIBRIDO = "combo-aereo-pacote-6-festas-lets-pipa-2019";
-	static private final String SLUG_EXPERIENCIA = "pacote-de-festas-combo-pipa-6d-2019";
-	static private final String SLUG_AEREO = "aereo-26-27-reveillon-pipa-2019";
+	static private final String SLUG_HIBRIDO = "combo-aereo-26-02-pacote-5-festas-lets-pipa-2019";
+	static private final String SLUG_EXPERIENCIA = "pacote-de-festas-pipa-2019";
+	static private final String SLUG_AEREO = "aereo-jpa-26-02-reveillon-pipa-2019";
 	//static private final String SLUG_AEREO_COMBO_FEMININO = "combo-aereo-pacote-feminino-5-festas-jeri-2019";
 	//static private final String SLUG_AEREO_COMBO_MASCULINO = "combo-aereo-pacote-masculino-5-festas-jeri-2019";
 	
@@ -221,8 +221,8 @@ public class Principal {
 		
 		result.next();
 		int valorExperienciaAvulsa = result.getInt("valorExperienciaAvulsa");
-		int valorExperienciaFeminino = result.getInt("valorExperienciaFeminino")  + valorExperienciaAvulsa;
-		int valorExperienciaMasculino = result.getInt("valorExperienciaMasculino") + valorExperienciaAvulsa;
+		int valorExperienciaFeminino = result.getInt("valorExperienciaFeminino")  /*+ valorExperienciaAvulsa*/ ;
+		int valorExperienciaMasculino = result.getInt("valorExperienciaMasculino") /*+ valorExperienciaAvulsa*/ ;
 		result.close();
 		
 		
@@ -306,6 +306,7 @@ public class Principal {
 				"	FROM acomodacao_quarto aq, produto subprod, produto_subproduto ps, produto prod, produto_tipo pt WHERE " + 
 				"	aq.idProduto = subprod.id AND ps.idSubproduto = subprod.id AND ps.idProduto = prod.id AND " + 
 				"   ps.idProduto_Tipo = pt.id AND aq.estoque > 0 AND " + 
+				"	DATEDIFF(aq.data_final, aq.data_inicial) = 7 AND" +
 				"	ps.idProduto IN (" + 
 				"		SELECT id FROM produto WHERE " + 
 				"			idProduto_Status IN (" + 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_capa" pageWidth="684" pageHeight="512" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="075858e5-cc68-4b57-866d-df2c8035c973">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_capa" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Capa.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataCriacao" class="java.lang.String">
+		<defaultValueExpression><![CDATA[DateFormat.getDateInstance().format(new Date())]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<detail>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="9945dca8-5dce-43c3-98fe-e5ac33e5a781"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_capa}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.capa}]]></anchorNameExpression>
+			</image>
+			<textField>
+				<reportElement x="280" y="492" width="150" height="20" forecolor="#FFFFFF" uuid="14d6d67c-9c05-4909-acd4-8a427d0a5dcc"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataCriacao}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
