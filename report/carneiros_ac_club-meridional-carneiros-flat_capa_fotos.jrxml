@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_ac_club-meridional-carneiros-flat_capa_fotos" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="1110893c-0c9a-4bce-872d-f12e44328650">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["carneiros"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_anchor" class="java.lang.String">
+		<defaultValueExpression><![CDATA["club-meridional-carneiros-flat"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["club-meridional-carneiros-flat"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_capa" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Flat Club Meridional.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_fotos1" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Flat Club Meridional - Fotos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_fotos2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Flat Club Meridional - Fotos2.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_menorValorPessoa" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<detail>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="745e6c04-a7f5-4f31-b890-e74a557bbd41"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_ac_club-meridional-carneiros-flat_capa}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$P{jr_carneiros_ac_club-meridional-carneiros-flat_anchor}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="595" y="479" width="33" height="33" uuid="069cf574-beaa-469a-9ff2-638d8d6a9497"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_carneiros_ac_club-meridional-carneiros-flat_linkSobre}]]></hyperlinkReferenceExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="46044943-48f2-4d12-a58e-c2e71faec147"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="600" y="432" width="84" height="34" forecolor="#FFFFFF" uuid="f9bc5333-e3f9-4b2b-af27-d98cfe617628"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_ac_club-meridional-carneiros-flat_menorValorPessoa}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="49224b6e-0c59-4a80-9c9b-def965a3218d"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_ac_club-meridional-carneiros-flat_fotos1}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="10" y="468" width="40" height="40" uuid="47baa3ae-3d25-4226-a3b2-64a81c1371ca"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="5bcf8f77-71d0-4d43-bd4c-50bd0271bf86"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_ac_club-meridional-carneiros-flat_fotos2}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="10" y="468" width="40" height="40" uuid="1045570a-efc6-42ff-b406-582258557aca"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

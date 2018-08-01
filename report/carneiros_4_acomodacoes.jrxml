@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_4_acomodacoes" pageWidth="684" pageHeight="474" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="1acd64a9-ff66-4135-9b31-ff5a1a5d9cee">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.carneiros.menuacomodacoes}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_imagem1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_link1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_imagem2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_link2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_imagem3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_link3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="474">
+			<image>
+				<reportElement x="0" y="0" width="684" height="474" uuid="01588226-a826-4abd-8ffd-2add3dac942b"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="190" width="145" height="145" uuid="2d7076f9-5968-4c0c-a202-9b48b328751c"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem1}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link1}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="190" width="145" height="145" uuid="a669a49f-94ff-4b19-9a83-5f9bb5b2e4ef"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem2}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link2}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="190" width="145" height="145" uuid="d670a0cc-9f17-479a-9744-77b5c72f806e"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem3}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link3}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

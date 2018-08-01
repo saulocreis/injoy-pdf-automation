@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_4_resumopacotes" pageWidth="684" pageHeight="1382" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="da384b65-922e-44d7-8719-4d711f73afec">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.carneiros.resumopacotes}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link.carneiros.sobre}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_nome1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacoteac1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacoteaereo1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacotefeminino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacotemasculino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_completofeminino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_completomasculino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_link1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_nome2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacoteac2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacoteaereo2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacotefeminino2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacotemasculino2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_completofeminino2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_completomasculino2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_link2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_nome3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacoteac3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacoteaereo3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacotefeminino3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_pacotemasculino3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_completofeminino3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_completomasculino3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_resumopacotes_link3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="1382">
+			<image>
+				<reportElement x="0" y="0" width="684" height="1382" uuid="014e5a86-6857-4eba-9f7b-4d34cc9cf892"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_resumopacotes}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.resumopacotes}]]></anchorNameExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="304" width="120" height="55" uuid="48862780-4617-4849-919a-617b9a6fc41f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_nome1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="304" width="90" height="55" uuid="87dcf021-a445-4d55-8b29-7e2d78bf264a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="304" width="90" height="55" uuid="a38816fc-16c6-4e89-a5d2-e5660616eadf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacoteaereo1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="304" width="80" height="55" uuid="bd584d71-510f-4c04-b0fd-f31a05d657a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacotefeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="304" width="80" height="55" uuid="de3bb2a2-0823-4e87-8f15-801ef28a8470"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacotemasculino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="304" width="80" height="55" uuid="7060b565-46fc-44a8-9708-e9b68e6e24f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_completofeminino1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="540" y="304" width="80" height="55" uuid="75df2a45-ea77-4258-81a0-e9aa943a8a97"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_completomasculino1}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="322" width="75" height="27" uuid="be1d2771-9952-46a8-bdd4-72329f481d83"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_carneiros_resumopacotes_link1}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="360" width="120" height="55" uuid="74086edb-e6d9-472a-87bc-3f7aacc00b7d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_nome2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="360" width="90" height="55" uuid="d9254ac3-1590-4738-9ff6-ebdf80713b51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="360" width="90" height="55" uuid="5578fdf7-dded-4747-b4c7-3c832b7e45bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacoteaereo2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="359" width="80" height="55" uuid="09dedd4d-cadd-4c02-9748-9148a0cd0520"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacotefeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="360" width="80" height="55" uuid="2bbbd3f6-940f-497f-aad0-bb69adf63183"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacotemasculino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="360" width="80" height="55" uuid="4ed613cb-4cd5-4202-adbc-7ab870630c14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_completofeminino2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="540" y="360" width="80" height="55" uuid="4362739c-9dbc-4e1c-a4a9-bac5c2453c19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_completomasculino2}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="373" width="75" height="27" uuid="224345d4-e795-4e8c-947a-a5e930d375e0"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_carneiros_resumopacotes_link2}]]></hyperlinkReferenceExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="415" width="120" height="55" uuid="95ece1ce-2a78-4ad3-a136-144c627213ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_nome3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="415" width="90" height="55" uuid="223ead47-231c-4b82-aa94-25d5e4dc0e59"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="415" width="90" height="55" uuid="53e865e5-dc70-4a90-ba95-e94d1814f5d3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacoteaereo3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="415" width="80" height="55" uuid="271abfb7-040f-459f-b1c6-4786c71d79fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacotefeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="380" y="415" width="80" height="55" uuid="6e91ba0e-079b-4a24-87de-942ec735275b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_pacotemasculino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="415" width="80" height="55" uuid="0c383657-fa9b-49a4-b5a6-58386d307f42"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_completofeminino3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="540" y="415" width="80" height="55" uuid="96d73fd3-aeea-4f1a-bbaa-8e41dfc99fc0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_completomasculino3}]]></textFieldExpression>
+			</textField>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="625" y="429" width="75" height="27" uuid="1e8e48ef-e5f8-4364-aeff-b3f9b06687e6"/>
+				<imageExpression><![CDATA[$R{injoy.image.botao_pequeno}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_carneiros_resumopacotes_link3}]]></hyperlinkReferenceExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

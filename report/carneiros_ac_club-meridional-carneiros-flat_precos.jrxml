@@ -1,245 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros2019_6_clubmeridional_precos" pageWidth="684" pageHeight="1118" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="44504152-df3e-4b7b-9efc-240e07a3179d">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
-	<parameter name = "sep" class = "java.lang.String">
-		<defaultValueExpression><![CDATA["/"]]></defaultValueExpression>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_ac_club-meridional-carneiros-flat_precos" pageWidth="684" pageHeight="1118" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="44504152-df3e-4b7b-9efc-240e07a3179d">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
 	</parameter>
-	<parameter name = "img_dir" class = "java.lang.String">
-		<defaultValueExpression><![CDATA["/var/lib/tomcat8/webapps/injoy-java/images/"]]></defaultValueExpression>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["carneiros"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="valorAereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Flat Club Meridional - Quartos Completo.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_pacoteac_apartamento-vista-mar_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_pacotefeminino_apartamento-vista-mar_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_pacotemasculino_apartamento-vista-mar_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_pacoteac_apartamento-vista-mar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_pacotefeminino_apartamento-vista-mar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_pacotemasculino_apartamento-vista-mar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_pacotefemininoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_ac_club-meridional-carneiros-flat_pacotemasculinoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
-		<![CDATA[SELECT 
-	(SELECT CONCAT($P{img_dir}, "carneiros2019", $P{sep}, t.arquivo)
-		FROM pdf t WHERE t.slug IN ("jr_carneiros2019_ac_club-meridional-carneiros-flat_precos"))
-	AS arquivo1,
-    (SELECT ROUND(efd.valor) FROM experiencia_festadias efd
-		WHERE efd.idProduto IN (1723) AND efd.id IN (777)) 
-	AS festaMasculino,
-	(SELECT ROUND(efd.valor) FROM experiencia_festadias efd
-		WHERE efd.idProduto IN (1723) AND efd.id IN (776)) 
-	AS festaFeminino,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25045)) 
-    AS valorPessoa_1716_25045,
-    (SELECT valorPessoa_1716_25045 + festaMasculino) 
-    AS festaMasculino_1716_25045,
-    (SELECT valorPessoa_1716_25045 + festaFeminino) 
-    AS festaFeminino_1716_25045,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25046)) 
-    AS valorPessoa_1716_25046,
-    (SELECT valorPessoa_1716_25046 + festaMasculino) 
-    AS festaMasculino_1716_25046,
-    (SELECT valorPessoa_1716_25046 + festaFeminino) 
-    AS festaFeminino_1716_25046,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25047)) 
-    AS valorPessoa_1716_25047,
-    (SELECT valorPessoa_1716_25047 + festaMasculino) 
-    AS festaMasculino_1716_25047,
-    (SELECT valorPessoa_1716_25047 + festaFeminino) 
-    AS festaFeminino_1716_25047,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25048)) 
-    AS valorPessoa_1716_25048,
-    (SELECT valorPessoa_1716_25048 + festaMasculino) 
-    AS festaMasculino_1716_25048,
-    (SELECT valorPessoa_1716_25048 + festaFeminino) 
-    AS festaFeminino_1716_25048,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25049)) 
-    AS valorPessoa_1716_25049,
-    (SELECT valorPessoa_1716_25049 + festaMasculino) 
-    AS festaMasculino_1716_25049,
-    (SELECT valorPessoa_1716_25049 + festaFeminino) 
-    AS festaFeminino_1716_25049,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25050)) 
-    AS valorPessoa_1716_25050,
-    (SELECT valorPessoa_1716_25050 + festaMasculino) 
-    AS festaMasculino_1716_25050,
-    (SELECT valorPessoa_1716_25050 + festaFeminino) 
-    AS festaFeminino_1716_25050,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25051)) 
-    AS valorPessoa_1716_25051,
-    (SELECT valorPessoa_1716_25051 + festaMasculino) 
-    AS festaMasculino_1716_25051,
-    (SELECT valorPessoa_1716_25051 + festaFeminino) 
-    AS festaFeminino_1716_25051,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25052)) 
-    AS valorPessoa_1716_25052,
-    (SELECT valorPessoa_1716_25052 + festaMasculino) 
-    AS festaMasculino_1716_25052,
-    (SELECT valorPessoa_1716_25052 + festaFeminino) 
-    AS festaFeminino_1716_25052,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25053)) 
-    AS valorPessoa_1716_25053,
-    (SELECT valorPessoa_1716_25053 + festaMasculino) 
-    AS festaMasculino_1716_25053,
-    (SELECT valorPessoa_1716_25053 + festaFeminino) 
-    AS festaFeminino_1716_25053,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25054)) 
-    AS valorPessoa_1716_25054,
-    (SELECT valorPessoa_1716_25054 + festaMasculino) 
-    AS festaMasculino_1716_25054,
-    (SELECT valorPessoa_1716_25054 + festaFeminino) 
-    AS festaFeminino_1716_25054,
-	(SELECT ROUND((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes))
-		FROM acomodacao_quarto aq
-		WHERE aq.idProduto IN (1716) AND aq.id IN (25055)) 
-    AS valorPessoa_1716_25055,
-    (SELECT valorPessoa_1716_25055 + festaMasculino) 
-    AS festaMasculino_1716_25055,
-    (SELECT valorPessoa_1716_25055 + festaFeminino) 
-    AS festaFeminino_1716_25055,
-    (SELECT ROUND(MIN((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes)))
-	FROM acomodacao_quarto aq 
-	WHERE aq.idProduto IN (1716)) 
-	AS menorValor,
-    (SELECT ROUND(aet.valor + aet.taxa) + menorValor
-		FROM aereo_trecho aet
-        WHERE aet.id IN (2231))
-    AS pacoteMasculino,
-    (SELECT ROUND(aet.valor + aet.taxa) + menorValor
-		FROM aereo_trecho aet
-        WHERE aet.id IN (2232))
-	AS pacoteFeminino
-	;]]>
+		<![CDATA[SELECT TRUE;]]>
 	</queryString>
-	<field name="arquivo1" class="java.lang.String">
-		<fieldDescription><![CDATA[arquivo1]]></fieldDescription>
-	</field>
-	<field name="festaMasculino" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino]]></fieldDescription>
-	</field>
-	<field name="festaFeminino" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25045" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25045]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25045" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25045]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25045" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25045]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25046" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25046]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25046" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25046]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25046" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25046]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25047" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25047]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25047" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25047]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25047" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25047]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25048" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25048]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25048" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25048]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25048" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25048]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25049" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25049]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25049" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25049]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25049" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25049]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25050" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25050]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25050" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25050]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25050" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25050]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25051" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25051]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25051" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25051]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25051" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25051]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25052" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25052]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25052" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25052]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25052" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25052]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25053" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25053]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25053" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25053]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25053" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25053]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25054" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25054]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25054" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25054]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25054" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25054]]></fieldDescription>
-	</field>
-	<field name="valorPessoa_1716_25055" class="java.lang.String">
-		<fieldDescription><![CDATA[valorPessoa_1716_25055]]></fieldDescription>
-	</field>
-	<field name="festaMasculino_1716_25055" class="java.lang.String">
-		<fieldDescription><![CDATA[festaMasculino_1716_25055]]></fieldDescription>
-	</field>
-	<field name="festaFeminino_1716_25055" class="java.lang.String">
-		<fieldDescription><![CDATA[festaFeminino_1716_25055]]></fieldDescription>
-	</field>
-	<field name="pacoteMasculino" class="java.lang.String">
-		<fieldDescription><![CDATA[pacoteMasculino]]></fieldDescription>
-	</field>
-	<field name="pacoteFeminino" class="java.lang.String">
-		<fieldDescription><![CDATA[pacoteFeminino]]></fieldDescription>
-	</field>
 	<background>
 		<band height="1118">
 			<image>
 				<reportElement x="0" y="0" width="684" height="1118" uuid="1190b0d0-59f9-4564-aed0-3cec720d4284"/>
-				<imageExpression><![CDATA[$F{arquivo1}]]></imageExpression>
+				<imageExpression><![CDATA["images\\carneiros\\Flat Club Meridional - Quartos.png"]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="20" y="1070" width="40" height="40" uuid="2ed6ddb8-2866-4a6b-beff-56085c65b1e5"/>

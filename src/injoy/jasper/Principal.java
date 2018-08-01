@@ -35,7 +35,7 @@ public class Principal {
 	/*
 	 * 'letspipa', 'jeri2019', 'carneiros'
 	 */
-	static private final String SLUG_DE = "letspipa";
+	static private final String SLUG_DE = "carneiros";
 	static private final String SLUG_HIBRIDO = "combo-aereo-26-02-pacote-5-festas-lets-pipa-2019";
 	static private final String SLUG_EXPERIENCIA = "pacote-de-festas-pipa-2019";
 	static private final String SLUG_AEREO = "aereo-jpa-26-02-reveillon-pipa-2019";
