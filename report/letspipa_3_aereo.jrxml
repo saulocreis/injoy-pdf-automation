@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_3_aereo" pageWidth="684" pageHeight="625" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="3f86f471-d3a0-4efb-bcc5-d92585fc10cd">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_aereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Aéreo & Combos.png"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="625">
+			<image>
+				<reportElement x="0" y="0" width="684" height="625" uuid="0d0d2334-f2c3-4d31-a2a6-30c8e184110f"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_aereo}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.aereo}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="580" y="540" width="80" height="80" uuid="1658086c-01f0-4b3a-a266-ee08090fb97d"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.letspipa.sobre.aereo}]]></hyperlinkReferenceExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

@@ -35,7 +35,7 @@ public class Principal {
 	/*
 	 * 'letspipa', 'jeri2019', 'carneiros'
 	 */
-	static private final String SLUG_DE = "carneiros";
+	static private final String SLUG_DE = "letspipa";
 	static private final String SLUG_HIBRIDO = "combo-aereo-26-02-pacote-5-festas-lets-pipa-2019";
 	static private final String SLUG_EXPERIENCIA = "pacote-de-festas-pipa-2019";
 	static private final String SLUG_AEREO = "aereo-jpa-26-02-reveillon-pipa-2019";
@@ -80,7 +80,8 @@ public class Principal {
 		listaArquivos.add(SLUG_DE + "_0_menu");
 		listaArquivos.add(SLUG_DE + "_1_reveillon");
 		listaArquivos.add(SLUG_DE + "_2_pqinjoy"); 
-		listaArquivos.add(SLUG_DE + "_3_infovenda"); 
+		listaArquivos.add(SLUG_DE + "_3_infovenda");
+		listaArquivos.add(SLUG_DE + "_3_aereo"); 
 		listaArquivos.add(SLUG_DE + "_4_acomodacoes");
 		listaArquivos.add(SLUG_DE + "_4_resumopacotes");
 		
@@ -124,6 +125,8 @@ public class Principal {
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
 				") AS infovenda," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
+				") AS aereo," +
+				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
 				") AS menuacomodacoes," +
 				"(SELECT arquivo FROM pdf WHERE slug IN (?)" + 
 				") AS resumopacotes," +
@@ -142,6 +145,7 @@ public class Principal {
 		String parameterReveillon = baseParameter + "reveillon";
 		String parameterPqInjoy = baseParameter + "pqinjoy";
 		String parameterInfovenda = baseParameter + "infovenda";
+		String parameterAereo = baseParameter + "aereo";
 		String parameterMenuAcomodacoes = baseParameter + "menuacomodacoes";
 		String parameterResumoPacotes = baseParameter + "resumopacotes";
 		String parameterFestas = baseParameter + "festas";
@@ -154,10 +158,11 @@ public class Principal {
 		statement.setString(5, parameterReveillon);
 		statement.setString(6, parameterPqInjoy);
 		statement.setString(7, parameterInfovenda);
-		statement.setString(8, parameterMenuAcomodacoes);
-		statement.setString(9, parameterResumoPacotes);
-		statement.setString(10, parameterFestas);
-		statement.setString(11, parameterFinal);
+		statement.setString(8, parameterAereo);
+		statement.setString(9, parameterMenuAcomodacoes);
+		statement.setString(10, parameterResumoPacotes);
+		statement.setString(11, parameterFestas);
+		statement.setString(12, parameterFinal);
 		ResultSet result = statement.executeQuery();
 		
 		result.next();
@@ -168,6 +173,7 @@ public class Principal {
 		parameters.put(parameterReveillon, result.getString("reveillon"));
 		parameters.put(parameterPqInjoy, result.getString("pqinjoy"));
 		parameters.put(parameterInfovenda, result.getString("infovenda"));
+		parameters.put(parameterAereo, result.getString("aereo"));
 		parameters.put(parameterMenuAcomodacoes, result.getString("menuacomodacoes"));
 		parameters.put(parameterResumoPacotes, result.getString("resumopacotes"));
 		parameters.put(parameterFestas, result.getString("festas"));
@@ -204,7 +210,7 @@ public class Principal {
 				"			slug IN (?) " + 
 				"		) " + 
 				"	) AS valorExperienciaMasculino, (" + 
-				"	SELECT ROUND(efd.valor,0)\r\n" + 
+				"	SELECT ROUND(efd.valor,0) " + 
 				"	FROM experiencia_festadias efd WHERE " + 
 				"		efd.categoria IN ('Secundário') AND " + 
 				"		efd.idProduto IN ( " + 
