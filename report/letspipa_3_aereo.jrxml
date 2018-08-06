@@ -5,7 +5,7 @@
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_aereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Aéreo & Combos.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Aereo & Combos.png"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>

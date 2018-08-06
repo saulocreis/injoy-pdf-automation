@@ -14,37 +14,37 @@
 		<defaultValueExpression><![CDATA["Madeiro Beach - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac_duplo-vista-mar-twin_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino_duplo-vista-mar-twin_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino_duplo-vista-mar-twin_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac_duplo-vista-floresta-twin_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino_duplo-vista-floresta-twin_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino_duplo-vista-floresta-twin_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacoteac_quádruplo-vista-jardim_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefeminino_quádruplo-vista-jardim_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculino_quádruplo-vista-jardim_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotefemininoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_madeiro-beach-hotel_pacotemasculinoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>

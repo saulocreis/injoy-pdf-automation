@@ -14,64 +14,64 @@
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_standard_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_standard_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_standard_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_standard_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_standard_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_standard_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_standard_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_standard_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_standard_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_bangalô_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_bangalô_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_bangalô_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_bangalô_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_bangalô_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_bangalô_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacoteac_bangalô_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefeminino_bangalô_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculino_bangalô_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotefemininoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_privilege-acqua-pipa_pacotemasculinoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>

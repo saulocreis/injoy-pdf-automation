@@ -14,7 +14,7 @@
 		<band height="510">
 			<image>
 				<reportElement x="0" y="0" width="684" height="510" uuid="1368c993-dd03-40d7-a565-8484285e27ab"/>
-				<imageExpression><![CDATA["images\\letspipa\\Final.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_final}]]></imageExpression>
 			</image>
 			<image hyperlinkType="Reference">
 				<reportElement mode="Transparent" x="110" y="460" width="40" height="40" uuid="247912ed-4dc5-41f6-b3e9-78addf94418c"/>

@@ -14,64 +14,64 @@
 		<defaultValueExpression><![CDATA["Villa da Pipa Suítes - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac_standard_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino_standard_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino_standard_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac_standard_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino_standard_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino_standard_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac_superior_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino_superior_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino_superior_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac_superior_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino_superior_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino_superior_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac_luxo_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino_luxo_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino_luxo_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacoteac_luxo_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefeminino_luxo_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculino_luxo_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotefemininoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_vila-da-pipa-suites_pacotemasculinoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>

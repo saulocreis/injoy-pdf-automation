@@ -17,172 +17,172 @@
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino1" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-luxo_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-luxo_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-luxo_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-luxo_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-luxo_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-luxo_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-luxo-premium_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-luxo-premium_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-luxo-premium_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-luxo-premium_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-luxo-premium_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-luxo-premium_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-luxo-premium_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-luxo-premium_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-luxo-premium_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-luxo-premium-plus_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-luxo-premium-plus_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-luxo-premium-plus_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-luxo-premium-plus_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-luxo-premium-plus_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-luxo-premium-plus_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-luxo-premium-plus_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-luxo-premium-plus_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-luxo-premium-plus_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-premium-elegance_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-premium-elegance_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-premium-elegance_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-premium-elegance_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-premium-elegance_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-premium-elegance_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_loft-premium-elegance_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_loft-premium-elegance_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_loft-premium-elegance_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_casa-master_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_casa-master_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_casa-master_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_casa-master_5" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_casa-master_5" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_casa-master_5" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_casa-master_6" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_casa-master_6" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_casa-master_6" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_casa-master_7" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_casa-master_7" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_casa-master_7" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacoteac_casa-master_8" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefeminino_casa-master_8" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculino_casa-master_8" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotefemininoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_pipa-privilege-boutique_pacotemasculinoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>

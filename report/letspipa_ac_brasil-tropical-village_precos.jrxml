@@ -14,28 +14,28 @@
 		<defaultValueExpression><![CDATA["Brasil Tropical Village - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac_chalé-luxo-30-mq_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino_chalé-luxo-30-mq_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino_chalé-luxo-30-mq_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacoteac_chalé-vip-triplo-65-mq_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefeminino_chalé-vip-triplo-65-mq_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculino_chalé-vip-triplo-65-mq_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotefemininoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_brasil-tropical-village_pacotemasculinoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["ESGOTADO"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>

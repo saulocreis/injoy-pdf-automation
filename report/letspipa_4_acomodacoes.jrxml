@@ -5,7 +5,7 @@
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_menuacomodacoes" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Menu Acomodações.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Menu Acomodacoes.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_menuacomodacoes_imagem1" class="java.lang.String">
 		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>

@@ -24,7 +24,7 @@ import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 import net.sf.jasperreports.export.SimplePdfExporterConfiguration;
 
-public class Principal {
+public class PrincipalSlug {
 	
 	static private final int MAX_RESULTS = 20;
 	static private final String DEFAULT_WORKSPACE = "injoy.";
@@ -336,7 +336,7 @@ public class Principal {
 		
 		String baseParameterDe = "jr_".concat(SLUG_DE);
 		String injoyLinkDESobre = get("link").concat(SLUG_DE).concat(SEP2).concat("sobre").concat(SEP2);
-		String esgotado = "ESGOTADO";
+		String esgotado = "N/D";
 		String tagAcomodacoes = get("tag.acomodacoes");
 		String imageVazio = get("image.vazio");
 		
@@ -513,7 +513,7 @@ public class Principal {
 					" " + 
 					"UNION " + 
 					"SELECT aq.nome as nomeAc, aq.estoque, ROUND(aq.valor, 0) AS valor, " + 
-					"	aq.hospedes, 'ESGOTADO' as valorPessoa " + 
+					"	aq.hospedes, 'N/D' as valorPessoa " + 
 					"FROM acomodacao_quarto aq WHERE " + 
 					"	DATEDIFF(aq.data_final, aq.data_inicial) = 7 AND " +
 					"	aq.estoque <= 0 AND " + 

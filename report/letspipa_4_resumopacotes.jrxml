@@ -5,7 +5,7 @@
 		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Resumo de Acomodações.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Resumo de Acomodacoes.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="linkSobre" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.link.sobre}]]></defaultValueExpression>
