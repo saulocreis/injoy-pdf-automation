@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_ac_pousada-nascer-do-sol_capa_fotos" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="eca8d650-9e3c-4c86-bdc3-fa95ef68e349">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["xama2019"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-nascer-do-sol_anchor" class="java.lang.String">
+		<defaultValueExpression><![CDATA["pousada-nascer-do-sol"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-nascer-do-sol_linkSobre" class="java.lang.String">
+		<defaultValueExpression><![CDATA["pousada-nascer-do-sol"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-nascer-do-sol_capa" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Pousada Nascer do Sol.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-nascer-do-sol_fotos1" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Pousada Nascer do Sol - Fotos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-nascer-do-sol_menorValorPessoa" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<detail>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="bc2e226c-0b09-4910-acf3-b89b1e6a2b01"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_ac_pousada-nascer-do-sol_capa}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$P{jr_xama2019_ac_pousada-nascer-do-sol_anchor}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="4dba7bfd-3fd8-4031-8fa6-1aa413acb1c4"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$P{jr_xama2019_ac_pousada-nascer-do-sol_linkSobre}]]></hyperlinkReferenceExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="e57ec9e6-2f33-44c3-8671-08fbeba74dbe"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="600" y="430" width="84" height="34" forecolor="#FFFFFF" uuid="0736d82a-e932-4006-8d32-0c53891bbf6c"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-nascer-do-sol_menorValorPessoa}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="1dac18f7-01e9-44b4-92a4-af0defed0dfd"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_ac_pousada-nascer-do-sol_fotos1}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="e9981531-3fc8-460e-95a4-26cd0a0452da"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

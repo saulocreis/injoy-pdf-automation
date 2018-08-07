@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Properties;
-
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -235,6 +234,7 @@ public class Xama2019Id {
 		DecimalFormat formatoSemCentavosComCifra = new DecimalFormat("R$ #,##0");
 		int valorAereo = result.getInt("valorAereo");
 		parameters.put("valorAereo", formatoSemCentavosComCifra.format(valorAereo));
+		System.out.println("valorAereo" + " -> " + valorAereo);
 		result.close();
 
 				
@@ -293,7 +293,7 @@ public class Xama2019Id {
 		int i = 1;
 		while(result.next() && i <= MAX_RESULTS) {
 			
-			//String slugPacote = result.getString("slugPacote");
+			String slugPacote = result.getString("slugPacote");
 			String nomeProduto = result.getString("nomeProduto");
 			String slugProduto = result.getString("slugProduto");
 			
@@ -302,7 +302,7 @@ public class Xama2019Id {
 			String nomeArquivoPrecos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_precos");
 			 
 			listaArquivos.add(nomeArquivoCapaFotos); 
-			listaArquivos.add(nomeArquivoPrecos); 
+			//listaArquivos.add(nomeArquivoPrecos); 
 			
 			int menorValorPessoa = result.getInt("menorValorPessoa");
 			DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("#,##0");
@@ -350,21 +350,21 @@ public class Xama2019Id {
 			String menorValorPessoaCompletoMasculinoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoMasculino);
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoMasculinoAsString);
-			
+			*/
 			parameter = baseParameterDe.concat("_resumopacotes_link").concat(iAsString);
 			String linkPacote = injoyLinkDESobre.concat(slugPacote);
 			System.out.println(parameter + " -> " + linkPacote);
 			parameters.put(parameter, linkPacote);
-			*/
+			
 			String baseParameterDeAc = baseParameterDe.concat("_ac_");
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_anchor");
 			System.out.println(parameter + " -> " + slugProduto);
 			parameters.put(parameter, slugProduto);
-			/*
+			
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_linkSobre");
 			System.out.println(parameter + " -> " + linkPacote);
 			parameters.put(parameter, linkPacote);
-			*/
+			
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_menorValorPessoa");
 			menorValorPessoaAsString = formatoSemCentavosComCifra.format(menorValorPessoa);
 			System.out.println(parameter + " -> " + menorValorPessoaAsString);
