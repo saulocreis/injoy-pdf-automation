@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_ac_pousada-flor-da-lua_precos" pageWidth="684" pageHeight="855" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="1f226e2e-46aa-4e60-aef4-787187c5d9c4">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["xama2019"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="valorAereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Pousada Flor da Lua - Quartos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacoteac_duplo-sem-ar_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_duplo-sem-ar_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacoteac_apartamento-com-ar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_apartamento-com-ar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacoteac_apartamento-com-ar_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_apartamento-com-ar_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacoteac_apartamento-casal-com-ar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_apartamento-casal-com-ar_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacoteac_apartamento-casal-com-ar_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_apartamento-casal-com-ar_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_ac_pousada-flor-da-lua_pacotecompleto" class="java.lang.String">
+		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="855">
+			<image>
+				<reportElement x="0" y="0" width="684" height="855" uuid="78d450a3-2471-4860-81ae-41c68b1087d7"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_ac_pousada-flor-da-lua_precos}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="810" width="40" height="40" uuid="6c3f5615-bb7b-4ba2-8c70-8bfc97fd84b0"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="280" width="98" height="34" uuid="8b944495-d127-4b26-b2a3-594347ec1105"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacoteac_duplo-sem-ar_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="280" width="98" height="34" uuid="89eb3a19-a8de-461e-b8af-f5af05007239"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_duplo-sem-ar_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="380" width="98" height="34" uuid="98728d97-1ced-4ec6-beb6-a188752eb445"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacoteac_apartamento-com-ar_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="380" width="98" height="34" uuid="9ce9a75a-7c63-43b0-994b-bb2294d62756"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_apartamento-com-ar_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="430" width="98" height="34" uuid="7d72fa00-8e97-4abb-b1e5-3e44203a4f3c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacoteac_apartamento-com-ar_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="430" width="98" height="34" uuid="2464b9b4-7da9-40d3-8adf-2643e5640d8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_apartamento-com-ar_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="506" width="98" height="34" uuid="c873478d-9c90-48fd-92c7-aecd56351c49"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacoteac_apartamento-casal-com-ar_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="506" width="98" height="34" uuid="91e15931-fbe1-4a67-bb56-b446efb17825"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_apartamento-casal-com-ar_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="560" width="98" height="34" uuid="1ea60c3d-74ea-4a4f-b847-f3857933a625"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacoteac_apartamento-casal-com-ar_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="560" width="98" height="34" uuid="f38ad19d-da6e-4186-9f80-d51c7ae4ad6d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacotefestas_apartamento-casal-com-ar_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="670" width="98" height="34" uuid="dc79ecb9-2152-4734-bf5b-b974ae0216f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacotecompleto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="370" y="760" width="130" height="34" forecolor="#FFFFFF" uuid="4f86f3f9-f541-408d-a70b-5bb016ffc168"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

@@ -340,10 +340,10 @@ public class Xama2019Id {
 			parameters.put(parameter, menorValorPessoaMasculinoAsString);
 			*/
 			parameter = baseParameterDe.concat("_resumopacotes_pacotecompleto").concat(iAsString);
-			int menorValorPessoaCompletoFeminino = menorValorPessoa + valorAereo + valorExperienciaUnissex;
-			String menorValorPessoaCompletoFemininoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoFeminino);
-			System.out.println(parameter + " -> " + menorValorPessoaCompletoFemininoAsString);
-			parameters.put(parameter, menorValorPessoaCompletoFemininoAsString);
+			int menorValorPessoaCompleto = menorValorPessoa + valorAereo + valorExperienciaUnissex;
+			String menorValorPessoaCompletoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompleto);
+			System.out.println(parameter + " -> " + menorValorPessoaCompletoAsString);
+			parameters.put(parameter, menorValorPessoaCompletoAsString);
 			/*
 			parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
 			int menorValorPessoaCompletoMasculino = menorValorPessoa + valorAereo + valorExperienciaMasculino;
@@ -369,6 +369,10 @@ public class Xama2019Id {
 			menorValorPessoaAsString = formatoSemCentavosComCifra.format(menorValorPessoa);
 			System.out.println(parameter + " -> " + menorValorPessoaAsString);
 			parameters.put(parameter, menorValorPessoaAsString);
+			
+			parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotecompleto");
+			System.out.println(parameter + " -> " + menorValorPessoaCompletoAsString);
+			parameters.put(parameter, menorValorPessoaCompletoAsString);
 			/*
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotefemininoaereo");
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoFemininoAsString);
@@ -744,11 +748,11 @@ public class Xama2019Id {
 				parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
-				*/
+				
 				parameter = baseParameterDe.concat("_resumopacotes_link").concat(iAsString);
 				System.out.println(parameter + " -> " + injoyLinkDESobre);
 				parameters.put(parameter, injoyLinkDESobre);
-				
+				*/
 				i++;
 			}
 			
