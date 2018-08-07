@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_4_resumopacotes" pageWidth="684" pageHeight="757" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="4aab9651-e41c-4063-9f79-18cc9a0c5017">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Resumo de Acomodacoes.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_nome1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteac1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteaereo1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotefestas1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotemasculino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotecompleto1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_completomasculino1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_nome2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteac2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteaereo2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotefestas2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotecompleto2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_nome3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteac3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteaereo3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotefestas3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotecompleto3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_nome4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteac4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteaereo4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotefestas4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotecompleto4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_nome5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteac5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteaereo5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotefestas5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotecompleto5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_nome6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteac6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteaereo6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotefestas6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotecompleto6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_nome7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteac7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteaereo7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotefestas7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotecompleto7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_nome8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteac8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteaereo8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotefestas8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotecompleto8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_nome9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteac9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacoteaereo9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotefestas9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_resumopacotes_pacotecompleto9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="757">
+			<image>
+				<reportElement x="0" y="0" width="684" height="757" uuid="014e5a86-6857-4eba-9f7b-4d34cc9cf892"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_resumopacotes}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.resumopacotes}]]></anchorNameExpression>
+			</image>
+			<textField>
+				<reportElement x="0" y="249" width="140" height="55" uuid="48862780-4617-4849-919a-617b9a6fc41f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_nome1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="250" width="90" height="55" uuid="87dcf021-a445-4d55-8b29-7e2d78bf264a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteac1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="250" width="130" height="55" uuid="a38816fc-16c6-4e89-a5d2-e5660616eadf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteaereo1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="362" y="250" width="143" height="55" uuid="bd584d71-510f-4c04-b0fd-f31a05d657a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotefestas1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="250" width="165" height="55" uuid="7060b565-46fc-44a8-9708-e9b68e6e24f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotecompleto1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="305" width="140" height="55" uuid="74086edb-e6d9-472a-87bc-3f7aacc00b7d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_nome2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="305" width="90" height="55" uuid="d9254ac3-1590-4738-9ff6-ebdf80713b51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteac2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="305" width="130" height="55" uuid="5578fdf7-dded-4747-b4c7-3c832b7e45bb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteaereo2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="305" width="145" height="55" uuid="09dedd4d-cadd-4c02-9748-9148a0cd0520"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotefestas2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="305" width="166" height="55" uuid="4ed613cb-4cd5-4202-adbc-7ab870630c14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotecompleto2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="360" width="140" height="55" uuid="95ece1ce-2a78-4ad3-a136-144c627213ed"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_nome3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="360" width="90" height="55" uuid="223ead47-231c-4b82-aa94-25d5e4dc0e59"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteac3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="359" width="130" height="55" uuid="53e865e5-dc70-4a90-ba95-e94d1814f5d3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteaereo3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="362" y="360" width="143" height="55" uuid="271abfb7-040f-459f-b1c6-4786c71d79fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotefestas3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="509" y="360" width="164" height="55" uuid="0c383657-fa9b-49a4-b5a6-58386d307f42"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotecompleto3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="415" width="140" height="55" uuid="a00f0489-b20d-4267-962a-ac26f16b1e7f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_nome4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="415" width="90" height="55" uuid="205fbea0-5d7d-4a98-9afa-e98fd9655a09"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteac4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="415" width="130" height="55" uuid="e185afdd-076b-4ed0-9495-114952493659"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteaereo4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="362" y="415" width="143" height="55" uuid="cac366a9-43cd-4a46-923e-0acc2b78d74e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotefestas4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="415" width="165" height="55" uuid="232230e3-8f62-4388-9a51-614568ed7c6f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotecompleto4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="470" width="140" height="55" uuid="3d3cd10f-c0c2-41a1-8087-f54ffba88760"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_nome5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="470" width="90" height="55" uuid="342ab7a6-229f-4907-bda3-5f439785cf1e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteac5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="470" width="131" height="55" uuid="17eddbf2-18df-4816-bdd3-0591025dda41"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteaereo5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="470" width="144" height="55" uuid="2e1085ee-6a0b-4d15-8a36-ae7b8512da0c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotefestas5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="470" width="165" height="55" uuid="f333be13-eeee-48cd-899f-bf86b68419db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotecompleto5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="531" width="140" height="55" uuid="37065b8d-4ddd-4eff-b44b-5a886bf2fa77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_nome6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="139" y="525" width="90" height="55" uuid="6a592247-5791-47a1-9ff8-abebb72ce194"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteac6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="525" width="130" height="55" uuid="292a3364-2f34-4d9a-987d-b58c510fb806"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteaereo6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="525" width="144" height="55" uuid="60ce8deb-a231-44be-ab95-9f082a8bee5b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotefestas6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="508" y="525" width="165" height="55" uuid="f12642ab-7624-4696-a85f-8f011786eed8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotecompleto6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="583" width="140" height="55" uuid="ce2bddf8-24ce-401e-9068-dd2abf39c321"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_nome7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="580" width="90" height="55" uuid="adf99450-56fc-4439-8224-8673d2354377"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteac7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="586" width="131" height="49" uuid="59c50223-96b0-49a4-a4aa-2461a4d2e6e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteaereo7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="586" width="145" height="49" uuid="c3bd750a-3259-48bb-a43f-48f1141ce55b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotefestas7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="509" y="586" width="164" height="49" uuid="f12ed271-1db3-4f4c-badd-c33df046a709"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotecompleto7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="639" width="140" height="55" uuid="14004892-9ce7-44a6-803f-507f245b85ac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_nome8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="639" width="90" height="55" uuid="871b8169-037e-48f0-92c7-8ac859178a8e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteac8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="639" width="131" height="55" uuid="0fecbdd7-d224-4ca9-b52b-b35a7810a2d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteaereo8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="639" width="144" height="55" uuid="da9f9579-f317-495a-993f-c26b6019e7a4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotefestas8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="509" y="639" width="164" height="54" uuid="c57642c3-09cb-4a9e-a36f-ff10addbf848"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotecompleto8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="700" width="140" height="55" uuid="b347e701-ba98-4ef7-a872-be4b5808b4bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_nome9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="700" width="90" height="55" uuid="bd6687ef-67b9-4c34-9f72-630a651a93af"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteac9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="229" y="700" width="131" height="55" uuid="cbe230e4-33d0-4b43-906c-b82fe7d3a062"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacoteaereo9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="700" width="144" height="55" uuid="40edd599-29b5-42d2-a1be-1189301c6111"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotefestas9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="509" y="700" width="164" height="54" uuid="aa1c4dfc-2687-48a4-9db5-352502165fe5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="18" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_resumopacotes_pacotecompleto9}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

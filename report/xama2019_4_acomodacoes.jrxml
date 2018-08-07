@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_4_acomodacoes" pageWidth="684" pageHeight="569" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="e68249d7-9b01-46d8-a019-650f8866b512">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Menu Acomodacoes.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem1" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem2" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem3" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem4" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem5" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem6" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem7" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem8" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem9" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem10" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link10" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem11" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link11" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_imagem12" class="java.lang.String">
+		<defaultValueExpression><![CDATA["vazio.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_menuacomodacoes_link12" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="569">
+			<image>
+				<reportElement x="0" y="0" width="684" height="569" uuid="d226c2f3-8ce3-4a76-96e7-7f2727ad573e"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="172" width="145" height="145" uuid="180a125d-cc19-4807-85aa-620e362943bb"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem1}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link1}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="172" width="145" height="145" uuid="aa26cf86-4f2f-4b30-a837-c0b46373103e"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem2}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link2}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="172" width="145" height="145" uuid="25c8f8d5-1d87-4ee8-b098-e0f013c571d4"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem3}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link3}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="172" width="145" height="145" uuid="a353d237-87dd-4e44-b202-4286a3da7237"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem4}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link4}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="300" width="145" height="145" uuid="6823a4fa-91c9-4fd1-b638-2a1dd6a9588a"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem5}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link5}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="300" width="145" height="145" uuid="6b5d28d2-bda8-4de3-9828-7be86b9b1194"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem6}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link6}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="300" width="145" height="145" uuid="1d0186ea-26b1-4304-b0ab-ca79f10a55ea"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem7}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link7}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="300" width="145" height="145" uuid="f22b7502-9a38-44de-89ce-e9cb493f65bd"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem8}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link8}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="424" width="145" height="145" uuid="d655c145-fa8d-4e33-a63c-981ad1cec618"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem9}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link9}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="424" width="145" height="145" uuid="b3522448-d232-4061-8321-44dd85329d01"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem10}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link10}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="424" width="145" height="145" uuid="26f649ac-d49b-4dfd-b1e3-ea00eb3262e9"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem11}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link11}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="424" width="145" height="145" uuid="c7446472-7742-4cad-8dc7-afada5da488c"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_menuacomodacoes_imagem12}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_xama2019_menuacomodacoes_link12}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

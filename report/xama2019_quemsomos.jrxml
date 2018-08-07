@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_quemsomos" pageWidth="684" pageHeight="512" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="9804f6d2-e272-48a1-8bae-ed1d84271f0e">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_quemsomos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Mapa.png"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<detail>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="39769659-e25f-4682-84c3-9697411454f9"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_quemsomos}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.mapa}]]></anchorNameExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

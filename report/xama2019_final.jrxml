@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_final" pageWidth="684" pageHeight="510" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="64950755-dac7-4f57-9be3-37bc3178960a">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_final" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Final.png"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<detail>
+		<band height="510">
+			<image>
+				<reportElement x="0" y="0" width="684" height="510" uuid="1368c993-dd03-40d7-a565-8484285e27ab"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_final}]]></imageExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="110" y="460" width="40" height="40" uuid="247912ed-4dc5-41f6-b3e9-78addf94418c"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link}]]></hyperlinkReferenceExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="160" y="420" width="40" height="40" uuid="b0c8f803-e9e6-4dfe-8f0c-d5e47566c008"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.email.concierge}]]></hyperlinkReferenceExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="380" y="420" width="40" height="40" uuid="880a4ce1-c0b6-4ae3-b29d-c684217a17ab"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.letspipa.whatsapp}]]></hyperlinkReferenceExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="510" y="420" width="40" height="40" uuid="18d668e5-e3b0-4de1-ad35-12052f566e8d"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.instagram}]]></hyperlinkReferenceExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

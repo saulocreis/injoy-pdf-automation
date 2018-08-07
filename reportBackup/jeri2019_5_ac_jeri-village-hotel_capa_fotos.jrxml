@@ -2,6 +2,9 @@
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="jeri2019_5_ac_pousada-cabana_capa_fotos" pageWidth="684" pageHeight="511" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="08966a2a-3fa5-4bc8-803b-c39c70a358ad">
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="localhost_MariaDB"/>
+	<parameter name="sep" class = "java.lang.String">
+		<defaultValueExpression><![CDATA["/"]]></defaultValueExpression>
+	</parameter>
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA["images"]]></defaultValueExpression>
 	</parameter>
@@ -13,13 +16,13 @@
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT
-	(SELECT CONCAT($P{img_dir}, "\\", $P{slug_de}, "\\", t.arquivo)	FROM pdf t
+	(SELECT CONCAT($P{img_dir}, $P{slug_de}, $P{sep}, t.arquivo)	FROM pdf t
 	WHERE t.slug IN (CONCAT("jr_", $P{slug_de}, "_ac_", $P{slug_ac}, "_", "capa")))
     as arquivo1,
-	(SELECT CONCAT($P{img_dir}, "\\", $P{slug_de}, "\\", t.arquivo)	FROM pdf t
+	(SELECT CONCAT($P{img_dir}, $P{slug_de}, $P{sep}, t.arquivo)	FROM pdf t
 	WHERE t.slug IN (CONCAT("jr_", $P{slug_de}, "_ac_", $P{slug_ac}, "_", "fotos1")))
     as arquivo2,
-	(SELECT CONCAT($P{img_dir}, "\\", $P{slug_de}, "\\", t.arquivo)	FROM pdf t
+	(SELECT CONCAT($P{img_dir}, $P{slug_de}, $P{sep}, t.arquivo)	FROM pdf t
 	WHERE t.slug IN (CONCAT("jr_", $P{slug_de}, "_ac_", $P{slug_ac}, "_", "fotos2")))
     as arquivo3,
     (SELECT ROUND(MIN((DATEDIFF(aq.data_final, aq.data_inicial) * aq.valor / aq.hospedes)))

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_3_aereo" pageWidth="684" pageHeight="661" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="62f695c6-4530-416a-a424-3c1a8d60f9d1">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_xama2019_aereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Aereo.png"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="661">
+			<image>
+				<reportElement x="0" y="0" width="684" height="661" uuid="cf654555-bcfc-4832-b952-72f536b64e31"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_aereo}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.aereo}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="Reference">
+				<reportElement mode="Transparent" x="580" y="580" width="80" height="80" uuid="b5b045fa-e292-4952-a80a-7447bb9850e5"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.xama2019.sobre.aereo}]]></hyperlinkReferenceExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>
