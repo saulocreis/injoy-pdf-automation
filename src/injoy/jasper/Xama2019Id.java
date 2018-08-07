@@ -36,9 +36,9 @@ public class Xama2019Id {
 	 * 'letspipa', 'jeri2019', 'carneiros', 'xama2019'
 	 */
 	static private final String SLUG_DE = "xama2019";
-	static private final int ID_HIBRIDO = 2142;
-	static private final int ID_EXPERIENCIA = 1780;
-	static private final int ID_AEREO = 2140;
+	// static private final int ID_HIBRIDO = 2142;
+	static private final int ID_EXPERIENCIA = 2079;
+	static private final int ID_AEREO = 2145;
 	
 	
 	static private Properties jasperprops;
@@ -72,13 +72,13 @@ public class Xama2019Id {
 		listaArquivos.add(SLUG_DE + "_1_reveillon");
 		listaArquivos.add(SLUG_DE + "_2_pqinjoy"); 
 		listaArquivos.add(SLUG_DE + "_3_infovenda");
-		listaArquivos.add(SLUG_DE + "_aereo"); 
 		listaArquivos.add(SLUG_DE + "_4_acomodacoes");
 		listaArquivos.add(SLUG_DE + "_4_resumopacotes");
 		
 		// BUSCA DOS DADOS DOS PARÂMETROS NO BANCO DE DADOS
 		searchDataFromConnection(connection, parameters, listaArquivos);
 		
+		listaArquivos.add(SLUG_DE + "_aereo");
 		listaArquivos.add(SLUG_DE + "_festas");
 		listaArquivos.add(SLUG_DE + "_final");
 		
@@ -171,14 +171,11 @@ public class Xama2019Id {
 		parameters.put(parameterFinal, result.getString("final"));
 		result.close();
 		
-		
 		/*
 		
 		
 		
 		*/
-		
-		
 		
 		query = "SELECT (" + 
 				"	SELECT ROUND(efd.valor, 0) " + 
@@ -186,13 +183,19 @@ public class Xama2019Id {
 				"	WHERE efd.sexo IN ('Feminino') AND " + 
 				"		efd.categoria IN ('Principal') AND " + 
 				"		efd.idProduto IN (?) " + 
-				"	) AS valorExperienciaFeminino, ( " + 
+				") AS valorExperienciaFeminino, ( " + 
 				"	SELECT ROUND(efd.valor, 0) " + 
 				"	FROM experiencia_festadias efd " + 
 				"	WHERE efd.sexo IN ('Masculino') AND " + 
 				"		efd.categoria IN ('Principal') AND " + 
 				"		efd.idProduto IN (?) " + 
-				"	) AS valorExperienciaMasculino, (" + 
+				") AS valorExperienciaMasculino, (" + 
+				"	SELECT ROUND(efd.valor,0) " + 
+				"	FROM experiencia_festadias efd " + 
+				"	WHERE efd.sexo IN ('Unissex') AND " + 
+				"		efd.categoria IN ('Principal') AND " + 
+				"		efd.idProduto IN (?) " + 
+				") AS valorExperienciaUnissex, (" + 
 				"	SELECT ROUND(efd.valor,0) " + 
 				"	FROM experiencia_festadias efd WHERE " + 
 				"		efd.categoria IN ('Secundário') AND " + 
@@ -204,12 +207,14 @@ public class Xama2019Id {
 		statement.setInt(1, ID_EXPERIENCIA);
 		statement.setInt(2, ID_EXPERIENCIA);
 		statement.setInt(3, ID_EXPERIENCIA);
+		statement.setInt(4, ID_EXPERIENCIA);
 		result = statement.executeQuery();
 		
 		result.next();
 		// int valorExperienciaAvulsa = result.getInt("valorExperienciaAvulsa");
-		int valorExperienciaFeminino = result.getInt("valorExperienciaFeminino")  /* + valorExperienciaAvulsa*/ ;
-		int valorExperienciaMasculino = result.getInt("valorExperienciaMasculino") /* + valorExperienciaAvulsa*/ ;
+		// int valorExperienciaFeminino = result.getInt("valorExperienciaFeminino")  /* + valorExperienciaAvulsa*/ ;
+		// int valorExperienciaMasculino = result.getInt("valorExperienciaMasculino") /* + valorExperienciaAvulsa*/ ;
+		int valorExperienciaUnissex = result.getInt("valorExperienciaUnissex") /* + valorExperienciaAvulsa*/ ;
 		result.close();
 		
 		
@@ -234,7 +239,7 @@ public class Xama2019Id {
 
 				
 		
-		
+		/*
 		query = "SELECT ROUND(hib.desconto_fixo, 0) as desconto " + 
 				"FROM produto hib WHERE " + 
 				"	hib.id IN (?) " + 
@@ -247,7 +252,7 @@ public class Xama2019Id {
 		result.next();
 		int desconto = result.getInt("desconto");
 		result.close();
-		
+		*/
 		
 		
 		
@@ -288,7 +293,7 @@ public class Xama2019Id {
 		int i = 1;
 		while(result.next() && i <= MAX_RESULTS) {
 			
-			String slugPacote = result.getString("slugPacote");
+			//String slugPacote = result.getString("slugPacote");
 			String nomeProduto = result.getString("nomeProduto");
 			String slugProduto = result.getString("slugProduto");
 			
@@ -322,26 +327,26 @@ public class Xama2019Id {
 			System.out.println(parameter + " -> " + menorValorPessoaComAereoAsString);
 			parameters.put(parameter, menorValorPessoaComAereoAsString);
 			
-			parameter = baseParameterDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
-			int menorValorPessoaFeminino = menorValorPessoa + valorExperienciaFeminino;
+			parameter = baseParameterDe.concat("_resumopacotes_pacotefestas").concat(iAsString);
+			int menorValorPessoaFeminino = menorValorPessoa + valorExperienciaUnissex;
 			String menorValorPessoaFemininoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaFeminino);
 			System.out.println(parameter + " -> " + menorValorPessoaFemininoAsString);
 			parameters.put(parameter, menorValorPessoaFemininoAsString);
-			
+			/*
 			parameter = baseParameterDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
 			int menorValorPessoaMasculino = menorValorPessoa + valorExperienciaMasculino;
 			String menorValorPessoaMasculinoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaMasculino);
 			System.out.println(parameter + " -> " + menorValorPessoaMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaMasculinoAsString);
-			
-			parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
-			int menorValorPessoaCompletoFeminino = menorValorPessoa + valorAereo + valorExperienciaFeminino - desconto;
+			*/
+			parameter = baseParameterDe.concat("_resumopacotes_pacotecompleto").concat(iAsString);
+			int menorValorPessoaCompletoFeminino = menorValorPessoa + valorAereo + valorExperienciaUnissex;
 			String menorValorPessoaCompletoFemininoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoFeminino);
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoFemininoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoFemininoAsString);
-
+			/*
 			parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
-			int menorValorPessoaCompletoMasculino = menorValorPessoa + valorAereo + valorExperienciaMasculino - desconto;
+			int menorValorPessoaCompletoMasculino = menorValorPessoa + valorAereo + valorExperienciaMasculino;
 			String menorValorPessoaCompletoMasculinoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoMasculino);
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoMasculinoAsString);
@@ -350,21 +355,21 @@ public class Xama2019Id {
 			String linkPacote = injoyLinkDESobre.concat(slugPacote);
 			System.out.println(parameter + " -> " + linkPacote);
 			parameters.put(parameter, linkPacote);
-			
+			*/
 			String baseParameterDeAc = baseParameterDe.concat("_ac_");
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_anchor");
 			System.out.println(parameter + " -> " + slugProduto);
 			parameters.put(parameter, slugProduto);
-			
+			/*
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_linkSobre");
 			System.out.println(parameter + " -> " + linkPacote);
 			parameters.put(parameter, linkPacote);
-			
+			*/
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_menorValorPessoa");
 			menorValorPessoaAsString = formatoSemCentavosComCifra.format(menorValorPessoa);
 			System.out.println(parameter + " -> " + menorValorPessoaAsString);
 			parameters.put(parameter, menorValorPessoaAsString);
-			
+			/*
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotefemininoaereo");
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoFemininoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoFemininoAsString);
@@ -372,7 +377,7 @@ public class Xama2019Id {
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotemasculinoaereo");
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoMasculinoAsString);
-			
+			*/
 		
 			
 			query = "SELECT ( " + 
@@ -490,7 +495,7 @@ public class Xama2019Id {
 				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacoteac_").concat(nomeAc);
 				System.out.println(parameter + " -> " + valorPessoaAsString);
 				parameters.put(parameter, valorPessoaAsString);
-				
+				/*
 				String valorPacoteFemininoAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
 						formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa") + valorExperienciaFeminino));
 				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotefeminino_").concat(nomeAc);
@@ -502,6 +507,12 @@ public class Xama2019Id {
 				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotemasculino_").concat(nomeAc);
 				System.out.println(parameter + " -> " + valorPacoteMasculinoAsString);
 				parameters.put(parameter, valorPacoteMasculinoAsString);
+				*/
+				String valorPacoteFestasAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
+					formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa") + valorExperienciaUnissex));
+				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotefestas_").concat(nomeAc);
+				System.out.println(parameter + " -> " + valorPacoteFestasAsString);
+				parameters.put(parameter, valorPacoteFestasAsString);
 
 			}
 			result2.close();
@@ -567,22 +578,22 @@ public class Xama2019Id {
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);
 				
-				parameter = baseParameterDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacotefestas").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);
-				
+				/*
 				parameter = baseParameterDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);				
-				
-				parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
+				*/
+				parameter = baseParameterDe.concat("_resumopacotes_pacotecompleto").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);
-				
+				/*
 				parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + emBreve);
 				parameters.put(parameter, emBreve);
-				
+				*/
 				query = "SELECT arquivo FROM pdf WHERE slug IN ('jr_"
 						+ SLUG_DE
 						+ "_ac_"
@@ -654,22 +665,22 @@ public class Xama2019Id {
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
 				
-				parameter = baseParameterDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacotefestas").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
-				
+				/*
 				parameter = baseParameterDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
-				
-				parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
+				*/
+				parameter = baseParameterDe.concat("_resumopacotes_pacotecompleto").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
-				
+				/*
 				parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + esgotado);
 				parameters.put(parameter, esgotado);
-				
+				*/
 				query = "SELECT arquivo FROM pdf WHERE slug IN ('jr_"
 						+ SLUG_DE
 						+ "_ac_"
@@ -718,22 +729,22 @@ public class Xama2019Id {
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
 				
-				parameter = baseParameterDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
+				parameter = baseParameterDe.concat("_resumopacotes_pacotefestas").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
-				
+				/*
 				parameter = baseParameterDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
-				
-				parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
+				*/
+				parameter = baseParameterDe.concat("_resumopacotes_pacotecompleto").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
-				
+				/*
 				parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
 				System.out.println(parameter + " -> " + "");
 				parameters.put(parameter, "");
-				
+				*/
 				parameter = baseParameterDe.concat("_resumopacotes_link").concat(iAsString);
 				System.out.println(parameter + " -> " + injoyLinkDESobre);
 				parameters.put(parameter, injoyLinkDESobre);
