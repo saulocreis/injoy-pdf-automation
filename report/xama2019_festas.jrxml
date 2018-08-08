@@ -4,7 +4,9 @@
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
 	</parameter>
-	<parameter name="jr_xama2019_festas" class="java.lang.String"/>
+	<parameter name="jr_xama2019_festas" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Festas.png"]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
@@ -12,7 +14,7 @@
 		<band height="511">
 			<image>
 				<reportElement x="0" y="0" width="684" height="511" uuid="ae31684c-fbb2-41c7-b3b7-3e9dfb015ebf"/>
-				<imageExpression><![CDATA["images\\xama2019\\Festas.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_festas}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.festas}]]></anchorNameExpression>
 			</image>
 		</band>

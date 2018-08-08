@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_2_pqinjoy" pageWidth="684" pageHeight="505" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="9027c360-fe98-452a-8523-d97e22a9442e">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_2_pqinjoy" pageWidth="684" pageHeight="512" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="9027c360-fe98-452a-8523-d97e22a9442e">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
 	</parameter>
@@ -11,9 +11,9 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="505">
+		<band height="512">
 			<image>
-				<reportElement x="0" y="0" width="684" height="505" uuid="c8cbf03c-1dfa-43b3-abc9-dc18a58da239"/>
+				<reportElement x="0" y="0" width="684" height="512" uuid="c8cbf03c-1dfa-43b3-abc9-dc18a58da239"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_pqinjoy}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.pqinjoy}]]></anchorNameExpression>
 			</image>
