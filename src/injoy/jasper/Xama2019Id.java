@@ -302,7 +302,7 @@ public class Xama2019Id {
 			String nomeArquivoPrecos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_precos");
 			 
 			listaArquivos.add(nomeArquivoCapaFotos); 
-			//listaArquivos.add(nomeArquivoPrecos); 
+			listaArquivos.add(nomeArquivoPrecos); 
 			
 			int menorValorPessoa = result.getInt("menorValorPessoa");
 			DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("#,##0");

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_ac_pousada-verde-mares_precos" pageWidth="684" pageHeight="1005" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="f1e6bb2e-a2d6-49e5-a741-f9cd1ba3e7d4">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_ac_pousada-verde-mares_precos" pageWidth="684" pageHeight="764" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="f1e6bb2e-a2d6-49e5-a741-f9cd1ba3e7d4">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
 	</parameter>
@@ -50,81 +50,81 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="1005">
+		<band height="764">
 			<image>
-				<reportElement x="0" y="0" width="684" height="1005" uuid="78d450a3-2471-4860-81ae-41c68b1087d7"/>
-				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_ac_pousada-verde-mares_precos}]]></imageExpression>
+				<reportElement x="0" y="0" width="684" height="764" uuid="78d450a3-2471-4860-81ae-41c68b1087d7"/>
+				<imageExpression><![CDATA["images\\xama2019\\Verdes Mares - Quartos.png"]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="30" y="950" width="40" height="40" uuid="6c3f5615-bb7b-4ba2-8c70-8bfc97fd84b0"/>
+				<reportElement mode="Transparent" x="30" y="710" width="40" height="40" uuid="6c3f5615-bb7b-4ba2-8c70-8bfc97fd84b0"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
-				<reportElement x="335" y="280" width="98" height="34" uuid="8b944495-d127-4b26-b2a3-594347ec1105"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacoteac_apartamento-com-frigobar_2}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="510" y="280" width="98" height="34" uuid="89eb3a19-a8de-461e-b8af-f5af05007239"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacotefestas_apartamento-com-frigobar_2}]]></textFieldExpression>
-			</textField>
-			<textField>
-				<reportElement x="335" y="400" width="98" height="34" uuid="98728d97-1ced-4ec6-beb6-a188752eb445"/>
+				<reportElement x="335" y="250" width="98" height="34" uuid="98728d97-1ced-4ec6-beb6-a188752eb445"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacoteac_apartamento-sem-frigobar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="510" y="400" width="98" height="34" uuid="9ce9a75a-7c63-43b0-994b-bb2294d62756"/>
+				<reportElement x="510" y="250" width="98" height="34" uuid="9ce9a75a-7c63-43b0-994b-bb2294d62756"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacotefestas_apartamento-sem-frigobar_2}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="530" width="98" height="34" uuid="7d72fa00-8e97-4abb-b1e5-3e44203a4f3c"/>
+				<reportElement x="335" y="305" width="98" height="34" uuid="7d72fa00-8e97-4abb-b1e5-3e44203a4f3c"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacoteac_apartamento-sem-frigobar_3}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="510" y="530" width="98" height="34" uuid="2464b9b4-7da9-40d3-8adf-2643e5640d8f"/>
+				<reportElement x="510" y="305" width="98" height="34" uuid="2464b9b4-7da9-40d3-8adf-2643e5640d8f"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacotefestas_apartamento-sem-frigobar_3}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="335" y="660" width="98" height="34" uuid="c873478d-9c90-48fd-92c7-aecd56351c49"/>
+				<reportElement x="335" y="375" width="98" height="34" uuid="8b944495-d127-4b26-b2a3-594347ec1105"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacoteac_apartamento-com-frigobar_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="375" width="98" height="34" uuid="89eb3a19-a8de-461e-b8af-f5af05007239"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacotefestas_apartamento-com-frigobar_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="430" width="98" height="34" uuid="c873478d-9c90-48fd-92c7-aecd56351c49"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacoteac_apartamento-com-frigobar_3}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="510" y="660" width="98" height="34" uuid="91e15931-fbe1-4a67-bb56-b446efb17825"/>
+				<reportElement x="510" y="430" width="98" height="34" uuid="91e15931-fbe1-4a67-bb56-b446efb17825"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacotefestas_apartamento-com-frigobar_3}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="510" y="810" width="98" height="34" uuid="dc79ecb9-2152-4734-bf5b-b974ae0216f4"/>
+				<reportElement x="510" y="550" width="98" height="34" uuid="dc79ecb9-2152-4734-bf5b-b974ae0216f4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_pacotecompleto}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="370" y="895" width="130" height="34" forecolor="#FFFFFF" uuid="4f86f3f9-f541-408d-a70b-5bb016ffc168"/>
+				<reportElement x="370" y="635" width="130" height="34" forecolor="#FFFFFF" uuid="4f86f3f9-f541-408d-a70b-5bb016ffc168"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="26" isBold="true"/>
 				</textElement>
