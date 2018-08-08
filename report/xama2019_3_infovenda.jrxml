@@ -17,13 +17,13 @@
 		<band height="1137">
 			<image>
 				<reportElement x="0" y="0" width="684" height="1137" uuid="581e1112-e192-46f0-a429-c88c4b598ecb"/>
-				<imageExpression><![CDATA["images\\xama2019\\Infos de Venda.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_infovenda}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.infovenda}]]></anchorNameExpression>
 			</image>
 			<textField>
 				<reportElement x="317" y="127" width="70" height="20" forecolor="#FFFFFF" uuid="14d6d67c-9c05-4909-acd4-8a427d0a5dcc"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="10" isBold="true"/>
+					<font fontName="Montserrat" size="14" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{dataCriacao}]]></textFieldExpression>
 			</textField>
