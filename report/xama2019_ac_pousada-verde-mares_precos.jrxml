@@ -53,7 +53,7 @@
 		<band height="764">
 			<image>
 				<reportElement x="0" y="0" width="684" height="764" uuid="78d450a3-2471-4860-81ae-41c68b1087d7"/>
-				<imageExpression><![CDATA["images\\xama2019\\Verdes Mares - Quartos.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_ac_pousada-verde-mares_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
 				<reportElement mode="Transparent" x="30" y="710" width="40" height="40" uuid="6c3f5615-bb7b-4ba2-8c70-8bfc97fd84b0"/>
