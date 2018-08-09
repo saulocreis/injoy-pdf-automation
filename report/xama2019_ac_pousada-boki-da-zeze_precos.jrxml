@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_ac_pousada-boki-da-zeze_precos" pageWidth="684" pageHeight="625" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="d84ce01f-9540-4954-aa34-48e181ab4ddd">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_ac_pousada-boki-da-zeze_precos" pageWidth="684" pageHeight="627" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="d84ce01f-9540-4954-aa34-48e181ab4ddd">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
 	</parameter>
@@ -32,9 +32,9 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="625">
+		<band height="627">
 			<image>
-				<reportElement x="0" y="0" width="684" height="625" uuid="78d450a3-2471-4860-81ae-41c68b1087d7"/>
+				<reportElement x="0" y="0" width="684" height="627" uuid="78d450a3-2471-4860-81ae-41c68b1087d7"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_ac_pousada-boki-da-zeze_precos}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
@@ -73,7 +73,7 @@
 			<textField>
 				<reportElement x="510" y="430" width="98" height="34" uuid="dc79ecb9-2152-4734-bf5b-b974ae0216f4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="21" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-boki-da-zeze_pacotecompleto}]]></textFieldExpression>
 			</textField>

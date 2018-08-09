@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_4_resumopacotes" pageWidth="684" pageHeight="757" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="4aab9651-e41c-4063-9f79-18cc9a0c5017">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_4_resumopacotes" pageWidth="684" pageHeight="760" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="4aab9651-e41c-4063-9f79-18cc9a0c5017">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
 	</parameter>
@@ -152,9 +152,9 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="757">
+		<band height="760">
 			<image>
-				<reportElement x="0" y="0" width="684" height="757" uuid="014e5a86-6857-4eba-9f7b-4d34cc9cf892"/>
+				<reportElement x="0" y="0" width="684" height="760" uuid="014e5a86-6857-4eba-9f7b-4d34cc9cf892"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_resumopacotes}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.resumopacotes}]]></anchorNameExpression>
 			</image>

@@ -21,7 +21,7 @@
 				<anchorNameExpression><![CDATA[$R{injoy.tag.infovenda}]]></anchorNameExpression>
 			</image>
 			<textField>
-				<reportElement x="317" y="127" width="70" height="20" forecolor="#FFFFFF" uuid="14d6d67c-9c05-4909-acd4-8a427d0a5dcc"/>
+				<reportElement x="317" y="127" width="83" height="20" forecolor="#FFFFFF" uuid="14d6d67c-9c05-4909-acd4-8a427d0a5dcc"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="14" isBold="true"/>
 				</textElement>

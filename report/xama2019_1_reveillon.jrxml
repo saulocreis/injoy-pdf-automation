@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_1_reveillon" pageWidth="684" pageHeight="606" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="525797d3-f651-4202-9f36-c4c16f737206">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_1_reveillon" pageWidth="684" pageHeight="608" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="525797d3-f651-4202-9f36-c4c16f737206">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
 	</parameter>
@@ -11,9 +11,9 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="606">
+		<band height="608">
 			<image>
-				<reportElement x="0" y="0" width="684" height="606" uuid="3d44548c-1fcb-44dd-be50-6d09657ea370"/>
+				<reportElement x="0" y="0" width="684" height="608" uuid="3d44548c-1fcb-44dd-be50-6d09657ea370"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_reveillon}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.reveillon}]]></anchorNameExpression>
 			</image>

@@ -133,7 +133,7 @@
 			<textField>
 				<reportElement x="510" y="670" width="98" height="34" uuid="dc79ecb9-2152-4734-bf5b-b974ae0216f4"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
+					<font fontName="Montserrat" size="21" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-flor-da-lua_pacotecompleto}]]></textFieldExpression>
 			</textField>

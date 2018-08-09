@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_ac_pousada-verde-mares_capa_fotos" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="eca8d650-9e3c-4c86-bdc3-fa95ef68e349">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="xama2019_ac_pousada-verde-mares_capa_fotos" pageWidth="684" pageHeight="514" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="eca8d650-9e3c-4c86-bdc3-fa95ef68e349">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.xama2019}]]></defaultValueExpression>
 	</parameter>
@@ -26,9 +26,9 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<detail>
-		<band height="512">
+		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="512" uuid="bc2e226c-0b09-4910-acf3-b89b1e6a2b01"/>
+				<reportElement x="0" y="0" width="684" height="514" uuid="bc2e226c-0b09-4910-acf3-b89b1e6a2b01"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_ac_pousada-verde-mares_capa}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_anchor}]]></anchorNameExpression>
 			</image>
@@ -50,9 +50,9 @@
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-verde-mares_menorValorPessoa}]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="512">
+		<band height="514">
 			<image>
-				<reportElement x="0" y="0" width="684" height="512" uuid="1dac18f7-01e9-44b4-92a4-af0defed0dfd"/>
+				<reportElement x="0" y="0" width="684" height="514" uuid="1dac18f7-01e9-44b4-92a4-af0defed0dfd"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_ac_pousada-verde-mares_fotos1}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">

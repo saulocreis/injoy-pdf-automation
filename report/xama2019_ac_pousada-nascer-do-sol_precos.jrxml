@@ -143,13 +143,6 @@
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-nascer-do-sol_pacotefestas_triplo-casal-com-cama-extra_4}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="510" y="810" width="98" height="34" uuid="dc79ecb9-2152-4734-bf5b-b974ae0216f4"/>
-				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="16" isBold="true"/>
-				</textElement>
-				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-nascer-do-sol_pacotecompleto}]]></textFieldExpression>
-			</textField>
-			<textField>
 				<reportElement x="335" y="630" width="98" height="34" uuid="18fd43ad-e25f-4625-8f91-39427ce054b8"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="16" isBold="true"/>
@@ -176,6 +169,13 @@
 					<font fontName="Montserrat" size="16" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-nascer-do-sol_pacotefestas_quíntuplo_6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="510" y="810" width="98" height="34" uuid="dc79ecb9-2152-4734-bf5b-b974ae0216f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="21" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_xama2019_ac_pousada-nascer-do-sol_pacotecompleto}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="370" y="895" width="130" height="34" forecolor="#FFFFFF" uuid="4f86f3f9-f541-408d-a70b-5bb016ffc168"/>
