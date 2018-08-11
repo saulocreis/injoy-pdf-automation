@@ -5,7 +5,7 @@
 		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_carneiros_menu" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Menu Geral.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Menu Completo.png"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
@@ -14,7 +14,7 @@
 		<band height="508">
 			<image>
 				<reportElement x="0" y="0" width="684" height="508" uuid="d349243b-129c-4b72-a9f0-65b1d4625e3a"/>
-				<imageExpression><![CDATA["images\\carneiros\\Menu Completo.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menu}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.menu}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">

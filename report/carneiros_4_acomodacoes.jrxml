@@ -5,7 +5,7 @@
 		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_carneiros_menuacomodacoes" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.image.carneiros.menuacomodacoes}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Menu Acomodacoes.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_carneiros_menuacomodacoes_imagem1" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
@@ -25,30 +25,85 @@
 	<parameter name="jr_carneiros_menuacomodacoes_link3" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_imagem4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_link4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_imagem5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_link5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_imagem6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_link6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_imagem7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_link7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_imagem8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_carneiros_menuacomodacoes_link8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
 		<band height="474">
 			<image>
-				<reportElement x="0" y="0" width="684" height="474" uuid="01588226-a826-4abd-8ffd-2add3dac942b"/>
+				<reportElement x="0" y="0" width="684" height="474" uuid="a988a5ee-cd4e-4ada-8acf-07c82ac85c75"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="30" y="190" width="145" height="145" uuid="2d7076f9-5968-4c0c-a202-9b48b328751c"/>
+				<reportElement mode="Transparent" x="30" y="180" width="145" height="145" uuid="09c211bf-be71-40ee-8c21-665ac0acf370"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem1}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link1}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="190" y="190" width="145" height="145" uuid="a669a49f-94ff-4b19-9a83-5f9bb5b2e4ef"/>
+				<reportElement mode="Transparent" x="190" y="180" width="145" height="145" uuid="5f037496-2db8-4361-86f4-b61fcd36f4a5"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem2}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link2}]]></hyperlinkAnchorExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="350" y="190" width="145" height="145" uuid="d670a0cc-9f17-479a-9744-77b5c72f806e"/>
+				<reportElement mode="Transparent" x="350" y="180" width="145" height="145" uuid="62b488cf-39d1-45d9-9bc1-354bb4dba5bb"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem3}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link3}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="180" width="145" height="145" uuid="413471a3-6648-40ec-a157-80c830fe5677"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem4}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link4}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="320" width="145" height="145" uuid="d08ca9ae-44bb-43f0-bd52-c5fa2cdeabf1"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem5}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link5}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="320" width="145" height="145" uuid="fcf12efd-f154-4089-bb33-578ab71c4427"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem6}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link6}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="320" width="145" height="145" uuid="06a3f87a-ec37-4e3b-a83c-9c1c9e76877b"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem7}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link7}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="320" width="145" height="145" uuid="c65b5784-ca46-46e3-8b23-fa73fa895cc6"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menuacomodacoes_imagem8}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_carneiros_menuacomodacoes_link8}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 	</background>

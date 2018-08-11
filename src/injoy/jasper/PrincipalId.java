@@ -35,10 +35,10 @@ public class PrincipalId {
 	/*
 	 * 'letspipa', 'jeri2019', 'carneiros'
 	 */
-	static private final String SLUG_DE = "letspipa";
-	static private final int ID_HIBRIDO = 2142;
-	static private final int ID_EXPERIENCIA = 1780;
-	static private final int ID_AEREO = 2140;
+	static private final String SLUG_DE = "carneiros";
+	static private final int ID_HIBRIDO = 1738;
+	static private final int ID_EXPERIENCIA = 1723;
+	static private final int ID_AEREO = 2018;
 	
 	
 	static private Properties jasperprops;

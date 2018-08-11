@@ -14,7 +14,7 @@
 		<band height="664">
 			<image>
 				<reportElement x="0" y="0" width="684" height="664" uuid="cf654555-bcfc-4832-b952-72f536b64e31"/>
-				<imageExpression><![CDATA["images\\xama2019\\Aereo.png"]]></imageExpression>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_xama2019_aereo}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.aereo}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">

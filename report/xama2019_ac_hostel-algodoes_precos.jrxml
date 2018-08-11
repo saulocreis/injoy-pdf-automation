@@ -14,37 +14,37 @@
 		<defaultValueExpression><![CDATA["Hostel Algodoes - Quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacoteac_suite-com-ar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacotefestas_suite-com-ar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacoteac_suite-sem-ar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacotefestas_suite-sem-ar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacoteac_suite-sem-ar_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacotefestas_suite-sem-ar_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacoteac_dormitório-sem-ar_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacotefestas_dormitório-sem-ar_4" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacoteac_mezanino-sem-ar_5" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacotefestas_mezanino-sem-ar_5" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_xama2019_ac_hostel-algodoes_pacotecompleto" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>

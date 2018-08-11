@@ -7,9 +7,6 @@
 	<parameter name="jr_letspipa_resumopacotes" class="java.lang.String">
 		<defaultValueExpression><![CDATA["Resumo de Acomodacoes.png"]]></defaultValueExpression>
 	</parameter>
-	<parameter name="linkSobre" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link.sobre}]]></defaultValueExpression>
-	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome1" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
@@ -32,7 +29,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link1" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -56,7 +53,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link2" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome3" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -80,7 +77,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link3" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome4" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -104,7 +101,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link4" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome5" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -128,7 +125,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link5" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome6" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -152,7 +149,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link6" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome7" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -176,7 +173,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link7" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome8" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -200,7 +197,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link8" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome9" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -224,7 +221,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link9" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome10" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -248,7 +245,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link10" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome11" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -272,7 +269,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link11" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome12" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -296,7 +293,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link12" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome13" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -320,7 +317,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link13" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome14" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -344,7 +341,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link14" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome15" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -368,7 +365,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link15" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome16" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -392,7 +389,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link16" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome17" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -416,7 +413,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link17" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome18" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -440,7 +437,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link18" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_nome19" class="java.lang.String">
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
@@ -464,7 +461,7 @@
 		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_resumopacotes_link19" class="java.lang.String">
-		<defaultValueExpression><![CDATA[$R{injoy.link}+$P{linkSobre}]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.link.letspipa.sobre}]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>

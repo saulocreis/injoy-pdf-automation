@@ -10,7 +10,7 @@
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
-	<detail>
+	<background>
 		<band height="510">
 			<image>
 				<reportElement x="0" y="0" width="684" height="510" uuid="1368c993-dd03-40d7-a565-8484285e27ab"/>
@@ -37,5 +37,5 @@
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.instagram}]]></hyperlinkReferenceExpression>
 			</image>
 		</band>
-	</detail>
+	</background>
 </jasperReport>

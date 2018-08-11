@@ -14,28 +14,28 @@
 		<defaultValueExpression><![CDATA["Apartamentos Orrit - quartos.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacoteac_apartamento-vista-mar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotefeminino_apartamento-vista-mar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotemasculino_apartamento-vista-mar_2" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacoteac_apartamento-vista-mar_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotefeminino_apartamento-vista-mar_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotemasculino_apartamento-vista-mar_3" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotefemininoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_letspipa_ac_apartamentos-orrit_pacotemasculinoaereo" class="java.lang.String">
-		<defaultValueExpression><![CDATA["N/D"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
