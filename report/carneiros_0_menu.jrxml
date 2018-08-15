@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_0_menu" pageWidth="684" pageHeight="508" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="cb4edf3f-aab5-4f9e-a936-ce3ba3f79fcb">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_0_menu" pageWidth="684" pageHeight="511" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="cb4edf3f-aab5-4f9e-a936-ce3ba3f79fcb">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
 	</parameter>
@@ -11,9 +11,9 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="508">
+		<band height="511">
 			<image>
-				<reportElement x="0" y="0" width="684" height="508" uuid="d349243b-129c-4b72-a9f0-65b1d4625e3a"/>
+				<reportElement x="0" y="0" width="684" height="511" uuid="d349243b-129c-4b72-a9f0-65b1d4625e3a"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_menu}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.menu}]]></anchorNameExpression>
 			</image>
@@ -45,7 +45,7 @@
 			<image hyperlinkType="LocalAnchor">
 				<reportElement x="453" y="303" width="226" height="205" uuid="cab36c3f-a5ff-484c-a8f7-ecb3bce3db98"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
-				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.capa}]]></hyperlinkAnchorExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.aereo}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
 	</background>

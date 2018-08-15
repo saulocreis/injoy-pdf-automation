@@ -32,7 +32,7 @@
 		<band height="512">
 			<image>
 				<reportElement x="0" y="0" width="684" height="512" uuid="745e6c04-a7f5-4f31-b890-e74a557bbd41"/>
-				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_ac_club-meridional-carneiros-flat_capa}]]></imageExpression>
+				<imageExpression><![CDATA["images\\carneiros\\Flat Club Meridional.png"]]></imageExpression>
 				<anchorNameExpression><![CDATA[$P{jr_carneiros_ac_club-meridional-carneiros-flat_anchor}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">

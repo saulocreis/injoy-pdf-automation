@@ -212,7 +212,7 @@
 			<textField>
 				<reportElement x="0" y="304" width="120" height="55" uuid="c1e1de15-fa12-4288-a29d-ec17ee532884"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="14" isBold="true"/>
+					<font fontName="Montserrat" size="12" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_nome1}]]></textFieldExpression>
 			</textField>
@@ -266,7 +266,7 @@
 			<textField>
 				<reportElement x="0" y="360" width="120" height="55" uuid="2fb5b8b3-2e3f-4379-a121-ede0af1f3d06"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="14" isBold="true"/>
+					<font fontName="Montserrat" size="12" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_nome2}]]></textFieldExpression>
 			</textField>
@@ -320,7 +320,7 @@
 			<textField>
 				<reportElement x="0" y="415" width="120" height="55" uuid="4d74b42d-97cc-4df5-9334-869c5b529346"/>
 				<textElement textAlignment="Center" verticalAlignment="Middle">
-					<font fontName="Montserrat" size="14" isBold="true"/>
+					<font fontName="Montserrat" size="12" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_carneiros_resumopacotes_nome3}]]></textFieldExpression>
 			</textField>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_ac_hotel-ancoradouro_capa_fotos" pageWidth="684" pageHeight="518" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="08966a2a-3fa5-4bc8-803b-c39c70a358ad">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_ac_hotel-ancoradouro_capa_fotos" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="1b31f361-ccc0-45ba-9d3d-0c23ba7759b8">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
 	</parameter>
@@ -29,48 +29,48 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<detail>
-		<band height="518">
+		<band height="512">
 			<image>
-				<reportElement x="0" y="0" width="684" height="518" uuid="504a2dc7-0faf-4fce-b3db-ebd0c60de91e"/>
+				<reportElement x="0" y="0" width="684" height="512" uuid="aeff1828-df5d-4492-8b8f-2620de7669d3"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_ac_hotel-ancoradouro_capa}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$P{jr_carneiros_ac_hotel-ancoradouro_anchor}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="595" y="485" width="33" height="33" uuid="9663f6b3-2124-40ea-b918-32d4d5a58d7e"/>
+				<reportElement mode="Transparent" x="600" y="478" width="33" height="33" uuid="e37c6058-a598-4907-beb2-f6448c2eb873"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$P{jr_carneiros_ac_hotel-ancoradouro_linkSobre}]]></hyperlinkReferenceExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="614cc5f1-3ce5-4bb6-a298-12475f097ea4"/>
+				<reportElement mode="Transparent" x="10" y="358" width="40" height="40" uuid="2df97ba9-b4d6-42d6-857c-103f92dae26a"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 			<textField>
-				<reportElement x="600" y="432" width="84" height="34" forecolor="#FFFFFF" uuid="f9bc5333-e3f9-4b2b-af27-d98cfe617628"/>
+				<reportElement x="600" y="432" width="84" height="34" forecolor="#FFFFFF" uuid="b9c9f8ae-fcf4-4197-b707-6c772c2af54b"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="18" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{jr_carneiros_ac_hotel-ancoradouro_menorValorPessoa}]]></textFieldExpression>
 			</textField>
 		</band>
-		<band height="518">
+		<band height="512">
 			<image>
-				<reportElement x="0" y="0" width="684" height="518" uuid="49224b6e-0c59-4a80-9c9b-def965a3218d"/>
+				<reportElement x="0" y="0" width="684" height="512" uuid="d29b954d-3d18-46aa-9133-edf5a6529434"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_ac_hotel-ancoradouro_fotos1}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="474" width="40" height="40" uuid="47baa3ae-3d25-4226-a3b2-64a81c1371ca"/>
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="47baa3ae-3d25-4226-a3b2-64a81c1371ca"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>
 		</band>
-		<band height="518">
+		<band height="512">
 			<image>
-				<reportElement x="0" y="0" width="684" height="518" uuid="5bcf8f77-71d0-4d43-bd4c-50bd0271bf86"/>
+				<reportElement x="0" y="0" width="684" height="512" uuid="5a9b2395-c820-4849-9059-d2511d91fff9"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_ac_hotel-ancoradouro_fotos2}]]></imageExpression>
 			</image>
 			<image hyperlinkType="LocalAnchor">
-				<reportElement mode="Transparent" x="10" y="474" width="40" height="40" uuid="1045570a-efc6-42ff-b406-582258557aca"/>
+				<reportElement mode="Transparent" x="10" y="470" width="40" height="40" uuid="366699c9-7434-47e1-94e7-52446e8d0647"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
 			</image>

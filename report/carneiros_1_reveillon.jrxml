@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_1_reveillon" pageWidth="684" pageHeight="718" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="16c397b2-23aa-488f-bac8-cba542dae6e8">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_1_reveillon" pageWidth="684" pageHeight="721" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="16c397b2-23aa-488f-bac8-cba542dae6e8">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_carneiros_reveillon" class="java.lang.String">
-		<defaultValueExpression><![CDATA["IJ + Carneiros.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Reveillon Carneiros Completo.png"]]></defaultValueExpression>
 	</parameter>
 	<queryString>
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="718">
+		<band height="721">
 			<image>
-				<reportElement x="0" y="0" width="684" height="718" uuid="4fa1dee5-4c6c-4d2b-a325-245ce4d8ddd8"/>
+				<reportElement x="0" y="0" width="684" height="721" uuid="4fa1dee5-4c6c-4d2b-a325-245ce4d8ddd8"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_reveillon}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.reveillon}]]></anchorNameExpression>
 			</image>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_2_pqinjoy" pageWidth="684" pageHeight="509" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="9101d9e6-f494-4a65-af72-f1796a67882e">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="carneiros_2_pqinjoy" pageWidth="684" pageHeight="516" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="9101d9e6-f494-4a65-af72-f1796a67882e">
 	<parameter name="img_dir" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.directory.carneiros}]]></defaultValueExpression>
 	</parameter>
@@ -11,9 +11,9 @@
 		<![CDATA[SELECT TRUE;]]>
 	</queryString>
 	<background>
-		<band height="509">
+		<band height="516">
 			<image>
-				<reportElement x="0" y="0" width="684" height="509" uuid="2a0428c1-de4c-4ae8-a2f8-996bd891a12d"/>
+				<reportElement x="0" y="0" width="684" height="516" uuid="2a0428c1-de4c-4ae8-a2f8-996bd891a12d"/>
 				<imageExpression><![CDATA[$P{img_dir}+$P{jr_carneiros_pqinjoy}]]></imageExpression>
 				<anchorNameExpression><![CDATA[$R{injoy.tag.pqinjoy}]]></anchorNameExpression>
 			</image>

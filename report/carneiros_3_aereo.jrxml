@@ -18,7 +18,7 @@
 				<anchorNameExpression><![CDATA[$R{injoy.tag.aereo}]]></anchorNameExpression>
 			</image>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="580" y="540" width="80" height="80" uuid="1658086c-01f0-4b3a-a266-ee08090fb97d"/>
+				<reportElement mode="Transparent" x="590" y="580" width="80" height="80" uuid="1658086c-01f0-4b3a-a266-ee08090fb97d"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link.carneiros.sobre.aereo}]]></hyperlinkReferenceExpression>
 			</image>

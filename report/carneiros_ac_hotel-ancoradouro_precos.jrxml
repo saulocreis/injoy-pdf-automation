@@ -11,7 +11,7 @@
 		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_carneiros_ac_hotel-ancoradouro_precos" class="java.lang.String">
-		<defaultValueExpression><![CDATA["Flat Club Meridional - Quartos Completo.png"]]></defaultValueExpression>
+		<defaultValueExpression><![CDATA["Ancoradouro - Quartos - Completo.png"]]></defaultValueExpression>
 	</parameter>
 	<parameter name="jr_carneiros_ac_hotel-ancoradouro_pacoteac_apartamento-sem-varanda_2" class="java.lang.String">
 		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
