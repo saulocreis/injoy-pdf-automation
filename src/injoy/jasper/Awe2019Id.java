@@ -24,7 +24,7 @@ import net.sf.jasperreports.export.SimpleExporterInput;
 import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 import net.sf.jasperreports.export.SimplePdfExporterConfiguration;
 
-public class PrincipalId {
+public class Awe2019Id {
 	
 	static private final int MAX_RESULTS = 20;
 	static private final String DEFAULT_WORKSPACE = "injoy.";
@@ -36,9 +36,9 @@ public class PrincipalId {
 	 * 'carneiros', 'jeri2019', 'letspipa', 'xama2019', 'awe2019'
 	 */
 	static private final String SLUG_DE = "awe2019";
-	static private final int ID_HIBRIDO = 1738;
-	static private final int ID_EXPERIENCIA = 1723;
-	static private final int ID_AEREO = 2018;
+	// static private final int ID_HIBRIDO = 1738;
+	static private final int ID_EXPERIENCIA = 1905;
+	static private final int ID_AEREO = 1906;
 	
 	
 	static private Properties jasperprops;
@@ -185,21 +185,25 @@ public class PrincipalId {
 		
 		*/
 		
-		
-		
 		query = "SELECT (" + 
 				"	SELECT ROUND(efd.valor, 0) " + 
 				"	FROM experiencia_festadias efd " + 
 				"	WHERE efd.sexo IN ('Feminino') AND " + 
 				"		efd.categoria IN ('Principal') AND " + 
 				"		efd.idProduto IN (?) " + 
-				"	) AS valorExperienciaFeminino, ( " + 
+				") AS valorExperienciaFeminino, ( " + 
 				"	SELECT ROUND(efd.valor, 0) " + 
 				"	FROM experiencia_festadias efd " + 
 				"	WHERE efd.sexo IN ('Masculino') AND " + 
 				"		efd.categoria IN ('Principal') AND " + 
 				"		efd.idProduto IN (?) " + 
-				"	) AS valorExperienciaMasculino, (" + 
+				") AS valorExperienciaMasculino, (" + 
+				"	SELECT ROUND(efd.valor,0) " + 
+				"	FROM experiencia_festadias efd " + 
+				"	WHERE efd.sexo IN ('Unissex') AND " + 
+				"		efd.categoria IN ('Principal') AND " + 
+				"		efd.idProduto IN (?) " + 
+				") AS valorExperienciaUnissex, (" + 
 				"	SELECT ROUND(efd.valor,0) " + 
 				"	FROM experiencia_festadias efd WHERE " + 
 				"		efd.categoria IN ('Secundário') AND " + 
@@ -211,12 +215,14 @@ public class PrincipalId {
 		statement.setInt(1, ID_EXPERIENCIA);
 		statement.setInt(2, ID_EXPERIENCIA);
 		statement.setInt(3, ID_EXPERIENCIA);
+		statement.setInt(4, ID_EXPERIENCIA);
 		result = statement.executeQuery();
 		
 		result.next();
 		// int valorExperienciaAvulsa = result.getInt("valorExperienciaAvulsa");
-		int valorExperienciaFeminino = result.getInt("valorExperienciaFeminino")  /* + valorExperienciaAvulsa*/ ;
-		int valorExperienciaMasculino = result.getInt("valorExperienciaMasculino") /* + valorExperienciaAvulsa*/ ;
+		// int valorExperienciaFeminino = result.getInt("valorExperienciaFeminino")  /* + valorExperienciaAvulsa*/ ;
+		// int valorExperienciaMasculino = result.getInt("valorExperienciaMasculino") /* + valorExperienciaAvulsa*/ ;
+		int valorExperienciaUnissex = result.getInt("valorExperienciaUnissex") /* + valorExperienciaAvulsa*/ ;
 		result.close();
 		
 		
@@ -242,6 +248,7 @@ public class PrincipalId {
 				
 		
 		
+		/*
 		query = "SELECT ROUND(hib.desconto_fixo, 0) as desconto " + 
 				"FROM produto hib WHERE " + 
 				"	hib.id IN (?) " + 
@@ -254,6 +261,7 @@ public class PrincipalId {
 		result.next();
 		int desconto = result.getInt("desconto");
 		result.close();
+		*/
 		
 		
 		
@@ -303,8 +311,8 @@ public class PrincipalId {
 			String nomeArquivoCapaFotos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_capa_fotos");
 			String nomeArquivoPrecos = SLUG_DE.concat("_ac_").concat(slugProduto).concat("_precos");
 			 
-			listaArquivos.add(nomeArquivoCapaFotos); 
-			listaArquivos.add(nomeArquivoPrecos); 
+			listaArquivos.add(nomeArquivoCapaFotos);
+			listaArquivos.add(nomeArquivoPrecos);
 			
 			int menorValorPessoa = result.getInt("menorValorPessoa");
 			DecimalFormat formatoSemCentavosSemCifra = new DecimalFormat("#,##0");
@@ -329,29 +337,30 @@ public class PrincipalId {
 			System.out.println(parameter + " -> " + menorValorPessoaComAereoAsString);
 			parameters.put(parameter, menorValorPessoaComAereoAsString);
 			
-			parameter = baseParameterDe.concat("_resumopacotes_pacotefeminino").concat(iAsString);
-			int menorValorPessoaFeminino = menorValorPessoa + valorExperienciaFeminino;
+			parameter = baseParameterDe.concat("_resumopacotes_pacotefestas").concat(iAsString);
+			int menorValorPessoaFeminino = menorValorPessoa + valorExperienciaUnissex;
 			String menorValorPessoaFemininoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaFeminino);
 			System.out.println(parameter + " -> " + menorValorPessoaFemininoAsString);
 			parameters.put(parameter, menorValorPessoaFemininoAsString);
-			
+			/*
 			parameter = baseParameterDe.concat("_resumopacotes_pacotemasculino").concat(iAsString);
 			int menorValorPessoaMasculino = menorValorPessoa + valorExperienciaMasculino;
 			String menorValorPessoaMasculinoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaMasculino);
 			System.out.println(parameter + " -> " + menorValorPessoaMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaMasculinoAsString);
-			
-			parameter = baseParameterDe.concat("_resumopacotes_completofeminino").concat(iAsString);
-			int menorValorPessoaCompletoFeminino = menorValorPessoa + valorAereo + valorExperienciaFeminino - desconto;
-			String menorValorPessoaCompletoFemininoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoFeminino);
-			System.out.println(parameter + " -> " + menorValorPessoaCompletoFemininoAsString);
-			parameters.put(parameter, menorValorPessoaCompletoFemininoAsString);
-
+			*/
+			parameter = baseParameterDe.concat("_resumopacotes_pacotecompleto").concat(iAsString);
+			int menorValorPessoaCompleto = menorValorPessoa + valorAereo + valorExperienciaUnissex;
+			String menorValorPessoaCompletoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompleto);
+			System.out.println(parameter + " -> " + menorValorPessoaCompletoAsString);
+			parameters.put(parameter, menorValorPessoaCompletoAsString);
+			/*
 			parameter = baseParameterDe.concat("_resumopacotes_completomasculino").concat(iAsString);
-			int menorValorPessoaCompletoMasculino = menorValorPessoa + valorAereo + valorExperienciaMasculino - desconto;
+			int menorValorPessoaCompletoMasculino = menorValorPessoa + valorAereo + valorExperienciaMasculino;
 			String menorValorPessoaCompletoMasculinoAsString = formatoSemCentavosSemCifra.format(menorValorPessoaCompletoMasculino);
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoMasculinoAsString);
+			*/
 			
 			parameter = baseParameterDe.concat("_resumopacotes_link").concat(iAsString);
 			String linkPacote = injoyLinkDESobre.concat(slugPacote);
@@ -372,6 +381,10 @@ public class PrincipalId {
 			System.out.println(parameter + " -> " + menorValorPessoaAsString);
 			parameters.put(parameter, menorValorPessoaAsString);
 			
+			parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotecompleto");
+			System.out.println(parameter + " -> " + menorValorPessoaCompletoAsString);
+			parameters.put(parameter, menorValorPessoaCompletoAsString);
+			/*
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotefemininoaereo");
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoFemininoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoFemininoAsString);
@@ -379,6 +392,7 @@ public class PrincipalId {
 			parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotemasculinoaereo");
 			System.out.println(parameter + " -> " + menorValorPessoaCompletoMasculinoAsString);
 			parameters.put(parameter, menorValorPessoaCompletoMasculinoAsString);
+			*/
 			
 		
 			
@@ -493,11 +507,11 @@ public class PrincipalId {
 				nomeAc = nomeAc + "_" + hospedes;
 				
 				String valorPessoaAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
-						formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa")));
+					formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa")));
 				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacoteac_").concat(nomeAc);
 				System.out.println(parameter + " -> " + valorPessoaAsString);
 				parameters.put(parameter, valorPessoaAsString);
-				
+				/*
 				String valorPacoteFemininoAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
 						formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa") + valorExperienciaFeminino));
 				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotefeminino_").concat(nomeAc);
@@ -509,6 +523,12 @@ public class PrincipalId {
 				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotemasculino_").concat(nomeAc);
 				System.out.println(parameter + " -> " + valorPacoteMasculinoAsString);
 				parameters.put(parameter, valorPacoteMasculinoAsString);
+				*/
+				String valorPacoteFestasAsString = (estoque <= 0 ? result2.getString("valorPessoa") :
+					formatoSemCentavosSemCifra.format(result2.getInt("valorPessoa") + valorExperienciaUnissex));
+				parameter = baseParameterDeAc.concat(slugProduto).concat("_pacotefestas_").concat(nomeAc);
+				System.out.println(parameter + " -> " + valorPacoteFestasAsString);
+				parameters.put(parameter, valorPacoteFestasAsString);
 
 			}
 			result2.close();

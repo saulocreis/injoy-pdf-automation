@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="awe2019_4_acomodacoes" pageWidth="684" pageHeight="512" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="bef88220-a10e-482d-845f-42c6d72588be">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.awe2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Menu Acomodacoes.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_imagem1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_link1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_imagem2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_link2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_imagem3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_link3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_imagem4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_link4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_imagem5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_link5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_imagem6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_link6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_imagem7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_link7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_imagem8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.image.vazio}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menuacomodacoes_link8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="fcf61fa8-19c9-4798-a69d-d2711968ceeb"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menuacomodacoes}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="180" width="145" height="145" uuid="f2339e65-90a6-4357-9c61-41a43965adc5"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menuacomodacoes_imagem1}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_awe2019_menuacomodacoes_link1}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="180" width="145" height="145" uuid="6bb46013-4065-443f-86e0-f4fb966ce9a9"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menuacomodacoes_imagem2}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_awe2019_menuacomodacoes_link2}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="180" width="145" height="145" uuid="1f6ba133-565a-4df8-a4b0-f2fb10c86431"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menuacomodacoes_imagem3}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_awe2019_menuacomodacoes_link3}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="180" width="145" height="145" uuid="4d28d7e6-300b-454b-95aa-051d2b6e7b6d"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menuacomodacoes_imagem4}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_awe2019_menuacomodacoes_link4}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="320" width="145" height="145" uuid="fc2d618b-751c-4c4e-9d0d-f2a9e8e6b511"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menuacomodacoes_imagem5}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_awe2019_menuacomodacoes_link5}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="190" y="320" width="145" height="145" uuid="514a3ac0-ae60-48d5-97df-4febe5c28cd3"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menuacomodacoes_imagem6}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_awe2019_menuacomodacoes_link6}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="350" y="320" width="145" height="145" uuid="1090b532-f773-4a6d-88d8-766c30c8f156"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menuacomodacoes_imagem7}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_awe2019_menuacomodacoes_link7}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="510" y="320" width="145" height="145" uuid="d6b318aa-f353-4a0f-ae23-431691fcfcda"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menuacomodacoes_imagem8}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$P{jr_awe2019_menuacomodacoes_link8}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

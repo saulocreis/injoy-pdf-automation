@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="awe2019_0_menu" pageWidth="684" pageHeight="510" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="0337fdae-1aa4-447e-996f-10b7c8affb00">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.awe2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_menu" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Menu Geral.png"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="510">
+			<image>
+				<reportElement x="0" y="0" width="684" height="510" uuid="6bd2e5b4-0737-43ef-818f-99744a2a1034"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_menu}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.menu}]]></anchorNameExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="0" y="104" width="227" height="199" uuid="5a3b187c-fef0-430a-96d3-7635d98268e6"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.reveillon}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="227" y="104" width="227" height="199" uuid="7f32ed28-7b51-4f7b-ba98-8e7d0a9aa629"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.pqinjoy}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="454" y="104" width="226" height="199" uuid="9cd53526-7df5-4188-8a51-639e4be45a15"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.infovenda}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="1" y="303" width="226" height="205" uuid="0d6a631d-174b-4af8-a7c0-b59d9697e430"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="227" y="303" width="226" height="205" uuid="13bb0b28-b356-489b-9b39-f081b08a687e"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.festas}]]></hyperlinkAnchorExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement x="453" y="303" width="226" height="205" uuid="8ca8d1a5-f347-4d5c-a570-5271a298e7e1"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.aereo}]]></hyperlinkAnchorExpression>
+			</image>
+		</band>
+	</background>
+</jasperReport>

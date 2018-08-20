@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="awe2019_capa" pageWidth="684" pageHeight="512" orientation="Landscape" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="2b7cd09c-f8ff-437f-81fa-7afc29f76c56">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.awe2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_capa" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Capa.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataCriacao" class="java.lang.String">
+		<defaultValueExpression><![CDATA[DateFormat.getDateInstance().format(new Date())]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<detail>
+		<band height="512">
+			<image>
+				<reportElement x="0" y="0" width="684" height="512" uuid="203f05d3-3ec0-4d8f-84e7-f0a1a4c72d35"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_capa}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.capa}]]></anchorNameExpression>
+			</image>
+			<textField>
+				<reportElement x="255" y="477" width="150" height="20" forecolor="#FFFFFF" uuid="94823fc8-661c-4b52-b2b6-ac9195225cb8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="8" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataCriacao}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

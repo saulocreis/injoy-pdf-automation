@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="awe2019_festas" pageWidth="684" pageHeight="516" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="0887200b-32a6-4803-8a35-135f5db913fe">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.awe2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_festas" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Festas.png"]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<detail>
+		<band height="516">
+			<image>
+				<reportElement x="0" y="0" width="684" height="516" uuid="818481bb-4259-4a45-97a5-c89598b9bc6b"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_festas}]]></imageExpression>
+				<anchorNameExpression><![CDATA[$R{injoy.tag.festas}]]></anchorNameExpression>
+			</image>
+		</band>
+	</detail>
+</jasperReport>

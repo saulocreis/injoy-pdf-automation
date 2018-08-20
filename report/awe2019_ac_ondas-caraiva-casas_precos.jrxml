@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="awe2019_ac_ondas-caraiva-casas_precos" pageWidth="684" pageHeight="570" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="7a4b4547-5616-4d56-a98e-53cd49267c66">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.awe2019}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["awe2019"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="valorAereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_ac_ondas-caraiva-casas_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Casas Ondas Caraiva - Quartos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_ac_ondas-caraiva-casas_pacoteac_casas-2-quartos_9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_ac_ondas-caraiva-casas_pacotefestas_casas-2-quartos_9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_ac_ondas-caraiva-casas_pacoteac_casa-3-quartos_9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_awe2019_ac_ondas-caraiva-casas_pacotefestas_casa-3-quartos_9" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="570">
+			<image>
+				<reportElement x="0" y="0" width="684" height="570" uuid="74873a08-0300-4f15-a697-dc6047d977f7"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_awe2019_ac_ondas-caraiva-casas_precos}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="520" width="40" height="40" uuid="02dd4899-76e9-4537-ad61-146fc76b716b"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="300" width="98" height="34" uuid="606a6d9c-bfc5-407d-9e99-1ba9f1fe099c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_awe2019_ac_ondas-caraiva-casas_pacoteac_casas-2-quartos_9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="300" width="98" height="34" uuid="85b0bf56-26ff-498d-b2e8-a64a0eeb1a8f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_awe2019_ac_ondas-caraiva-casas_pacotefestas_casas-2-quartos_9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="420" width="98" height="34" uuid="30508a70-4962-40c8-9342-fe6f655849fc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_awe2019_ac_ondas-caraiva-casas_pacoteac_casa-3-quartos_9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="420" width="98" height="34" uuid="4f9ebea2-7136-467b-8cbf-eb805c37eaac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_awe2019_ac_ondas-caraiva-casas_pacotefestas_casa-3-quartos_9}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>
