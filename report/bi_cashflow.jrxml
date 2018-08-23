@@ -1,0 +1,2132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="CashFlow" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="842" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="0039fa1c-18cb-4d6c-81fc-743ac1861cf2">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<parameter name="dataCriacao" class="java.lang.String">
+		<defaultValueExpression><![CDATA[DateFormat.getDateInstance().format(new Date())]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="dataSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPagoParcialSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPagoParcialSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPagoParcialSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPagoParcialSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPagoParcialSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPagoParcialSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPagoParcialSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPagoParcialSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPagoParcialSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPreVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPreVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPreVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPreVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPreVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPreVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPreVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPreVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="totalPreVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPagoParcialSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPagoParcialSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPagoParcialSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPagoParcialSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPagoParcialSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPagoParcialSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPagoParcialSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPagoParcialSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPagoParcialSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPreVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPreVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPreVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPreVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPreVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPreVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPreVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPreVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="acomodacaoPreVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPagoParcialSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPagoParcialSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPagoParcialSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPagoParcialSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPagoParcialSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPagoParcialSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPagoParcialSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPagoParcialSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPagoParcialSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPreVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPreVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPreVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPreVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPreVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPreVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPreVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPreVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaMasculinoPreVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPagoParcialSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPagoParcialSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPagoParcialSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPagoParcialSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPagoParcialSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPagoParcialSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPagoParcialSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPagoParcialSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPagoParcialSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPreVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPreVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPreVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPreVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPreVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPreVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPreVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPreVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaFemininoPreVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPagoParcialSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPagoParcialSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPagoParcialSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPagoParcialSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPagoParcialSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPagoParcialSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPagoParcialSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPagoParcialSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPagoParcialSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPreVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPreVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPreVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPreVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPreVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPreVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPreVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPreVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="festaUnissexPreVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPagoParcialSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPagoParcialSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPagoParcialSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPagoParcialSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPagoParcialSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPagoParcialSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPagoParcialSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPagoParcialSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPagoParcialSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPreVendaSemana8" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPreVendaSemana7" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPreVendaSemana6" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPreVendaSemana5" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPreVendaSemana4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPreVendaSemana3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPreVendaSemana2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPreVendaSemana1" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<parameter name="aereoPreVendaSemana0" class="java.lang.String">
+		<defaultValueExpression><![CDATA[""]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="595">
+			<staticText>
+				<reportElement x="10" y="40" width="100" height="20" uuid="8e85ab5e-a386-4116-b96f-8f11d462b4ac"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="60" width="100" height="20" uuid="8f92cfbe-e688-49a2-8095-86778ddb7125"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEM COMBOS]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="80" width="100" height="20" uuid="854129e8-4344-43bc-a966-1d8764c9c579"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[VENDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="100" width="100" height="20" uuid="443fe79a-7af3-4457-9074-0a74d92e62ef"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PAGO PARCIAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="120" width="100" height="20" uuid="97e13cf9-d19d-4590-bed1-8ae9b8db590d"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PRÉ-VENDA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="140" width="100" height="20" uuid="d133e3d7-3f14-4853-a713-08a509fd136b"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FINANCEIRO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="160" width="90" height="20" uuid="1a7ff0c3-9cae-4ee6-884a-eb3230848869"/>
+				<text><![CDATA[ACOMODAÇÃO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="180" width="80" height="20" uuid="b54003ae-2e60-433e-beb2-bbacdf8ff85b"/>
+				<text><![CDATA[Venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="200" width="80" height="20" uuid="d394944b-c91d-446a-b49a-67c22af41bf3"/>
+				<text><![CDATA[Pago Parcial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="220" width="80" height="20" uuid="63f1b05d-c1a4-4734-a00e-55df57a91833"/>
+				<text><![CDATA[Pré-venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="240" width="90" height="20" uuid="8b1a81ef-ddfc-4704-8062-b84999fa4220"/>
+				<text><![CDATA[FESTAS MASC]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="260" width="80" height="20" uuid="dec2912d-bb62-4dde-a8de-d20513fa8b37"/>
+				<text><![CDATA[Venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="300" width="80" height="20" uuid="8bb98ddc-21ae-450b-b8d8-d139d9475229"/>
+				<text><![CDATA[Pré-venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="280" width="80" height="20" uuid="c7eb382f-cca6-4d49-89d6-a824c4b41660"/>
+				<text><![CDATA[Pago Parcial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="320" width="90" height="20" uuid="a5b4f8b6-591f-4192-8b35-a900d521a30d"/>
+				<text><![CDATA[FESTAS FEM]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="340" width="80" height="20" uuid="fc560be8-51b5-4ea0-9687-a44ef8b83f36"/>
+				<text><![CDATA[Venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="380" width="80" height="20" uuid="ddf4afb8-f0a2-46d5-9443-3a39962fa4f2"/>
+				<text><![CDATA[Pré-venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="360" width="80" height="20" uuid="36251e75-03f9-4e3e-b520-4a3c59a10224"/>
+				<text><![CDATA[Pago Parcial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="400" width="90" height="20" uuid="9e3c69bb-cf89-477f-8adb-aeffffee51dd"/>
+				<text><![CDATA[FESTAS UNISSEX]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="460" width="80" height="20" uuid="df750e5b-f19a-4e3a-9ee1-ada074b37020"/>
+				<text><![CDATA[Pré-venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="440" width="80" height="20" uuid="a2bffc5f-a34a-4f4a-8d2d-19c258473dff"/>
+				<text><![CDATA[Pago Parcial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="420" width="80" height="20" uuid="ce408780-60bd-4553-b294-b94116207607"/>
+				<text><![CDATA[Venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="480" width="90" height="20" uuid="d30df203-858e-44a7-ad84-c35a70e0698d"/>
+				<text><![CDATA[AÉREO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="540" width="80" height="20" uuid="58b59052-7222-4f7f-8746-2ce273e524fb"/>
+				<text><![CDATA[Pré-venda]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="520" width="80" height="20" uuid="5d9a6918-06ff-4c2c-b16d-603d94426c4f"/>
+				<text><![CDATA[Pago Parcial]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="500" width="80" height="20" uuid="d9d775ac-889e-486e-8eca-01165659c413"/>
+				<text><![CDATA[Venda]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="10" y="10" width="100" height="20" uuid="89baf7a8-8b16-4f19-9bc5-2fb250212c0a"/>
+				<textElement>
+					<font size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{slug_de}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="10" width="70" height="20" uuid="ef2b8024-b2d2-4fae-b48c-682a0f4fc019"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="10" width="70" height="20" uuid="ee29799f-03e0-49ee-ae29-4291122df2ec"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="10" width="70" height="20" uuid="c62ca3b1-be7c-4bd3-97a6-92c49965f062"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="10" width="70" height="20" uuid="21111e51-1cbf-4d2c-9bd2-bf4b1384c850"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="10" width="70" height="20" uuid="d3d1aed8-23dc-477e-a14d-79e675d5401d"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="10" width="70" height="20" uuid="eacb9751-8141-46ee-995f-768c168e83ca"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="10" width="70" height="20" uuid="ff6495ee-1e7d-4112-af9f-7581bfd2ea1f"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="10" width="70" height="20" uuid="5853e918-6eae-4319-bb9c-53175f7954df"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="10" width="70" height="20" uuid="371bd18f-7ab2-4e46-b500-b98221b63ab2"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{dataSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="110" y="40" width="70" height="20" uuid="bd09a20d-7a18-4d47-9b3f-3893acaf180c"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="40" width="70" height="20" uuid="a4c8a194-2a3a-4d9c-ac38-d6cc047570ec"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="40" width="70" height="20" uuid="5305d9c9-22a3-439f-bdcb-316a4d65815b"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="40" width="70" height="20" uuid="7ef37aed-f6fc-4b54-adc6-77b110fbb737"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="40" width="70" height="20" uuid="4c2bfbc4-334f-4816-8802-67e0837f6d2a"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="40" width="70" height="20" uuid="0be19755-44d7-4849-8241-d994f5130bf8"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="40" width="70" height="20" uuid="7783f730-549c-413d-be22-44a2be9d7a6a"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="40" width="70" height="20" uuid="b7117a32-d4aa-4b81-a13a-635689537331"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="40" width="70" height="20" uuid="ad96990f-6b9e-4ab0-a15c-7771d527bf70"/>
+				<textElement textAlignment="Center">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="80" width="70" height="20" uuid="dd2e051e-c499-419a-b496-177f692830c8"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="80" width="70" height="20" uuid="687433f9-c1cc-4e0f-9ac0-4069c96333ac"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="80" width="70" height="20" uuid="1929791f-c8af-47a0-9d47-d233d4ab6c64"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="80" width="70" height="20" uuid="761021c2-4da3-4ffd-97c3-aa3635988620"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="80" width="70" height="20" uuid="96b47615-f6f2-4bec-808a-ca27f5570e8c"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="80" width="70" height="20" uuid="f5d10015-01bf-48c9-9933-24c417283ef4"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="80" width="70" height="20" uuid="52767870-7859-46dc-9330-d627d210cf31"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="80" width="70" height="20" uuid="b0a8ae89-0d4e-4a51-b792-b52ed9cab2dc"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="80" width="70" height="20" uuid="e51ab828-b7c8-40cb-8b4c-b5ba27d4ba42"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="100" width="70" height="20" uuid="c12168e5-6ce4-454e-ba96-0cf32cf3aecf"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPagoParcialSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="100" width="70" height="20" uuid="9d2b33ed-0bc6-4080-8423-c29a7e30d94e"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPagoParcialSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="100" width="70" height="20" uuid="01cc2bf4-a3d6-441a-8fcd-ae02c1fdc07d"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPagoParcialSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="100" width="70" height="20" uuid="9045b542-c9d1-4d3d-a929-884dbd53f531"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPagoParcialSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="100" width="70" height="20" uuid="957cb15b-03b3-4983-b4eb-867b5bb9b287"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPagoParcialSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="100" width="70" height="20" uuid="617d04d5-86b5-4753-b0d5-de3b842c3854"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPagoParcialSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="100" width="70" height="20" uuid="87aa43b2-c476-4752-96bd-afa321387b15"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPagoParcialSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="100" width="70" height="20" uuid="7d940e1d-6fea-410a-9bf5-c6753e77d9c3"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPagoParcialSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="100" width="70" height="20" uuid="265f0acd-d3e2-4364-9f94-932a43ee3171"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPagoParcialSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="120" width="70" height="20" uuid="c8c16c16-d957-4589-a829-074a082e17db"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPreVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="120" width="70" height="20" uuid="f03d9961-a833-4c0d-84fc-8081b6bcd296"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPreVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="120" width="70" height="20" uuid="9cf724e7-fe01-4c9d-9608-0fc0faf56336"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPreVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="120" width="70" height="20" uuid="62848a1f-6bca-4cee-9871-65cb13ac5e47"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPreVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="120" width="70" height="20" uuid="f0b05902-6d32-41db-94a6-98442a2a5ce9"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPreVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="120" width="70" height="20" uuid="4f6e2ef6-855a-4388-8d26-e8e01d4a4624"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPreVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="120" width="70" height="20" uuid="14f28786-1baa-49b4-bb7f-a212b93e72cb"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPreVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="120" width="70" height="20" uuid="8cd04e68-29f8-44f8-a4db-635bf92b5f35"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPreVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="120" width="70" height="20" uuid="002eea19-edb4-494e-8163-9bbcf024998f"/>
+				<textElement textAlignment="Center">
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{totalPreVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="160" width="70" height="20" uuid="febd5b33-1791-40d6-869f-92575d027f9d"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{acomodacaoSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="160" width="70" height="20" uuid="639d4730-41e6-46a7-bdf3-ffa5dfd19dd3"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{acomodacaoSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="160" width="70" height="20" uuid="0e10ed16-f7e6-4605-b1bb-bf34bc046ad9"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{acomodacaoSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="160" width="70" height="20" uuid="4ccf8019-a50b-4c07-9bfd-055cc2dc5871"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{acomodacaoSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="160" width="70" height="20" uuid="c85e1beb-0a83-4a51-bb91-cbe5e02b83ea"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{acomodacaoSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="160" width="70" height="20" uuid="31766493-0169-43a4-982b-c9442e462f01"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{acomodacaoSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="160" width="70" height="20" uuid="437f2a4e-701e-4664-bb88-3e93992652c3"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{acomodacaoSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="160" width="70" height="20" uuid="0d19f4e4-52bc-4eb5-b899-0b4e5005575f"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{acomodacaoSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="160" width="70" height="20" uuid="70434f8b-fc80-4ea8-9f63-04cfc9425bac"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{acomodacaoSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="180" width="70" height="20" uuid="dd2e051e-c499-419a-b496-177f692830c8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="180" width="70" height="20" uuid="687433f9-c1cc-4e0f-9ac0-4069c96333ac"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="180" width="70" height="20" uuid="1929791f-c8af-47a0-9d47-d233d4ab6c64"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="180" width="70" height="20" uuid="761021c2-4da3-4ffd-97c3-aa3635988620"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="180" width="70" height="20" uuid="96b47615-f6f2-4bec-808a-ca27f5570e8c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="180" width="70" height="20" uuid="f5d10015-01bf-48c9-9933-24c417283ef4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="180" width="70" height="20" uuid="52767870-7859-46dc-9330-d627d210cf31"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="180" width="70" height="20" uuid="b0a8ae89-0d4e-4a51-b792-b52ed9cab2dc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="180" width="70" height="20" uuid="e51ab828-b7c8-40cb-8b4c-b5ba27d4ba42"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="200" width="70" height="20" uuid="c12168e5-6ce4-454e-ba96-0cf32cf3aecf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPagoParcialSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="200" width="70" height="20" uuid="9d2b33ed-0bc6-4080-8423-c29a7e30d94e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPagoParcialSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="200" width="70" height="20" uuid="01cc2bf4-a3d6-441a-8fcd-ae02c1fdc07d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPagoParcialSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="200" width="70" height="20" uuid="9045b542-c9d1-4d3d-a929-884dbd53f531"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPagoParcialSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="200" width="70" height="20" uuid="957cb15b-03b3-4983-b4eb-867b5bb9b287"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPagoParcialSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="200" width="70" height="20" uuid="617d04d5-86b5-4753-b0d5-de3b842c3854"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPagoParcialSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="200" width="70" height="20" uuid="87aa43b2-c476-4752-96bd-afa321387b15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPagoParcialSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="200" width="70" height="20" uuid="7d940e1d-6fea-410a-9bf5-c6753e77d9c3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPagoParcialSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="200" width="70" height="20" uuid="265f0acd-d3e2-4364-9f94-932a43ee3171"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPagoParcialSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="220" width="70" height="20" uuid="c8c16c16-d957-4589-a829-074a082e17db"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPreVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="220" width="70" height="20" uuid="f03d9961-a833-4c0d-84fc-8081b6bcd296"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPreVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="220" width="70" height="20" uuid="9cf724e7-fe01-4c9d-9608-0fc0faf56336"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPreVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="220" width="70" height="20" uuid="62848a1f-6bca-4cee-9871-65cb13ac5e47"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPreVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="220" width="70" height="20" uuid="f0b05902-6d32-41db-94a6-98442a2a5ce9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPreVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="220" width="70" height="20" uuid="4f6e2ef6-855a-4388-8d26-e8e01d4a4624"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPreVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="220" width="70" height="20" uuid="14f28786-1baa-49b4-bb7f-a212b93e72cb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPreVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="220" width="70" height="20" uuid="8cd04e68-29f8-44f8-a4db-635bf92b5f35"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPreVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="220" width="70" height="20" uuid="002eea19-edb4-494e-8163-9bbcf024998f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{acomodacaoPreVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="240" width="70" height="20" uuid="febd5b33-1791-40d6-869f-92575d027f9d"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaMasculinoSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="240" width="70" height="20" uuid="639d4730-41e6-46a7-bdf3-ffa5dfd19dd3"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaMasculinoSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="240" width="70" height="20" uuid="0e10ed16-f7e6-4605-b1bb-bf34bc046ad9"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaMasculinoSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="240" width="70" height="20" uuid="4ccf8019-a50b-4c07-9bfd-055cc2dc5871"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaMasculinoSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="240" width="70" height="20" uuid="c85e1beb-0a83-4a51-bb91-cbe5e02b83ea"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaMasculinoSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="240" width="70" height="20" uuid="31766493-0169-43a4-982b-c9442e462f01"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaMasculinoSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="240" width="70" height="20" uuid="437f2a4e-701e-4664-bb88-3e93992652c3"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaMasculinoSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="240" width="70" height="20" uuid="0d19f4e4-52bc-4eb5-b899-0b4e5005575f"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaMasculinoSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="240" width="70" height="20" uuid="70434f8b-fc80-4ea8-9f63-04cfc9425bac"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaMasculinoSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="260" width="70" height="20" uuid="dd2e051e-c499-419a-b496-177f692830c8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="260" width="70" height="20" uuid="687433f9-c1cc-4e0f-9ac0-4069c96333ac"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="260" width="70" height="20" uuid="1929791f-c8af-47a0-9d47-d233d4ab6c64"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="260" width="70" height="20" uuid="761021c2-4da3-4ffd-97c3-aa3635988620"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="260" width="70" height="20" uuid="96b47615-f6f2-4bec-808a-ca27f5570e8c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="260" width="70" height="20" uuid="f5d10015-01bf-48c9-9933-24c417283ef4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="260" width="70" height="20" uuid="52767870-7859-46dc-9330-d627d210cf31"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="260" width="70" height="20" uuid="b0a8ae89-0d4e-4a51-b792-b52ed9cab2dc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="260" width="70" height="20" uuid="e51ab828-b7c8-40cb-8b4c-b5ba27d4ba42"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="280" width="70" height="20" uuid="c12168e5-6ce4-454e-ba96-0cf32cf3aecf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPagoParcialSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="280" width="70" height="20" uuid="9d2b33ed-0bc6-4080-8423-c29a7e30d94e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPagoParcialSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="280" width="70" height="20" uuid="01cc2bf4-a3d6-441a-8fcd-ae02c1fdc07d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPagoParcialSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="280" width="70" height="20" uuid="9045b542-c9d1-4d3d-a929-884dbd53f531"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPagoParcialSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="280" width="70" height="20" uuid="957cb15b-03b3-4983-b4eb-867b5bb9b287"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPagoParcialSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="280" width="70" height="20" uuid="617d04d5-86b5-4753-b0d5-de3b842c3854"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPagoParcialSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="280" width="70" height="20" uuid="87aa43b2-c476-4752-96bd-afa321387b15"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPagoParcialSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="280" width="70" height="20" uuid="7d940e1d-6fea-410a-9bf5-c6753e77d9c3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPagoParcialSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="280" width="70" height="20" uuid="265f0acd-d3e2-4364-9f94-932a43ee3171"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPagoParcialSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="300" width="70" height="20" uuid="c8c16c16-d957-4589-a829-074a082e17db"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPreVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="300" width="70" height="20" uuid="f03d9961-a833-4c0d-84fc-8081b6bcd296"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPreVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="300" width="70" height="20" uuid="9cf724e7-fe01-4c9d-9608-0fc0faf56336"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPreVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="300" width="70" height="20" uuid="62848a1f-6bca-4cee-9871-65cb13ac5e47"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPreVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="300" width="70" height="20" uuid="f0b05902-6d32-41db-94a6-98442a2a5ce9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPreVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="300" width="70" height="20" uuid="4f6e2ef6-855a-4388-8d26-e8e01d4a4624"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPreVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="300" width="70" height="20" uuid="14f28786-1baa-49b4-bb7f-a212b93e72cb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPreVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="300" width="70" height="20" uuid="8cd04e68-29f8-44f8-a4db-635bf92b5f35"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPreVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="300" width="70" height="20" uuid="002eea19-edb4-494e-8163-9bbcf024998f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaMasculinoPreVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="320" width="70" height="20" uuid="315379aa-ad11-4522-9433-e3a56d3b0682"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaFemininoSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="320" width="70" height="20" uuid="eb6cfbae-526a-45a7-9ad4-dc01585ffc1b"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaFemininoSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="320" width="70" height="20" uuid="dfb3184e-b8dd-45de-b316-8ba7e59d65c4"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaFemininoSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="320" width="70" height="20" uuid="4f831e70-598c-45a3-b126-4851f479203e"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaFemininoSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="320" width="70" height="20" uuid="5f15cd25-a5c1-4f35-9517-cd19c57f6fab"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaFemininoSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="320" width="70" height="20" uuid="22eded60-0bf6-4baf-ba3e-60528e9287f1"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaFemininoSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="320" width="70" height="20" uuid="87c4062d-1d74-4646-ba9b-b06eff8a7d73"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaFemininoSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="320" width="70" height="20" uuid="e03b0bb6-f731-4ed2-a396-7c354af4c407"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaFemininoSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="320" width="70" height="20" uuid="953a6d12-c9b9-4f24-b012-651989c7048f"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaFemininoSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="340" width="70" height="20" uuid="6faedc4c-5171-4894-988e-1304673222d2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="340" width="70" height="20" uuid="28ab0708-e4b9-417d-a3e8-3a4af16309df"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="340" width="70" height="20" uuid="469ff925-b94e-4116-8023-b209ef22e38d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="340" width="70" height="20" uuid="b6c18e70-d136-437e-bfbd-d04b9b2b9927"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="340" width="70" height="20" uuid="7d92e132-4b88-4747-a217-0df24b7ac062"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="340" width="70" height="20" uuid="2f42c68f-4a9b-4905-9d8f-298299b1ab77"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="340" width="70" height="20" uuid="10c441e8-4737-40b0-a76c-e6f68bcd48f0"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="340" width="70" height="20" uuid="97ae1aa6-342d-48d3-93f3-e8518ae3d9cb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="340" width="70" height="20" uuid="8130342f-ab27-4771-9aa9-c585fa19a675"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="360" width="70" height="20" uuid="3283f37d-4d58-464e-a6a3-94c2b55f0be9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPagoParcialSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="360" width="70" height="20" uuid="27484a13-911d-4aff-acff-be09e69f147a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPagoParcialSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="360" width="70" height="20" uuid="4f68d251-f099-4be2-bf74-01be5ef9a65d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPagoParcialSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="360" width="70" height="20" uuid="4a0dae2c-b694-4dea-8e02-7bcf047944b6"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPagoParcialSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="360" width="70" height="20" uuid="f9211c20-628c-481b-a52d-04041a232b46"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPagoParcialSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="360" width="70" height="20" uuid="29441707-adad-4fb7-9e43-0cb921e375c9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPagoParcialSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="360" width="70" height="20" uuid="aded0caa-c704-47da-ba14-af024dd2e656"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPagoParcialSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="360" width="70" height="20" uuid="b1ca6b71-046d-4c23-83d5-9fb78b000011"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPagoParcialSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="360" width="70" height="20" uuid="b57d0511-ea7d-4720-9345-95349eae95fb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPagoParcialSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="380" width="70" height="20" uuid="da67d33d-ddec-49f2-9f73-70bc723e1154"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPreVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="380" width="70" height="20" uuid="e4213760-a08e-4d39-b7f6-367c53b3ab3f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPreVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="380" width="70" height="20" uuid="6c607b73-41f9-4246-af89-673243eaa1ee"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPreVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="380" width="70" height="20" uuid="22b566a2-9f46-4aad-af78-9a8cb962477c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPreVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="380" width="70" height="20" uuid="c795ea16-2641-4ff6-b01a-8af5004f4a55"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPreVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="380" width="70" height="20" uuid="30d83155-23bc-4898-adf3-a08dd573737d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPreVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="380" width="70" height="20" uuid="103bcee2-1131-40db-8ec3-25519bf9a926"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPreVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="380" width="70" height="20" uuid="d238b996-cdf7-479f-ad02-de28cd0b4c90"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPreVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="380" width="70" height="20" uuid="6c2764bb-475b-4825-b8c1-f01a2a9881bf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaFemininoPreVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="400" width="70" height="20" uuid="a2dc2c7c-d33d-43cc-883f-8b2a549056ac"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaUnissexSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="400" width="70" height="20" uuid="f39eba81-c359-4af2-9a49-f397a9752dbd"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaUnissexSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="400" width="70" height="20" uuid="a4133cd6-a4a2-4f59-a265-83d830a32628"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaUnissexSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="400" width="70" height="20" uuid="b7e16397-3067-4c2e-9e69-7518392edeb6"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaUnissexSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="400" width="70" height="20" uuid="13dcaa98-830c-43de-a40a-cbb9e0b32c6f"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaUnissexSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="400" width="70" height="20" uuid="f97094e8-753b-4633-a42d-04917799d466"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaUnissexSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="400" width="70" height="20" uuid="229838d4-b2ec-440b-93c8-1f7b360b0a65"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaUnissexSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="400" width="70" height="20" uuid="62c67e58-fba0-4ae0-97b6-08ede2edb9d3"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaUnissexSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="400" width="70" height="20" uuid="9d4e1155-246e-4936-b424-8d7b2dba960e"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{festaUnissexSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="420" width="70" height="20" uuid="1d6f5b92-6312-43b8-be20-73def881273c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="420" width="70" height="20" uuid="ff2efbd1-46cb-4f9a-b6ae-6a5772438d68"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="420" width="70" height="20" uuid="91025beb-00fa-43b0-a852-47649c6607c7"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="420" width="70" height="20" uuid="66f9b857-d9a8-4941-8372-15d33d6e45bf"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="420" width="70" height="20" uuid="945294ba-3825-454c-94f9-9a74a6bf0034"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="420" width="70" height="20" uuid="96026639-2e82-41e1-9416-6a6ea28793d9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="420" width="70" height="20" uuid="53f3f43e-d6d8-4be3-8822-c4a8ff368b78"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="420" width="70" height="20" uuid="14c0fc92-9954-44c9-b9e7-f3028dd82cc7"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="420" width="70" height="20" uuid="80ef20a8-5a75-426a-bfb2-32fcb287b40b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="440" width="70" height="20" uuid="a4a5bf9c-8594-4ab8-a034-a40ad911a5c5"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPagoParcialSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="440" width="70" height="20" uuid="be4622c5-cc74-4931-9edf-42fa1badf414"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPagoParcialSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="440" width="70" height="20" uuid="7c0f22dc-9291-4853-8b66-0fdcff731842"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPagoParcialSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="440" width="70" height="20" uuid="39f252fc-d919-4c53-8aeb-eaa8ee4ff1cc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPagoParcialSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="440" width="70" height="20" uuid="7a172ef9-4a03-4f61-9924-2a4f3ec63edc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPagoParcialSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="440" width="70" height="20" uuid="28169f1a-b20c-420c-982d-84ac8375e27e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPagoParcialSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="440" width="70" height="20" uuid="4a3516bd-8242-47d1-b95f-85c5a3b9fde2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPagoParcialSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="440" width="70" height="20" uuid="522ed939-14a8-4574-825c-a8a14f4aea14"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPagoParcialSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="440" width="70" height="20" uuid="d0e4e37a-6385-44a5-b516-62ecf5cdee22"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPagoParcialSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="460" width="70" height="20" uuid="7fbceda2-90a6-44d4-97ea-45341d82e963"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPreVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="460" width="70" height="20" uuid="fd83783a-c896-4ba0-9332-c5e06d89bcbb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPreVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="460" width="70" height="20" uuid="2dbccae5-4772-43b7-a5e9-e3d48217dbb1"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPreVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="460" width="70" height="20" uuid="894dfb36-70e3-414f-aa45-b01c62313967"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPreVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="460" width="70" height="20" uuid="61b73db3-a79d-41d2-adcd-71ab75523292"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPreVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="460" width="70" height="20" uuid="98144a66-f437-4cc7-8077-c5f29b19c739"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPreVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="460" width="70" height="20" uuid="30eb9c3b-448e-4618-83f3-d6a44250d9dd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPreVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="460" width="70" height="20" uuid="abc23560-6030-4e78-9647-2ea07720347d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPreVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="460" width="70" height="20" uuid="51776350-727b-434a-bb4f-4a052b0f88fb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{festaUnissexPreVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="10" y="570" width="70" height="20" uuid="7b62ce5f-21dd-48cb-9753-a7594e7ceaf8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{dataCriacao}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="480" width="70" height="20" uuid="44f327c6-b800-4cc8-a753-3f7da31de22d"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aereoSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="480" width="70" height="20" uuid="b82aff48-7b5b-476e-9db2-1d8537dbaa49"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aereoSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="480" width="70" height="20" uuid="13d2be10-fcad-4564-b2a2-a32ea2f6a93e"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aereoSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="480" width="70" height="20" uuid="32a9d217-071c-45b0-88e0-d9c052e9bd23"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aereoSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="480" width="70" height="20" uuid="553d9b88-8b88-4c35-852f-303baeeb46c1"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aereoSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="480" width="70" height="20" uuid="bfe8fe93-977c-4299-bf40-bae0f0108881"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aereoSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="480" width="70" height="20" uuid="93beae24-8b16-4d98-a928-1937101bcdc6"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aereoSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="480" width="70" height="20" uuid="c108f3c7-0e4b-46b5-be06-09b71fb3ec0b"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aereoSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="480" width="70" height="20" uuid="c1a77911-a38f-47ee-bc09-8b0b92543bbe"/>
+				<textElement textAlignment="Center">
+					<font size="10" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{aereoSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="500" width="70" height="20" uuid="99f9fe17-228e-4eb4-9b27-8d4e42061b42"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="500" width="70" height="20" uuid="d33bdc70-6d2e-4ae6-b971-42d18b2c70e5"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="500" width="70" height="20" uuid="1d2a1c07-c995-4ae2-a4a2-4bac406ee3b3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="500" width="70" height="20" uuid="776fbb9d-d802-4775-9a01-f310f7d36fc8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="500" width="70" height="20" uuid="f86fc465-c06f-4595-bb52-0f74dd7e926f"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="500" width="70" height="20" uuid="ec83ba79-ab14-4698-9c77-d102147024d8"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="500" width="70" height="20" uuid="c64c169b-93c2-4d34-8130-9ce69270323d"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="500" width="70" height="20" uuid="65894136-f9b4-4afa-838f-4cdfc8ef28b3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="500" width="70" height="20" uuid="4a085437-0ac8-4a1a-83fb-509bfdf9605a"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoVendaSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="520" width="70" height="20" uuid="5e7f569e-fe70-43b2-93ab-9959111b1f52"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPagoParcialSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="520" width="70" height="20" uuid="008810f0-1663-41fa-8193-95575816af31"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPagoParcialSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="520" width="70" height="20" uuid="15df9d4d-db3d-486c-a11c-9d1593ba7749"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPagoParcialSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="520" width="70" height="20" uuid="4c27bce7-02ef-41e6-8c34-caf81b252d2c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPagoParcialSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="520" width="70" height="20" uuid="37c3a948-173a-4b03-9883-d707b106e50c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPagoParcialSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="520" width="70" height="20" uuid="f9eed371-4f03-4c0e-980a-45155382c9dc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPagoParcialSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="520" width="70" height="20" uuid="5521ebe5-5fac-4316-b82b-3ae0def9dbfc"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPagoParcialSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="520" width="70" height="20" uuid="f7b75edc-408b-4077-8f33-969e3cba8ccb"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPagoParcialSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="520" width="70" height="20" uuid="1fcde1c8-35a7-4fab-9c79-9db168c87a5c"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPagoParcialSemana0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="540" width="70" height="20" uuid="582748cf-67f1-4282-bb5b-1766be64c3af"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPreVendaSemana8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="180" y="540" width="70" height="20" uuid="b91ab865-fed2-489b-85f2-3dc993713d1e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPreVendaSemana7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="540" width="70" height="20" uuid="5c06d48d-44b4-4d42-9199-6b34f32a66c4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPreVendaSemana6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="540" width="70" height="20" uuid="1759fb3c-4737-43e4-97da-a5dbf58771dd"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPreVendaSemana5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="390" y="540" width="70" height="20" uuid="061374f4-369e-4cd7-8bd8-2f338f7475af"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPreVendaSemana4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="460" y="540" width="70" height="20" uuid="37a9d2bf-c0b1-4487-b556-685b6b181728"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPreVendaSemana3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="530" y="540" width="70" height="20" uuid="372c9f5f-6b31-46c2-b349-6b49913bd2de"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPreVendaSemana2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="600" y="540" width="70" height="20" uuid="7e683683-8940-4c5d-aeaa-f56b9100a5f2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPreVendaSemana1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="670" y="540" width="70" height="20" uuid="b89ba585-a7c6-49cb-8bbc-4e2321836831"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$P{aereoPreVendaSemana0}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

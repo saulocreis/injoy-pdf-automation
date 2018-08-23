@@ -35,10 +35,10 @@ public class PrincipalId {
 	/*
 	 * 'carneiros', 'jeri2019', 'letspipa', 'xama2019', 'awe2019'
 	 */
-	static private final String SLUG_DE = "awe2019";
-	static private final int ID_HIBRIDO = 1738;
-	static private final int ID_EXPERIENCIA = 1723;
-	static private final int ID_AEREO = 2018;
+	static private final String SLUG_DE = "letspipa";
+	static private final int ID_HIBRIDO = 2137;
+	static private final int ID_EXPERIENCIA = 2029;
+	static private final int ID_AEREO = 2141;
 	
 	
 	static private Properties jasperprops;
@@ -79,7 +79,7 @@ public class PrincipalId {
 		listaArquivos.add(SLUG_DE + "_1_reveillon");
 		listaArquivos.add(SLUG_DE + "_2_pqinjoy"); 
 		listaArquivos.add(SLUG_DE + "_3_infovenda");
-		// listaArquivos.add(SLUG_DE + "_3_aereo"); 
+		listaArquivos.add(SLUG_DE + "_3_aereo"); 
 		listaArquivos.add(SLUG_DE + "_4_acomodacoes");
 		listaArquivos.add(SLUG_DE + "_4_resumopacotes");
 		

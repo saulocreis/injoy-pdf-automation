@@ -25,6 +25,12 @@ public class InjoyProperties {
 		return null;
 	}
 	
+	static public Properties getProperties() {
+		if (inicializado) return propriedades;
+		inicializar();
+		return propriedades;
+	}
+	
 	static private boolean inicializar() {
 		
 		if(inicializado) return true;
@@ -53,6 +59,14 @@ public class InjoyProperties {
 		
 		inicializado = (propriedades != null);
 		return inicializado;
+	}
+	
+	public static String getReportFilePath(String reportName) {
+		return "report/" + reportName + ".jrxml";
+	}
+	
+	public static String getPDFFilePath(String pdfName) {
+		return "pdf/" + pdfName + ".pdf";
 	}
 
 }
