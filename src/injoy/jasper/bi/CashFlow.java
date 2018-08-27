@@ -30,6 +30,7 @@ public class CashFlow {
 	private static final String SQL_PEDIDOS_PAGO = "SELECT idPedido FROM pedido_pagador WHERE parcela IN (1) GROUP BY idPedido HAVING MIN(status_interno) IN (2) AND MAX(status_interno) IN (2)";
 	private static final String SQL_PEDIDOS_PAGO_PARCIAL = "SELECT idPedido FROM pedido_pagador WHERE parcela IN (1) GROUP BY idPedido HAVING MIN(status_interno) IN (0, 1) AND MAX(status_interno) IN (2)";
 	private static final String SQL_PEDIDOS_PREVENDA = "SELECT idPedido FROM pedido_pagador WHERE parcela IN (1) GROUP BY idPedido HAVING MIN(status_interno) IN (0, 1) AND MAX(status_interno) IN (0, 1)";
+	private static final String SQL_SEM_RECEITA = "prod.slug NOT LIKE ('%-fretado-%') AND ";
 	
 	public static void main(String[] args) throws SQLException, JRException {
 		long startTime = Calendar.getInstance().getTimeInMillis();
@@ -54,6 +55,11 @@ public class CashFlow {
 					totalAereo = new double[NUM_SEMANAS+1], totalVenda = new double[NUM_SEMANAS+1], 
 					totalPagoParcial = new double[NUM_SEMANAS+1], totalPreVenda = new double[NUM_SEMANAS+1];
 			
+			double[] totalSemCombo = new double[NUM_SEMANAS+1], totalAcomodacaoSemCombo = new double[NUM_SEMANAS+1], totalFestasFemininoSemCombo = new double[NUM_SEMANAS+1], 
+					totalFestasMasculinoSemCombo = new double[NUM_SEMANAS+1], totalFestasUnissexSemCombo = new double[NUM_SEMANAS+1], 
+					totalAereoSemCombo = new double[NUM_SEMANAS+1], totalVendaSemCombo = new double[NUM_SEMANAS+1], 
+					totalPagoParcialSemCombo = new double[NUM_SEMANAS+1], totalPreVendaSemCombo = new double[NUM_SEMANAS+1];
+			
 			for(int i = 0; i <= NUM_SEMANAS; i++) {
 				
 				String dataDoCalendarioAtual = FORMATO_DATA.format(calendar.getTime());
@@ -66,12 +72,26 @@ public class CashFlow {
 				totalVenda[i] += venda;
 				total[i] += venda;
 				
+				venda = buscaValorFinal(dao.getConnection(), queryAcomodacoes(SQL_PEDIDOS_PAGO, true), slug, dataDoCalendarioAtual);
+				vendaAsString = FORMATO_DINHEIRO.format(venda);
+				parameters.put("acomodacaoVendaSemComboSemana" + String.valueOf(i), vendaAsString);
+				totalAcomodacaoSemCombo[i] += venda;
+				totalVendaSemCombo[i] += venda;
+				totalSemCombo[i] += venda;
+				
 				double pagoParcial = buscaValorFinal(dao.getConnection(), queryAcomodacoes(SQL_PEDIDOS_PAGO_PARCIAL), slug, dataDoCalendarioAtual);
 				String valorPagoParcialAsString = FORMATO_DINHEIRO.format(pagoParcial);
 				parameters.put("acomodacaoPagoParcialSemana" + String.valueOf(i), valorPagoParcialAsString);
 				totalAcomodacao[i] += pagoParcial;
 				totalPagoParcial[i] += pagoParcial;
 				total[i] += pagoParcial;
+				
+				pagoParcial = buscaValorFinal(dao.getConnection(), queryAcomodacoes(SQL_PEDIDOS_PAGO_PARCIAL, true), slug, dataDoCalendarioAtual);
+				valorPagoParcialAsString = FORMATO_DINHEIRO.format(pagoParcial);
+				parameters.put("acomodacaoPagoParcialSemComboSemana" + String.valueOf(i), valorPagoParcialAsString);
+				totalAcomodacaoSemCombo[i] += pagoParcial;
+				totalPagoParcialSemCombo[i] += pagoParcial;
+				totalSemCombo[i] += pagoParcial;
 				
 				double preVenda = buscaValorFinal(dao.getConnection(), queryAcomodacoes(SQL_PEDIDOS_PREVENDA), slug, dataDoCalendarioAtual);
 				String valorPreVendaAsString = FORMATO_DINHEIRO.format(preVenda);
@@ -80,12 +100,26 @@ public class CashFlow {
 				totalPreVenda[i] += preVenda;
 				total[i] += preVenda;
 				
+				preVenda = buscaValorFinal(dao.getConnection(), queryAcomodacoes(SQL_PEDIDOS_PREVENDA, true), slug, dataDoCalendarioAtual);
+				valorPreVendaAsString = FORMATO_DINHEIRO.format(preVenda);
+				parameters.put("acomodacaoPreVendaSemComboSemana" + String.valueOf(i), valorPreVendaAsString);
+				totalAcomodacaoSemCombo[i] += preVenda;
+				totalPreVendaSemCombo[i] += preVenda;
+				totalSemCombo[i] += preVenda;
+				
 				venda = buscaValorFinal(dao.getConnection(), queryFestasMasculino(SQL_PEDIDOS_PAGO), slug, dataDoCalendarioAtual);
 				vendaAsString = FORMATO_DINHEIRO.format(venda);
 				parameters.put("festaMasculinoVendaSemana" + String.valueOf(i), vendaAsString);
 				totalFestasMasculino[i] += venda;
 				totalVenda[i] += venda;
 				total[i] += venda;
+				
+				venda = buscaValorFinal(dao.getConnection(), queryFestasMasculino(SQL_PEDIDOS_PAGO, true), slug, dataDoCalendarioAtual);
+				vendaAsString = FORMATO_DINHEIRO.format(venda);
+				parameters.put("festaMasculinoVendaSemComboSemana" + String.valueOf(i), vendaAsString);
+				totalFestasMasculinoSemCombo[i] += venda;
+				totalVendaSemCombo[i] += venda;
+				totalSemCombo[i] += venda;
 				
 				pagoParcial = buscaValorFinal(dao.getConnection(), queryFestasMasculino(SQL_PEDIDOS_PAGO_PARCIAL), slug, dataDoCalendarioAtual);
 				valorPagoParcialAsString = FORMATO_DINHEIRO.format(pagoParcial);
@@ -94,6 +128,13 @@ public class CashFlow {
 				totalPagoParcial[i] += pagoParcial;
 				total[i] += pagoParcial;
 				
+				pagoParcial = buscaValorFinal(dao.getConnection(), queryFestasMasculino(SQL_PEDIDOS_PAGO_PARCIAL, true), slug, dataDoCalendarioAtual);
+				valorPagoParcialAsString = FORMATO_DINHEIRO.format(pagoParcial);
+				parameters.put("festaMasculinoPagoParcialSemComboSemana" + String.valueOf(i), valorPagoParcialAsString);
+				totalFestasMasculinoSemCombo[i] += pagoParcial;
+				totalPagoParcialSemCombo[i] += pagoParcial;
+				totalSemCombo[i] += pagoParcial;
+				
 				preVenda = buscaValorFinal(dao.getConnection(), queryFestasMasculino(SQL_PEDIDOS_PREVENDA), slug, dataDoCalendarioAtual);
 				valorPreVendaAsString = FORMATO_DINHEIRO.format(preVenda);
 				parameters.put("festaMasculinoPreVendaSemana" + String.valueOf(i), valorPreVendaAsString);
@@ -101,12 +142,26 @@ public class CashFlow {
 				totalPreVenda[i] += preVenda;
 				total[i] += preVenda;
 				
+				preVenda = buscaValorFinal(dao.getConnection(), queryFestasMasculino(SQL_PEDIDOS_PREVENDA, true), slug, dataDoCalendarioAtual);
+				valorPreVendaAsString = FORMATO_DINHEIRO.format(preVenda);
+				parameters.put("festaMasculinoPreVendaSemComboSemana" + String.valueOf(i), valorPreVendaAsString);
+				totalFestasMasculinoSemCombo[i] += preVenda;
+				totalPreVendaSemCombo[i] += preVenda;
+				totalSemCombo[i] += preVenda;
+				
 				venda = buscaValorFinal(dao.getConnection(), queryFestasFeminino(SQL_PEDIDOS_PAGO), slug, dataDoCalendarioAtual);
 				vendaAsString = FORMATO_DINHEIRO.format(venda);
 				parameters.put("festaFemininoVendaSemana" + String.valueOf(i), vendaAsString);
 				totalFestasFeminino[i] += venda;
 				totalVenda[i] += venda;
 				total[i] += venda;
+				
+				venda = buscaValorFinal(dao.getConnection(), queryFestasFeminino(SQL_PEDIDOS_PAGO, true), slug, dataDoCalendarioAtual);
+				vendaAsString = FORMATO_DINHEIRO.format(venda);
+				parameters.put("festaFemininoVendaSemComboSemana" + String.valueOf(i), vendaAsString);
+				totalFestasFemininoSemCombo[i] += venda;
+				totalVendaSemCombo[i] += venda;
+				totalSemCombo[i] += venda;
 				
 				pagoParcial = buscaValorFinal(dao.getConnection(), queryFestasFeminino(SQL_PEDIDOS_PAGO_PARCIAL), slug, dataDoCalendarioAtual);
 				valorPagoParcialAsString = FORMATO_DINHEIRO.format(pagoParcial);
@@ -214,9 +269,14 @@ public class CashFlow {
 	}
 	
 	private static String queryAcomodacoes(String criteria) {
+		return queryAcomodacoes(criteria, false);
+	}
+	
+	private static String queryAcomodacoes(String criteria, boolean semCombos) {
 		return "SELECT SUM(pi.valor) + SUM(pi.desconto) as valor" +  
 				" FROM pedido_item pi, pedido ped, produto_tipo pt, produto_subtipo ps, produto prod, acomodacao_quarto t" + 
-				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND" + 
+				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND " + 
+				(semCombos ? SQL_SEM_RECEITA : "") +
 				"	DATEDIFF(?, ped.data) >= 0 AND " + 
 				"	ped.id IN ( " + 
 				"		SELECT id FROM pedido WHERE idDe IN ( " + 
@@ -230,9 +290,14 @@ public class CashFlow {
 	}
 	
 	private static String queryAereo(String criteria) {
+		return queryAereo(criteria, false);
+	}
+	
+	private static String queryAereo(String criteria, boolean semCombos) {
 		return "SELECT SUM(pi.valor) + SUM(pi.desconto) as valor" +  
 				" FROM pedido_item pi, pedido ped, produto_tipo pt, produto_subtipo ps, produto prod, aereo_trecho t" + 
-				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND" + 
+				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND " + 
+				(semCombos ? SQL_SEM_RECEITA : "") +
 				"	DATEDIFF(?, ped.data) >= 0 AND " + 
 				"	ped.id IN ( " + 
 				"		SELECT id FROM pedido WHERE idDe IN ( " + 
@@ -246,9 +311,14 @@ public class CashFlow {
 	}
 	
 	private static String queryFestasMasculino(String criteria) {
+		return queryFestasMasculino(criteria, false);
+	}
+	
+	private static String queryFestasMasculino(String criteria, boolean semCombos) {
 		return "SELECT SUM(pi.valor) + SUM(pi.desconto) as valor" +  
 				" FROM pedido_item pi, pedido ped, produto_tipo pt, produto_subtipo ps, produto prod, experiencia_festadias t" + 
-				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND" + 
+				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND " + 
+				(semCombos ? SQL_SEM_RECEITA : "") +
 				" t.sexo IN ('Masculino') AND " +
 				"	DATEDIFF(?, ped.data) >= 0 AND " + 
 				"	ped.id IN ( " + 
@@ -263,9 +333,14 @@ public class CashFlow {
 	}
 	
 	private static String queryFestasFeminino(String criteria) {
+		return queryFestasFeminino(criteria, false);
+	}
+	
+	private static String queryFestasFeminino(String criteria, boolean semCombos) {
 		return "SELECT SUM(pi.valor) + SUM(pi.desconto) as valor" +  
 				" FROM pedido_item pi, pedido ped, produto_tipo pt, produto_subtipo ps, produto prod, experiencia_festadias t" + 
-				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND" + 
+				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND " + 
+				(semCombos ? SQL_SEM_RECEITA : "") +
 				" t.sexo IN ('Feminino') AND " +
 				"	DATEDIFF(?, ped.data) >= 0 AND " + 
 				"	ped.id IN ( " + 
@@ -280,9 +355,14 @@ public class CashFlow {
 	}
 	
 	private static String queryFestasUnissex(String criteria) {
+		return queryFestasUnissex(criteria, false);
+	}
+	
+	private static String queryFestasUnissex(String criteria, boolean semCombos) {
 		return "SELECT SUM(pi.valor) + SUM(pi.desconto) as valor" +  
 				" FROM pedido_item pi, pedido ped, produto_tipo pt, produto_subtipo ps, produto prod, experiencia_festadias t" + 
-				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND" + 
+				" WHERE pi.idPedido = ped.id AND pt.id = pi.tipo AND pi.subtipo = ps.id AND pi.idExterno = prod.id AND pi.idExterno2 = t.id AND " + 
+				(semCombos ? SQL_SEM_RECEITA : "") +
 				" t.sexo IN ('Unissex') AND " +
 				"	DATEDIFF(?, ped.data) >= 0 AND " + 
 				"	ped.id IN ( " + 

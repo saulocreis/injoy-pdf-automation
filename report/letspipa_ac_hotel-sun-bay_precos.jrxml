@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="letspipa_ac_hotel-sun-bay_precos" pageWidth="684" pageHeight="979" columnWidth="684" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" resourceBundle="jasperprops" uuid="c75fd9ee-5d61-41a7-9c1d-7fac47b79c74">
+	<parameter name="img_dir" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.directory.letspipa}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="slug_de" class="java.lang.String">
+		<defaultValueExpression><![CDATA["letspipa"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="valorAereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA["0"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_precos" class="java.lang.String">
+		<defaultValueExpression><![CDATA["Sun Bay - Quartos.png"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacoteac_standard_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotefeminino_standard_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotemasculino_standard_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacoteac_standard_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotefeminino_standard_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotemasculino_standard_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacoteac_standard-com-hidro_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotefeminino_standard-com-hidro_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotemasculino_standard-com-hidro_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacoteac_confort_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotefeminino_confort_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotemasculino_confort_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacoteac_confort_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotefeminino_confort_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotemasculino_confort_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacoteac_master_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotefeminino_master_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotemasculino_master_2" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacoteac_master_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotefeminino_master_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotemasculino_master_3" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacoteac_master_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotefeminino_master_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotemasculino_master_4" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotefemininoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<parameter name="jr_letspipa_ac_hotel-sun-bay_pacotemasculinoaereo" class="java.lang.String">
+		<defaultValueExpression><![CDATA[$R{injoy.tag.esgotado}]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[SELECT TRUE;]]>
+	</queryString>
+	<background>
+		<band height="979">
+			<image>
+				<reportElement x="0" y="0" width="684" height="979" uuid="3f32f6c7-b7d6-43df-af05-a8dc91116beb"/>
+				<imageExpression><![CDATA[$P{img_dir}+$P{jr_letspipa_ac_hotel-sun-bay_precos}]]></imageExpression>
+			</image>
+			<image hyperlinkType="LocalAnchor">
+				<reportElement mode="Transparent" x="30" y="939" width="40" height="40" uuid="bf9b7bad-9276-43c2-be52-d1dadd76ae90"/>
+				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
+				<hyperlinkAnchorExpression><![CDATA[$R{injoy.tag.acomodacoes}]]></hyperlinkAnchorExpression>
+			</image>
+			<textField>
+				<reportElement x="335" y="250" width="98" height="34" uuid="6b0881c9-a7a0-403b-aefb-b7f03cb58adf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacoteac_standard_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="250" width="98" height="34" uuid="a6814426-3703-44bb-aae5-422f11f48587"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotefeminino_standard_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="250" width="98" height="34" uuid="ea80ad85-24da-4d4a-9f5d-ea2c9f4aea1a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotemasculino_standard_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="310" width="98" height="34" uuid="53fc6f43-c289-4974-a400-68b8a610fbec"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacoteac_standard_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="310" width="98" height="34" uuid="c4f025bf-e90e-4a11-8ee8-7e410c57ed4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotefeminino_standard_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="310" width="98" height="34" uuid="b9531678-096c-42b2-b162-33371ce8fc3a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotemasculino_standard_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="410" width="98" height="34" uuid="22b1ae38-3776-433f-afd7-2f12e91f87c7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacoteac_standard-com-hidro_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="410" width="98" height="34" uuid="b4e6ea5d-f83c-4214-8006-c27035d92c72"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotefeminino_standard-com-hidro_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="410" width="98" height="34" uuid="9163ea7f-f799-4ee3-8183-72dad37ba2a3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotemasculino_standard-com-hidro_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="505" width="98" height="34" uuid="7615b96b-8b9e-4d8a-bc4e-68d25f8d2799"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacoteac_confort_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="505" width="98" height="34" uuid="ed33b6a3-0207-4a92-8f83-34eb1824ada3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotefeminino_confort_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="505" width="98" height="34" uuid="57c6d21a-9e19-4bf4-94cb-32218f2fcf95"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotemasculino_confort_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="560" width="98" height="34" uuid="cf200778-1d2f-4084-8cfa-0bb8b254057c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacoteac_confort_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="560" width="98" height="34" uuid="7eec1809-0c30-4020-8eea-9bd3b8a87670"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotefeminino_confort_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="560" width="98" height="34" uuid="f2e1a7df-c3fd-45ae-acaa-d89f3a685e77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotemasculino_confort_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="620" width="98" height="34" uuid="ca92385f-ace5-494a-b857-05c8f888f613"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacoteac_master_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="620" width="98" height="34" uuid="c3fe73f3-1f6b-4279-9d4c-412d78129f12"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotefeminino_master_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="620" width="98" height="34" uuid="a04506b4-f12a-486c-b069-154cecaffd23"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotemasculino_master_2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="660" width="98" height="34" uuid="67f27977-b553-4993-894a-bd20e6418acd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacoteac_master_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="660" width="98" height="34" uuid="e925f7f2-4152-4d7c-9be3-fc30682b2bb6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotefeminino_master_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="660" width="98" height="34" uuid="decb677b-8394-443d-8047-4e0ffd829bbf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotemasculino_master_3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="335" y="700" width="98" height="34" uuid="f044720c-1310-4041-8b4a-73c5fe867000"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacoteac_master_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="700" width="98" height="34" uuid="80290384-50d5-4e89-a504-8e939a956306"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotefeminino_master_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="700" width="98" height="34" uuid="e4f66560-4606-46f9-a0fc-c2a2443b2061"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotemasculino_master_4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="450" y="800" width="98" height="34" uuid="3dc0fd67-2dc4-48d3-aecb-1a652fea70a5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotefemininoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="800" width="98" height="34" uuid="42c63a6c-9a93-4697-a127-f3be1254aada"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{jr_letspipa_ac_hotel-sun-bay_pacotemasculinoaereo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="885" width="130" height="34" forecolor="#FFFFFF" uuid="e9d34dc8-fac3-4d37-b385-b7eb1ac61ebf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Montserrat" size="26" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{valorAereo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</background>
+</jasperReport>

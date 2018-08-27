@@ -21,14 +21,14 @@
 				<anchorNameExpression><![CDATA[$R{injoy.tag.infovenda}]]></anchorNameExpression>
 			</image>
 			<textField>
-				<reportElement x="320" y="130" width="70" height="20" forecolor="#FFFFFF" uuid="e23d7b85-560d-4df1-8d3a-b449ac501f05"/>
+				<reportElement x="315" y="132" width="70" height="20" forecolor="#FFFFFF" uuid="e23d7b85-560d-4df1-8d3a-b449ac501f05"/>
 				<textElement textAlignment="Left" verticalAlignment="Middle">
 					<font fontName="Montserrat" size="10" isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$P{dataCriacao}]]></textFieldExpression>
 			</textField>
 			<image hyperlinkType="Reference">
-				<reportElement mode="Transparent" x="410" y="170" width="150" height="27" uuid="a396e2ec-1ac6-4370-a9f2-a1358db93a9a"/>
+				<reportElement mode="Transparent" x="400" y="170" width="150" height="27" uuid="a396e2ec-1ac6-4370-a9f2-a1358db93a9a"/>
 				<imageExpression><![CDATA[$R{injoy.image.link}]]></imageExpression>
 				<hyperlinkReferenceExpression><![CDATA[$R{injoy.link}]]></hyperlinkReferenceExpression>
 			</image>

@@ -36,9 +36,9 @@ public class PrincipalId {
 	 * 'carneiros', 'jeri2019', 'letspipa', 'xama2019', 'awe2019'
 	 */
 	static private final String SLUG_DE = "letspipa";
-	static private final int ID_HIBRIDO = 2137;
+	static private final int ID_HIBRIDO = 2224;
 	static private final int ID_EXPERIENCIA = 2029;
-	static private final int ID_AEREO = 2141;
+	static private final int ID_AEREO = 2222;
 	
 	
 	static private Properties jasperprops;
@@ -604,7 +604,7 @@ public class PrincipalId {
 					System.out.println(parameter + " -> " + arquivo);
 					parameters.put(parameter, arquivo);
 				}
-				result2.close();			
+				result2.close();
 				
 				i++;
 			}
